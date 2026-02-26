@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "error": "Erro",
+    "ok": "OK",
+    "enabled": "Ativado",
+    "disabled": "Desativado"
+  },
+  "settings": {
+    "unlockPro": "Desbloquear Pro",
+    "unlockProSubtitle": "Obtenha Acesso Completo",
+    "contactSupport": "Contatar suporte",
+    "contactSupportSubtitle": "Ajuda, comentários ou sugestões",
+    "rateApp": "Avaliar app",
+    "rateAppSubtitle": "Compartilhe sua opinião",
+    "shareApp": "Compartilhar app",
+    "shareAppSubtitle": "Conte aos seus amigos",
+    "shareMessage": "Confira o {{appName}}!",
+    "appearance": "Aparência",
+    "appearanceSubtitle": "Escolha seu tema",
+    "themeSystem": "Sistema",
+    "themeLight": "Claro",
+    "themeDark": "Escuro",
+    "privacyPolicy": "Política de privacidade",
+    "privacyPolicySubtitle": "Ver nossa política de privacidade",
+    "termsOfService": "Termos de serviço",
+    "termsOfServiceSubtitle": "Ver nossos termos de serviço",
+    "account": "Conta",
+    "signedInWithApple": "Conectado com Apple",
+    "resetOnboarding": "Redefinir integração",
+    "resetOnboardingSubtitle": "Limpar estado de integração",
+    "onboardingResetTitle": "Integração redefinida",
+    "onboardingResetMessage": "Reinicie o app para ver o fluxo de integração.",
+    "version": "Versão",
+    "emailPlaceholder": "Por favor deixe sua mensagem acima desta linha",
+    "emailAppName": "App:",
+    "emailAppVersion": "Versão do app:",
+    "emailOS": "SO:",
+    "emailUserId": "ID do usuário:",
+    "checkInReminders": "Lembretes de check-in",
+    "language": "Idioma",
+    "systemDefault": "Padrão do sistema",
+    "reminderTime": "Lembrete",
+    "addReminder": "Adicionar lembrete"
+  },
+  "account": {
+    "editProfile": "Editar perfil",
+    "editProfileSubtitle": "Atualize sua foto de perfil",
+    "signOut": "Sair",
+    "signOutConfirmTitle": "Sair",
+    "signOutConfirmMessage": "Tem certeza de que deseja sair?",
+    "deleteAccount": "Excluir conta",
+    "deleteAccountSubtitle": "Excluir permanentemente sua conta e dados",
+    "deleteAccountTitle": "Excluir conta",
+    "deleteAccountWarning": "Esta ação é permanente e não pode ser desfeita. Todos os seus dados, incluindo publicações, comentários e informações da conta serão excluídos permanentemente.",
+    "deleteAccountConfirmPrompt": "Para confirmar, digite \"{{confirmText}}\" abaixo:",
+    "deleteAccountConfirmText": "excluir conta permanentemente",
+    "deleteAccountScheduledTitle": "Conta agendada para exclusão",
+    "deleteAccountScheduledMessage": "Sua conta será excluída nas próximas 24 horas.",
+    "deleteAccountConfirmError": "Por favor digite o texto de confirmação exatamente."
+  },
+  "profile": {
+    "tapToChangePhoto": "Toque para alterar a foto de perfil",
+    "username": "Nome de usuário",
+    "notSet": "Não definido",
+    "failedToUpdate": "Falha ao atualizar perfil"
+  },
+  "log": {
+    "whenDidItStart": "Quando começou?",
+    "dateTime": "Data e hora",
+    "severity": "Gravidade",
+    "severityScale": "de 10",
+    "severityValue": "Gravidade: {{value}}/10",
+    "severityLevels": {
+      "mild": "Leve",
+      "moderate": "Moderado",
+      "severe": "Grave"
+    },
+    "headacheType": "Tipo",
+    "headacheTypes": {
+      "tension": "Tensão",
+      "migraine": "Enxaqueca",
+      "cluster": "Cluster",
+      "sinus": "Sinusal",
+      "not-sure": "Não tenho certeza"
+    },
+    "location": "Localização",
+    "locations": {
+      "front": "Frontal",
+      "back": "Posterior",
+      "left-side": "Lado esquerdo",
+      "right-side": "Lado direito",
+      "top": "Topo",
+      "all-over": "Por toda a cabeça"
+    },
+    "duration": "Duração",
+    "minutes": "min",
+    "triggers": "Gatilhos",
+    "selectAllThatApply": "Selecione todos os que se aplicam",
+    "triggerOptions": {
+      "stress": "Estresse",
+      "lack-of-sleep": "Falta de sono",
+      "dehydration": "Desidratação",
+      "screen-time": "Tempo de tela",
+      "weather": "Clima",
+      "food": "Alimento",
+      "alcohol": "Álcool",
+      "caffeine": "Cafeína",
+      "hormones": "Hormônios",
+      "exercise": "Exercício"
+    },
+    "medications": "Medicamentos",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofeno",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspirina",
+      "triptan": "Triptano",
+      "none": "Nenhum"
+    },
+    "notes": "Notas",
+    "optional": "Opcional",
+    "upgradeToProNotes": "Atualize para PRO para adicionar notas",
+    "update": "Atualizar",
+    "logButton": "Registrar",
+    "logDetails": "Detalhes do registro",
+    "date": "Data",
+    "time": "Hora",
+    "deleteLog": "Excluir registro",
+    "deleteLogTitle": "Excluir registro",
+    "deleteLogMessage": "Tem certeza de que deseja excluir este registro? Esta ação não pode ser desfeita.",
+    "scanWithAI": "Escanear com IA",
+    "analysisFailed": "Não foi possível analisar a foto. Tente novamente ou insira manualmente.",
+    "noContainerDetected": "Nenhum objeto foi detectado na foto. Tente novamente com uma imagem mais clara."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Começar",
+      "next": "Próximo",
+      "continue": "Continuar",
+      "skip": "Pular"
+    },
+    "welcome": {
+      "title": "Registre suas dores de cabeça,\ntome o controle",
+      "subtitle": "Vamos responder algumas perguntas rápidas para personalizar sua experiência"
+    },
+    "painPoints": {
+      "title": "Dificuldade em gerenciar suas dores de cabeça?",
+      "subtitle": "Sem registrar padrões e gatilhos, é difícil descobrir o que ajuda. Nosso app facilita registrar, identificar padrões e tomar o controle.",
+      "buttonText": "Me mostre como funciona"
+    },
+    "benefits": {
+      "title": "Este app te ajuda a",
+      "benefit1": "Registrar suas dores de cabeça sem esforço",
+      "benefit2": "Identificar padrões e gatilhos",
+      "benefit3": "Obter informações personalizadas",
+      "benefit4": "Tomar o controle da sua saúde",
+      "buttonText": "É isso que eu preciso"
+    },
+    "comparison": {
+      "title": "O registro funciona",
+      "subtitle": "Pessoas que registram suas dores de cabeça relatam melhores resultados",
+      "withoutTracking": "Sem registro",
+      "withApp": "Com este app",
+      "buttonText": "Quero tomar o controle"
+    },
+    "personalization": {
+      "title": "Personalizando sua experiência",
+      "subtitle": "Configurando seu rastreador de dores de cabeça...",
+      "steps": {
+        "profile": {
+          "title": "Seu perfil",
+          "description": "Configurando suas preferências de registro"
+        },
+        "calendar": {
+          "title": "Configuração do calendário",
+          "description": "Preparando seu calendário pessoal de registro"
+        },
+        "insights": {
+          "title": "Informações inteligentes",
+          "description": "Treinando recomendações personalizadas"
+        },
+        "preferences": {
+          "title": "Preferências",
+          "description": "Aplicando suas configurações"
+        },
+        "ready": {
+          "title": "Pronto!",
+          "description": "Seu rastreador está pronto"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Tudo pronto!",
+      "subtitle": "Seu rastreador personalizado está pronto. Registre sua primeira dor de cabeça e comece a identificar padrões!"
+    },
+    "finished": {
+      "title": "Bem-vindo",
+      "subtitle": "Seu rastreador de dores de cabeça está pronto",
+      "numberLabel": "pessoas registrando suas dores de cabeça",
+      "bottomTitle": "Pronto para registrar sua primeira dor de cabeça?",
+      "bottomSubtitle": "Comece a registrar hoje e descubra seus padrões",
+      "buttonText": "Sim, estou pronto!"
+    },
+    "community": {
+      "title": "Aprendam juntos",
+      "subtitle": "Conecte-se com outros, compartilhe dicas e obtenha ajuda de uma comunidade solidária",
+      "buttonText": "Adoro isso!"
+    },
+    "notifications": {
+      "title": "Fique por dentro",
+      "subtitle": "Receba notificações quando membros da comunidade comentarem ou votarem em suas publicações",
+      "votesOnResults": "Votos nos seus resultados",
+      "repliesToPosts": "Respostas às suas publicações",
+      "turnOn": "Ativar notificações"
+    },
+    "checkInNotifications": {
+      "title": "Ativar lembretes de check-in",
+      "subtitle": "Permita notificações para receber seus lembretes personalizados",
+      "reason1": "Receba lembretes para registrar dores de cabeça nos seus horários preferidos",
+      "reason2": "Crie hábitos de registro consistentes",
+      "turnOn": "Ativar notificações"
+    },
+    "sheet": {
+      "welcomeTo": "Bem-vindo ao"
+    },
+    "question1": {
+      "title": "Com que frequência você tem dores de cabeça?",
+      "subtitle": "Isso nos ajuda a personalizar sua experiência de registro.",
+      "options": {
+        "daily": "Diariamente",
+        "severalPerWeek": "Várias vezes por semana",
+        "weekly": "Cerca de uma vez por semana",
+        "fewPerMonth": "Algumas vezes por mês",
+        "rarely": "Raramente"
+      }
+    },
+    "question2": {
+      "title": "Que tipo de dor de cabeça você geralmente tem?",
+      "subtitle": "Não se preocupe se não tiver certeza — você sempre pode mudar depois.",
+      "options": {
+        "tension": "Cefaleia tensional",
+        "migraine": "Enxaqueca",
+        "cluster": "Cefaleia em salvas",
+        "sinus": "Cefaleia sinusal",
+        "notSure": "Não tenho certeza"
+      }
+    },
+    "notifications": {
+      "title": "Quando devemos lembrar você?",
+      "subtitle": "Escolha um horário para seu check-in diário. Você pode adicionar mais depois nas configurações."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Nenhuma publicação ainda",
+    "beFirstToShare": "Seja o primeiro a compartilhar com a comunidade!",
+    "couldntLoadPosts": "Não foi possível carregar as publicações",
+    "somethingWentWrong": "Algo deu errado. Por favor verifique sua conexão e tente novamente.",
+    "tryAgain": "Tentar novamente",
+    "deletePostTitle": "Excluir publicação",
+    "deletePostMessage": "Tem certeza de que deseja excluir esta publicação?",
+    "viewAllComments": "Ver todos os {{count}} comentários"
+  },
+  "post": {
+    "delete": "Excluir",
+    "report": "Denunciar",
+    "post": "Publicar"
+  },
+  "comments": {
+    "title": "Comentários",
+    "noCommentsYet": "Nenhum comentário ainda",
+    "beFirstToComment": "Seja o primeiro a comentar!",
+    "loadingComments": "Carregando comentários",
+    "postNotFound": "Publicação não encontrada",
+    "addComment": "Adicionar um comentário..."
+  },
+  "createPost": {
+    "post": "Publicar",
+    "placeholders": {
+      "shareResults": "Compartilhe seus resultados...",
+      "shareStory": "Compartilhe sua história...",
+      "whatsOnMind": "O que está em mente?",
+      "howFeeling": "Como você está se sentindo hoje?",
+      "writeCaption": "Escreva uma legenda...",
+      "shareCommunity": "Compartilhe com a comunidade...",
+      "tellJourney": "Conte-nos sobre sua jornada...",
+      "shareMoment": "Compartilhe seu momento..."
+    }
+  },
+  "reportPost": {
+    "description": "Por favor nos diga por que está denunciando esta publicação. Vamos analisar e tomar as medidas apropriadas.",
+    "placeholder": "Descreva o problema...",
+    "submit": "Enviar",
+    "successTitle": "Denúncia enviada",
+    "successMessage": "Obrigado pela denúncia. Vamos analisar esta publicação.",
+    "errorNoReason": "Por favor forneça um motivo para sua denúncia."
+  },
+  "paywall": {
+    "tryForFree": "Experimente grátis",
+    "continue": "Continuar",
+    "noCommitment": "Sem compromisso, cancele quando quiser",
+    "freeTrialEnabled": "Teste gratuito ativado",
+    "noPurchasesFound": "Nenhuma compra encontrada",
+    "tryAgain": "Tentar novamente",
+    "errorTitle": "Erro",
+    "errorDescription": "Não foi possível carregar as assinaturas. Por favor tente novamente ou contate o suporte se o problema persistir.",
+    "footer": {
+      "terms": "Termos",
+      "restorePurchase": "Restaurar compra",
+      "privacy": "Privacidade"
+    },
+    "trial": {
+      "title": "Obtenha acesso ilimitado por {{days}} dias",
+      "subtitle": "Vamos te lembrar antes do fim do teste",
+      "today": "Hoje",
+      "todaySubtitle": "Desbloqueie acesso completo ao seu rastreador de dores de cabeça.",
+      "inTwoDays": "Em 2 dias",
+      "inTwoDaysSubtitle": "Enviaremos um lembrete antes do fim do seu teste.",
+      "inThreeDays": "Em 3 dias",
+      "inThreeDaysSubtitle": "Sua assinatura começará a menos que você cancele antes."
+    },
+    "nonTrial": {
+      "titleHard": "Desbloqueie o app para continuar",
+      "titleSoft": "Obtenha Acesso Completo",
+      "subtitle": "Seu companheiro de rastreamento de dores de cabeça"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Registro rápido e fácil",
+        "description": "Registre entradas em segundos com nossa interface otimizada - sem complicações"
+      },
+      "reminders": {
+        "title": "Lembretes personalizados",
+        "description": "Defina lembretes personalizados para registrar e acompanhar suas dores de cabeça"
+      },
+      "noPaywall": {
+        "title": "Remover paywall chato",
+        "description": "Sem mais popups de paywall toda vez que abrir o app"
+      },
+      "unlimited": {
+        "title": "Registro Ilimitado",
+        "description": "Registre quantas vezes precisar - sem limites mensais"
+      },
+      "indieDeveloper": {
+        "title": "Apoie um Desenvolvedor Independente",
+        "description": "Ajude a moldar o futuro deste app e aproveite recursos exclusivos criados com carinho por um desenvolvedor independente."
+      }
+    },
+    "reviews": {
+      "sarah": "Finalmente encontrei um app que torna o registro de dores de cabeça fácil! A visão do calendário é perfeita para identificar padrões ao longo do tempo.",
+      "isaac": "Tenho migraines há anos. Este app me ajudou a identificar meus gatilhos — agora consigo realmente preveni-las!",
+      "emma": "Meu neurologista recomendou que eu registrasse minhas dores de cabeça e isso tornou tudo tão simples. Adoro ter dados reais para minhas consultas!",
+      "arthur": "O rastreamento de gatilhos é brilhante! Descobri que a cafeína era meu principal culpado. Uma verdadeira mudança de jogo para minha saúde!",
+      "zoe": "Super rápido para registrar - leva apenas segundos. Estou consistente há 3 meses e minhas dores de cabeça reduziram significativamente!",
+      "maya": "Como alguém que sofre com migraines crônicas, ter tudo em um lugar me dá tranquilidade. Adoro os lembretes diários!"
+    },
+    "package": {
+      "freeTrial": "TESTE GRÁTIS",
+      "perWeek": "/semana",
+      "perMonth": "/mês",
+      "perYear": "/ano",
+      "once": "uma vez",
+      "percentOff": "{{percent}}% de desconto",
+      "savePercent": "ECONOMIZE {{percent}}%",
+      "yearly": "anual",
+      "weekly": "semanal",
+      "monthly": "mensal",
+      "then": "depois ",
+      "daysFree": "{{count}} dias grátis",
+      "introSubtitle": "{{count}} dias grátis · depois {{price}}",
+      "weeklyIntroSubtitle": "{{count}} dias grátis · Cancele a qualquer momento",
+      "weeklySubtitle": "Renovação automática · Cancele a qualquer momento",
+      "monthlySubtitle": "Renovação automática · Cancele a qualquer momento",
+      "annualSubtitle": "Cobrança anual · Cancele a qualquer momento",
+      "lifetimeSubtitle": "Pagamento único",
+      "yearlyTitle": "Anual",
+      "monthlyTitle": "Mensal",
+      "weeklyTitle": "Semanal",
+      "lifetimeTitle": "Vitalício"
+    },
+    "wreath": {
+      "bestHealthApp": "Melhor app de rastreamento de dores de cabeça"
+    },
+    "v2": {
+      "title": "Escolha seu plano",
+      "perksIntro": "Ao assinar, você desbloqueará os seguintes benefícios:"
+    }
+  },
+  "setupProfile": {
+    "title": "Configure seu perfil",
+    "subtitle": "É assim que você aparecerá para outros na comunidade.",
+    "addPhoto": "Adicionar foto de perfil (opcional)",
+    "placeholder": "nome de usuário",
+    "next": "Próximo",
+    "usernameTaken": "Este nome de usuário já está em uso.",
+    "failedToUpdate": "Falha ao atualizar perfil",
+    "onlyLettersNumbersUnderscores": "Apenas letras, números e underscores",
+    "checking": "Verificando...",
+    "usernameIsTaken": "Nome de usuário em uso",
+    "usernameIsAvailable": "Nome de usuário disponível",
+    "usernameMinLength": "Deve ter pelo menos 3 caracteres",
+    "usernameMaxLength": "Deve ter menos de 20 caracteres",
+    "usernameInstructions": "3-20 caracteres. Apenas letras, números e underscores.",
+    "usernameErrorInstructions": "O nome de usuário deve ter 3-20 caracteres e conter apenas letras, números e underscores."
+  },
+  "confirm": {
+    "analyze": "Analisar",
+    "noPhotoToAnalyze": "Nenhuma foto para analisar",
+    "failedToProcessImage": "Falha ao processar imagem"
+  },
+  "feedback": {
+    "title": "Compartilhe sua opinião",
+    "subtitle": "Ajude-nos a melhorar sua experiência",
+    "tellUs": "Diga-nos o que podemos melhorar",
+    "submit": "Enviar",
+    "thankYouTitle": "Obrigado!",
+    "thankYouMessage": "Sua opinião nos ajuda a melhorar o app.",
+    "feedbackRequired": "Opinião necessária",
+    "feedbackRequiredMessage": "Por favor insira sua opinião antes de enviar."
+  },
+  "history": {
+    "search": "Buscar",
+    "noConversationsYet": "Nenhuma conversa ainda",
+    "noConversationsMessage": "Suas sessões de ajuda aparecerão aqui quando você começar a fazer perguntas.",
+    "deleteTitle": "Excluir",
+    "deleteMessage": "Tem certeza de que deseja excluir isto? Esta ação não pode ser desfeita.",
+    "sortQuestionAZ": "Pergunta (A-Z)",
+    "sortQuestionZA": "Pergunta (Z-A)",
+    "sortDateNewest": "Data (Mais recente)",
+    "sortDateOldest": "Data (Mais antigo)"
+  },
+  "chat": {
+    "askFollowUp": "Faça uma pergunta de acompanhamento..."
+  },
+  "signIn": {
+    "title": "Crie uma conta",
+    "subtitle": "Entre para compartilhar com a comunidade. É super rápido!"
+  },
+  "calendar": {
+    "noRecords": "Sem registros",
+    "noRecordsMessage": "Nenhum registro de dor de cabeça para esta data.",
+    "firstLogPrompt": "Toque + para adicionar seu primeiro registro!",
+    "addLog": "Adicionar registro"
+  },
+  "camera": {
+    "loading": "Carregando...",
+    "continue": "Continuar",
+    "permissionTitle": "Permissão da câmera",
+    "permissionMessage": "Precisamos da sua permissão para mostrar a câmera"
+  },
+  "rating": {
+    "howWouldYouRate": "Como você avaliaria nossa análise?"
+  },
+  "tabs": {
+    "dashboard": "Painel",
+    "calendar": "Calendário",
+    "settings": "Configurações"
+  },
+  "dashboard": {
+    "severity": "Severidade",
+    "noData": "Sem dores de cabeça esta semana",
+    "totalHeadaches": "Total de dores",
+    "avgSeverity": "Severidade média",
+    "avgDuration": "Duração média",
+    "topTrigger": "Principal gatilho",
+    "noDataTitle": "Nenhuma dor de cabeça registrada",
+    "noDataDescription": "Registre sua primeira dor de cabeça para ver as estatísticas semanais",
+    "addLog": "Adicionar registro"
+  },
+  "navigation": {
+    "back": "Voltar",
+    "createPost": "Criar publicação",
+    "reportPost": "Denunciar publicação",
+    "account": "Conta",
+    "editProfile": "Editar perfil",
+    "deleteAccount": "Excluir conta",
+    "editLog": "Editar registro",
+    "community": "Comunidade",
+    "history": "Histórico",
+    "logHeadache": "Registrar dor de cabeça",
+    "language": "Idioma"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Esta página não foi encontrada."
+  },
+  "imageEdit": {
+    "brightness": "Brilho",
+    "contrast": "Contraste",
+    "invert": "Inverter",
+    "bw": "P&B"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Requisitos da foto",
+    "whatToAvoid": "O que evitar",
+    "bullets": {
+      "ensureBothLines": "Certifique-se de que ambas as linhas de controle e teste estejam visíveis e em close.",
+      "testStraight": "O teste deve estar reto e horizontal.",
+      "clearPhoto": "Use uma foto clara e de alta qualidade com iluminação uniforme.",
+      "simpleBackground": "Mantenha o fundo simples, idealmente uma cor sólida.",
+      "avoidBlurry": "Evite fotos borradas ou fora de foco.",
+      "dontCrop": "Não corte partes da janela do teste.",
+      "avoidShadows": "Evite sombras fortes ou reflexos no teste.",
+      "dontAngle": "Não tire fotos em ângulo.",
+      "darkPhotos": "Fotos escuras sem contraste."
+    },
+    "summary": {
+      "title": "Sobre linhas tênues, evaporação e indentações",
+      "intro": "Linhas extremamente tênues podem ser difíceis para a IA detectar. Esteja atento a possíveis falsos positivos de:",
+      "evapLines": "Linhas de evaporação: ",
+      "evapDesc": "Marcas tênues e incolores que aparecem quando o teste seca, tipicamente após o tempo de leitura recomendado.",
+      "indentLines": "Linhas de indentação: ",
+      "indentDesc": "Marcas sutis do processo de fabricação da tira de teste, que podem ser visíveis independentemente do resultado.",
+      "revisitGuide": "Você pode revisitar este guia a qualquer momento pelo ícone de informação no canto inferior direito."
+    },
+    "next": "Próximo"
+  },
+  "videoDemo": {
+    "title": "Escaneie e obtenha resultados instantaneamente",
+    "subtitle": "Ajudamos mais de 10.000 mulheres a obter seus resultados"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Aviso legal",
+    "content": "Este aplicativo utiliza tecnologia de IA que pode produzir resultados imprecisos ou incompletos. Sempre verifique informações importantes de fontes confiáveis e use seu próprio julgamento ao tomar decisões baseadas em conteúdo gerado por IA."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Este é um app muito bom que uso todos os dias. É muito fácil de usar e adoro os widgets.",
+      "zlassenp": "Ver uma contagem regressiva para minha viagem ou aniversário de um amigo me anima.",
+      "rajgha": "Torna difícil esquecer eventos importantes. Só queria que houvesse opções de fontes.",
+      "jaynacc": "Não achava que usaria muito este app… mas agora verifico toda manhã."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Hora de registrar!",
+      "body": "Como está sua cabeça? Registre o status da sua dor de cabeça."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Bem-vindo! 🧠",
+        "body": "Rastreie suas dores de cabeça e identifique padrões. Registre sua primeira dor de cabeça hoje!"
+      },
+      "reminder1": {
+        "title": "Rastreie suas dores de cabeça 📊",
+        "body": "O registro constante ajuda a encontrar seus gatilhos. Atualize para registro ilimitado e análise detalhada."
+      },
+      "reminder2": {
+        "title": "Análise Detalhada 🎓",
+        "body": "Junte-se a milhares que atualizaram para recomendações personalizadas de padrões de dor de cabeça."
+      },
+      "reminder3": {
+        "title": "Tempo limitado: Desbloqueie tudo 🔓",
+        "body": "Obtenha registro ilimitado + análise detalhada. Comece seu teste gratuito agora!"
+      },
+      "reminder4": {
+        "title": "Registre de forma inteligente 📱",
+        "body": "Usuários premium obtêm análises detalhadas, rastreamento de gatilhos e registros ilimitados."
+      },
+      "reminder5": {
+        "title": "Sua jornada com dores de cabeça 🌟",
+        "body": "Atualize agora e tome controle das suas dores de cabeça. Teste gratuito disponível!"
+      },
+      "reminder6": {
+        "title": "Última chance: Recursos premium 🚨",
+        "body": "Não perca o registro ilimitado e a análise de padrões."
+      },
+      "reminder7": {
+        "title": "Sentimos sua falta! 🧠",
+        "body": "Volte e continue sua jornada de rastreamento de dores de cabeça. Os recursos premium estão esperando por você."
+      },
+      "trialEnds": "Seu teste termina amanhã"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Acordei com dor, sensibilidade à luz",
+      "afterLongMeeting": "Começou após reunião longa",
+      "leftWorkEarly": "Tive que sair do trabalho mais cedo, náusea e aura",
+      "worstThisMonth": "O pior deste mês, triptano ajudou após 1h",
+      "rainyDay": "Dia chuvoso, provavelmente mudança de pressão",
+      "onlySleptFourHours": "Dormi apenas 4 horas, precisei dos dois remédios",
+      "tooMuchCoffee": "Café demais ontem, paguei o preço hoje"
+    }
+  }
+}

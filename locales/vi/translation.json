@@ -1,0 +1,588 @@
+{
+  "common": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "error": "Lỗi",
+    "ok": "OK",
+    "enabled": "Đã bật",
+    "disabled": "Đã tắt"
+  },
+  "settings": {
+    "unlockPro": "Mở khóa Pro",
+    "unlockProSubtitle": "Nhận Quyền Truy Cập Đầy Đủ",
+    "contactSupport": "Liên hệ hỗ trợ",
+    "contactSupportSubtitle": "Trợ giúp, nhận xét hoặc gợi ý",
+    "rateApp": "Đánh giá ứng dụng",
+    "rateAppSubtitle": "Chia sẻ phản hồi của bạn",
+    "shareApp": "Chia sẻ ứng dụng",
+    "shareAppSubtitle": "Giới thiệu cho bạn bè",
+    "shareMessage": "Hãy thử {{appName}}!",
+    "appearance": "Giao diện",
+    "appearanceSubtitle": "Chọn chủ đề của bạn",
+    "themeSystem": "Hệ thống",
+    "themeLight": "Sáng",
+    "themeDark": "Tối",
+    "privacyPolicy": "Chính sách bảo mật",
+    "privacyPolicySubtitle": "Xem chính sách bảo mật",
+    "termsOfService": "Điều khoản dịch vụ",
+    "termsOfServiceSubtitle": "Xem điều khoản dịch vụ",
+    "account": "Tài khoản",
+    "signedInWithApple": "Đã đăng nhập bằng Apple",
+    "resetOnboarding": "Đặt lại giới thiệu",
+    "resetOnboardingSubtitle": "Xóa trạng thái giới thiệu",
+    "onboardingResetTitle": "Đã đặt lại giới thiệu",
+    "onboardingResetMessage": "Khởi động lại ứng dụng để xem phần giới thiệu.",
+    "version": "Phiên bản",
+    "emailPlaceholder": "Vui lòng để lại tin nhắn phía trên dòng này",
+    "emailAppName": "Ứng dụng:",
+    "emailAppVersion": "Phiên bản ứng dụng:",
+    "emailOS": "HĐH:",
+    "emailUserId": "ID người dùng:",
+    "checkInReminders": "Nhắc nhở ghi chép",
+    "reminderTime": "Nhắc nhở",
+    "addReminder": "Thêm nhắc nhở"
+  },
+  "account": {
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "editProfileSubtitle": "Cập nhật ảnh hồ sơ",
+    "signOut": "Đăng xuất",
+    "signOutConfirmTitle": "Đăng xuất",
+    "signOutConfirmMessage": "Bạn có chắc muốn đăng xuất?",
+    "deleteAccount": "Xóa tài khoản",
+    "deleteAccountSubtitle": "Xóa vĩnh viễn tài khoản và dữ liệu",
+    "deleteAccountTitle": "Xóa tài khoản",
+    "deleteAccountWarning": "Hành động này là vĩnh viễn và không thể hoàn tác. Tất cả dữ liệu của bạn, bao gồm bài đăng, bình luận và thông tin tài khoản sẽ bị xóa vĩnh viễn.",
+    "deleteAccountConfirmPrompt": "Để xác nhận, nhập \"{{confirmText}}\" bên dưới:",
+    "deleteAccountConfirmText": "xóa vĩnh viễn tài khoản",
+    "deleteAccountScheduledTitle": "Tài khoản đã được lên lịch xóa",
+    "deleteAccountScheduledMessage": "Tài khoản của bạn sẽ được xóa trong vòng 24 giờ.",
+    "deleteAccountConfirmError": "Vui lòng nhập chính xác văn bản xác nhận."
+  },
+  "profile": {
+    "tapToChangePhoto": "Nhấn để thay đổi ảnh hồ sơ",
+    "username": "Tên người dùng",
+    "notSet": "Chưa đặt",
+    "failedToUpdate": "Không thể cập nhật hồ sơ"
+  },
+  "log": {
+    "whenDidItStart": "Khi nào bắt đầu?",
+    "dateTime": "Ngày & Giờ",
+    "severity": "Mức độ",
+    "severityScale": "trên 10",
+    "severityValue": "Mức độ: {{value}}/10",
+    "severityLevels": {
+      "mild": "Nhẹ",
+      "moderate": "Trung bình",
+      "severe": "Nặng"
+    },
+    "headacheType": "Loại",
+    "headacheTypes": {
+      "tension": "Căng thẳng",
+      "migraine": "Đau nửa đầu",
+      "cluster": "Cụm",
+      "sinus": "Xoang",
+      "not-sure": "Không chắc"
+    },
+    "location": "Vị trí",
+    "locations": {
+      "front": "Trán",
+      "back": "Sau đầu",
+      "left-side": "Bên trái",
+      "right-side": "Bên phải",
+      "top": "Đỉnh đầu",
+      "all-over": "Khắp đầu"
+    },
+    "duration": "Thời gian",
+    "minutes": "phút",
+    "triggers": "Yếu tố kích hoạt",
+    "selectAllThatApply": "Chọn tất cả những gì phù hợp",
+    "triggerOptions": {
+      "stress": "Căng thẳng",
+      "lack-of-sleep": "Thiếu ngủ",
+      "dehydration": "Mất nước",
+      "screen-time": "Thời gian nhìn màn hình",
+      "weather": "Thời tiết",
+      "food": "Thức ăn",
+      "alcohol": "Rượu bia",
+      "caffeine": "Caffeine",
+      "hormones": "Hormone",
+      "exercise": "Vận động"
+    },
+    "medications": "Thuốc",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspirin",
+      "triptan": "Triptan",
+      "none": "Không dùng"
+    },
+    "notes": "Ghi chú",
+    "optional": "Tùy chọn",
+    "upgradeToProNotes": "Nâng cấp lên PRO để thêm ghi chú",
+    "update": "Cập nhật",
+    "logButton": "Ghi nhận",
+    "logDetails": "Chi tiết ghi nhận",
+    "date": "Ngày",
+    "time": "Giờ",
+    "deleteLog": "Xóa ghi nhận",
+    "deleteLogTitle": "Xóa ghi nhận",
+    "deleteLogMessage": "Bạn có chắc muốn xóa ghi nhận này? Hành động này không thể hoàn tác.",
+    "scanWithAI": "Quét bằng AI",
+    "analysisFailed": "Không thể phân tích ảnh. Vui lòng thử lại hoặc nhập thủ công.",
+    "noContainerDetected": "Không phát hiện đối tượng trong ảnh. Vui lòng thử lại với hình ảnh rõ hơn."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Bắt đầu",
+      "next": "Tiếp theo",
+      "continue": "Tiếp tục",
+      "skip": "Bỏ qua"
+    },
+    "welcome": {
+      "title": "Theo dõi đau đầu,\nkiểm soát sức khỏe",
+      "subtitle": "Hãy trả lời một vài câu hỏi nhanh để cá nhân hóa trải nghiệm của bạn"
+    },
+    "painPoints": {
+      "title": "Bạn đang gặp khó khăn trong việc quản lý đau đầu?",
+      "subtitle": "Nếu không theo dõi các mẫu và yếu tố kích hoạt, rất khó để tìm ra điều gì giúp ích. Ứng dụng của chúng tôi giúp bạn dễ dàng ghi nhận, nhận diện mẫu và kiểm soát.",
+      "buttonText": "Cho tôi xem cách hoạt động"
+    },
+    "benefits": {
+      "title": "Ứng dụng này giúp bạn",
+      "benefit1": "Theo dõi đau đầu dễ dàng",
+      "benefit2": "Nhận diện các mẫu và yếu tố kích hoạt",
+      "benefit3": "Nhận thông tin chi tiết được cá nhân hóa",
+      "benefit4": "Kiểm soát sức khỏe của bạn",
+      "buttonText": "Đây là điều tôi cần"
+    },
+    "comparison": {
+      "title": "Theo dõi có hiệu quả",
+      "subtitle": "Những người theo dõi đau đầu báo cáo kết quả tốt hơn",
+      "withoutTracking": "Không theo dõi",
+      "withApp": "Với ứng dụng này",
+      "buttonText": "Tôi muốn kiểm soát"
+    },
+    "personalization": {
+      "title": "Cá nhân hóa trải nghiệm",
+      "subtitle": "Đang thiết lập trình theo dõi đau đầu...",
+      "steps": {
+        "profile": {
+          "title": "Hồ sơ của bạn",
+          "description": "Thiết lập tùy chọn theo dõi"
+        },
+        "calendar": {
+          "title": "Thiết lập lịch",
+          "description": "Chuẩn bị lịch ghi nhận cá nhân"
+        },
+        "insights": {
+          "title": "Phân tích thông minh",
+          "description": "Đào tạo đề xuất cá nhân hóa"
+        },
+        "preferences": {
+          "title": "Tùy chọn",
+          "description": "Áp dụng cài đặt của bạn"
+        },
+        "ready": {
+          "title": "Sẵn sàng!",
+          "description": "Trình theo dõi đã sẵn sàng"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Bạn đã sẵn sàng!",
+      "subtitle": "Trình theo dõi cá nhân hóa của bạn đã sẵn sàng. Ghi nhận cơn đau đầu đầu tiên và bắt đầu nhận diện các mẫu!"
+    },
+    "finished": {
+      "title": "Chào mừng",
+      "subtitle": "Trình theo dõi đau đầu của bạn đã sẵn sàng",
+      "numberLabel": "người đang theo dõi đau đầu",
+      "bottomTitle": "Sẵn sàng ghi nhận cơn đau đầu đầu tiên?",
+      "bottomSubtitle": "Bắt đầu theo dõi hôm nay và khám phá các mẫu của bạn",
+      "buttonText": "Vâng, tôi sẵn sàng!"
+    },
+    "community": {
+      "title": "Cùng nhau học hỏi",
+      "subtitle": "Kết nối với mọi người, chia sẻ mẹo và nhận trợ giúp từ cộng đồng hỗ trợ",
+      "buttonText": "Tuyệt vời!"
+    },
+    "notifications": {
+      "title": "Luôn cập nhật",
+      "subtitle": "Nhận thông báo khi thành viên cộng đồng bình luận hoặc bỏ phiếu cho bài đăng của bạn",
+      "votesOnResults": "Bỏ phiếu cho kết quả của bạn",
+      "repliesToPosts": "Trả lời bài đăng của bạn",
+      "turnOn": "Bật thông báo"
+    },
+    "checkInNotifications": {
+      "title": "Bật nhắc nhở kiểm tra",
+      "subtitle": "Cho phép thông báo để nhận nhắc nhở cá nhân hóa",
+      "reason1": "Nhận nhắc nhở ghi nhận đau đầu vào thời gian bạn muốn",
+      "reason2": "Xây dựng thói quen theo dõi đều đặn",
+      "turnOn": "Bật thông báo"
+    },
+    "sheet": {
+      "welcomeTo": "Chào mừng đến"
+    },
+    "question1": {
+      "title": "Bạn bị đau đầu thường xuyên như thế nào?",
+      "subtitle": "Điều này giúp chúng tôi cá nhân hóa trải nghiệm theo dõi của bạn.",
+      "options": {
+        "daily": "Hàng ngày",
+        "severalPerWeek": "Vài lần một tuần",
+        "weekly": "Khoảng một lần một tuần",
+        "fewPerMonth": "Vài lần một tháng",
+        "rarely": "Hiếm khi"
+      }
+    },
+    "question2": {
+      "title": "Bạn thường bị loại đau đầu nào?",
+      "subtitle": "Không chắc cũng không sao — bạn luôn có thể thay đổi sau.",
+      "options": {
+        "tension": "Đau đầu căng thẳng",
+        "migraine": "Đau nửa đầu",
+        "cluster": "Đau đầu cụm",
+        "sinus": "Đau đầu do xoang",
+        "notSure": "Không chắc"
+      }
+    },
+    "notifications": {
+      "title": "Khi nào chúng tôi nên nhắc bạn?",
+      "subtitle": "Chọn thời gian cho lần ghi chép hàng ngày. Bạn có thể thêm nhiều hơn sau trong cài đặt."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Chưa có bài đăng",
+    "beFirstToShare": "Hãy là người đầu tiên chia sẻ với cộng đồng!",
+    "couldntLoadPosts": "Không thể tải bài đăng",
+    "somethingWentWrong": "Đã xảy ra lỗi. Vui lòng kiểm tra kết nối và thử lại.",
+    "tryAgain": "Thử lại",
+    "deletePostTitle": "Xóa bài đăng",
+    "deletePostMessage": "Bạn có chắc muốn xóa bài đăng này?",
+    "viewAllComments": "Xem tất cả {{count}} bình luận"
+  },
+  "post": {
+    "delete": "Xóa",
+    "report": "Báo cáo",
+    "post": "Đăng"
+  },
+  "comments": {
+    "title": "Bình luận",
+    "noCommentsYet": "Chưa có bình luận",
+    "beFirstToComment": "Hãy là người đầu tiên bình luận!",
+    "loadingComments": "Đang tải bình luận",
+    "postNotFound": "Không tìm thấy bài đăng",
+    "addComment": "Thêm bình luận..."
+  },
+  "createPost": {
+    "post": "Đăng",
+    "placeholders": {
+      "shareResults": "Chia sẻ kết quả...",
+      "shareStory": "Chia sẻ câu chuyện...",
+      "whatsOnMind": "Bạn đang nghĩ gì?",
+      "howFeeling": "Bạn cảm thấy thế nào hôm nay?",
+      "writeCaption": "Viết chú thích...",
+      "shareCommunity": "Chia sẻ với cộng đồng...",
+      "tellJourney": "Kể về hành trình của bạn...",
+      "shareMoment": "Chia sẻ khoảnh khắc..."
+    }
+  },
+  "reportPost": {
+    "description": "Vui lòng cho chúng tôi biết lý do bạn báo cáo bài đăng này. Chúng tôi sẽ xem xét và xử lý phù hợp.",
+    "placeholder": "Mô tả vấn đề...",
+    "submit": "Gửi",
+    "successTitle": "Đã gửi báo cáo",
+    "successMessage": "Cảm ơn báo cáo của bạn. Chúng tôi sẽ xem xét bài đăng này.",
+    "errorNoReason": "Vui lòng cung cấp lý do báo cáo."
+  },
+  "paywall": {
+    "tryForFree": "Dùng thử miễn phí",
+    "continue": "Tiếp tục",
+    "noCommitment": "Không ràng buộc, hủy bất cứ lúc nào",
+    "freeTrialEnabled": "Đã kích hoạt dùng thử miễn phí",
+    "noPurchasesFound": "Không tìm thấy giao dịch mua",
+    "tryAgain": "Thử lại",
+    "errorTitle": "Lỗi",
+    "errorDescription": "Không thể tải gói đăng ký. Vui lòng thử lại hoặc liên hệ hỗ trợ.",
+    "footer": {
+      "terms": "Điều khoản",
+      "restorePurchase": "Khôi phục giao dịch",
+      "privacy": "Bảo mật"
+    },
+    "trial": {
+      "title": "Nhận quyền truy cập không giới hạn trong {{days}} ngày",
+      "subtitle": "Chúng tôi sẽ nhắc bạn trước khi hết thời gian dùng thử",
+      "today": "Hôm nay",
+      "todaySubtitle": "Mở khóa toàn bộ quyền truy cập trình theo dõi đau đầu.",
+      "inTwoDays": "Trong 2 ngày",
+      "inTwoDaysSubtitle": "Chúng tôi sẽ gửi nhắc nhở trước khi hết thời gian dùng thử.",
+      "inThreeDays": "Trong 3 ngày",
+      "inThreeDaysSubtitle": "Gói đăng ký sẽ bắt đầu trừ khi bạn hủy trước đó."
+    },
+    "nonTrial": {
+      "titleHard": "Mở khóa ứng dụng để tiếp tục",
+      "titleSoft": "Nhận Quyền Truy Cập Đầy Đủ",
+      "subtitle": "Trợ lý theo dõi đau đầu của bạn"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Ghi nhận nhanh & dễ dàng",
+        "description": "Ghi nhận trong vài giây với giao diện đơn giản"
+      },
+      "reminders": {
+        "title": "Nhắc nhở tùy chỉnh",
+        "description": "Đặt nhắc nhở cá nhân để ghi lại và theo dõi cơn đau đầu"
+      },
+      "noPaywall": {
+        "title": "Xóa paywall phiền phức",
+        "description": "Không còn popup paywall mỗi khi mở ứng dụng"
+      },
+      "unlimited": {
+        "title": "Ghi Chép Không Giới Hạn",
+        "description": "Ghi bao nhiêu lần tùy thích - không giới hạn hàng tháng"
+      },
+      "indieDeveloper": {
+        "title": "Ủng Hộ Nhà Phát Triển Độc Lập",
+        "description": "Giúp định hình tương lai của ứng dụng này và tận hưởng các tính năng độc quyền được tạo ra với tâm huyết bởi một nhà phát triển độc lập."
+      }
+    },
+    "reviews": {
+      "sarah": "Cuối cùng cũng tìm được ứng dụng giúp theo dõi đau đầu dễ dàng! Chế độ xem lịch hoàn hảo để thấy các mẫu theo thời gian.",
+      "isaac": "Tôi bị đau nửa đầu nhiều năm. Ứng dụng này giúp tôi xác định được các yếu tố kích hoạt — giờ tôi có thể phòng ngừa được!",
+      "emma": "Bác sĩ thần kinh khuyên tôi theo dõi đau đầu và ứng dụng này làm mọi thứ thật đơn giản. Tôi thích có dữ liệu thực để chia sẻ khi khám!",
+      "arthur": "Theo dõi yếu tố kích hoạt thật tuyệt! Phát hiện caffeine là thủ phạm chính. Thay đổi cuộc chơi cho sức khỏe của tôi!",
+      "zoe": "Ghi nhận siêu nhanh - chỉ mất vài giây. Tôi đã kiên trì 3 tháng và đau đầu đã giảm đáng kể!",
+      "maya": "Là người bị đau nửa đầu mãn tính, có mọi thứ ở một nơi cho tôi sự yên tâm. Rất thích nhắc nhở hàng ngày!"
+    },
+    "package": {
+      "freeTrial": "DÙNG THỬ MIỄN PHÍ",
+      "perWeek": "/tuần",
+      "perMonth": "/tháng",
+      "perYear": "/năm",
+      "once": "một lần",
+      "percentOff": "giảm {{percent}}%",
+      "savePercent": "TIẾT KIỆM {{percent}}%",
+      "yearly": "hàng năm",
+      "weekly": "hàng tuần",
+      "monthly": "hàng tháng",
+      "then": "sau đó ",
+      "daysFree": "{{count}} ngày miễn phí",
+      "introSubtitle": "{{count}} ngày miễn phí · sau đó {{price}}",
+      "weeklyIntroSubtitle": "{{count}} ngày miễn phí · Hủy bất cứ lúc nào",
+      "weeklySubtitle": "Tự động gia hạn · Hủy bất cứ lúc nào",
+      "monthlySubtitle": "Tự động gia hạn · Hủy bất cứ lúc nào",
+      "annualSubtitle": "Thanh toán hàng năm · Hủy bất cứ lúc nào",
+      "lifetimeSubtitle": "Thanh toán một lần",
+      "yearlyTitle": "Hàng năm",
+      "monthlyTitle": "Hàng tháng",
+      "weeklyTitle": "Hàng tuần",
+      "lifetimeTitle": "Trọn đời"
+    },
+    "wreath": {
+      "bestHealthApp": "Ứng dụng theo dõi đau đầu tốt nhất"
+    },
+    "v2": {
+      "title": "Chọn gói của bạn",
+      "perksIntro": "Khi đăng ký, bạn sẽ mở khóa các quyền lợi sau:"
+    }
+  },
+  "setupProfile": {
+    "title": "Thiết lập hồ sơ",
+    "subtitle": "Đây là cách bạn xuất hiện với người khác trong cộng đồng.",
+    "addPhoto": "Thêm ảnh hồ sơ (tùy chọn)",
+    "placeholder": "tên người dùng",
+    "next": "Tiếp theo",
+    "usernameTaken": "Tên người dùng này đã được sử dụng.",
+    "failedToUpdate": "Không thể cập nhật hồ sơ",
+    "onlyLettersNumbersUnderscores": "Chỉ chữ cái, số và dấu gạch dưới",
+    "checking": "Đang kiểm tra...",
+    "usernameIsTaken": "Tên người dùng đã được sử dụng",
+    "usernameIsAvailable": "Tên người dùng khả dụng",
+    "usernameMinLength": "Tối thiểu 3 ký tự",
+    "usernameMaxLength": "Tối đa 20 ký tự",
+    "usernameInstructions": "3-20 ký tự. Chỉ chữ cái, số và dấu gạch dưới.",
+    "usernameErrorInstructions": "Tên người dùng phải từ 3-20 ký tự và chỉ chứa chữ cái, số và dấu gạch dưới."
+  },
+  "confirm": {
+    "analyze": "Phân tích",
+    "noPhotoToAnalyze": "Không có ảnh để phân tích",
+    "failedToProcessImage": "Không thể xử lý hình ảnh"
+  },
+  "feedback": {
+    "title": "Chia sẻ phản hồi",
+    "subtitle": "Giúp chúng tôi cải thiện trải nghiệm của bạn",
+    "tellUs": "Cho chúng tôi biết chúng tôi có thể cải thiện gì",
+    "submit": "Gửi",
+    "thankYouTitle": "Cảm ơn!",
+    "thankYouMessage": "Phản hồi của bạn giúp chúng tôi cải thiện ứng dụng.",
+    "feedbackRequired": "Cần phản hồi",
+    "feedbackRequiredMessage": "Vui lòng nhập phản hồi trước khi gửi."
+  },
+  "history": {
+    "search": "Tìm kiếm",
+    "noConversationsYet": "Chưa có cuộc trò chuyện",
+    "noConversationsMessage": "Các phiên trợ giúp sẽ xuất hiện ở đây khi bạn bắt đầu đặt câu hỏi.",
+    "deleteTitle": "Xóa",
+    "deleteMessage": "Bạn có chắc muốn xóa? Hành động này không thể hoàn tác.",
+    "sortQuestionAZ": "Câu hỏi (A-Z)",
+    "sortQuestionZA": "Câu hỏi (Z-A)",
+    "sortDateNewest": "Ngày (Mới nhất)",
+    "sortDateOldest": "Ngày (Cũ nhất)"
+  },
+  "chat": {
+    "askFollowUp": "Đặt câu hỏi tiếp theo..."
+  },
+  "signIn": {
+    "title": "Tạo tài khoản",
+    "subtitle": "Đăng nhập để chia sẻ với cộng đồng. Rất nhanh!"
+  },
+  "calendar": {
+    "noRecords": "Không có ghi nhận",
+    "noRecordsMessage": "Không có ghi nhận đau đầu cho ngày này.",
+    "firstLogPrompt": "Nhấn + để thêm ghi nhận đầu tiên!",
+    "addLog": "Thêm ghi nhận"
+  },
+  "camera": {
+    "loading": "Đang tải...",
+    "continue": "Tiếp tục",
+    "permissionTitle": "Quyền truy cập camera",
+    "permissionMessage": "Chúng tôi cần quyền truy cập camera của bạn"
+  },
+  "rating": {
+    "howWouldYouRate": "Bạn đánh giá phân tích của chúng tôi thế nào?"
+  },
+  "tabs": {
+    "dashboard": "Bảng điều khiển",
+    "calendar": "Lịch",
+    "settings": "Cài đặt"
+  },
+  "dashboard": {
+    "severity": "Mức độ",
+    "noData": "Không có đau đầu tuần này",
+    "totalHeadaches": "Tổng số đau đầu",
+    "avgSeverity": "Mức độ TB",
+    "avgDuration": "Thời lượng TB",
+    "topTrigger": "Nguyên nhân chính",
+    "noDataTitle": "Chưa có cơn đau đầu nào được ghi lại",
+    "noDataDescription": "Ghi lại cơn đau đầu đầu tiên để xem thống kê hàng tuần",
+    "addLog": "Thêm nhật ký"
+  },
+  "navigation": {
+    "back": "Quay lại",
+    "createPost": "Tạo bài đăng",
+    "reportPost": "Báo cáo bài đăng",
+    "account": "Tài khoản",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "deleteAccount": "Xóa tài khoản",
+    "editLog": "Chỉnh sửa ghi nhận",
+    "community": "Cộng đồng",
+    "history": "Lịch sử",
+    "logHeadache": "Ghi nhận đau đầu"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Không tìm thấy trang này."
+  },
+  "imageEdit": {
+    "brightness": "Độ sáng",
+    "contrast": "Độ tương phản",
+    "invert": "Đảo ngược",
+    "bw": "Đ&T"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Yêu cầu ảnh",
+    "whatToAvoid": "Điều cần tránh",
+    "bullets": {
+      "ensureBothLines": "Đảm bảo cả hai vùng đường kiểm soát và đường kiểm tra đều rõ ràng và có thể nhìn thấy.",
+      "testStraight": "Que thử phải thẳng và nằm ngang.",
+      "clearPhoto": "Sử dụng ảnh rõ ràng, chất lượng cao với ánh sáng đều.",
+      "simpleBackground": "Giữ nền đơn giản, lý tưởng là màu đồng nhất.",
+      "avoidBlurry": "Tránh ảnh mờ.",
+      "dontCrop": "Đừng cắt bớt phần cửa sổ kiểm tra.",
+      "avoidShadows": "Tránh bóng đổ hoặc phản chiếu trên que thử.",
+      "dontAngle": "Đừng chụp ảnh nghiêng.",
+      "darkPhotos": "Ảnh tối không có độ tương phản."
+    },
+    "summary": {
+      "title": "Về đường mờ, bay hơi & vết lõm",
+      "intro": "Các đường cực kỳ mờ có thể khó phát hiện bằng AI. Lưu ý các kết quả dương tính giả có thể từ:",
+      "evapLines": "Đường bay hơi: ",
+      "evapDesc": "Các dấu mờ, không màu xuất hiện khi que thử khô, thường sau thời gian đọc khuyến nghị.",
+      "indentLines": "Đường vết lõm: ",
+      "indentDesc": "Các dấu tinh vi từ quy trình sản xuất que thử, có thể nhìn thấy bất kể kết quả.",
+      "revisitGuide": "Bạn có thể xem lại hướng dẫn này bất cứ lúc nào từ biểu tượng thông tin ở góc dưới bên phải."
+    },
+    "next": "Tiếp theo"
+  },
+  "videoDemo": {
+    "title": "Quét & nhận kết quả ngay lập tức",
+    "subtitle": "Chúng tôi đã giúp hơn 10.000 phụ nữ nhận kết quả"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Tuyên bố miễn trừ",
+    "content": "Ứng dụng này sử dụng công nghệ AI có thể tạo ra kết quả không chính xác hoặc không đầy đủ. Luôn xác minh thông tin quan trọng từ các nguồn uy tín và sử dụng phán đoán của riêng bạn khi đưa ra quyết định dựa trên nội dung do AI tạo."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Đây là một ứng dụng rất tốt mà tôi sử dụng hàng ngày. Rất dễ sử dụng và tôi thích các widget.",
+      "zlassenp": "Thấy đếm ngược đến chuyến đi hoặc sinh nhật bạn bè làm tôi phấn khích.",
+      "rajgha": "Khó quên các sự kiện lớn. Chỉ ước có thêm tùy chọn phông chữ.",
+      "jaynacc": "Không nghĩ mình sẽ dùng ứng dụng này nhiều… nhưng giờ tôi kiểm tra nó mỗi sáng."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Nhắc nhở ghi nhận đau đầu 🧠",
+      "body": "Đến lúc ghi nhận dữ liệu đau đầu hôm nay rồi. Ghi nhận đều đặn giúp xác định các mẫu!"
+    },
+    "drip": {
+      "welcome": {
+        "title": "Chào mừng! 🧠",
+        "body": "Theo dõi đau đầu và khám phá các mẫu. Ghi nhận mục đầu tiên hôm nay!"
+      },
+      "reminder1": {
+        "title": "Theo dõi đau đầu 📊",
+        "body": "Ghi nhận đều đặn giúp xác định các mẫu. Nâng cấp để theo dõi không giới hạn và phân tích chi tiết."
+      },
+      "reminder2": {
+        "title": "Phân tích chi tiết 🎓",
+        "body": "Tham gia cùng hàng nghìn người đã nâng cấp để nhận đề xuất quản lý đau đầu cá nhân hóa."
+      },
+      "reminder3": {
+        "title": "Thời gian có hạn: Mở khóa tất cả 🔓",
+        "body": "Nhận ghi nhận không giới hạn + phân tích chi tiết. Bắt đầu dùng thử miễn phí!"
+      },
+      "reminder4": {
+        "title": "Theo dõi thông minh hơn 📱",
+        "body": "Người dùng premium nhận phân tích chi tiết, phát hiện mẫu và ghi nhận không giới hạn."
+      },
+      "reminder5": {
+        "title": "Hành trình cùng đau đầu của bạn 🌟",
+        "body": "Nâng cấp ngay và kiểm soát sức khỏe của bạn. Dùng thử miễn phí có sẵn!"
+      },
+      "reminder6": {
+        "title": "Cơ hội cuối: Tính năng premium 🚨",
+        "body": "Đừng bỏ lỡ theo dõi không giới hạn và phân tích đau đầu."
+      },
+      "reminder7": {
+        "title": "Chúng tôi nhớ bạn! 💚",
+        "body": "Quay lại và tiếp tục theo dõi đau đầu. Tính năng premium đang chờ bạn."
+      },
+      "trialEnds": "Thời gian dùng thử kết thúc vào ngày mai"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Thức dậy đã bị, nhạy cảm với ánh sáng",
+      "afterLongMeeting": "Bắt đầu sau cuộc họp dài",
+      "leftWorkEarly": "Phải về sớm, buồn nôn và có hào quang",
+      "worstThisMonth": "Tệ nhất tháng này, triptan giúp sau 1 giờ",
+      "rainyDay": "Ngày mưa, thay đổi áp suất có thể là nguyên nhân",
+      "onlySleptFourHours": "Chỉ ngủ 4 tiếng, cần cả hai loại thuốc",
+      "tooMuchCoffee": "Uống quá nhiều cà phê hôm qua, hôm nay trả giá"
+    }
+  }
+}

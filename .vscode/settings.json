@@ -1,0 +1,18 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "editor.tabSize": 2,
+  "cSpell.words": [
+    "pressable",
+    "revenuecat",
+    "clsx",
+    "nativewindui",
+    "posthog"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

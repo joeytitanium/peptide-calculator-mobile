@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "error": "エラー",
+    "ok": "OK",
+    "enabled": "有効",
+    "disabled": "無効"
+  },
+  "settings": {
+    "unlockPro": "Proをアンロック",
+    "unlockProSubtitle": "フルアクセスを取得",
+    "contactSupport": "サポートに連絡",
+    "contactSupportSubtitle": "ヘルプ、コメント、提案",
+    "rateApp": "アプリを評価",
+    "rateAppSubtitle": "フィードバックを共有",
+    "shareApp": "アプリを共有",
+    "shareAppSubtitle": "友達に教える",
+    "shareMessage": "{{appName}}をチェック！",
+    "appearance": "外観",
+    "appearanceSubtitle": "テーマを選択",
+    "themeSystem": "システム",
+    "themeLight": "ライト",
+    "themeDark": "ダーク",
+    "privacyPolicy": "プライバシーポリシー",
+    "privacyPolicySubtitle": "プライバシーポリシーを見る",
+    "termsOfService": "利用規約",
+    "termsOfServiceSubtitle": "利用規約を見る",
+    "account": "アカウント",
+    "signedInWithApple": "Appleでサインイン済み",
+    "resetOnboarding": "オンボーディングをリセット",
+    "resetOnboardingSubtitle": "オンボーディング状態をクリア",
+    "onboardingResetTitle": "オンボーディングリセット",
+    "onboardingResetMessage": "オンボーディングフローを見るにはアプリを再起動してください。",
+    "version": "バージョン",
+    "emailPlaceholder": "この行の上にメッセージを残してください",
+    "emailAppName": "アプリ：",
+    "emailAppVersion": "アプリバージョン：",
+    "emailOS": "OS：",
+    "emailUserId": "ユーザーID：",
+    "checkInReminders": "チェックインリマインダー",
+    "language": "言語",
+    "systemDefault": "システムデフォルト",
+    "reminderTime": "リマインダー",
+    "addReminder": "リマインダーを追加"
+  },
+  "account": {
+    "editProfile": "プロフィール編集",
+    "editProfileSubtitle": "プロフィール写真を更新",
+    "signOut": "サインアウト",
+    "signOutConfirmTitle": "サインアウト",
+    "signOutConfirmMessage": "サインアウトしてもよろしいですか？",
+    "deleteAccount": "アカウント削除",
+    "deleteAccountSubtitle": "アカウントとデータを完全に削除",
+    "deleteAccountTitle": "アカウント削除",
+    "deleteAccountWarning": "この操作は永久的で元に戻せません。投稿、コメント、アカウント情報を含むすべてのデータが完全に削除されます。",
+    "deleteAccountConfirmPrompt": "確認するには、以下に「{{confirmText}}」と入力してください：",
+    "deleteAccountConfirmText": "アカウントを完全に削除",
+    "deleteAccountScheduledTitle": "アカウント削除予定",
+    "deleteAccountScheduledMessage": "アカウントは24時間以内に削除されます。",
+    "deleteAccountConfirmError": "確認テキストを正確に入力してください。"
+  },
+  "profile": {
+    "tapToChangePhoto": "タップしてプロフィール写真を変更",
+    "username": "ユーザー名",
+    "notSet": "未設定",
+    "failedToUpdate": "プロフィールの更新に失敗しました"
+  },
+  "log": {
+    "whenDidItStart": "いつ始まりましたか？",
+    "dateTime": "日時",
+    "severity": "重症度",
+    "severityScale": "10点中",
+    "severityValue": "重症度: {{value}}/10",
+    "severityLevels": {
+      "mild": "軽度",
+      "moderate": "中度",
+      "severe": "重度"
+    },
+    "headacheType": "タイプ",
+    "headacheTypes": {
+      "tension": "緊張型",
+      "migraine": "片頭痛",
+      "cluster": "群発型",
+      "sinus": "副鼻腔型",
+      "not-sure": "不明"
+    },
+    "location": "場所",
+    "locations": {
+      "front": "前頭部",
+      "back": "後頭部",
+      "left-side": "左側",
+      "right-side": "右側",
+      "top": "頭頂部",
+      "all-over": "全体"
+    },
+    "duration": "持続時間",
+    "minutes": "分",
+    "triggers": "誘因",
+    "selectAllThatApply": "当てはまるものをすべて選択",
+    "triggerOptions": {
+      "stress": "ストレス",
+      "lack-of-sleep": "睡眠不足",
+      "dehydration": "脱水",
+      "screen-time": "画面時間",
+      "weather": "天気",
+      "food": "食事",
+      "alcohol": "アルコール",
+      "caffeine": "カフェイン",
+      "hormones": "ホルモン",
+      "exercise": "運動"
+    },
+    "medications": "薬",
+    "medicationOptions": {
+      "ibuprofen": "イブプロフェン",
+      "acetaminophen": "アセトアミノフェン",
+      "aspirin": "アスピリン",
+      "triptan": "トリプタン",
+      "none": "なし"
+    },
+    "notes": "メモ",
+    "optional": "任意",
+    "upgradeToProNotes": "メモを追加するにはPROにアップグレード",
+    "update": "更新",
+    "logButton": "記録",
+    "logDetails": "記録の詳細",
+    "date": "日付",
+    "time": "時間",
+    "deleteLog": "記録を削除",
+    "deleteLogTitle": "記録を削除",
+    "deleteLogMessage": "この記録を削除してもよろしいですか？この操作は元に戻せません。",
+    "scanWithAI": "AIでスキャン",
+    "analysisFailed": "写真を分析できませんでした。もう一度お試しいただくか、手動で入力してください。",
+    "noContainerDetected": "写真からオブジェクトが検出されませんでした。より鮮明な画像でお試しください。"
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "始める",
+      "next": "次へ",
+      "continue": "続ける",
+      "skip": "スキップ"
+    },
+    "welcome": {
+      "title": "頭痛を記録して、\nコントロールを取り戻そう",
+      "subtitle": "いくつかの質問に答えて、あなた専用の体験を作りましょう"
+    },
+    "painPoints": {
+      "title": "頭痛の管理に悩んでいませんか？",
+      "subtitle": "パターンやきっかけを記録しなければ、何が効果的かを見つけるのは難しいです。このアプリを使えば、簡単に記録し、パターンを特定し、コントロールを取り戻せます。",
+      "buttonText": "使い方を見せて"
+    },
+    "benefits": {
+      "title": "このアプリでできること",
+      "benefit1": "頭痛を手軽に記録",
+      "benefit2": "パターンやきっかけを特定",
+      "benefit3": "パーソナライズされたインサイトを取得",
+      "benefit4": "健康をコントロール",
+      "buttonText": "これが必要だった"
+    },
+    "comparison": {
+      "title": "記録は効果的",
+      "subtitle": "頭痛を記録している人はより良い結果を報告しています",
+      "withoutTracking": "記録なし",
+      "withApp": "このアプリあり",
+      "buttonText": "コントロールを取り戻したい"
+    },
+    "personalization": {
+      "title": "あなたの体験をパーソナライズ中",
+      "subtitle": "頭痛トラッカーを設定中...",
+      "steps": {
+        "profile": {
+          "title": "あなたのプロフィール",
+          "description": "記録の設定を構成中"
+        },
+        "calendar": {
+          "title": "カレンダー設定",
+          "description": "個人の記録カレンダーを準備中"
+        },
+        "insights": {
+          "title": "スマートインサイト",
+          "description": "パーソナライズされた推奨をトレーニング中"
+        },
+        "preferences": {
+          "title": "設定",
+          "description": "設定を適用中"
+        },
+        "ready": {
+          "title": "準備完了！",
+          "description": "トラッカーの準備ができました"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "準備完了！",
+      "subtitle": "パーソナライズされたトラッカーの準備ができました。最初の頭痛を記録して、パターンを発見しましょう！"
+    },
+    "finished": {
+      "title": "ようこそ",
+      "subtitle": "頭痛トラッカーの準備ができました",
+      "numberLabel": "人が頭痛を記録中",
+      "bottomTitle": "最初の頭痛を記録する準備はできましたか？",
+      "bottomSubtitle": "今日から記録を始めて、パターンを発見しましょう",
+      "buttonText": "はい、準備できました！"
+    },
+    "community": {
+      "title": "一緒に学ぼう",
+      "subtitle": "仲間とつながり、ヒントを共有し、サポートコミュニティから助けを得よう",
+      "buttonText": "いいね！"
+    },
+    "notifications": {
+      "title": "最新情報をキャッチ",
+      "subtitle": "コミュニティメンバーがあなたの投稿にコメントや投票した時に通知を受け取る",
+      "votesOnResults": "あなたの結果への投票",
+      "repliesToPosts": "あなたの投稿への返信",
+      "turnOn": "通知をオンにする"
+    },
+    "checkInNotifications": {
+      "title": "チェックインリマインダーを有効にする",
+      "subtitle": "通知を許可してパーソナライズされたリマインダーを受け取る",
+      "reason1": "お好みの時間に頭痛記録のリマインダーを受け取る",
+      "reason2": "一貫した記録習慣を身につける",
+      "turnOn": "通知をオンにする"
+    },
+    "sheet": {
+      "welcomeTo": "ようこそ"
+    },
+    "question1": {
+      "title": "どのくらいの頻度で頭痛を経験しますか？",
+      "subtitle": "あなたの記録体験をパーソナライズするのに役立ちます。",
+      "options": {
+        "daily": "毎日",
+        "severalPerWeek": "週に数回",
+        "weekly": "週に1回程度",
+        "fewPerMonth": "月に数回",
+        "rarely": "めったにない"
+      }
+    },
+    "question2": {
+      "title": "通常どのタイプの頭痛がありますか？",
+      "subtitle": "わからなくても大丈夫 — あとからいつでも変更できます。",
+      "options": {
+        "tension": "緊張型頭痛",
+        "migraine": "片頭痛",
+        "cluster": "群発頭痛",
+        "sinus": "副鼻腔頭痛",
+        "notSure": "わからない"
+      }
+    },
+    "notifications": {
+      "title": "いつリマインドしますか？",
+      "subtitle": "毎日のチェックインの時間を選んでください。設定で後から追加できます。"
+    }
+  },
+  "feed": {
+    "noPostsYet": "まだ投稿がありません",
+    "beFirstToShare": "コミュニティで最初に共有しましょう！",
+    "couldntLoadPosts": "投稿を読み込めませんでした",
+    "somethingWentWrong": "問題が発生しました。接続を確認してもう一度お試しください。",
+    "tryAgain": "再試行",
+    "deletePostTitle": "投稿を削除",
+    "deletePostMessage": "この投稿を削除してもよろしいですか？",
+    "viewAllComments": "{{count}}件のコメントをすべて表示"
+  },
+  "post": {
+    "delete": "削除",
+    "report": "報告",
+    "post": "投稿"
+  },
+  "comments": {
+    "title": "コメント",
+    "noCommentsYet": "まだコメントがありません",
+    "beFirstToComment": "最初にコメントしましょう！",
+    "loadingComments": "コメントを読み込み中",
+    "postNotFound": "投稿が見つかりません",
+    "addComment": "コメントを追加..."
+  },
+  "createPost": {
+    "post": "投稿",
+    "placeholders": {
+      "shareResults": "結果を共有...",
+      "shareStory": "あなたの話を共有...",
+      "whatsOnMind": "何を考えていますか？",
+      "howFeeling": "今日の調子はどうですか？",
+      "writeCaption": "キャプションを書く...",
+      "shareCommunity": "コミュニティと共有...",
+      "tellJourney": "あなたの体験を教えてください...",
+      "shareMoment": "あなたの瞬間を共有..."
+    }
+  },
+  "reportPost": {
+    "description": "この投稿を報告する理由を教えてください。確認の上、適切な対応を取ります。",
+    "placeholder": "問題を説明...",
+    "submit": "送信",
+    "successTitle": "報告が送信されました",
+    "successMessage": "ご報告ありがとうございます。この投稿を確認します。",
+    "errorNoReason": "報告の理由を入力してください。"
+  },
+  "paywall": {
+    "tryForFree": "無料で試す",
+    "continue": "続ける",
+    "noCommitment": "縛りなし、いつでもキャンセル可能",
+    "freeTrialEnabled": "無料トライアル有効",
+    "noPurchasesFound": "購入が見つかりません",
+    "tryAgain": "再試行",
+    "errorTitle": "エラー",
+    "errorDescription": "サブスクリプションを読み込めませんでした。もう一度お試しいただくか、問題が続く場合はサポートにご連絡ください。",
+    "footer": {
+      "terms": "利用規約",
+      "restorePurchase": "購入を復元",
+      "privacy": "プライバシー"
+    },
+    "trial": {
+      "title": "{{days}}日間無制限アクセスを取得",
+      "subtitle": "トライアル終了前にお知らせします",
+      "today": "今日",
+      "todaySubtitle": "頭痛トラッカーへのフルアクセスをアンロック。",
+      "inTwoDays": "2日後",
+      "inTwoDaysSubtitle": "トライアル終了前にリマインダーを送ります。",
+      "inThreeDays": "3日後",
+      "inThreeDaysSubtitle": "キャンセルしない限り、サブスクリプションが開始されます。"
+    },
+    "nonTrial": {
+      "titleHard": "アプリをアンロックして続ける",
+      "titleSoft": "フルアクセスを取得",
+      "subtitle": "あなたの頭痛トラッキングパートナー"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "素早く簡単な記録",
+        "description": "効率的なインターフェースで数秒で記録 - 手間いらず"
+      },
+      "reminders": {
+        "title": "カスタムリマインダー",
+        "description": "頭痛を記録・追跡するためのリマインダーを設定"
+      },
+      "noPaywall": {
+        "title": "うっとうしいペイウォールを削除",
+        "description": "アプリを開くたびに表示されるペイウォールポップアップがなくなります"
+      },
+      "unlimited": {
+        "title": "無制限の記録",
+        "description": "必要な回数だけ記録可能 - 月間制限なし"
+      },
+      "indieDeveloper": {
+        "title": "インディー開発者を応援",
+        "description": "このアプリの未来を一緒に作り、インディー開発者が心を込めて作った限定機能をお楽しみください。"
+      }
+    },
+    "reviews": {
+      "sarah": "頭痛の記録を簡単にしてくれるアプリをやっと見つけました！カレンダー表示は時間の経過とともにパターンを見るのに最適です。",
+      "isaac": "長年片頭痛に悩んでいましたが、このアプリで誘因を特定できました。今では予防できます！",
+      "emma": "神経科医に頭痛を記録するよう勧められましたが、これでとても簡単になりました。診察で本物のデータを持てるのが嬉しいです！",
+      "arthur": "誘因追跡が素晴らしい！カフェインが主な原因だと気づきました。健康管理の大きな転換点です！",
+      "zoe": "記録がとても速い - ほんの数秒です。3ヶ月継続していますが、頭痛が大幅に減りました！",
+      "maya": "慢性片頭痛に悩む者として、すべてが一か所にあると安心します。毎日のリマインダーも大好きです！"
+    },
+    "package": {
+      "freeTrial": "無料トライアル",
+      "perWeek": "/週",
+      "perMonth": "/月",
+      "perYear": "/年",
+      "once": "一回",
+      "percentOff": "{{percent}}%オフ",
+      "savePercent": "{{percent}}%お得",
+      "yearly": "年間",
+      "weekly": "週間",
+      "monthly": "月間",
+      "then": "以降 ",
+      "daysFree": "{{count}}日間無料",
+      "introSubtitle": "{{count}}日間無料 · その後{{price}}",
+      "weeklyIntroSubtitle": "{{count}}日間無料 · いつでもキャンセル可能",
+      "weeklySubtitle": "自動更新 · いつでもキャンセル可能",
+      "monthlySubtitle": "自動更新 · いつでもキャンセル可能",
+      "annualSubtitle": "年間請求 · いつでもキャンセル可能",
+      "lifetimeSubtitle": "一回払い",
+      "yearlyTitle": "年間",
+      "monthlyTitle": "月間",
+      "weeklyTitle": "週間",
+      "lifetimeTitle": "買い切り"
+    },
+    "wreath": {
+      "bestHealthApp": "最優秀頭痛トラッカーアプリ"
+    },
+    "v2": {
+      "title": "プランを選択",
+      "perksIntro": "登録すると以下の特典がアンロックされます："
+    }
+  },
+  "setupProfile": {
+    "title": "プロフィールを設定",
+    "subtitle": "コミュニティで他の人にこのように表示されます。",
+    "addPhoto": "プロフィール写真を追加（任意）",
+    "placeholder": "ユーザー名",
+    "next": "次へ",
+    "usernameTaken": "このユーザー名は既に使われています。",
+    "failedToUpdate": "プロフィールの更新に失敗しました",
+    "onlyLettersNumbersUnderscores": "英字、数字、アンダースコアのみ",
+    "checking": "確認中...",
+    "usernameIsTaken": "ユーザー名は使用済みです",
+    "usernameIsAvailable": "ユーザー名は利用可能です",
+    "usernameMinLength": "3文字以上必要です",
+    "usernameMaxLength": "20文字未満にしてください",
+    "usernameInstructions": "3〜20文字。英字、数字、アンダースコアのみ。",
+    "usernameErrorInstructions": "ユーザー名は3〜20文字で、英字、数字、アンダースコアのみ使用できます。"
+  },
+  "confirm": {
+    "analyze": "分析",
+    "noPhotoToAnalyze": "分析する写真がありません",
+    "failedToProcessImage": "画像の処理に失敗しました"
+  },
+  "feedback": {
+    "title": "フィードバックを共有",
+    "subtitle": "あなたの体験の改善にご協力ください",
+    "tellUs": "改善できる点を教えてください",
+    "submit": "送信",
+    "thankYouTitle": "ありがとうございます！",
+    "thankYouMessage": "フィードバックはアプリの改善に役立ちます。",
+    "feedbackRequired": "フィードバックが必要です",
+    "feedbackRequiredMessage": "送信前にフィードバックを入力してください。"
+  },
+  "history": {
+    "search": "検索",
+    "noConversationsYet": "まだ会話がありません",
+    "noConversationsMessage": "質問を始めると、ヘルプセッションがここに表示されます。",
+    "deleteTitle": "削除",
+    "deleteMessage": "これを削除してもよろしいですか？この操作は元に戻せません。",
+    "sortQuestionAZ": "質問（A-Z）",
+    "sortQuestionZA": "質問（Z-A）",
+    "sortDateNewest": "日付（新しい順）",
+    "sortDateOldest": "日付（古い順）"
+  },
+  "chat": {
+    "askFollowUp": "フォローアップの質問をする..."
+  },
+  "signIn": {
+    "title": "アカウントを作成",
+    "subtitle": "コミュニティと共有するにはサインインしてください。とても簡単です！"
+  },
+  "calendar": {
+    "noRecords": "記録なし",
+    "noRecordsMessage": "この日の頭痛記録はありません。",
+    "firstLogPrompt": "+をタップして最初の記録を追加！",
+    "addLog": "記録を追加"
+  },
+  "camera": {
+    "loading": "読み込み中...",
+    "continue": "続ける",
+    "permissionTitle": "カメラの許可",
+    "permissionMessage": "カメラを表示するための許可が必要です"
+  },
+  "rating": {
+    "howWouldYouRate": "分析をどう評価しますか？"
+  },
+  "tabs": {
+    "dashboard": "ダッシュボード",
+    "calendar": "カレンダー",
+    "settings": "設定"
+  },
+  "dashboard": {
+    "severity": "重症度",
+    "noData": "今週は頭痛がありません",
+    "totalHeadaches": "頭痛の合計",
+    "avgSeverity": "平均重症度",
+    "avgDuration": "平均持続時間",
+    "topTrigger": "主な誘因",
+    "noDataTitle": "頭痛がまだ記録されていません",
+    "noDataDescription": "最初の頭痛を記録して、週次の統計を確認しましょう",
+    "addLog": "記録を追加"
+  },
+  "navigation": {
+    "back": "戻る",
+    "createPost": "投稿を作成",
+    "reportPost": "投稿を報告",
+    "account": "アカウント",
+    "editProfile": "プロフィール編集",
+    "deleteAccount": "アカウント削除",
+    "editLog": "記録を編集",
+    "community": "コミュニティ",
+    "history": "履歴",
+    "logHeadache": "頭痛を記録",
+    "language": "言語"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "このページは見つかりませんでした。"
+  },
+  "imageEdit": {
+    "brightness": "明るさ",
+    "contrast": "コントラスト",
+    "invert": "反転",
+    "bw": "白黒"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "写真の要件",
+    "whatToAvoid": "避けるべきこと",
+    "bullets": {
+      "ensureBothLines": "コントロールラインとテストラインの両方がクローズアップで見えるようにしてください。",
+      "testStraight": "テストはまっすぐ水平にしてください。",
+      "clearPhoto": "均一な照明で鮮明で高品質な写真を使用してください。",
+      "simpleBackground": "背景はシンプルに、できれば無地にしてください。",
+      "avoidBlurry": "ぼやけた写真やピンボケの写真は避けてください。",
+      "dontCrop": "テストウィンドウの一部を切り取らないでください。",
+      "avoidShadows": "テストに強い影や光の反射を避けてください。",
+      "dontAngle": "角度をつけて撮影しないでください。",
+      "darkPhotos": "コントラストのない暗い写真。"
+    },
+    "summary": {
+      "title": "薄い線、蒸発線、くぼみ線について",
+      "intro": "非常に薄い線はAIが検出するのが難しい場合があります。以下からの偽陽性にご注意ください：",
+      "evapLines": "蒸発線：",
+      "evapDesc": "テストが乾燥する際に現れる薄く無色の跡で、通常は推奨読み取り時間の後に発生します。",
+      "indentLines": "くぼみ線：",
+      "indentDesc": "テストストリップの製造過程からの微妙な跡で、結果に関係なく見える場合があります。",
+      "revisitGuide": "右下の情報アイコンからいつでもこのガイドに戻ることができます。"
+    },
+    "next": "次へ"
+  },
+  "videoDemo": {
+    "title": "スキャンして即座に結果を取得",
+    "subtitle": "10,000人以上の女性が結果を得るお手伝いをしてきました"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "免責事項",
+    "content": "このアプリケーションはAI技術を使用しており、不正確または不完全な結果を生成する可能性があります。重要な情報は必ず信頼できる情報源から確認し、AIが生成したコンテンツに基づいて意思決定を行う際は自身の判断を使用してください。"
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "毎日使っているとても良いアプリです。使いやすくてウィジェットが気に入っています。",
+      "zlassenp": "旅行や友達の誕生日までのカウントダウンを見るとワクワクします。",
+      "rajgha": "大事なイベントを忘れにくくなります。フォントオプションがあればいいのですが。",
+      "jaynacc": "このアプリをあまり使わないと思っていましたが…今は毎朝チェックしています。"
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "チェックインの時間！",
+      "body": "頭の調子はどうですか？頭痛の状態を記録してください。"
+    },
+    "drip": {
+      "welcome": {
+        "title": "ようこそ！🧠",
+        "body": "頭痛を記録してパターンを発見しましょう。今日最初の頭痛を記録！"
+      },
+      "reminder1": {
+        "title": "頭痛を記録 📊",
+        "body": "継続的な記録が誘因の発見に役立ちます。無制限の記録と詳細なインサイトにアップグレード。"
+      },
+      "reminder2": {
+        "title": "詳細なインサイト 🎓",
+        "body": "パーソナライズされた頭痛パターン推奨のためにアップグレードした数千人に参加しましょう。"
+      },
+      "reminder3": {
+        "title": "期間限定：すべてをアンロック 🔓",
+        "body": "無制限の記録 + 詳細な分析を取得。今すぐ無料トライアルを開始！"
+      },
+      "reminder4": {
+        "title": "よりスマートに記録 📱",
+        "body": "プレミアムユーザーは詳細なインサイト、誘因追跡、無制限の記録を取得。"
+      },
+      "reminder5": {
+        "title": "あなたの頭痛管理の旅 🌟",
+        "body": "今すぐアップグレードして頭痛をコントロール。無料トライアル利用可能！"
+      },
+      "reminder6": {
+        "title": "ラストチャンス：プレミアム機能 🚨",
+        "body": "無制限の記録とパターン分析をお見逃しなく。"
+      },
+      "reminder7": {
+        "title": "お待ちしています！🧠",
+        "body": "戻って頭痛追跡の旅を続けましょう。プレミアム機能がお待ちしています。"
+      },
+      "trialEnds": "トライアルは明日終了します"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "起きた時から痛み、光に敏感",
+      "afterLongMeeting": "長い会議の後に始まった",
+      "leftWorkEarly": "早退した、吐き気と前兆あり",
+      "worstThisMonth": "今月最悪、トリプタンが1時間後に効いた",
+      "rainyDay": "雨の日、気圧の変化が原因",
+      "onlySleptFourHours": "4時間しか寝ていない、両方の薬が必要だった",
+      "tooMuchCoffee": "昨日コーヒーを飲みすぎた、今日そのツケが来た"
+    }
+  }
+}

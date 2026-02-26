@@ -1,0 +1,64 @@
+---
+description: Always use fetchApi for backend API calls
+globs: **/*.ts, **/*.tsx
+---
+
+# API Call Conventions
+
+## Always use `fetchApi` for backend API calls
+
+Never use raw `fetch()` for calls to the backend API. Always use `fetchApi` from `@/lib/api/fetch-api`.
+
+### Why?
+
+- `fetchApi` automatically handles authentication (Apple identity token, user ID)
+- Provides consistent error handling and response parsing
+- Type-safe with Zod schema validation
+
+### Usage
+
+```typescript
+import { fetchApi } from '@/lib/api/fetch-api';
+import { z } from 'zod';
+
+const RESPONSE_SCHEMA = z.object({
+  id: z.string(),
+});
+
+// POST request
+const response = await fetchApi({
+  method: 'POST',
+  path: '/endpoint',
+  body: { key: 'value' },
+  schema: RESPONSE_SCHEMA,
+});
+
+// GET request
+const response = await fetchApi({
+  path: '/endpoint',
+  schema: RESPONSE_SCHEMA,
+});
+
+// DELETE request with body
+const response = await fetchApi({
+  method: 'DELETE',
+  path: '/endpoint',
+  body: { id: 'some-id' },
+  schema: RESPONSE_SCHEMA,
+});
+
+// Handle response
+if (!response.success) {
+  // Handle error
+  console.error(response.publicFacingMessage);
+  return;
+}
+
+// Use data
+console.log(response.data);
+```
+
+### When NOT to use fetchApi
+
+- External API calls (third-party services)
+- Non-JSON responses (file downloads, etc.)

@@ -1,0 +1,18 @@
+appId: ${APP_ID}
+---
+# Tap the plus button in the header to open add log
+- tapOn:
+    id: 'add-log-button'
+- waitForAnimationToEnd:
+    timeout: 2000
+# Wait for modal to fully load before taking screenshot
+- extendedWaitUntil:
+    visible:
+      id: 'header-close-button'
+    timeout: 3000
+- takeScreenshot: '${LOCALE}/04-add-log'
+# Close the modal
+- tapOn:
+    id: 'header-close-button'
+- waitForAnimationToEnd:
+    timeout: 1000

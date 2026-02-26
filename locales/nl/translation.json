@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "error": "Fout",
+    "ok": "OK",
+    "enabled": "Ingeschakeld",
+    "disabled": "Uitgeschakeld"
+  },
+  "settings": {
+    "unlockPro": "Pro ontgrendelen",
+    "unlockProSubtitle": "Krijg Volledige Toegang",
+    "contactSupport": "Contact opnemen",
+    "contactSupportSubtitle": "Hulp, opmerkingen of suggesties",
+    "rateApp": "Beoordeel app",
+    "rateAppSubtitle": "Deel je feedback",
+    "shareApp": "Deel app",
+    "shareAppSubtitle": "Vertel je vrienden",
+    "shareMessage": "Bekijk {{appName}}!",
+    "appearance": "Uiterlijk",
+    "appearanceSubtitle": "Kies je thema",
+    "themeSystem": "Systeem",
+    "themeLight": "Licht",
+    "themeDark": "Donker",
+    "privacyPolicy": "Privacybeleid",
+    "privacyPolicySubtitle": "Bekijk ons privacybeleid",
+    "termsOfService": "Servicevoorwaarden",
+    "termsOfServiceSubtitle": "Bekijk onze servicevoorwaarden",
+    "account": "Account",
+    "signedInWithApple": "Ingelogd met Apple",
+    "resetOnboarding": "Onboarding resetten",
+    "resetOnboardingSubtitle": "Onboardingstatus wissen",
+    "onboardingResetTitle": "Onboarding gereset",
+    "onboardingResetMessage": "Herstart de app om de onboarding te zien.",
+    "version": "Versie",
+    "emailPlaceholder": "Laat je bericht hierboven achter",
+    "emailAppName": "App:",
+    "emailAppVersion": "App-versie:",
+    "emailOS": "OS:",
+    "emailUserId": "Gebruikers-ID:",
+    "checkInReminders": "Check-in herinneringen",
+    "language": "Taal",
+    "systemDefault": "Systeemstandaard",
+    "reminderTime": "Herinnering",
+    "addReminder": "Herinnering toevoegen"
+  },
+  "account": {
+    "editProfile": "Profiel bewerken",
+    "editProfileSubtitle": "Werk je profielfoto bij",
+    "signOut": "Uitloggen",
+    "signOutConfirmTitle": "Uitloggen",
+    "signOutConfirmMessage": "Weet je zeker dat je wilt uitloggen?",
+    "deleteAccount": "Account verwijderen",
+    "deleteAccountSubtitle": "Verwijder je account en gegevens permanent",
+    "deleteAccountTitle": "Account verwijderen",
+    "deleteAccountWarning": "Deze actie is permanent en kan niet ongedaan worden gemaakt. Al je gegevens, inclusief je berichten, reacties en accountinformatie worden permanent verwijderd.",
+    "deleteAccountConfirmPrompt": "Typ \"{{confirmText}}\" hieronder om te bevestigen:",
+    "deleteAccountConfirmText": "account permanent verwijderen",
+    "deleteAccountScheduledTitle": "Account gepland voor verwijdering",
+    "deleteAccountScheduledMessage": "Je account wordt binnen 24 uur verwijderd.",
+    "deleteAccountConfirmError": "Typ de bevestigingstekst exact over."
+  },
+  "profile": {
+    "tapToChangePhoto": "Tik om profielfoto te wijzigen",
+    "username": "Gebruikersnaam",
+    "notSet": "Niet ingesteld",
+    "failedToUpdate": "Profiel bijwerken mislukt"
+  },
+  "log": {
+    "whenDidItStart": "Wanneer begon het?",
+    "dateTime": "Datum & Tijd",
+    "severity": "Ernst",
+    "severityScale": "van 10",
+    "severityValue": "Ernst: {{value}}/10",
+    "severityLevels": {
+      "mild": "Mild",
+      "moderate": "Matig",
+      "severe": "Ernstig"
+    },
+    "headacheType": "Type",
+    "headacheTypes": {
+      "tension": "Spanning",
+      "migraine": "Migraine",
+      "cluster": "Cluster",
+      "sinus": "Sinus",
+      "not-sure": "Niet zeker"
+    },
+    "location": "Locatie",
+    "locations": {
+      "front": "Voorkant",
+      "back": "Achterkant",
+      "left-side": "Linkerkant",
+      "right-side": "Rechterkant",
+      "top": "Bovenkant",
+      "all-over": "Overal"
+    },
+    "duration": "Duur",
+    "minutes": "min",
+    "triggers": "Triggers",
+    "selectAllThatApply": "Selecteer alles wat van toepassing is",
+    "triggerOptions": {
+      "stress": "Stress",
+      "lack-of-sleep": "Slaapgebrek",
+      "dehydration": "Uitdroging",
+      "screen-time": "Schermtijd",
+      "weather": "Weer",
+      "food": "Voedsel",
+      "alcohol": "Alcohol",
+      "caffeine": "Cafeïne",
+      "hormones": "Hormonen",
+      "exercise": "Beweging"
+    },
+    "medications": "Medicijnen",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspirine",
+      "triptan": "Triptan",
+      "none": "Geen"
+    },
+    "notes": "Notities",
+    "optional": "Optioneel",
+    "upgradeToProNotes": "Upgrade naar PRO om notities toe te voegen",
+    "update": "Bijwerken",
+    "logButton": "Loggen",
+    "logDetails": "Loggegevens",
+    "date": "Datum",
+    "time": "Tijd",
+    "deleteLog": "Log verwijderen",
+    "deleteLogTitle": "Log verwijderen",
+    "deleteLogMessage": "Weet je zeker dat je dit log wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "scanWithAI": "Scannen met AI",
+    "analysisFailed": "Kon de foto niet analyseren. Probeer opnieuw of voer handmatig in.",
+    "noContainerDetected": "Geen object gedetecteerd in de foto. Probeer opnieuw met een duidelijkere afbeelding."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Aan de slag",
+      "next": "Volgende",
+      "continue": "Doorgaan",
+      "skip": "Overslaan"
+    },
+    "welcome": {
+      "title": "Houd je hoofdpijn bij,\nneem de controle",
+      "subtitle": "Laten we een paar snelle vragen beantwoorden om je ervaring te personaliseren"
+    },
+    "painPoints": {
+      "title": "Moeite met het beheersen van je hoofdpijn?",
+      "subtitle": "Zonder patronen en triggers bij te houden, is het moeilijk om te vinden wat helpt. Onze app maakt het makkelijk om te loggen, patronen te herkennen en de controle te nemen.",
+      "buttonText": "Laat me zien hoe het werkt"
+    },
+    "benefits": {
+      "title": "Deze app helpt je",
+      "benefit1": "Je hoofdpijn moeiteloos bijhouden",
+      "benefit2": "Patronen en triggers identificeren",
+      "benefit3": "Persoonlijke inzichten krijgen",
+      "benefit4": "De controle over je gezondheid nemen",
+      "buttonText": "Dit is wat ik nodig heb"
+    },
+    "comparison": {
+      "title": "Bijhouden werkt",
+      "subtitle": "Mensen die hun hoofdpijn bijhouden melden betere resultaten",
+      "withoutTracking": "Zonder bijhouden",
+      "withApp": "Met deze app",
+      "buttonText": "Ik wil de controle nemen"
+    },
+    "personalization": {
+      "title": "Je ervaring personaliseren",
+      "subtitle": "Je hoofdpijntracker instellen...",
+      "steps": {
+        "profile": {
+          "title": "Je profiel",
+          "description": "Je trackingvoorkeuren instellen"
+        },
+        "calendar": {
+          "title": "Kalender instellen",
+          "description": "Je persoonlijke logkalender voorbereiden"
+        },
+        "insights": {
+          "title": "Slimme inzichten",
+          "description": "Gepersonaliseerde aanbevelingen trainen"
+        },
+        "preferences": {
+          "title": "Voorkeuren",
+          "description": "Je instellingen toepassen"
+        },
+        "ready": {
+          "title": "Klaar!",
+          "description": "Je tracker is klaar voor gebruik"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Je bent helemaal klaar!",
+      "subtitle": "Je gepersonaliseerde tracker is klaar. Log je eerste hoofdpijn en begin patronen te herkennen!"
+    },
+    "finished": {
+      "title": "Welkom",
+      "subtitle": "Je hoofdpijntracker is klaar",
+      "numberLabel": "mensen die hun hoofdpijn bijhouden",
+      "bottomTitle": "Klaar om je eerste hoofdpijn te loggen?",
+      "bottomSubtitle": "Begin vandaag met bijhouden en ontdek je patronen",
+      "buttonText": "Ja, ik ben klaar!"
+    },
+    "community": {
+      "title": "Samen leren",
+      "subtitle": "Maak contact met anderen, deel tips en krijg hulp van een ondersteunende community",
+      "buttonText": "Geweldig!"
+    },
+    "notifications": {
+      "title": "Blijf op de hoogte",
+      "subtitle": "Krijg meldingen wanneer communityleden reageren of stemmen op je berichten",
+      "votesOnResults": "Stemmen op je resultaten",
+      "repliesToPosts": "Reacties op je berichten",
+      "turnOn": "Meldingen inschakelen"
+    },
+    "checkInNotifications": {
+      "title": "Check-in herinneringen inschakelen",
+      "subtitle": "Sta meldingen toe om je persoonlijke herinneringen te ontvangen",
+      "reason1": "Ontvang herinneringen om hoofdpijn te loggen op je voorkeurstijden",
+      "reason2": "Bouw consistente trackinggewoonten op",
+      "turnOn": "Meldingen inschakelen"
+    },
+    "sheet": {
+      "welcomeTo": "Welkom bij"
+    },
+    "question1": {
+      "title": "Hoe vaak heb je hoofdpijn?",
+      "subtitle": "Dit helpt ons je tracking-ervaring te personaliseren.",
+      "options": {
+        "daily": "Dagelijks",
+        "severalPerWeek": "Meerdere keren per week",
+        "weekly": "Ongeveer een keer per week",
+        "fewPerMonth": "Een paar keer per maand",
+        "rarely": "Zelden"
+      }
+    },
+    "question2": {
+      "title": "Welk type hoofdpijn heb je meestal?",
+      "subtitle": "Maak je geen zorgen als je het niet zeker weet — je kunt dit later altijd wijzigen.",
+      "options": {
+        "tension": "Spanningshoofdpijn",
+        "migraine": "Migraine",
+        "cluster": "Clusterhoofdpijn",
+        "sinus": "Sinushoofdpijn",
+        "notSure": "Niet zeker"
+      }
+    },
+    "notifications": {
+      "title": "Wanneer moeten we je herinneren?",
+      "subtitle": "Kies een tijd voor je dagelijkse check-in. Je kunt er later meer toevoegen in de instellingen."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Nog geen berichten",
+    "beFirstToShare": "Wees de eerste om te delen met de community!",
+    "couldntLoadPosts": "Kon berichten niet laden",
+    "somethingWentWrong": "Er is iets misgegaan. Controleer je verbinding en probeer het opnieuw.",
+    "tryAgain": "Opnieuw proberen",
+    "deletePostTitle": "Bericht verwijderen",
+    "deletePostMessage": "Weet je zeker dat je dit bericht wilt verwijderen?",
+    "viewAllComments": "Bekijk alle {{count}} reacties"
+  },
+  "post": {
+    "delete": "Verwijderen",
+    "report": "Melden",
+    "post": "Plaatsen"
+  },
+  "comments": {
+    "title": "Reacties",
+    "noCommentsYet": "Nog geen reacties",
+    "beFirstToComment": "Wees de eerste om te reageren!",
+    "loadingComments": "Reacties laden",
+    "postNotFound": "Bericht niet gevonden",
+    "addComment": "Voeg een reactie toe..."
+  },
+  "createPost": {
+    "post": "Plaatsen",
+    "placeholders": {
+      "shareResults": "Deel je resultaten...",
+      "shareStory": "Deel je verhaal...",
+      "whatsOnMind": "Waar denk je aan?",
+      "howFeeling": "Hoe voel je je vandaag?",
+      "writeCaption": "Schrijf een bijschrift...",
+      "shareCommunity": "Deel met de community...",
+      "tellJourney": "Vertel over je reis...",
+      "shareMoment": "Deel je moment..."
+    }
+  },
+  "reportPost": {
+    "description": "Vertel ons waarom je dit bericht meldt. We zullen het beoordelen en gepaste actie ondernemen.",
+    "placeholder": "Beschrijf het probleem...",
+    "submit": "Verzenden",
+    "successTitle": "Melding verzonden",
+    "successMessage": "Bedankt voor je melding. We zullen dit bericht beoordelen.",
+    "errorNoReason": "Geef een reden op voor je melding."
+  },
+  "paywall": {
+    "tryForFree": "Gratis proberen",
+    "continue": "Doorgaan",
+    "noCommitment": "Geen verplichting, op elk moment opzeggen",
+    "freeTrialEnabled": "Gratis proefperiode ingeschakeld",
+    "noPurchasesFound": "Geen aankopen gevonden",
+    "tryAgain": "Opnieuw proberen",
+    "errorTitle": "Fout",
+    "errorDescription": "Kan abonnementen niet laden. Probeer het opnieuw of neem contact op met support als het probleem aanhoudt.",
+    "footer": {
+      "terms": "Voorwaarden",
+      "restorePurchase": "Aankoop herstellen",
+      "privacy": "Privacy"
+    },
+    "trial": {
+      "title": "Krijg onbeperkte toegang voor {{days}} dagen",
+      "subtitle": "We herinneren je voordat je proefperiode eindigt",
+      "today": "Vandaag",
+      "todaySubtitle": "Ontgrendel volledige toegang tot je hoofdpijntracker.",
+      "inTwoDays": "Over 2 dagen",
+      "inTwoDaysSubtitle": "We sturen een herinnering voordat je proefperiode eindigt.",
+      "inThreeDays": "Over 3 dagen",
+      "inThreeDaysSubtitle": "Je abonnement begint tenzij je voor die tijd opzegt."
+    },
+    "nonTrial": {
+      "titleHard": "Ontgrendel de app om door te gaan",
+      "titleSoft": "Krijg Volledige Toegang",
+      "subtitle": "Je hoofdpijn tracking companion"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Snel & eenvoudig loggen",
+        "description": "Log invoeren in seconden met onze gestroomlijnde interface - geen gedoe"
+      },
+      "reminders": {
+        "title": "Aangepaste herinneringen",
+        "description": "Stel persoonlijke herinneringen in om je hoofdpijn bij te houden"
+      },
+      "noPaywall": {
+        "title": "Vervelende paywall verwijderen",
+        "description": "Geen paywall-popups meer telkens als je de app opent"
+      },
+      "unlimited": {
+        "title": "Onbeperkt Loggen",
+        "description": "Log zo vaak als je wilt - geen maandelijkse limieten"
+      },
+      "indieDeveloper": {
+        "title": "Steun een Indie-ontwikkelaar",
+        "description": "Help de toekomst van deze app vorm te geven en geniet van exclusieve functies met zorg gemaakt door een indie-ontwikkelaar."
+      }
+    },
+    "reviews": {
+      "sarah": "Eindelijk een app gevonden die hoofdpijn bijhouden makkelijk maakt! Het kalenderoverzicht is perfect om patronen over tijd te zien.",
+      "isaac": "Ik heb al jaren migraines. Deze app hielp me mijn triggers te identificeren — nu kan ik ze echt voorkomen!",
+      "emma": "Mijn neuroloog adviseerde me mijn hoofdpijn bij te houden en dit maakte het zo simpel. Fijn om echte data te hebben voor mijn afspraken!",
+      "arthur": "De trigger-tracking is briljant! Ik ontdekte dat cafeïne mijn grootste boosdoener was. Zo'n gamechanger voor mijn gezondheid!",
+      "zoe": "Super snel te loggen - duurt maar seconden. Ik ben 3 maanden consistent en mijn hoofdpijnen zijn significant verminderd!",
+      "maya": "Als iemand die worstelt met chronische migraines geeft het me gemoedsrust om alles op één plek te hebben. Love de dagelijkse herinneringen!"
+    },
+    "package": {
+      "freeTrial": "GRATIS PROEFPERIODE",
+      "perWeek": "/week",
+      "perMonth": "/maand",
+      "perYear": "/jaar",
+      "once": "eenmalig",
+      "percentOff": "{{percent}}% korting",
+      "savePercent": "BESPAAR {{percent}}%",
+      "yearly": "jaarlijks",
+      "weekly": "wekelijks",
+      "monthly": "maandelijks",
+      "then": "daarna ",
+      "daysFree": "{{count}} dagen gratis",
+      "introSubtitle": "{{count}} dagen gratis · daarna {{price}}",
+      "weeklyIntroSubtitle": "{{count}} dagen gratis · Op elk moment opzegbaar",
+      "weeklySubtitle": "Automatische verlenging · Op elk moment opzegbaar",
+      "monthlySubtitle": "Automatische verlenging · Op elk moment opzegbaar",
+      "annualSubtitle": "Jaarlijkse facturering · Op elk moment opzegbaar",
+      "lifetimeSubtitle": "Eenmalige betaling",
+      "yearlyTitle": "Jaarlijks",
+      "monthlyTitle": "Maandelijks",
+      "weeklyTitle": "Wekelijks",
+      "lifetimeTitle": "Levenslang"
+    },
+    "wreath": {
+      "bestHealthApp": "Beste hoofdpijntracker-app"
+    },
+    "v2": {
+      "title": "Kies je abonnement",
+      "perksIntro": "Met een abonnement ontgrendel je de volgende voordelen:"
+    }
+  },
+  "setupProfile": {
+    "title": "Stel je profiel in",
+    "subtitle": "Zo verschijn je voor anderen in de community.",
+    "addPhoto": "Voeg een profielfoto toe (optioneel)",
+    "placeholder": "gebruikersnaam",
+    "next": "Volgende",
+    "usernameTaken": "Deze gebruikersnaam is al bezet.",
+    "failedToUpdate": "Profiel bijwerken mislukt",
+    "onlyLettersNumbersUnderscores": "Alleen letters, cijfers en underscores",
+    "checking": "Controleren...",
+    "usernameIsTaken": "Gebruikersnaam is bezet",
+    "usernameIsAvailable": "Gebruikersnaam is beschikbaar",
+    "usernameMinLength": "Moet minimaal 3 tekens zijn",
+    "usernameMaxLength": "Moet minder dan 20 tekens zijn",
+    "usernameInstructions": "3-20 tekens. Alleen letters, cijfers en underscores.",
+    "usernameErrorInstructions": "Gebruikersnaam moet 3-20 tekens lang zijn en mag alleen letters, cijfers en underscores bevatten."
+  },
+  "confirm": {
+    "analyze": "Analyseren",
+    "noPhotoToAnalyze": "Geen foto om te analyseren",
+    "failedToProcessImage": "Foto verwerken mislukt"
+  },
+  "feedback": {
+    "title": "Deel je feedback",
+    "subtitle": "Help ons je ervaring te verbeteren",
+    "tellUs": "Vertel ons wat we kunnen verbeteren",
+    "submit": "Verzenden",
+    "thankYouTitle": "Bedankt!",
+    "thankYouMessage": "Je feedback helpt ons de app te verbeteren.",
+    "feedbackRequired": "Feedback vereist",
+    "feedbackRequiredMessage": "Voer je feedback in voordat je verzendt."
+  },
+  "history": {
+    "search": "Zoeken",
+    "noConversationsYet": "Nog geen gesprekken",
+    "noConversationsMessage": "Je huiswerkhulpsessies verschijnen hier zodra je vragen begint te stellen.",
+    "deleteTitle": "Verwijderen",
+    "deleteMessage": "Weet je zeker dat je dit wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "sortQuestionAZ": "Vraag (A-Z)",
+    "sortQuestionZA": "Vraag (Z-A)",
+    "sortDateNewest": "Datum (Nieuwste eerst)",
+    "sortDateOldest": "Datum (Oudste eerst)"
+  },
+  "chat": {
+    "askFollowUp": "Stel een vervolgvraag..."
+  },
+  "signIn": {
+    "title": "Maak een account aan",
+    "subtitle": "Log in om te delen met de community. Het is super snel!"
+  },
+  "calendar": {
+    "noRecords": "Geen gegevens",
+    "noRecordsMessage": "Geen hoofdpijngegevens voor deze datum.",
+    "firstLogPrompt": "Tik op + om je eerste log toe te voegen!",
+    "addLog": "Log toevoegen"
+  },
+  "camera": {
+    "loading": "Laden...",
+    "continue": "Doorgaan",
+    "permissionTitle": "Cameratoestemming",
+    "permissionMessage": "We hebben je toestemming nodig om de camera te tonen"
+  },
+  "rating": {
+    "howWouldYouRate": "Hoe zou je onze analyse beoordelen?"
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "calendar": "Kalender",
+    "settings": "Instellingen"
+  },
+  "dashboard": {
+    "severity": "Ernst",
+    "noData": "Geen hoofdpijn deze week",
+    "totalHeadaches": "Totaal hoofdpijn",
+    "avgSeverity": "Gem. ernst",
+    "avgDuration": "Gem. duur",
+    "topTrigger": "Belangrijkste trigger",
+    "noDataTitle": "Nog geen hoofdpijnen geregistreerd",
+    "noDataDescription": "Registreer je eerste hoofdpijn om je wekelijkse statistieken te zien",
+    "addLog": "Log toevoegen"
+  },
+  "navigation": {
+    "back": "Terug",
+    "createPost": "Bericht maken",
+    "reportPost": "Bericht melden",
+    "account": "Account",
+    "editProfile": "Profiel bewerken",
+    "deleteAccount": "Account verwijderen",
+    "editLog": "Log bewerken",
+    "community": "Community",
+    "history": "Geschiedenis",
+    "logHeadache": "Hoofdpijn loggen",
+    "language": "Taal"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Deze pagina kon niet worden gevonden."
+  },
+  "imageEdit": {
+    "brightness": "Helderheid",
+    "contrast": "Contrast",
+    "invert": "Omkeren",
+    "bw": "Z&W"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Fotovereisten",
+    "whatToAvoid": "Wat te vermijden",
+    "bullets": {
+      "ensureBothLines": "Zorg dat zowel de controle- als testlijn van dichtbij zichtbaar zijn.",
+      "testStraight": "De test moet recht en horizontaal zijn.",
+      "clearPhoto": "Gebruik een duidelijke, kwalitatieve foto met gelijkmatige belichting.",
+      "simpleBackground": "Houd de achtergrond eenvoudig, bij voorkeur effen.",
+      "avoidBlurry": "Vermijd onscherpe foto's.",
+      "dontCrop": "Snij geen delen van het testvenster af.",
+      "avoidShadows": "Vermijd harde schaduwen of schittering op de test.",
+      "dontAngle": "Maak geen foto's vanuit een hoek.",
+      "darkPhotos": "Donkere foto's zonder contrast."
+    },
+    "summary": {
+      "title": "Over vage lijnen, verdamping & indrukken",
+      "intro": "Extreem vage lijnen kunnen moeilijk te detecteren zijn voor AI. Let op mogelijke fout-positieven van:",
+      "evapLines": "Verdampingslijnen: ",
+      "evapDesc": "Vage, kleurloze markeringen die verschijnen als de test droogt, meestal na het aanbevolen leesvenster.",
+      "indentLines": "Indruklijnen: ",
+      "indentDesc": "Subtiele markeringen van het productieproces van de teststrip, die zichtbaar kunnen zijn ongeacht het resultaat.",
+      "revisitGuide": "Je kunt deze gids altijd opnieuw bekijken via het info-icoon rechtsonder."
+    },
+    "next": "Volgende"
+  },
+  "videoDemo": {
+    "title": "Scan & krijg direct resultaten",
+    "subtitle": "We hebben meer dan 10.000 vrouwen geholpen hun resultaten te krijgen"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "Deze applicatie maakt gebruik van AI-technologie die onnauwkeurige of onvolledige resultaten kan produceren. Verifieer altijd belangrijke informatie uit gezaghebbende bronnen en gebruik je eigen oordeel bij het nemen van beslissingen op basis van AI-gegenereerde inhoud."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Dit is een heel goede app die ik elke dag gebruik. Het is zo makkelijk te gebruiken en ik hou van de widgets.",
+      "zlassenp": "Een aftelling zien naar mijn reis of de verjaardag van een vriend maakt me enthousiast.",
+      "rajgha": "Maakt het moeilijk om grote evenementen te vergeten. Zou alleen willen dat er lettertypeopties waren.",
+      "jaynacc": "Dacht niet dat ik deze app veel zou gebruiken… maar nu check ik hem elke ochtend."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Tijd om in te checken!",
+      "body": "Hoe voelt je hoofd? Log je hoofdpijnstatus."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Welkom! 🧠",
+        "body": "Houd je hoofdpijn bij en identificeer patronen. Log vandaag je eerste hoofdpijn!"
+      },
+      "reminder1": {
+        "title": "Houd je hoofdpijn bij 📊",
+        "body": "Consistent loggen helpt je triggers te vinden. Upgrade voor onbeperkt bijhouden en gedetailleerde inzichten."
+      },
+      "reminder2": {
+        "title": "Gedetailleerde inzichten 🎓",
+        "body": "Sluit je aan bij duizenden die hebben geüpgraded voor gepersonaliseerde hoofdpijnpatroonaanbevelingen."
+      },
+      "reminder3": {
+        "title": "Beperkte tijd: Ontgrendel alles 🔓",
+        "body": "Krijg onbeperkt loggen + gedetailleerde analyse. Start nu je gratis proefperiode!"
+      },
+      "reminder4": {
+        "title": "Slimmer bijhouden 📱",
+        "body": "Premium gebruikers krijgen gedetailleerde inzichten, trigger-tracking en onbeperkte logs."
+      },
+      "reminder5": {
+        "title": "Jouw hoofdpijnreis 🌟",
+        "body": "Upgrade nu en neem de controle over je hoofdpijn. Gratis proefperiode beschikbaar!"
+      },
+      "reminder6": {
+        "title": "Laatste kans: Premium functies 🚨",
+        "body": "Mis onbeperkt bijhouden en patroonanalyse niet."
+      },
+      "reminder7": {
+        "title": "We missen je! 🧠",
+        "body": "Kom terug en ga door met je hoofdpijnregistratie. Premium functies wachten op je."
+      },
+      "trialEnds": "Je proefperiode eindigt morgen"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Werd er wakker mee, lichtgevoeligheid",
+      "afterLongMeeting": "Begon na een lange vergadering",
+      "leftWorkEarly": "Moest eerder van werk weg, misselijkheid en aura",
+      "worstThisMonth": "Ergste deze maand, triptan hielp na 1 uur",
+      "rainyDay": "Regenachtige dag, drukverandering waarschijnlijk de oorzaak",
+      "onlySleptFourHours": "Slechts 4 uur geslapen, beide medicijnen nodig",
+      "tooMuchCoffee": "Gisteren te veel koffie, vandaag de rekening"
+    }
+  }
+}

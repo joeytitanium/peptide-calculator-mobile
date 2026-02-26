@@ -1,0 +1,22 @@
+{
+  "cli": {
+    "version": ">= 9.0.0",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "store",
+      "env": {
+        "ANDROID_HOME": "/Users/joey/Library/Android/sdk"
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}

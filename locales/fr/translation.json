@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "error": "Erreur",
+    "ok": "OK",
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  },
+  "settings": {
+    "unlockPro": "Débloquer Pro",
+    "unlockProSubtitle": "Accès Complet",
+    "contactSupport": "Contacter le support",
+    "contactSupportSubtitle": "Aide, commentaires ou suggestions",
+    "rateApp": "Noter l'app",
+    "rateAppSubtitle": "Partagez votre avis",
+    "shareApp": "Partager l'app",
+    "shareAppSubtitle": "Parlez-en à vos amis",
+    "shareMessage": "Découvrez {{appName}} !",
+    "appearance": "Apparence",
+    "appearanceSubtitle": "Choisissez votre thème",
+    "themeSystem": "Système",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "privacyPolicy": "Politique de confidentialité",
+    "privacyPolicySubtitle": "Voir notre politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "termsOfServiceSubtitle": "Voir nos conditions d'utilisation",
+    "account": "Compte",
+    "signedInWithApple": "Connecté avec Apple",
+    "resetOnboarding": "Réinitialiser l'accueil",
+    "resetOnboardingSubtitle": "Effacer l'état d'accueil",
+    "onboardingResetTitle": "Accueil réinitialisé",
+    "onboardingResetMessage": "Redémarrez l'app pour voir le parcours d'accueil.",
+    "version": "Version",
+    "emailPlaceholder": "Veuillez laisser votre message au-dessus de cette ligne",
+    "emailAppName": "App :",
+    "emailAppVersion": "Version de l'app :",
+    "emailOS": "OS :",
+    "emailUserId": "ID utilisateur :",
+    "checkInReminders": "Rappels de suivi",
+    "language": "Langue",
+    "systemDefault": "Par défaut du système",
+    "reminderTime": "Rappel",
+    "addReminder": "Ajouter un rappel"
+  },
+  "account": {
+    "editProfile": "Modifier le profil",
+    "editProfileSubtitle": "Mettre à jour votre photo de profil",
+    "signOut": "Se déconnecter",
+    "signOutConfirmTitle": "Se déconnecter",
+    "signOutConfirmMessage": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "deleteAccount": "Supprimer le compte",
+    "deleteAccountSubtitle": "Supprimer définitivement votre compte et vos données",
+    "deleteAccountTitle": "Supprimer le compte",
+    "deleteAccountWarning": "Cette action est définitive et irréversible. Toutes vos données, y compris vos publications, commentaires et informations de compte seront définitivement supprimées.",
+    "deleteAccountConfirmPrompt": "Pour confirmer, tapez « {{confirmText}} » ci-dessous :",
+    "deleteAccountConfirmText": "supprimer définitivement le compte",
+    "deleteAccountScheduledTitle": "Compte programmé pour suppression",
+    "deleteAccountScheduledMessage": "Votre compte sera supprimé dans les prochaines 24 heures.",
+    "deleteAccountConfirmError": "Veuillez taper le texte de confirmation exactement."
+  },
+  "profile": {
+    "tapToChangePhoto": "Appuyez pour changer la photo de profil",
+    "username": "Nom d'utilisateur",
+    "notSet": "Non défini",
+    "failedToUpdate": "Échec de la mise à jour du profil"
+  },
+  "log": {
+    "whenDidItStart": "Quand a-t-il commencé ?",
+    "dateTime": "Date et heure",
+    "severity": "Sévérité",
+    "severityScale": "sur 10",
+    "severityValue": "Sévérité : {{value}}/10",
+    "severityLevels": {
+      "mild": "Léger",
+      "moderate": "Modéré",
+      "severe": "Sévère"
+    },
+    "headacheType": "Type",
+    "headacheTypes": {
+      "tension": "Céphalée de tension",
+      "migraine": "Migraine",
+      "cluster": "Céphalée en grappe",
+      "sinus": "Céphalée sinusale",
+      "not-sure": "Pas sûr"
+    },
+    "location": "Localisation",
+    "locations": {
+      "front": "Avant",
+      "back": "Arrière",
+      "left-side": "Côté gauche",
+      "right-side": "Côté droit",
+      "top": "Sommet",
+      "all-over": "Partout"
+    },
+    "duration": "Durée",
+    "minutes": "min",
+    "triggers": "Déclencheurs",
+    "selectAllThatApply": "Sélectionnez tout ce qui s'applique",
+    "triggerOptions": {
+      "stress": "Stress",
+      "lack-of-sleep": "Manque de sommeil",
+      "dehydration": "Déshydratation",
+      "screen-time": "Temps d'écran",
+      "weather": "Météo",
+      "food": "Alimentation",
+      "alcohol": "Alcool",
+      "caffeine": "Caféine",
+      "hormones": "Hormones",
+      "exercise": "Exercice"
+    },
+    "medications": "Médicaments",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofène",
+      "acetaminophen": "Paracétamol",
+      "aspirin": "Aspirine",
+      "triptan": "Triptan",
+      "none": "Aucun"
+    },
+    "notes": "Notes",
+    "optional": "Facultatif",
+    "upgradeToProNotes": "Passez à PRO pour ajouter des notes",
+    "update": "Mettre à jour",
+    "logButton": "Enregistrer",
+    "logDetails": "Détails de l'entrée",
+    "date": "Date",
+    "time": "Heure",
+    "deleteLog": "Supprimer l'entrée",
+    "deleteLogTitle": "Supprimer l'entrée",
+    "deleteLogMessage": "Êtes-vous sûr de vouloir supprimer cette entrée ? Cette action est irréversible.",
+    "scanWithAI": "Scanner avec l'IA",
+    "analysisFailed": "Impossible d'analyser la photo. Veuillez réessayer ou saisir manuellement.",
+    "noContainerDetected": "Aucun objet n'a été détecté sur la photo. Veuillez réessayer avec une image plus nette."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Commencer",
+      "next": "Suivant",
+      "continue": "Continuer",
+      "skip": "Passer"
+    },
+    "welcome": {
+      "title": "Suivez vos maux de tête,\nreprenez le contrôle",
+      "subtitle": "Répondons à quelques questions rapides pour personnaliser votre expérience"
+    },
+    "painPoints": {
+      "title": "Du mal à gérer vos maux de tête ?",
+      "subtitle": "Sans suivre les schémas et les déclencheurs, il est difficile de trouver ce qui aide. Notre app facilite l'enregistrement, l'identification des schémas et la reprise du contrôle.",
+      "buttonText": "Montrez-moi comment ça marche"
+    },
+    "benefits": {
+      "title": "Cette app vous aide à",
+      "benefit1": "Suivre vos maux de tête sans effort",
+      "benefit2": "Identifier les schémas et les déclencheurs",
+      "benefit3": "Obtenir des informations personnalisées",
+      "benefit4": "Reprendre le contrôle de votre santé",
+      "buttonText": "C'est ce qu'il me faut"
+    },
+    "comparison": {
+      "title": "Le suivi fonctionne",
+      "subtitle": "Les personnes qui suivent leurs maux de tête rapportent de meilleurs résultats",
+      "withoutTracking": "Sans suivi",
+      "withApp": "Avec cette app",
+      "buttonText": "Je veux reprendre le contrôle"
+    },
+    "personalization": {
+      "title": "Personnalisation de votre expérience",
+      "subtitle": "Configuration de votre suivi de maux de tête...",
+      "steps": {
+        "profile": {
+          "title": "Votre profil",
+          "description": "Configuration de vos préférences de suivi"
+        },
+        "calendar": {
+          "title": "Configuration du calendrier",
+          "description": "Préparation de votre calendrier personnel"
+        },
+        "insights": {
+          "title": "Analyses intelligentes",
+          "description": "Formation des recommandations personnalisées"
+        },
+        "preferences": {
+          "title": "Préférences",
+          "description": "Application de vos paramètres"
+        },
+        "ready": {
+          "title": "Prêt !",
+          "description": "Votre suivi est prêt"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Tout est prêt !",
+      "subtitle": "Votre suivi personnalisé est prêt. Enregistrez votre premier mal de tête et commencez à identifier les schémas !"
+    },
+    "finished": {
+      "title": "Bienvenue",
+      "subtitle": "Votre suivi de maux de tête est prêt",
+      "numberLabel": "personnes suivent leurs maux de tête",
+      "bottomTitle": "Prêt à enregistrer votre premier mal de tête ?",
+      "bottomSubtitle": "Commencez le suivi aujourd'hui et découvrez vos schémas",
+      "buttonText": "Oui, je suis prêt !"
+    },
+    "community": {
+      "title": "Apprenons ensemble",
+      "subtitle": "Connectez-vous avec d'autres, partagez des conseils et obtenez de l'aide d'une communauté bienveillante",
+      "buttonText": "J'adore !"
+    },
+    "notifications": {
+      "title": "Restez informé",
+      "subtitle": "Recevez des notifications quand les membres commentent ou votent sur vos publications",
+      "votesOnResults": "Votes sur vos résultats",
+      "repliesToPosts": "Réponses à vos publications",
+      "turnOn": "Activer les notifications"
+    },
+    "checkInNotifications": {
+      "title": "Activer les rappels de suivi",
+      "subtitle": "Autorisez les notifications pour recevoir vos rappels personnalisés",
+      "reason1": "Recevez des rappels pour enregistrer vos maux de tête aux heures souhaitées",
+      "reason2": "Développez des habitudes de suivi régulières",
+      "turnOn": "Activer les notifications"
+    },
+    "sheet": {
+      "welcomeTo": "Bienvenue sur"
+    },
+    "question1": {
+      "title": "À quelle fréquence avez-vous des maux de tête ?",
+      "subtitle": "Cela nous aide à personnaliser votre expérience de suivi.",
+      "options": {
+        "daily": "Quotidiennement",
+        "severalPerWeek": "Plusieurs fois par semaine",
+        "weekly": "Environ une fois par semaine",
+        "fewPerMonth": "Quelques fois par mois",
+        "rarely": "Rarement"
+      }
+    },
+    "question2": {
+      "title": "Quel type de maux de tête avez-vous habituellement ?",
+      "subtitle": "Ne vous inquiétez pas si vous n'êtes pas sûr — vous pourrez toujours le modifier plus tard.",
+      "options": {
+        "tension": "Céphalée de tension",
+        "migraine": "Migraine",
+        "cluster": "Céphalée en grappe",
+        "sinus": "Céphalée sinusale",
+        "notSure": "Pas sûr"
+      }
+    },
+    "notifications": {
+      "title": "Quand devons-nous vous rappeler ?",
+      "subtitle": "Choisissez une heure pour votre suivi quotidien. Vous pourrez en ajouter d'autres dans les paramètres."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Pas encore de publications",
+    "beFirstToShare": "Soyez le premier à partager avec la communauté !",
+    "couldntLoadPosts": "Impossible de charger les publications",
+    "somethingWentWrong": "Une erreur s'est produite. Veuillez vérifier votre connexion et réessayer.",
+    "tryAgain": "Réessayer",
+    "deletePostTitle": "Supprimer la publication",
+    "deletePostMessage": "Êtes-vous sûr de vouloir supprimer cette publication ?",
+    "viewAllComments": "Voir les {{count}} commentaires"
+  },
+  "post": {
+    "delete": "Supprimer",
+    "report": "Signaler",
+    "post": "Publier"
+  },
+  "comments": {
+    "title": "Commentaires",
+    "noCommentsYet": "Pas encore de commentaires",
+    "beFirstToComment": "Soyez le premier à commenter !",
+    "loadingComments": "Chargement des commentaires",
+    "postNotFound": "Publication introuvable",
+    "addComment": "Ajouter un commentaire..."
+  },
+  "createPost": {
+    "post": "Publier",
+    "placeholders": {
+      "shareResults": "Partagez vos résultats...",
+      "shareStory": "Partagez votre histoire...",
+      "whatsOnMind": "À quoi pensez-vous ?",
+      "howFeeling": "Comment vous sentez-vous aujourd'hui ?",
+      "writeCaption": "Écrivez une légende...",
+      "shareCommunity": "Partagez avec la communauté...",
+      "tellJourney": "Racontez-nous votre parcours...",
+      "shareMoment": "Partagez votre moment..."
+    }
+  },
+  "reportPost": {
+    "description": "Dites-nous pourquoi vous signalez cette publication. Nous l'examinerons et prendrons les mesures appropriées.",
+    "placeholder": "Décrivez le problème...",
+    "submit": "Envoyer",
+    "successTitle": "Signalement envoyé",
+    "successMessage": "Merci pour votre signalement. Nous examinerons cette publication.",
+    "errorNoReason": "Veuillez fournir une raison pour votre signalement."
+  },
+  "paywall": {
+    "tryForFree": "Essayer gratuitement",
+    "continue": "Continuer",
+    "noCommitment": "Sans engagement, annulez à tout moment",
+    "freeTrialEnabled": "Essai gratuit activé",
+    "noPurchasesFound": "Aucun achat trouvé",
+    "tryAgain": "Réessayer",
+    "errorTitle": "Erreur",
+    "errorDescription": "Impossible de charger les abonnements. Veuillez réessayer ou contacter le support.",
+    "footer": {
+      "terms": "Conditions",
+      "restorePurchase": "Restaurer l'achat",
+      "privacy": "Confidentialité"
+    },
+    "trial": {
+      "title": "Obtenez un accès illimité pendant {{days}} jours",
+      "subtitle": "Nous vous rappellerons avant la fin de votre essai",
+      "today": "Aujourd'hui",
+      "todaySubtitle": "Débloquez l'accès complet à votre suivi de maux de tête.",
+      "inTwoDays": "Dans 2 jours",
+      "inTwoDaysSubtitle": "Nous enverrons un rappel avant la fin de votre essai.",
+      "inThreeDays": "Dans 3 jours",
+      "inThreeDaysSubtitle": "Votre abonnement commencera sauf si vous annulez avant."
+    },
+    "nonTrial": {
+      "titleHard": "Débloquez l'app pour continuer",
+      "titleSoft": "Accès Complet",
+      "subtitle": "Votre compagnon de suivi des maux de tête"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Enregistrement rapide et facile",
+        "description": "Enregistrez des entrées en quelques secondes avec notre interface optimisée - sans tracas"
+      },
+      "reminders": {
+        "title": "Rappels personnalisés",
+        "description": "Définissez des rappels personnalisés pour enregistrer et suivre vos maux de tête"
+      },
+      "noPaywall": {
+        "title": "Supprimer le paywall agaçant",
+        "description": "Plus de popups de paywall à chaque ouverture de l'app"
+      },
+      "unlimited": {
+        "title": "Enregistrement Illimité",
+        "description": "Enregistrez autant que nécessaire - sans limites mensuelles"
+      },
+      "indieDeveloper": {
+        "title": "Soutenir un Développeur Indépendant",
+        "description": "Participez à l'avenir de cette app et profitez de fonctionnalités exclusives créées avec soin par un développeur indépendant."
+      }
+    },
+    "reviews": {
+      "sarah": "J'ai enfin trouvé une app qui rend le suivi des maux de tête facile ! La vue calendrier est parfaite pour repérer les schémas au fil du temps.",
+      "isaac": "J'ai souffert de migraines pendant des années. Cette app m'a aidé à identifier mes déclencheurs — maintenant je peux vraiment les prévenir !",
+      "emma": "Mon neurologue m'a recommandé de suivre mes maux de tête et ça a rendu les choses si simples. J'adore avoir des données réelles pour mes rendez-vous !",
+      "arthur": "Le suivi des déclencheurs est brillant ! J'ai découvert que la caféine était mon principal coupable. Un vrai changement pour ma santé !",
+      "zoe": "Super rapide à enregistrer - quelques secondes seulement. Ça fait 3 mois que je suis régulière et mes maux de tête ont considérablement diminué !",
+      "maya": "En tant que personne souffrant de migraines chroniques, avoir tout au même endroit me rassure. J'adore aussi les rappels quotidiens !"
+    },
+    "package": {
+      "freeTrial": "ESSAI GRATUIT",
+      "perWeek": "/semaine",
+      "perMonth": "/mois",
+      "perYear": "/an",
+      "once": "une fois",
+      "percentOff": "{{percent}}% de réduction",
+      "savePercent": "ÉCONOMISEZ {{percent}}%",
+      "yearly": "annuel",
+      "weekly": "hebdomadaire",
+      "monthly": "mensuel",
+      "then": "puis ",
+      "daysFree": "{{count}} jours gratuits",
+      "introSubtitle": "{{count}} jours gratuits · puis {{price}}",
+      "weeklyIntroSubtitle": "{{count}} jours gratuits · Annulez à tout moment",
+      "weeklySubtitle": "Renouvellement automatique · Annulez à tout moment",
+      "monthlySubtitle": "Renouvellement automatique · Annulez à tout moment",
+      "annualSubtitle": "Facturation annuelle · Annulez à tout moment",
+      "lifetimeSubtitle": "Paiement unique",
+      "yearlyTitle": "Annuel",
+      "monthlyTitle": "Mensuel",
+      "weeklyTitle": "Hebdomadaire",
+      "lifetimeTitle": "À vie"
+    },
+    "wreath": {
+      "bestHealthApp": "Meilleure app de suivi des maux de tête"
+    },
+    "v2": {
+      "title": "Choisissez votre forfait",
+      "perksIntro": "En vous abonnant, vous débloquerez les avantages suivants :"
+    }
+  },
+  "setupProfile": {
+    "title": "Configurez votre profil",
+    "subtitle": "C'est ainsi que vous apparaîtrez aux autres dans la communauté.",
+    "addPhoto": "Ajouter une photo de profil (facultatif)",
+    "placeholder": "nom d'utilisateur",
+    "next": "Suivant",
+    "usernameTaken": "Ce nom d'utilisateur est déjà pris.",
+    "failedToUpdate": "Échec de la mise à jour du profil",
+    "onlyLettersNumbersUnderscores": "Lettres, chiffres et tirets bas uniquement",
+    "checking": "Vérification...",
+    "usernameIsTaken": "Nom d'utilisateur déjà pris",
+    "usernameIsAvailable": "Nom d'utilisateur disponible",
+    "usernameMinLength": "3 caractères minimum",
+    "usernameMaxLength": "20 caractères maximum",
+    "usernameInstructions": "3-20 caractères. Lettres, chiffres et tirets bas uniquement.",
+    "usernameErrorInstructions": "Le nom d'utilisateur doit contenir 3-20 caractères et uniquement des lettres, chiffres et tirets bas."
+  },
+  "confirm": {
+    "analyze": "Analyser",
+    "noPhotoToAnalyze": "Pas de photo à analyser",
+    "failedToProcessImage": "Échec du traitement de l'image"
+  },
+  "feedback": {
+    "title": "Partagez votre avis",
+    "subtitle": "Aidez-nous à améliorer votre expérience",
+    "tellUs": "Dites-nous ce que nous pouvons améliorer",
+    "submit": "Envoyer",
+    "thankYouTitle": "Merci !",
+    "thankYouMessage": "Votre avis nous aide à améliorer l'app.",
+    "feedbackRequired": "Avis requis",
+    "feedbackRequiredMessage": "Veuillez entrer votre avis avant d'envoyer."
+  },
+  "history": {
+    "search": "Rechercher",
+    "noConversationsYet": "Pas encore de conversations",
+    "noConversationsMessage": "Vos sessions d'aide apparaîtront ici une fois que vous commencerez à poser des questions.",
+    "deleteTitle": "Supprimer",
+    "deleteMessage": "Êtes-vous sûr de vouloir supprimer ceci ? Cette action est irréversible.",
+    "sortQuestionAZ": "Question (A-Z)",
+    "sortQuestionZA": "Question (Z-A)",
+    "sortDateNewest": "Date (Plus récent)",
+    "sortDateOldest": "Date (Plus ancien)"
+  },
+  "chat": {
+    "askFollowUp": "Posez une question de suivi..."
+  },
+  "signIn": {
+    "title": "Créer un compte",
+    "subtitle": "Connectez-vous pour partager avec la communauté. C'est super rapide !"
+  },
+  "calendar": {
+    "noRecords": "Aucune entrée",
+    "noRecordsMessage": "Aucun enregistrement de maux de tête pour cette date.",
+    "firstLogPrompt": "Appuyez sur + pour ajouter votre première entrée !",
+    "addLog": "Ajouter une entrée"
+  },
+  "camera": {
+    "loading": "Chargement...",
+    "continue": "Continuer",
+    "permissionTitle": "Permission caméra",
+    "permissionMessage": "Nous avons besoin de votre permission pour afficher la caméra"
+  },
+  "rating": {
+    "howWouldYouRate": "Comment évalueriez-vous notre analyse ?"
+  },
+  "tabs": {
+    "dashboard": "Tableau de bord",
+    "calendar": "Calendrier",
+    "settings": "Paramètres"
+  },
+  "dashboard": {
+    "severity": "Sévérité",
+    "noData": "Pas de maux de tête cette semaine",
+    "totalHeadaches": "Total des maux",
+    "avgSeverity": "Sévérité moy.",
+    "avgDuration": "Durée moy.",
+    "topTrigger": "Déclencheur principal",
+    "noDataTitle": "Aucun mal de tête enregistré",
+    "noDataDescription": "Enregistrez votre premier mal de tête pour voir vos statistiques hebdomadaires",
+    "addLog": "Ajouter un journal"
+  },
+  "navigation": {
+    "back": "Retour",
+    "createPost": "Créer une publication",
+    "reportPost": "Signaler la publication",
+    "account": "Compte",
+    "editProfile": "Modifier le profil",
+    "deleteAccount": "Supprimer le compte",
+    "editLog": "Modifier l'entrée",
+    "community": "Communauté",
+    "history": "Historique",
+    "logHeadache": "Enregistrer mal de tête",
+    "language": "Langue"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Cette page est introuvable."
+  },
+  "imageEdit": {
+    "brightness": "Luminosité",
+    "contrast": "Contraste",
+    "invert": "Inverser",
+    "bw": "N&B"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Exigences photo",
+    "whatToAvoid": "Ce qu'il faut éviter",
+    "bullets": {
+      "ensureBothLines": "Assurez-vous que les zones de contrôle et de test sont visibles en gros plan.",
+      "testStraight": "Le test doit être droit et horizontal.",
+      "clearPhoto": "Utilisez une photo claire et de haute qualité avec un éclairage uniforme.",
+      "simpleBackground": "Gardez un fond simple, idéalement uni.",
+      "avoidBlurry": "Évitez les photos floues ou pas nettes.",
+      "dontCrop": "Ne recadrez pas des parties de la fenêtre du test.",
+      "avoidShadows": "Évitez les ombres fortes ou les reflets sur le test.",
+      "dontAngle": "Ne prenez pas de photos en angle.",
+      "darkPhotos": "Photos sombres sans contraste."
+    },
+    "summary": {
+      "title": "À propos des lignes faibles, d'évaporation et d'indentation",
+      "intro": "Les lignes extrêmement faibles peuvent être difficiles à détecter pour l'IA. Attention aux faux positifs potentiels de :",
+      "evapLines": "Lignes d'évaporation : ",
+      "evapDesc": "Marques faibles et incolores qui apparaissent lorsque le test sèche, généralement après la fenêtre de lecture recommandée.",
+      "indentLines": "Lignes d'indentation : ",
+      "indentDesc": "Marques subtiles du processus de fabrication de la bandelette, qui peuvent être visibles quel que soit le résultat.",
+      "revisitGuide": "Vous pouvez consulter ce guide à tout moment depuis l'icône d'information en bas à droite."
+    },
+    "next": "Suivant"
+  },
+  "videoDemo": {
+    "title": "Scannez et obtenez des résultats instantanément",
+    "subtitle": "Nous avons aidé plus de 10 000 femmes à obtenir leurs résultats"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "content": "Cette application utilise une technologie d'IA qui peut produire des résultats inexacts ou incomplets. Vérifiez toujours les informations importantes auprès de sources fiables et utilisez votre propre jugement pour les décisions basées sur du contenu généré par l'IA."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "C'est une très bonne app que j'utilise tous les jours. Elle est facile à utiliser et j'adore les widgets.",
+      "zlassenp": "Voir un compte à rebours pour mon voyage ou l'anniversaire d'un ami me motive.",
+      "rajgha": "Difficile d'oublier les événements importants. J'aimerais juste avoir des options de police.",
+      "jaynacc": "Je ne pensais pas utiliser cette app autant… mais maintenant je la consulte chaque matin."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Heure du check-in !",
+      "body": "Comment va votre tête ? Enregistrez votre état de maux de tête."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Bienvenue ! 🧠",
+        "body": "Suivez vos maux de tête et identifiez des schémas. Enregistrez votre premier mal de tête aujourd'hui !"
+      },
+      "reminder1": {
+        "title": "Suivez vos maux de tête 📊",
+        "body": "Un suivi régulier aide à trouver vos déclencheurs. Passez à la version supérieure pour un suivi illimité et des analyses détaillées."
+      },
+      "reminder2": {
+        "title": "Analyses Détaillées 🎓",
+        "body": "Rejoignez des milliers de personnes qui ont mis à niveau pour des recommandations personnalisées de schémas de maux de tête."
+      },
+      "reminder3": {
+        "title": "Offre limitée : Tout débloquer 🔓",
+        "body": "Suivi illimité + analyse détaillée. Commencez votre essai gratuit maintenant !"
+      },
+      "reminder4": {
+        "title": "Suivez plus intelligemment 📱",
+        "body": "Les utilisateurs premium obtiennent des analyses détaillées, le suivi des déclencheurs et des entrées illimitées."
+      },
+      "reminder5": {
+        "title": "Votre parcours contre les maux de tête 🌟",
+        "body": "Passez à la version supérieure et prenez le contrôle de vos maux de tête. Essai gratuit disponible !"
+      },
+      "reminder6": {
+        "title": "Dernière chance : Fonctionnalités premium 🚨",
+        "body": "Ne manquez pas le suivi illimité et l'analyse de schémas."
+      },
+      "reminder7": {
+        "title": "Vous nous manquez ! 🧠",
+        "body": "Revenez et continuez votre parcours de suivi des maux de tête. Les fonctionnalités premium vous attendent."
+      },
+      "trialEnds": "Votre essai se termine demain"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Réveillé avec, sensibilité à la lumière",
+      "afterLongMeeting": "A commencé après une longue réunion",
+      "leftWorkEarly": "Ai dû quitter le travail tôt, nausées et aura",
+      "worstThisMonth": "Le pire ce mois-ci, le triptan a aidé après 1h",
+      "rainyDay": "Jour de pluie, probablement dû au changement de pression",
+      "onlySleptFourHours": "N'ai dormi que 4 heures, les deux médicaments étaient nécessaires",
+      "tooMuchCoffee": "Trop de café hier, j'en ai payé le prix aujourd'hui"
+    }
+  }
+}

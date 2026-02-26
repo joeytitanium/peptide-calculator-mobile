@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "error": "Fehler",
+    "ok": "OK",
+    "enabled": "Aktiviert",
+    "disabled": "Deaktiviert"
+  },
+  "settings": {
+    "unlockPro": "Pro freischalten",
+    "unlockProSubtitle": "Vollen Zugang Erhalten",
+    "contactSupport": "Support kontaktieren",
+    "contactSupportSubtitle": "Hilfe, Kommentare oder Vorschläge",
+    "rateApp": "App bewerten",
+    "rateAppSubtitle": "Teile dein Feedback",
+    "shareApp": "App teilen",
+    "shareAppSubtitle": "Erzähle es deinen Freunden",
+    "shareMessage": "Schau dir {{appName}} an!",
+    "appearance": "Erscheinungsbild",
+    "appearanceSubtitle": "Wähle dein Design",
+    "themeSystem": "System",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "privacyPolicySubtitle": "Unsere Datenschutzrichtlinie ansehen",
+    "termsOfService": "Nutzungsbedingungen",
+    "termsOfServiceSubtitle": "Unsere Nutzungsbedingungen ansehen",
+    "account": "Konto",
+    "signedInWithApple": "Mit Apple angemeldet",
+    "resetOnboarding": "Einführung zurücksetzen",
+    "resetOnboardingSubtitle": "Einführungsstatus löschen",
+    "onboardingResetTitle": "Einführung zurückgesetzt",
+    "onboardingResetMessage": "Starte die App neu, um den Einführungsablauf zu sehen.",
+    "version": "Version",
+    "emailPlaceholder": "Bitte hinterlasse deine Nachricht über dieser Zeile",
+    "emailAppName": "App:",
+    "emailAppVersion": "App-Version:",
+    "emailOS": "Betriebssystem:",
+    "emailUserId": "Benutzer-ID:",
+    "checkInReminders": "Check-in-Erinnerungen",
+    "language": "Sprache",
+    "systemDefault": "Systemstandard",
+    "reminderTime": "Erinnerung",
+    "addReminder": "Erinnerung hinzufügen"
+  },
+  "account": {
+    "editProfile": "Profil bearbeiten",
+    "editProfileSubtitle": "Profilbild aktualisieren",
+    "signOut": "Abmelden",
+    "signOutConfirmTitle": "Abmelden",
+    "signOutConfirmMessage": "Bist du sicher, dass du dich abmelden möchtest?",
+    "deleteAccount": "Konto löschen",
+    "deleteAccountSubtitle": "Konto und Daten dauerhaft löschen",
+    "deleteAccountTitle": "Konto löschen",
+    "deleteAccountWarning": "Diese Aktion ist dauerhaft und kann nicht rückgängig gemacht werden. Alle deine Daten, einschließlich Beiträge, Kommentare und Kontoinformationen werden dauerhaft gelöscht.",
+    "deleteAccountConfirmPrompt": "Zur Bestätigung gib \"{{confirmText}}\" unten ein:",
+    "deleteAccountConfirmText": "Konto dauerhaft löschen",
+    "deleteAccountScheduledTitle": "Konto zur Löschung vorgemerkt",
+    "deleteAccountScheduledMessage": "Dein Konto wird innerhalb der nächsten 24 Stunden gelöscht.",
+    "deleteAccountConfirmError": "Bitte gib den Bestätigungstext exakt ein."
+  },
+  "profile": {
+    "tapToChangePhoto": "Tippe, um das Profilbild zu ändern",
+    "username": "Benutzername",
+    "notSet": "Nicht festgelegt",
+    "failedToUpdate": "Profil konnte nicht aktualisiert werden"
+  },
+  "log": {
+    "whenDidItStart": "Wann hat es angefangen?",
+    "dateTime": "Datum & Uhrzeit",
+    "severity": "Schweregrad",
+    "severityScale": "von 10",
+    "severityValue": "Schweregrad: {{value}}/10",
+    "severityLevels": {
+      "mild": "Leicht",
+      "moderate": "Mäßig",
+      "severe": "Schwer"
+    },
+    "headacheType": "Art",
+    "headacheTypes": {
+      "tension": "Spannungskopfschmerz",
+      "migraine": "Migräne",
+      "cluster": "Clusterkopfschmerz",
+      "sinus": "Sinuskopfschmerz",
+      "not-sure": "Nicht sicher"
+    },
+    "location": "Position",
+    "locations": {
+      "front": "Vorne",
+      "back": "Hinten",
+      "left-side": "Linke Seite",
+      "right-side": "Rechte Seite",
+      "top": "Oben",
+      "all-over": "Überall"
+    },
+    "duration": "Dauer",
+    "minutes": "Min",
+    "triggers": "Auslöser",
+    "selectAllThatApply": "Alle zutreffenden auswählen",
+    "triggerOptions": {
+      "stress": "Stress",
+      "lack-of-sleep": "Schlafmangel",
+      "dehydration": "Dehydrierung",
+      "screen-time": "Bildschirmzeit",
+      "weather": "Wetter",
+      "food": "Essen",
+      "alcohol": "Alkohol",
+      "caffeine": "Koffein",
+      "hormones": "Hormone",
+      "exercise": "Sport"
+    },
+    "medications": "Medikamente",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspirin",
+      "triptan": "Triptan",
+      "none": "Keine"
+    },
+    "notes": "Notizen",
+    "optional": "Optional",
+    "upgradeToProNotes": "Upgrade auf PRO, um Notizen hinzuzufügen",
+    "update": "Aktualisieren",
+    "logButton": "Erfassen",
+    "logDetails": "Eintragsdetails",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "deleteLog": "Eintrag löschen",
+    "deleteLogTitle": "Eintrag löschen",
+    "deleteLogMessage": "Bist du sicher, dass du diesen Eintrag löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "scanWithAI": "Mit KI scannen",
+    "analysisFailed": "Foto konnte nicht analysiert werden. Bitte versuche es erneut oder gib die Daten manuell ein.",
+    "noContainerDetected": "Kein Objekt im Foto erkannt. Bitte versuche es mit einem klareren Bild."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Los geht's",
+      "next": "Weiter",
+      "continue": "Fortfahren",
+      "skip": "Überspringen"
+    },
+    "welcome": {
+      "title": "Erfasse deine Kopfschmerzen,\nübernimm die Kontrolle",
+      "subtitle": "Lass uns ein paar kurze Fragen beantworten, um dein Erlebnis zu personalisieren"
+    },
+    "painPoints": {
+      "title": "Schwierigkeiten, deine Kopfschmerzen in den Griff zu bekommen?",
+      "subtitle": "Ohne Muster und Auslöser zu verfolgen, ist es schwer herauszufinden, was hilft. Unsere App macht es einfach zu erfassen, Muster zu erkennen und die Kontrolle zu übernehmen.",
+      "buttonText": "Zeig mir, wie es funktioniert"
+    },
+    "benefits": {
+      "title": "Diese App hilft dir",
+      "benefit1": "Deine Kopfschmerzen mühelos erfassen",
+      "benefit2": "Muster und Auslöser erkennen",
+      "benefit3": "Personalisierte Einblicke erhalten",
+      "benefit4": "Die Kontrolle über deine Gesundheit übernehmen",
+      "buttonText": "Das brauche ich"
+    },
+    "comparison": {
+      "title": "Tracking wirkt",
+      "subtitle": "Menschen, die ihre Kopfschmerzen tracken, berichten von besseren Ergebnissen",
+      "withoutTracking": "Ohne Tracking",
+      "withApp": "Mit dieser App",
+      "buttonText": "Ich möchte die Kontrolle übernehmen"
+    },
+    "personalization": {
+      "title": "Dein Erlebnis wird personalisiert",
+      "subtitle": "Dein Kopfschmerz-Tracker wird eingerichtet...",
+      "steps": {
+        "profile": {
+          "title": "Dein Profil",
+          "description": "Tracking-Einstellungen werden konfiguriert"
+        },
+        "calendar": {
+          "title": "Kalender-Einrichtung",
+          "description": "Dein persönlicher Protokollkalender wird vorbereitet"
+        },
+        "insights": {
+          "title": "Intelligente Einblicke",
+          "description": "Personalisierte Empfehlungen werden trainiert"
+        },
+        "preferences": {
+          "title": "Einstellungen",
+          "description": "Deine Einstellungen werden angewendet"
+        },
+        "ready": {
+          "title": "Fertig!",
+          "description": "Dein Tracker ist einsatzbereit"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Alles bereit!",
+      "subtitle": "Dein personalisierter Tracker ist fertig. Erfasse deine ersten Kopfschmerzen und beginne, Muster zu erkennen!"
+    },
+    "finished": {
+      "title": "Willkommen",
+      "subtitle": "Dein Kopfschmerz-Tracker ist bereit",
+      "numberLabel": "Menschen tracken ihre Kopfschmerzen",
+      "bottomTitle": "Bereit, deine ersten Kopfschmerzen zu erfassen?",
+      "bottomSubtitle": "Beginne heute mit dem Tracking und entdecke deine Muster",
+      "buttonText": "Ja, ich bin bereit!"
+    },
+    "community": {
+      "title": "Gemeinsam lernen",
+      "subtitle": "Verbinde dich mit anderen, teile Tipps und erhalte Hilfe von einer unterstützenden Community",
+      "buttonText": "Toll!"
+    },
+    "notifications": {
+      "title": "Bleib auf dem Laufenden",
+      "subtitle": "Erhalte Benachrichtigungen, wenn Community-Mitglieder deine Beiträge kommentieren oder bewerten",
+      "votesOnResults": "Stimmen für deine Ergebnisse",
+      "repliesToPosts": "Antworten auf deine Beiträge",
+      "turnOn": "Benachrichtigungen aktivieren"
+    },
+    "checkInNotifications": {
+      "title": "Check-in-Erinnerungen aktivieren",
+      "subtitle": "Erlaube Benachrichtigungen für deine persönlichen Erinnerungen",
+      "reason1": "Werde erinnert, Kopfschmerzen zu deinen bevorzugten Zeiten zu erfassen",
+      "reason2": "Entwickle regelmäßige Tracking-Gewohnheiten",
+      "turnOn": "Benachrichtigungen aktivieren"
+    },
+    "sheet": {
+      "welcomeTo": "Willkommen bei"
+    },
+    "question1": {
+      "title": "Wie oft hast du Kopfschmerzen?",
+      "subtitle": "Das hilft uns, dein Tracking-Erlebnis zu personalisieren.",
+      "options": {
+        "daily": "Täglich",
+        "severalPerWeek": "Mehrmals pro Woche",
+        "weekly": "Etwa einmal pro Woche",
+        "fewPerMonth": "Ein paar Mal im Monat",
+        "rarely": "Selten"
+      }
+    },
+    "question2": {
+      "title": "Welche Art von Kopfschmerzen hast du normalerweise?",
+      "subtitle": "Keine Sorge, wenn du dir nicht sicher bist — du kannst es später jederzeit ändern.",
+      "options": {
+        "tension": "Spannungskopfschmerz",
+        "migraine": "Migräne",
+        "cluster": "Clusterkopfschmerz",
+        "sinus": "Sinuskopfschmerz",
+        "notSure": "Nicht sicher"
+      }
+    },
+    "notifications": {
+      "title": "Wann sollen wir dich erinnern?",
+      "subtitle": "Wähle eine Zeit für deinen täglichen Check-in. Du kannst später in den Einstellungen weitere hinzufügen."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Noch keine Beiträge",
+    "beFirstToShare": "Sei der Erste, der mit der Community teilt!",
+    "couldntLoadPosts": "Beiträge konnten nicht geladen werden",
+    "somethingWentWrong": "Etwas ist schiefgelaufen. Bitte überprüfe deine Verbindung und versuche es erneut.",
+    "tryAgain": "Erneut versuchen",
+    "deletePostTitle": "Beitrag löschen",
+    "deletePostMessage": "Bist du sicher, dass du diesen Beitrag löschen möchtest?",
+    "viewAllComments": "Alle {{count}} Kommentare anzeigen"
+  },
+  "post": {
+    "delete": "Löschen",
+    "report": "Melden",
+    "post": "Posten"
+  },
+  "comments": {
+    "title": "Kommentare",
+    "noCommentsYet": "Noch keine Kommentare",
+    "beFirstToComment": "Sei der Erste, der kommentiert!",
+    "loadingComments": "Kommentare werden geladen",
+    "postNotFound": "Beitrag nicht gefunden",
+    "addComment": "Kommentar hinzufügen..."
+  },
+  "createPost": {
+    "post": "Posten",
+    "placeholders": {
+      "shareResults": "Teile deine Ergebnisse...",
+      "shareStory": "Teile deine Geschichte...",
+      "whatsOnMind": "Was beschäftigt dich?",
+      "howFeeling": "Wie fühlst du dich heute?",
+      "writeCaption": "Schreibe eine Bildunterschrift...",
+      "shareCommunity": "Mit der Community teilen...",
+      "tellJourney": "Erzähle uns von deiner Erfahrung...",
+      "shareMoment": "Teile deinen Moment..."
+    }
+  },
+  "reportPost": {
+    "description": "Bitte sag uns, warum du diesen Beitrag meldest. Wir werden ihn prüfen und entsprechende Maßnahmen ergreifen.",
+    "placeholder": "Beschreibe das Problem...",
+    "submit": "Absenden",
+    "successTitle": "Meldung gesendet",
+    "successMessage": "Danke für deine Meldung. Wir werden diesen Beitrag prüfen.",
+    "errorNoReason": "Bitte gib einen Grund für deine Meldung an."
+  },
+  "paywall": {
+    "tryForFree": "Kostenlos testen",
+    "continue": "Fortfahren",
+    "noCommitment": "Keine Verpflichtung, jederzeit kündbar",
+    "freeTrialEnabled": "Kostenlose Testphase aktiviert",
+    "noPurchasesFound": "Keine Käufe gefunden",
+    "tryAgain": "Erneut versuchen",
+    "errorTitle": "Fehler",
+    "errorDescription": "Abonnements konnten nicht geladen werden. Bitte versuche es erneut oder kontaktiere den Support.",
+    "footer": {
+      "terms": "AGB",
+      "restorePurchase": "Kauf wiederherstellen",
+      "privacy": "Datenschutz"
+    },
+    "trial": {
+      "title": "Erhalte unbegrenzten Zugang für {{days}} Tage",
+      "subtitle": "Wir erinnern dich vor Ende deiner Testphase",
+      "today": "Heute",
+      "todaySubtitle": "Schalte vollen Zugang zu deinem Kopfschmerz-Tracker frei.",
+      "inTwoDays": "In 2 Tagen",
+      "inTwoDaysSubtitle": "Wir senden eine Erinnerung vor Ende deiner Testphase.",
+      "inThreeDays": "In 3 Tagen",
+      "inThreeDaysSubtitle": "Dein Abonnement beginnt, sofern du nicht vorher kündigst."
+    },
+    "nonTrial": {
+      "titleHard": "App freischalten, um fortzufahren",
+      "titleSoft": "Vollen Zugang Erhalten",
+      "subtitle": "Dein Kopfschmerz-Tracking-Begleiter"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Schnelles & einfaches Erfassen",
+        "description": "Erfasse Einträge in Sekunden mit unserer optimierten Oberfläche - ohne Aufwand"
+      },
+      "reminders": {
+        "title": "Individuelle Erinnerungen",
+        "description": "Setze persönliche Erinnerungen zum Erfassen und Verfolgen deiner Kopfschmerzen"
+      },
+      "noPaywall": {
+        "title": "Nervige Paywall entfernen",
+        "description": "Keine Paywall-Popups mehr bei jedem Öffnen der App"
+      },
+      "unlimited": {
+        "title": "Unbegrenztes Protokollieren",
+        "description": "Protokolliere so oft du willst - keine monatlichen Limits"
+      },
+      "indieDeveloper": {
+        "title": "Einen Indie-Entwickler unterstützen",
+        "description": "Hilf mit, die Zukunft dieser App zu gestalten und genieße exklusive Funktionen, liebevoll entwickelt von einem Indie-Entwickler."
+      }
+    },
+    "reviews": {
+      "sarah": "Endlich eine App gefunden, die das Erfassen von Kopfschmerzen einfach macht! Die Kalenderansicht ist perfekt, um Muster im Zeitverlauf zu erkennen.",
+      "isaac": "Ich leide seit Jahren unter Migräne. Diese App hat mir geholfen, meine Auslöser zu identifizieren – jetzt kann ich sie tatsächlich verhindern!",
+      "emma": "Mein Neurologe empfahl mir, meine Kopfschmerzen zu dokumentieren und das hat es so einfach gemacht. Toll, echte Daten für Arzttermine zu haben!",
+      "arthur": "Das Auslöser-Tracking ist genial! Ich habe entdeckt, dass Koffein mein Hauptauslöser war. Ein echter Gamechanger für meine Gesundheit!",
+      "zoe": "Superschnell beim Erfassen – dauert nur Sekunden. Ich bin seit 3 Monaten dabei und meine Kopfschmerzen haben sich deutlich reduziert!",
+      "maya": "Als jemand, der mit chronischer Migräne kämpft, gibt es mir Ruhe, alles an einem Ort zu haben. Die täglichen Erinnerungen finde ich auch super!"
+    },
+    "package": {
+      "freeTrial": "KOSTENLOS TESTEN",
+      "perWeek": "/Woche",
+      "perMonth": "/Monat",
+      "perYear": "/Jahr",
+      "once": "einmalig",
+      "percentOff": "{{percent}}% Rabatt",
+      "savePercent": "{{percent}}% SPAREN",
+      "yearly": "jährlich",
+      "weekly": "wöchentlich",
+      "monthly": "monatlich",
+      "then": "dann ",
+      "daysFree": "{{count}} Tage kostenlos",
+      "introSubtitle": "{{count}} Tage kostenlos · dann {{price}}",
+      "weeklyIntroSubtitle": "{{count}} Tage kostenlos · Jederzeit kündbar",
+      "weeklySubtitle": "Automatische Verlängerung · Jederzeit kündbar",
+      "monthlySubtitle": "Automatische Verlängerung · Jederzeit kündbar",
+      "annualSubtitle": "Jährliche Abrechnung · Jederzeit kündbar",
+      "lifetimeSubtitle": "Einmalzahlung",
+      "yearlyTitle": "Jährlich",
+      "monthlyTitle": "Monatlich",
+      "weeklyTitle": "Wöchentlich",
+      "lifetimeTitle": "Lebenslang"
+    },
+    "wreath": {
+      "bestHealthApp": "Beste Kopfschmerz-Tracker-App"
+    },
+    "v2": {
+      "title": "Wähle deinen Plan",
+      "perksIntro": "Mit einem Abo schaltest du folgende Vorteile frei:"
+    }
+  },
+  "setupProfile": {
+    "title": "Richte dein Profil ein",
+    "subtitle": "So wirst du anderen in der Community angezeigt.",
+    "addPhoto": "Profilbild hinzufügen (optional)",
+    "placeholder": "Benutzername",
+    "next": "Weiter",
+    "usernameTaken": "Dieser Benutzername ist bereits vergeben.",
+    "failedToUpdate": "Profil konnte nicht aktualisiert werden",
+    "onlyLettersNumbersUnderscores": "Nur Buchstaben, Zahlen und Unterstriche",
+    "checking": "Wird überprüft...",
+    "usernameIsTaken": "Benutzername ist vergeben",
+    "usernameIsAvailable": "Benutzername ist verfügbar",
+    "usernameMinLength": "Mindestens 3 Zeichen erforderlich",
+    "usernameMaxLength": "Maximal 20 Zeichen",
+    "usernameInstructions": "3-20 Zeichen. Nur Buchstaben, Zahlen und Unterstriche.",
+    "usernameErrorInstructions": "Der Benutzername muss 3-20 Zeichen lang sein und darf nur Buchstaben, Zahlen und Unterstriche enthalten."
+  },
+  "confirm": {
+    "analyze": "Analysieren",
+    "noPhotoToAnalyze": "Kein Foto zum Analysieren",
+    "failedToProcessImage": "Bild konnte nicht verarbeitet werden"
+  },
+  "feedback": {
+    "title": "Teile dein Feedback",
+    "subtitle": "Hilf uns, dein Erlebnis zu verbessern",
+    "tellUs": "Sag uns, was wir verbessern können",
+    "submit": "Absenden",
+    "thankYouTitle": "Danke!",
+    "thankYouMessage": "Dein Feedback hilft uns, die App zu verbessern.",
+    "feedbackRequired": "Feedback erforderlich",
+    "feedbackRequiredMessage": "Bitte gib dein Feedback ein, bevor du absendest."
+  },
+  "history": {
+    "search": "Suchen",
+    "noConversationsYet": "Noch keine Gespräche",
+    "noConversationsMessage": "Deine Hilfesitzungen erscheinen hier, sobald du Fragen stellst.",
+    "deleteTitle": "Löschen",
+    "deleteMessage": "Bist du sicher, dass du das löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "sortQuestionAZ": "Frage (A-Z)",
+    "sortQuestionZA": "Frage (Z-A)",
+    "sortDateNewest": "Datum (Neueste zuerst)",
+    "sortDateOldest": "Datum (Älteste zuerst)"
+  },
+  "chat": {
+    "askFollowUp": "Stelle eine Folgefrage..."
+  },
+  "signIn": {
+    "title": "Konto erstellen",
+    "subtitle": "Melde dich an, um mit der Community zu teilen. Es geht super schnell!"
+  },
+  "calendar": {
+    "noRecords": "Keine Einträge",
+    "noRecordsMessage": "Keine Kopfschmerz-Einträge für dieses Datum.",
+    "firstLogPrompt": "Tippe auf +, um deinen ersten Eintrag zu erstellen!",
+    "addLog": "Eintrag hinzufügen"
+  },
+  "camera": {
+    "loading": "Wird geladen...",
+    "continue": "Fortfahren",
+    "permissionTitle": "Kameraberechtigung",
+    "permissionMessage": "Wir benötigen deine Erlaubnis, um die Kamera zu verwenden"
+  },
+  "rating": {
+    "howWouldYouRate": "Wie würdest du unsere Analyse bewerten?"
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "calendar": "Kalender",
+    "settings": "Einstellungen"
+  },
+  "dashboard": {
+    "severity": "Schweregrad",
+    "noData": "Keine Kopfschmerzen diese Woche",
+    "totalHeadaches": "Kopfschmerzen gesamt",
+    "avgSeverity": "Ø Schweregrad",
+    "avgDuration": "Ø Dauer",
+    "topTrigger": "Häufigster Auslöser",
+    "noDataTitle": "Noch keine Kopfschmerzen erfasst",
+    "noDataDescription": "Erfasse deinen ersten Kopfschmerz, um deine wöchentlichen Einblicke zu sehen",
+    "addLog": "Eintrag hinzufügen"
+  },
+  "navigation": {
+    "back": "Zurück",
+    "createPost": "Beitrag erstellen",
+    "reportPost": "Beitrag melden",
+    "account": "Konto",
+    "editProfile": "Profil bearbeiten",
+    "deleteAccount": "Konto löschen",
+    "editLog": "Eintrag bearbeiten",
+    "community": "Community",
+    "history": "Verlauf",
+    "logHeadache": "Kopfschmerz erfassen",
+    "language": "Sprache"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Diese Seite konnte nicht gefunden werden."
+  },
+  "imageEdit": {
+    "brightness": "Helligkeit",
+    "contrast": "Kontrast",
+    "invert": "Invertieren",
+    "bw": "S&W"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Fotoanforderungen",
+    "whatToAvoid": "Was zu vermeiden ist",
+    "bullets": {
+      "ensureBothLines": "Stelle sicher, dass sowohl Kontroll- als auch Testlinienbereiche nah und sichtbar sind.",
+      "testStraight": "Der Test sollte gerade und horizontal sein.",
+      "clearPhoto": "Verwende ein klares, hochwertiges Foto mit gleichmäßiger Beleuchtung.",
+      "simpleBackground": "Halte den Hintergrund einfach, idealerweise einfarbig.",
+      "avoidBlurry": "Vermeide unscharfe oder verschwommene Fotos.",
+      "dontCrop": "Schneide keine Teile des Testfensters ab.",
+      "avoidShadows": "Vermeide starke Schatten oder Blendung auf dem Test.",
+      "dontAngle": "Fotografiere nicht schräg.",
+      "darkPhotos": "Dunkle Fotos ohne Kontrast."
+    },
+    "summary": {
+      "title": "Über schwache Linien, Verdunstungs- und Eindrucklinien",
+      "intro": "Extrem schwache Linien können für die KI schwer zu erkennen sein. Achte auf mögliche Fehlalarme durch:",
+      "evapLines": "Verdunstungslinien: ",
+      "evapDesc": "Schwache, farblose Markierungen, die beim Trocknen des Tests erscheinen, typischerweise nach dem empfohlenen Ablesezeitraum.",
+      "indentLines": "Eindrucklinien: ",
+      "indentDesc": "Feine Markierungen aus dem Herstellungsprozess des Teststreifens, die unabhängig vom Ergebnis sichtbar sein können.",
+      "revisitGuide": "Du kannst diese Anleitung jederzeit über das Info-Symbol unten rechts erneut aufrufen."
+    },
+    "next": "Weiter"
+  },
+  "videoDemo": {
+    "title": "Scannen & sofort Ergebnisse erhalten",
+    "subtitle": "Wir haben über 10.000 Frauen geholfen, ihre Ergebnisse zu erhalten"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "content": "Diese Anwendung verwendet KI-Technologie, die ungenaue oder unvollständige Ergebnisse liefern kann. Überprüfe wichtige Informationen immer aus maßgeblichen Quellen und nutze dein eigenes Urteilsvermögen bei Entscheidungen basierend auf KI-generierten Inhalten."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Das ist eine sehr gute App, die ich täglich nutze. Sie ist so einfach zu bedienen und ich liebe die Widgets.",
+      "zlassenp": "Einen Countdown zu meiner Reise oder dem Geburtstag eines Freundes zu sehen, begeistert mich.",
+      "rajgha": "Macht es schwer, wichtige Events zu vergessen. Wünschte nur, es gäbe Schriftoptionen.",
+      "jaynacc": "Dachte nicht, dass ich diese App viel nutzen würde… aber jetzt schaue ich jeden Morgen rein."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Zeit zum Einchecken!",
+      "body": "Wie fühlt sich dein Kopf an? Erfasse deinen Kopfschmerz-Status."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Willkommen! 🧠",
+        "body": "Tracke deine Kopfschmerzen und erkenne Muster. Erfasse heute deinen ersten Eintrag!"
+      },
+      "reminder1": {
+        "title": "Tracke deine Kopfschmerzen 📊",
+        "body": "Regelmäßiges Erfassen hilft, Auslöser zu finden. Upgrade für unbegrenztes Tracking und detaillierte Einblicke."
+      },
+      "reminder2": {
+        "title": "Detaillierte Einblicke 🎓",
+        "body": "Schließe dich Tausenden an, die für personalisierte Kopfschmerz-Muster-Empfehlungen upgegradet haben."
+      },
+      "reminder3": {
+        "title": "Zeitlich begrenzt: Alles freischalten 🔓",
+        "body": "Unbegrenztes Tracking + detaillierte Analyse erhalten. Starte jetzt deine kostenlose Testphase!"
+      },
+      "reminder4": {
+        "title": "Smarter tracken 📱",
+        "body": "Premium-Nutzer erhalten detaillierte Einblicke, Auslöser-Tracking und unbegrenzte Einträge."
+      },
+      "reminder5": {
+        "title": "Deine Kopfschmerz-Reise 🌟",
+        "body": "Jetzt upgraden und die Kontrolle über deine Kopfschmerzen übernehmen. Kostenlose Testphase verfügbar!"
+      },
+      "reminder6": {
+        "title": "Letzte Chance: Premium-Funktionen 🚨",
+        "body": "Verpasse nicht unbegrenztes Tracking und Musteranalyse."
+      },
+      "reminder7": {
+        "title": "Wir vermissen dich! 🧠",
+        "body": "Komm zurück und setze deine Kopfschmerz-Tracking-Reise fort. Premium-Funktionen warten auf dich."
+      },
+      "trialEnds": "Deine Testphase endet morgen"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Damit aufgewacht, Lichtempfindlichkeit",
+      "afterLongMeeting": "Begann nach langem Meeting",
+      "leftWorkEarly": "Musste früher von der Arbeit gehen, Übelkeit und Aura",
+      "worstThisMonth": "Schlimmster diesen Monat, Triptan half nach 1 Std.",
+      "rainyDay": "Regentag, wahrscheinlich Druckveränderung",
+      "onlySleptFourHours": "Nur 4 Stunden geschlafen, brauchte beide Medikamente",
+      "tooMuchCoffee": "Gestern zu viel Kaffee, heute dafür bezahlt"
+    }
+  }
+}

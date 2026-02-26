@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "error": "Error",
+    "ok": "OK",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "settings": {
+    "unlockPro": "Unlock Pro",
+    "unlockProSubtitle": "Get Full Access",
+    "contactSupport": "Contact support",
+    "contactSupportSubtitle": "Help, comments, or suggestions",
+    "rateApp": "Rate app",
+    "rateAppSubtitle": "Share your feedback",
+    "shareApp": "Share app",
+    "shareAppSubtitle": "Tell your friends",
+    "shareMessage": "Check out {{appName}}!",
+    "appearance": "Appearance",
+    "appearanceSubtitle": "Choose your theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "privacyPolicy": "Privacy policy",
+    "privacyPolicySubtitle": "View our privacy policy",
+    "termsOfService": "Terms of service",
+    "termsOfServiceSubtitle": "View our terms of service",
+    "account": "Account",
+    "signedInWithApple": "Signed in with Apple",
+    "resetOnboarding": "Reset onboarding",
+    "resetOnboardingSubtitle": "Clear onboarding state",
+    "onboardingResetTitle": "Onboarding Reset",
+    "onboardingResetMessage": "Restart the app to see the onboarding flow.",
+    "version": "Version",
+    "emailPlaceholder": "Please leave your message above this line",
+    "emailAppName": "App:",
+    "emailAppVersion": "App Version:",
+    "emailOS": "OS:",
+    "emailUserId": "User ID:",
+    "checkInReminders": "Check-in reminders",
+    "reminderTime": "Reminder",
+    "addReminder": "Add reminder",
+    "language": "Language",
+    "systemDefault": "System Default"
+  },
+  "account": {
+    "editProfile": "Edit profile",
+    "editProfileSubtitle": "Update your profile photo",
+    "signOut": "Sign out",
+    "signOutConfirmTitle": "Sign Out",
+    "signOutConfirmMessage": "Are you sure you want to sign out?",
+    "deleteAccount": "Delete account",
+    "deleteAccountSubtitle": "Permanently delete your account and data",
+    "deleteAccountTitle": "Delete Account",
+    "deleteAccountWarning": "This action is permanent and cannot be undone. All your data, including your posts, comments, and account information will be permanently deleted.",
+    "deleteAccountConfirmPrompt": "To confirm, type \"{{confirmText}}\" below:",
+    "deleteAccountConfirmText": "permanently delete account",
+    "deleteAccountScheduledTitle": "Account Scheduled for Deletion",
+    "deleteAccountScheduledMessage": "Your account will be deleted within the next 24 hours.",
+    "deleteAccountConfirmError": "Please type the confirmation text exactly."
+  },
+  "profile": {
+    "tapToChangePhoto": "Tap to change profile photo",
+    "username": "Username",
+    "notSet": "Not set",
+    "failedToUpdate": "Failed to update profile"
+  },
+  "log": {
+    "whenDidItStart": "When did it start?",
+    "dateTime": "Date & Time",
+    "severity": "Severity",
+    "severityScale": "out of 10",
+    "severityValue": "Severity: {{value}}/10",
+    "severityLevels": {
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe"
+    },
+    "headacheType": "Type",
+    "headacheTypes": {
+      "tension": "Tension",
+      "migraine": "Migraine",
+      "cluster": "Cluster",
+      "sinus": "Sinus",
+      "not-sure": "Not sure"
+    },
+    "location": "Location",
+    "locations": {
+      "front": "Front",
+      "back": "Back",
+      "left-side": "Left side",
+      "right-side": "Right side",
+      "top": "Top",
+      "all-over": "All over"
+    },
+    "duration": "Duration",
+    "minutes": "min",
+    "triggers": "Triggers",
+    "selectAllThatApply": "Select all that apply",
+    "triggerOptions": {
+      "stress": "Stress",
+      "lack-of-sleep": "Lack of sleep",
+      "dehydration": "Dehydration",
+      "screen-time": "Screen time",
+      "weather": "Weather",
+      "food": "Food",
+      "alcohol": "Alcohol",
+      "caffeine": "Caffeine",
+      "hormones": "Hormones",
+      "exercise": "Exercise"
+    },
+    "medications": "Medications",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Acetaminophen",
+      "aspirin": "Aspirin",
+      "triptan": "Triptan",
+      "none": "None"
+    },
+    "notes": "Notes",
+    "optional": "Optional",
+    "upgradeToProNotes": "Upgrade to PRO to add notes",
+    "update": "Update",
+    "logButton": "Log",
+    "logDetails": "Log Details",
+    "date": "Date",
+    "time": "Time",
+    "deleteLog": "Delete log",
+    "deleteLogTitle": "Delete Log",
+    "deleteLogMessage": "Are you sure you want to delete this log? This action cannot be undone.",
+    "scanWithAI": "Scan with AI",
+    "analysisFailed": "Could not analyze the photo. Please try again or enter manually.",
+    "noContainerDetected": "No water container was detected in the photo. Please try again with a clearer image."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Get Started",
+      "next": "Next",
+      "continue": "Continue",
+      "skip": "Skip"
+    },
+    "welcome": {
+      "title": "Track your headaches,\ntake control",
+      "subtitle": "Let's answer a few quick questions to personalize your experience"
+    },
+    "painPoints": {
+      "title": "Struggling to manage your headaches?",
+      "subtitle": "Without tracking patterns and triggers, it's hard to find what helps. Our app makes it easy to log, identify patterns, and take control.",
+      "buttonText": "Show me how it works"
+    },
+    "benefits": {
+      "title": "This app helps you",
+      "benefit1": "Track your headaches effortlessly",
+      "benefit2": "Identify patterns and triggers",
+      "benefit3": "Get personalized insights",
+      "benefit4": "Take control of your health",
+      "buttonText": "This is what I need"
+    },
+    "comparison": {
+      "title": "Tracking works",
+      "subtitle": "People who track their headaches report better outcomes",
+      "withoutTracking": "Without tracking",
+      "withApp": "With this app",
+      "buttonText": "I want to take control"
+    },
+    "personalization": {
+      "title": "Personalizing Your Experience",
+      "subtitle": "Setting up your headache tracker...",
+      "steps": {
+        "profile": {
+          "title": "Your Profile",
+          "description": "Setting up your tracking preferences"
+        },
+        "calendar": {
+          "title": "Calendar Setup",
+          "description": "Preparing your personal log calendar"
+        },
+        "insights": {
+          "title": "Smart Insights",
+          "description": "Training personalized recommendations"
+        },
+        "preferences": {
+          "title": "Preferences",
+          "description": "Applying your settings"
+        },
+        "ready": {
+          "title": "Ready!",
+          "description": "Your tracker is ready to go"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "You're all set!",
+      "subtitle": "Your personalized tracker is ready. Log your first headache and start identifying patterns!"
+    },
+    "finished": {
+      "title": "Welcome",
+      "subtitle": "Your headache tracker is ready",
+      "numberLabel": "people tracking their headaches",
+      "bottomTitle": "Ready to log your first headache?",
+      "bottomSubtitle": "Start tracking today and discover your patterns",
+      "buttonText": "Yes, I'm ready!"
+    },
+    "community": {
+      "title": "Learn together",
+      "subtitle": "Connect with fellow students, share study tips, and get help from a supportive learning community",
+      "buttonText": "Love this!"
+    },
+    "notifications": {
+      "title": "Stay in the loop",
+      "subtitle": "Get notified when community members comment or vote on your posts",
+      "votesOnResults": "Votes on your test results",
+      "repliesToPosts": "Replies to your posts",
+      "turnOn": "Turn on notifications"
+    },
+    "checkInNotifications": {
+      "title": "Enable Check-in Reminders",
+      "subtitle": "Allow notifications to receive your personalized reminders",
+      "reason1": "Get reminded to log headaches at your preferred times",
+      "reason2": "Build consistent tracking habits",
+      "turnOn": "Turn on notifications"
+    },
+    "sheet": {
+      "welcomeTo": "Welcome to"
+    },
+    "question1": {
+      "title": "How often do you experience headaches?",
+      "subtitle": "This helps us personalize your tracking experience.",
+      "options": {
+        "daily": "Daily",
+        "severalPerWeek": "Several times a week",
+        "weekly": "About once a week",
+        "fewPerMonth": "A few times a month",
+        "rarely": "Rarely"
+      }
+    },
+    "question2": {
+      "title": "What type of headaches do you typically get?",
+      "subtitle": "Don't worry if you're not sure — you can always change this later.",
+      "options": {
+        "tension": "Tension headache",
+        "migraine": "Migraine",
+        "cluster": "Cluster headache",
+        "sinus": "Sinus headache",
+        "notSure": "Not sure"
+      }
+    },
+    "notifications": {
+      "title": "When should we remind you?",
+      "subtitle": "Pick a time for your daily check-in. You can add more later in settings."
+    }
+  },
+  "feed": {
+    "noPostsYet": "No posts yet",
+    "beFirstToShare": "Be the first to share with the community!",
+    "couldntLoadPosts": "Couldn't load posts",
+    "somethingWentWrong": "Something went wrong. Please check your connection and try again.",
+    "tryAgain": "Try Again",
+    "deletePostTitle": "Delete Post",
+    "deletePostMessage": "Are you sure you want to delete this post?",
+    "viewAllComments": "View all {{count}} comments"
+  },
+  "post": {
+    "delete": "Delete",
+    "report": "Report",
+    "post": "Post"
+  },
+  "comments": {
+    "title": "Comments",
+    "noCommentsYet": "No comments yet",
+    "beFirstToComment": "Be the first to comment!",
+    "loadingComments": "Loading comments",
+    "postNotFound": "Post not found",
+    "addComment": "Add a comment..."
+  },
+  "createPost": {
+    "post": "Post",
+    "placeholders": {
+      "shareResults": "Share your results...",
+      "shareStory": "Share your story...",
+      "whatsOnMind": "What's on your mind?",
+      "howFeeling": "How are you feeling today?",
+      "writeCaption": "Write a caption...",
+      "shareCommunity": "Share with the community...",
+      "tellJourney": "Tell us about your journey...",
+      "shareMoment": "Share your moment..."
+    }
+  },
+  "reportPost": {
+    "description": "Please tell us why you're reporting this post. We'll review it and take appropriate action.",
+    "placeholder": "Describe the issue...",
+    "submit": "Submit",
+    "successTitle": "Report Submitted",
+    "successMessage": "Thank you for your report. We will review this post.",
+    "errorNoReason": "Please provide a reason for your report."
+  },
+  "paywall": {
+    "tryForFree": "Try for free",
+    "continue": "Continue",
+    "noCommitment": "No commitment, cancel anytime",
+    "freeTrialEnabled": "Free trial enabled",
+    "noPurchasesFound": "No purchases found",
+    "tryAgain": "Try Again",
+    "errorTitle": "Error",
+    "errorDescription": "Unable to load subscriptions. Please try again or contact support if the issue persists.",
+    "footer": {
+      "terms": "Terms",
+      "restorePurchase": "Restore Purchase",
+      "privacy": "Privacy"
+    },
+    "trial": {
+      "title": "Get Unlimited access for {{days}} days",
+      "subtitle": "We'll remind you before your trial ends",
+      "today": "Today",
+      "todaySubtitle": "Unlock full access to your headache tracker.",
+      "inTwoDays": "In 2 Days",
+      "inTwoDaysSubtitle": "We'll send a reminder before your trial ends.",
+      "inThreeDays": "In 3 Days",
+      "inThreeDaysSubtitle": "Your subscription will begin unless you cancel before."
+    },
+    "nonTrial": {
+      "titleHard": "Unlock the app to continue",
+      "titleSoft": "Get Full Access",
+      "subtitle": "Your headache tracking companion"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Quick & Easy Logging",
+        "description": "Log entries in seconds with our streamlined interface - no hassle"
+      },
+      "reminders": {
+        "title": "Custom Reminders",
+        "description": "Set personalized reminders to log and track your headaches"
+      },
+      "noPaywall": {
+        "title": "Remove Annoying Paywall",
+        "description": "No more paywall popups every time you open the app"
+      },
+      "unlimited": {
+        "title": "Unlimited Logging",
+        "description": "Log as many times as you need - no monthly limits"
+      },
+      "indieDeveloper": {
+        "title": "Support an Indie Developer",
+        "description": "Help shape this app's future and enjoy exclusive features crafted with care by an indie developer."
+      }
+    },
+    "reviews": {
+      "sarah": "Finally found an app that makes tracking headaches easy! The calendar view is perfect for spotting patterns over time.",
+      "isaac": "I've had migraines for years. This app helped me identify my triggers — now I can actually prevent them!",
+      "emma": "My neurologist recommended I track my headaches and this made it so simple. Love having real data for my appointments!",
+      "arthur": "The trigger tracking is brilliant! I discovered caffeine was my main culprit. Such a game changer for my health!",
+      "zoe": "Super quick to log - takes just seconds. I've been consistent for 3 months and my headaches have reduced significantly!",
+      "maya": "As someone who struggles with chronic migraines, having everything in one place gives me peace of mind. Love the daily reminders!"
+    },
+    "package": {
+      "freeTrial": "FREE TRIAL",
+      "perWeek": "/week",
+      "perMonth": "/month",
+      "perYear": "/year",
+      "once": "once",
+      "percentOff": "{{percent}}% off",
+      "savePercent": "SAVE {{percent}}%",
+      "yearly": "yearly",
+      "weekly": "weekly",
+      "monthly": "monthly",
+      "then": "then ",
+      "daysFree": "{{count}} days Free",
+      "introSubtitle": "{{count}} days free · then {{price}}",
+      "weeklyIntroSubtitle": "{{count}} days free · Cancel anytime",
+      "weeklySubtitle": "Auto renew · Cancel anytime",
+      "monthlySubtitle": "Auto renew · Cancel anytime",
+      "annualSubtitle": "Billed yearly · Cancel anytime",
+      "lifetimeSubtitle": "One Time Payment",
+      "yearlyTitle": "Yearly",
+      "monthlyTitle": "Monthly",
+      "weeklyTitle": "Weekly",
+      "lifetimeTitle": "Lifetime"
+    },
+    "wreath": {
+      "bestHealthApp": "Best Headache Tracker App"
+    },
+    "v2": {
+      "title": "Choose your plan",
+      "perksIntro": "By subscribing you'll unlock the following perks:"
+    }
+  },
+  "setupProfile": {
+    "title": "Set up your profile",
+    "subtitle": "This is how you'll appear to others in the community.",
+    "addPhoto": "Add a profile photo (optional)",
+    "placeholder": "username",
+    "next": "Next",
+    "usernameTaken": "This username is already taken.",
+    "failedToUpdate": "Failed to update profile",
+    "onlyLettersNumbersUnderscores": "Only letters, numbers, and underscores",
+    "checking": "Checking...",
+    "usernameIsTaken": "Username is taken",
+    "usernameIsAvailable": "Username is available",
+    "usernameMinLength": "Must be at least 3 characters",
+    "usernameMaxLength": "Must be less than 20 characters",
+    "usernameInstructions": "3-20 characters. Letters, numbers, and underscores only.",
+    "usernameErrorInstructions": "Username must be 3-20 characters long and contain only letters, numbers, and underscores."
+  },
+  "confirm": {
+    "analyze": "Analyze",
+    "noPhotoToAnalyze": "No photo to analyze",
+    "failedToProcessImage": "Failed to process image"
+  },
+  "feedback": {
+    "title": "Share Your Feedback",
+    "subtitle": "Help us improve your experience",
+    "tellUs": "Tell us what we can improve",
+    "submit": "Submit",
+    "thankYouTitle": "Thank you!",
+    "thankYouMessage": "Your feedback helps us improve the app.",
+    "feedbackRequired": "Feedback Required",
+    "feedbackRequiredMessage": "Please enter your feedback before submitting."
+  },
+  "history": {
+    "search": "Search",
+    "noConversationsYet": "No conversations yet",
+    "noConversationsMessage": "Your homework help sessions will appear here once you start asking questions.",
+    "deleteTitle": "Delete",
+    "deleteMessage": "Are you sure you want to delete this? This action cannot be undone.",
+    "sortQuestionAZ": "Question (A-Z)",
+    "sortQuestionZA": "Question (Z-A)",
+    "sortDateNewest": "Date (Newest First)",
+    "sortDateOldest": "Date (Oldest First)"
+  },
+  "chat": {
+    "askFollowUp": "Ask a follow-up question..."
+  },
+  "signIn": {
+    "title": "Create an account",
+    "subtitle": "Sign in to share with the community. It's super quick!"
+  },
+  "calendar": {
+    "noRecords": "No records",
+    "noRecordsMessage": "No headache records for this date.",
+    "firstLogPrompt": "Tap + to add your first log!",
+    "addLog": "Add Log"
+  },
+  "camera": {
+    "loading": "Loading...",
+    "continue": "Continue",
+    "permissionTitle": "Camera permission",
+    "permissionMessage": "We need your permission to show the camera"
+  },
+  "rating": {
+    "howWouldYouRate": "How would you rate our analysis?"
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "calendar": "Calendar",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "severity": "Severity",
+    "noData": "No headaches this week",
+    "totalHeadaches": "Total Headaches",
+    "avgSeverity": "Average Severity",
+    "avgDuration": "Average Duration",
+    "topTrigger": "Top Trigger",
+    "noDataTitle": "No headaches logged yet",
+    "noDataDescription": "Log your first headache to start seeing your weekly insights",
+    "addLog": "Add Log"
+  },
+  "navigation": {
+    "back": "Back",
+    "createPost": "Create Post",
+    "reportPost": "Report Post",
+    "account": "Account",
+    "editProfile": "Edit Profile",
+    "deleteAccount": "Delete Account",
+    "editLog": "Edit Log",
+    "logHeadache": "Log Headache",
+    "community": "Community",
+    "history": "History",
+    "language": "Language"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "This page could not be found."
+  },
+  "imageEdit": {
+    "brightness": "Brightness",
+    "contrast": "Contrast",
+    "invert": "Invert",
+    "bw": "B&W"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Photo Requirements",
+    "whatToAvoid": "What to Avoid",
+    "bullets": {
+      "ensureBothLines": "Ensure both control and test line areas are close up and visible.",
+      "testStraight": "The test should be straight and horizontal.",
+      "clearPhoto": "Use a clear, high-quality photo with even lighting.",
+      "simpleBackground": "Keep the background simple, ideally a solid color.",
+      "avoidBlurry": "Avoid blurry or out-of-focus photos.",
+      "dontCrop": "Don't crop out parts of the test window.",
+      "avoidShadows": "Avoid harsh shadows or glare on the test.",
+      "dontAngle": "Don't take photos at an angle.",
+      "darkPhotos": "Dark photos with no contrast."
+    },
+    "summary": {
+      "title": "About Faint Lines, Evaps & Indents",
+      "intro": "Extremely faint lines can be difficult for AI to detect. Be mindful of potential false positives from:",
+      "evapLines": "Evaporation Lines: ",
+      "evapDesc": "Faint, colorless marks that appear as the test dries, typically after the recommended reading window.",
+      "indentLines": "Indent Lines: ",
+      "indentDesc": "Subtle marks from the test strip manufacturing process, which may be visible regardless of result.",
+      "revisitGuide": "You can revisit this guide anytime from the info icon in the bottom right."
+    },
+    "next": "Next"
+  },
+  "videoDemo": {
+    "title": "Scan & get results instantly",
+    "subtitle": "We've helped over 10,000 women get their results"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "This application uses AI technology which may produce inaccurate or incomplete results. Always verify important information from authoritative sources and use your own judgment when making decisions based on AI-generated content."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "This is a very good app that I use every day. It's so easy to use and I love the widgets.",
+      "zlassenp": "Seeing a countdown to my trip or friend's birthday gets me hyped.",
+      "rajgha": "Makes it hard to forget big events. Only wish there were font options.",
+      "jaynacc": "Didn't think I'd use this app much… but now I check it every morning."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Time to check in!",
+      "body": "How is your head feeling? Log your headache status."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Welcome! 🧠",
+        "body": "Track your headaches and identify patterns. Log your first headache today!"
+      },
+      "reminder1": {
+        "title": "Track Your Headaches 📊",
+        "body": "Consistent logging helps you find your triggers. Upgrade for unlimited tracking and detailed insights."
+      },
+      "reminder2": {
+        "title": "Premium Insights 🎓",
+        "body": "Join thousands who upgraded for personalized headache pattern recommendations."
+      },
+      "reminder3": {
+        "title": "Limited Time: Unlock Everything 🔓",
+        "body": "Get unlimited logging + pattern analysis. Start your free trial now!"
+      },
+      "reminder4": {
+        "title": "Track Smarter 📱",
+        "body": "Premium users get detailed insights, trigger tracking, and unlimited logs."
+      },
+      "reminder5": {
+        "title": "Your Headache Journey 🌟",
+        "body": "Upgrade now and take control of your headaches. Free trial available!"
+      },
+      "reminder6": {
+        "title": "Last Chance: Premium Features 🚨",
+        "body": "Don't miss out on unlimited tracking and pattern analysis."
+      },
+      "reminder7": {
+        "title": "We Miss You! 🧠",
+        "body": "Come back and continue your headache tracking journey. Premium features are waiting for you."
+      },
+      "trialEnds": "Your trial ends tomorrow"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Woke up with it, light sensitivity",
+      "afterLongMeeting": "Started after long meeting",
+      "leftWorkEarly": "Had to leave work early, nausea and aura",
+      "worstThisMonth": "Worst one this month, triptan helped after 1h",
+      "rainyDay": "Rainy day, pressure change likely the cause",
+      "onlySleptFourHours": "Only slept 4 hours, needed both meds to manage",
+      "tooMuchCoffee": "Too much coffee yesterday, paid for it today"
+    }
+  }
+}

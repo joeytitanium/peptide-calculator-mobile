@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "error": "Błąd",
+    "ok": "OK",
+    "enabled": "Włączone",
+    "disabled": "Wyłączone"
+  },
+  "settings": {
+    "unlockPro": "Odblokuj Pro",
+    "unlockProSubtitle": "Uzyskaj Pełny Dostęp",
+    "contactSupport": "Skontaktuj się z pomocą",
+    "contactSupportSubtitle": "Pomoc, uwagi lub sugestie",
+    "rateApp": "Oceń aplikację",
+    "rateAppSubtitle": "Podziel się opinią",
+    "shareApp": "Udostępnij aplikację",
+    "shareAppSubtitle": "Powiedz znajomym",
+    "shareMessage": "Sprawdź {{appName}}!",
+    "appearance": "Wygląd",
+    "appearanceSubtitle": "Wybierz motyw",
+    "themeSystem": "Systemowy",
+    "themeLight": "Jasny",
+    "themeDark": "Ciemny",
+    "privacyPolicy": "Polityka prywatności",
+    "privacyPolicySubtitle": "Zobacz naszą politykę prywatności",
+    "termsOfService": "Regulamin",
+    "termsOfServiceSubtitle": "Zobacz nasz regulamin",
+    "account": "Konto",
+    "signedInWithApple": "Zalogowano przez Apple",
+    "resetOnboarding": "Resetuj wprowadzenie",
+    "resetOnboardingSubtitle": "Wyczyść stan wprowadzenia",
+    "onboardingResetTitle": "Wprowadzenie zresetowane",
+    "onboardingResetMessage": "Uruchom ponownie aplikację, aby zobaczyć wprowadzenie.",
+    "version": "Wersja",
+    "emailPlaceholder": "Zostaw wiadomość powyżej tej linii",
+    "emailAppName": "Aplikacja:",
+    "emailAppVersion": "Wersja aplikacji:",
+    "emailOS": "System:",
+    "emailUserId": "ID użytkownika:",
+    "checkInReminders": "Przypomnienia o rejestracji",
+    "language": "Język",
+    "systemDefault": "Domyślny systemu",
+    "reminderTime": "Przypomnienie",
+    "addReminder": "Dodaj przypomnienie"
+  },
+  "account": {
+    "editProfile": "Edytuj profil",
+    "editProfileSubtitle": "Zaktualizuj zdjęcie profilowe",
+    "signOut": "Wyloguj się",
+    "signOutConfirmTitle": "Wylogowanie",
+    "signOutConfirmMessage": "Czy na pewno chcesz się wylogować?",
+    "deleteAccount": "Usuń konto",
+    "deleteAccountSubtitle": "Trwale usuń swoje konto i dane",
+    "deleteAccountTitle": "Usuń konto",
+    "deleteAccountWarning": "Ta czynność jest trwała i nie można jej cofnąć. Wszystkie Twoje dane, w tym posty, komentarze i informacje o koncie zostaną trwale usunięte.",
+    "deleteAccountConfirmPrompt": "Aby potwierdzić, wpisz \"{{confirmText}}\" poniżej:",
+    "deleteAccountConfirmText": "trwale usuń konto",
+    "deleteAccountScheduledTitle": "Konto zaplanowane do usunięcia",
+    "deleteAccountScheduledMessage": "Twoje konto zostanie usunięte w ciągu 24 godzin.",
+    "deleteAccountConfirmError": "Wpisz tekst potwierdzenia dokładnie."
+  },
+  "profile": {
+    "tapToChangePhoto": "Dotknij, aby zmienić zdjęcie profilowe",
+    "username": "Nazwa użytkownika",
+    "notSet": "Nie ustawiono",
+    "failedToUpdate": "Nie udało się zaktualizować profilu"
+  },
+  "log": {
+    "whenDidItStart": "Kiedy zaczął się ból?",
+    "dateTime": "Data i czas",
+    "severity": "Nasilenie",
+    "severityScale": "na 10",
+    "severityValue": "Nasilenie: {{value}}/10",
+    "severityLevels": {
+      "mild": "Łagodny",
+      "moderate": "Umiarkowany",
+      "severe": "Silny"
+    },
+    "headacheType": "Typ",
+    "headacheTypes": {
+      "tension": "Napięciowy",
+      "migraine": "Migrena",
+      "cluster": "Klasterowy",
+      "sinus": "Zatokowy",
+      "not-sure": "Nie wiem"
+    },
+    "location": "Lokalizacja",
+    "locations": {
+      "front": "Przód",
+      "back": "Tył",
+      "left-side": "Lewa strona",
+      "right-side": "Prawa strona",
+      "top": "Czubek głowy",
+      "all-over": "Cała głowa"
+    },
+    "duration": "Czas trwania",
+    "minutes": "min",
+    "triggers": "Wyzwalacze",
+    "selectAllThatApply": "Wybierz wszystkie pasujące",
+    "triggerOptions": {
+      "stress": "Stres",
+      "lack-of-sleep": "Brak snu",
+      "dehydration": "Odwodnienie",
+      "screen-time": "Czas przed ekranem",
+      "weather": "Pogoda",
+      "food": "Jedzenie",
+      "alcohol": "Alkohol",
+      "caffeine": "Kofeina",
+      "hormones": "Hormony",
+      "exercise": "Ćwiczenia"
+    },
+    "medications": "Leki",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspiryna",
+      "triptan": "Tryptan",
+      "none": "Brak"
+    },
+    "notes": "Notatki",
+    "optional": "Opcjonalne",
+    "upgradeToProNotes": "Ulepsz do PRO, aby dodać notatki",
+    "update": "Aktualizuj",
+    "logButton": "Zapisz",
+    "logDetails": "Szczegóły wpisu",
+    "date": "Data",
+    "time": "Czas",
+    "deleteLog": "Usuń wpis",
+    "deleteLogTitle": "Usuń wpis",
+    "deleteLogMessage": "Czy na pewno chcesz usunąć ten wpis? Tej czynności nie można cofnąć.",
+    "scanWithAI": "Skanuj z AI",
+    "analysisFailed": "Nie udało się przeanalizować zdjęcia. Spróbuj ponownie lub wprowadź ręcznie.",
+    "noContainerDetected": "Nie wykryto obiektu na zdjęciu. Spróbuj ponownie z wyraźniejszym zdjęciem."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Rozpocznij",
+      "next": "Dalej",
+      "continue": "Kontynuuj",
+      "skip": "Pomiń"
+    },
+    "welcome": {
+      "title": "Śledź bóle głowy,\nprzejmij kontrolę",
+      "subtitle": "Odpowiedzmy na kilka pytań, aby spersonalizować Twoje doświadczenie"
+    },
+    "painPoints": {
+      "title": "Trudno radzić sobie z bólami głowy?",
+      "subtitle": "Bez śledzenia wzorców i wyzwalaczy trudno znaleźć to, co pomaga. Nasza aplikacja ułatwia rejestrowanie, identyfikowanie wzorców i przejmowanie kontroli.",
+      "buttonText": "Pokaż mi jak to działa"
+    },
+    "benefits": {
+      "title": "Ta aplikacja pomaga Ci",
+      "benefit1": "Śledzić bóle głowy bez wysiłku",
+      "benefit2": "Identyfikować wzorce i wyzwalacze",
+      "benefit3": "Uzyskiwać spersonalizowane spostrzeżenia",
+      "benefit4": "Przejąć kontrolę nad swoim zdrowiem",
+      "buttonText": "Tego właśnie potrzebuję"
+    },
+    "comparison": {
+      "title": "Śledzenie działa",
+      "subtitle": "Ludzie, którzy śledzą swoje bóle głowy, zgłaszają lepsze wyniki",
+      "withoutTracking": "Bez śledzenia",
+      "withApp": "Z tą aplikacją",
+      "buttonText": "Chcę przejąć kontrolę"
+    },
+    "personalization": {
+      "title": "Personalizacja Twojego doświadczenia",
+      "subtitle": "Konfigurowanie trackera bólów głowy...",
+      "steps": {
+        "profile": {
+          "title": "Twój profil",
+          "description": "Konfigurowanie preferencji śledzenia"
+        },
+        "calendar": {
+          "title": "Konfiguracja kalendarza",
+          "description": "Przygotowanie osobistego kalendarza wpisów"
+        },
+        "insights": {
+          "title": "Inteligentne spostrzeżenia",
+          "description": "Trenowanie spersonalizowanych rekomendacji"
+        },
+        "preferences": {
+          "title": "Preferencje",
+          "description": "Stosowanie Twoich ustawień"
+        },
+        "ready": {
+          "title": "Gotowe!",
+          "description": "Twój tracker jest gotowy do użycia"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Wszystko gotowe!",
+      "subtitle": "Twój spersonalizowany tracker jest gotowy. Zapisz pierwszy ból głowy i zacznij identyfikować wzorce!"
+    },
+    "finished": {
+      "title": "Witaj",
+      "subtitle": "Twój tracker bólów głowy jest gotowy",
+      "numberLabel": "osób śledzących swoje bóle głowy",
+      "bottomTitle": "Gotowy, aby zapisać pierwszy ból głowy?",
+      "bottomSubtitle": "Zacznij śledzić już dziś i odkryj swoje wzorce",
+      "buttonText": "Tak, jestem gotowy!"
+    },
+    "community": {
+      "title": "Uczmy się razem",
+      "subtitle": "Połącz się z innymi, dziel się wskazówkami i uzyskaj pomoc od wspierającej społeczności",
+      "buttonText": "Świetnie!"
+    },
+    "notifications": {
+      "title": "Bądź na bieżąco",
+      "subtitle": "Otrzymuj powiadomienia, gdy członkowie społeczności komentują lub głosują na Twoje posty",
+      "votesOnResults": "Głosy na Twoje wyniki",
+      "repliesToPosts": "Odpowiedzi na Twoje posty",
+      "turnOn": "Włącz powiadomienia"
+    },
+    "checkInNotifications": {
+      "title": "Włącz przypomnienia o sprawdzeniu",
+      "subtitle": "Zezwól na powiadomienia, aby otrzymywać spersonalizowane przypomnienia",
+      "reason1": "Otrzymuj przypomnienia o zapisywaniu bólów głowy o preferowanych porach",
+      "reason2": "Buduj nawyk regularnego śledzenia",
+      "turnOn": "Włącz powiadomienia"
+    },
+    "sheet": {
+      "welcomeTo": "Witaj w"
+    },
+    "question1": {
+      "title": "Jak często doświadczasz bólów głowy?",
+      "subtitle": "To pomaga nam spersonalizować Twoje doświadczenie śledzenia.",
+      "options": {
+        "daily": "Codziennie",
+        "severalPerWeek": "Kilka razy w tygodniu",
+        "weekly": "Mniej więcej raz w tygodniu",
+        "fewPerMonth": "Kilka razy w miesiącu",
+        "rarely": "Rzadko"
+      }
+    },
+    "question2": {
+      "title": "Jaki typ bólów głowy zazwyczaj masz?",
+      "subtitle": "Nie martw się, jeśli nie jesteś pewien — zawsze możesz to zmienić później.",
+      "options": {
+        "tension": "Ból głowy napięciowy",
+        "migraine": "Migrena",
+        "cluster": "Klasterowy ból głowy",
+        "sinus": "Zatokowy ból głowy",
+        "notSure": "Nie jestem pewien"
+      }
+    },
+    "notifications": {
+      "title": "Kiedy powinniśmy ci przypomnieć?",
+      "subtitle": "Wybierz czas na codzienny wpis. Później możesz dodać więcej w ustawieniach."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Brak postów",
+    "beFirstToShare": "Bądź pierwszym, który podzieli się ze społecznością!",
+    "couldntLoadPosts": "Nie udało się załadować postów",
+    "somethingWentWrong": "Coś poszło nie tak. Sprawdź połączenie i spróbuj ponownie.",
+    "tryAgain": "Spróbuj ponownie",
+    "deletePostTitle": "Usuń post",
+    "deletePostMessage": "Czy na pewno chcesz usunąć ten post?",
+    "viewAllComments": "Zobacz wszystkie komentarze ({{count}})"
+  },
+  "post": {
+    "delete": "Usuń",
+    "report": "Zgłoś",
+    "post": "Opublikuj"
+  },
+  "comments": {
+    "title": "Komentarze",
+    "noCommentsYet": "Brak komentarzy",
+    "beFirstToComment": "Bądź pierwszym komentującym!",
+    "loadingComments": "Ładowanie komentarzy",
+    "postNotFound": "Nie znaleziono posta",
+    "addComment": "Dodaj komentarz..."
+  },
+  "createPost": {
+    "post": "Opublikuj",
+    "placeholders": {
+      "shareResults": "Podziel się wynikami...",
+      "shareStory": "Podziel się historią...",
+      "whatsOnMind": "O czym myślisz?",
+      "howFeeling": "Jak się dziś czujesz?",
+      "writeCaption": "Napisz podpis...",
+      "shareCommunity": "Podziel się ze społecznością...",
+      "tellJourney": "Opowiedz o swojej podróży...",
+      "shareMoment": "Podziel się swoją chwilą..."
+    }
+  },
+  "reportPost": {
+    "description": "Powiedz nam, dlaczego zgłaszasz ten post. Przeanalizujemy go i podejmiemy odpowiednie działania.",
+    "placeholder": "Opisz problem...",
+    "submit": "Wyślij",
+    "successTitle": "Zgłoszenie wysłane",
+    "successMessage": "Dziękujemy za zgłoszenie. Przeanalizujemy ten post.",
+    "errorNoReason": "Podaj powód zgłoszenia."
+  },
+  "paywall": {
+    "tryForFree": "Wypróbuj za darmo",
+    "continue": "Kontynuuj",
+    "noCommitment": "Bez zobowiązań, anuluj w dowolnym momencie",
+    "freeTrialEnabled": "Bezpłatny okres próbny włączony",
+    "noPurchasesFound": "Nie znaleziono zakupów",
+    "tryAgain": "Spróbuj ponownie",
+    "errorTitle": "Błąd",
+    "errorDescription": "Nie można załadować subskrypcji. Spróbuj ponownie lub skontaktuj się z pomocą techniczną.",
+    "footer": {
+      "terms": "Regulamin",
+      "restorePurchase": "Przywróć zakup",
+      "privacy": "Prywatność"
+    },
+    "trial": {
+      "title": "Uzyskaj nieograniczony dostęp na {{days}} dni",
+      "subtitle": "Przypomnimy Ci przed końcem okresu próbnego",
+      "today": "Dziś",
+      "todaySubtitle": "Odblokuj pełny dostęp do trackera bólów głowy.",
+      "inTwoDays": "Za 2 dni",
+      "inTwoDaysSubtitle": "Wyślemy przypomnienie przed końcem okresu próbnego.",
+      "inThreeDays": "Za 3 dni",
+      "inThreeDaysSubtitle": "Twoja subskrypcja rozpocznie się, chyba że anulujesz wcześniej."
+    },
+    "nonTrial": {
+      "titleHard": "Odblokuj aplikację, aby kontynuować",
+      "titleSoft": "Uzyskaj Pełny Dostęp",
+      "subtitle": "Twój towarzysz śledzenia bólów głowy"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Szybkie i łatwe logowanie",
+        "description": "Loguj wpisy w sekundach dzięki naszemu uproszczonemu interfejsowi"
+      },
+      "reminders": {
+        "title": "Własne przypomnienia",
+        "description": "Ustaw spersonalizowane przypomnienia, aby rejestrować i śledzić bóle głowy"
+      },
+      "noPaywall": {
+        "title": "Usuń irytujący paywall",
+        "description": "Koniec z wyskakującymi oknami paywall przy każdym otwarciu aplikacji"
+      },
+      "unlimited": {
+        "title": "Nieograniczone Wpisy",
+        "description": "Loguj ile chcesz - bez miesięcznych limitów"
+      },
+      "indieDeveloper": {
+        "title": "Wesprzyj Niezależnego Dewelopera",
+        "description": "Pomóż kształtować przyszłość tej aplikacji i ciesz się ekskluzywnymi funkcjami tworzonymi z pasją przez niezależnego dewelopera."
+      }
+    },
+    "reviews": {
+      "sarah": "W końcu znalazłam aplikację, która sprawia, że śledzenie bólów głowy jest łatwe! Widok kalendarza jest idealny do obserwowania wzorców w czasie.",
+      "isaac": "Mam migreny od lat. Ta aplikacja pomogła mi zidentyfikować moje wyzwalacze — teraz naprawdę mogę im zapobiegać!",
+      "emma": "Mój neurolog zalecił mi śledzenie bólów głowy i to uczyniło to tak prostym. Uwielbiam mieć prawdziwe dane na wizyty!",
+      "arthur": "Śledzenie wyzwalaczy jest genialne! Odkryłem, że kofeina to mój główny winowajca. Taka zmiana zasad gry dla mojego zdrowia!",
+      "zoe": "Super szybkie logowanie - zajmuje tylko sekundy. Jestem konsekwentna od 3 miesięcy i moje bóle głowy znacznie się zmniejszyły!",
+      "maya": "Jako osoba zmagająca się z chronicznymi migrenami, posiadanie wszystkiego w jednym miejscu daje mi spokój ducha. Uwielbiam codzienne przypomnienia!"
+    },
+    "package": {
+      "freeTrial": "BEZPŁATNY OKRES PRÓBNY",
+      "perWeek": "/tydzień",
+      "perMonth": "/miesiąc",
+      "perYear": "/rok",
+      "once": "jednorazowo",
+      "percentOff": "{{percent}}% taniej",
+      "savePercent": "OSZCZĘDŹ {{percent}}%",
+      "yearly": "rocznie",
+      "weekly": "tygodniowo",
+      "monthly": "miesięcznie",
+      "then": "potem ",
+      "daysFree": "{{count}} dni za darmo",
+      "introSubtitle": "{{count}} dni za darmo · potem {{price}}",
+      "weeklyIntroSubtitle": "{{count}} dni za darmo · Anuluj w dowolnym momencie",
+      "weeklySubtitle": "Automatyczne odnowienie · Anuluj w dowolnym momencie",
+      "monthlySubtitle": "Automatyczne odnowienie · Anuluj w dowolnym momencie",
+      "annualSubtitle": "Rozliczenie roczne · Anuluj w dowolnym momencie",
+      "lifetimeSubtitle": "Jednorazowa płatność",
+      "yearlyTitle": "Roczny",
+      "monthlyTitle": "Miesięczny",
+      "weeklyTitle": "Tygodniowy",
+      "lifetimeTitle": "Dożywotni"
+    },
+    "wreath": {
+      "bestHealthApp": "Najlepsza aplikacja do śledzenia bólów głowy"
+    },
+    "v2": {
+      "title": "Wybierz swój plan",
+      "perksIntro": "Subskrybując, odblokujesz następujące korzyści:"
+    }
+  },
+  "setupProfile": {
+    "title": "Skonfiguruj swój profil",
+    "subtitle": "Tak będziesz widoczny dla innych w społeczności.",
+    "addPhoto": "Dodaj zdjęcie profilowe (opcjonalne)",
+    "placeholder": "nazwa użytkownika",
+    "next": "Dalej",
+    "usernameTaken": "Ta nazwa użytkownika jest już zajęta.",
+    "failedToUpdate": "Nie udało się zaktualizować profilu",
+    "onlyLettersNumbersUnderscores": "Tylko litery, cyfry i podkreślenia",
+    "checking": "Sprawdzanie...",
+    "usernameIsTaken": "Nazwa użytkownika jest zajęta",
+    "usernameIsAvailable": "Nazwa użytkownika jest dostępna",
+    "usernameMinLength": "Musi mieć co najmniej 3 znaki",
+    "usernameMaxLength": "Musi mieć mniej niż 20 znaków",
+    "usernameInstructions": "3-20 znaków. Tylko litery, cyfry i podkreślenia.",
+    "usernameErrorInstructions": "Nazwa użytkownika musi mieć 3-20 znaków i zawierać tylko litery, cyfry i podkreślenia."
+  },
+  "confirm": {
+    "analyze": "Analizuj",
+    "noPhotoToAnalyze": "Brak zdjęcia do analizy",
+    "failedToProcessImage": "Nie udało się przetworzyć zdjęcia"
+  },
+  "feedback": {
+    "title": "Podziel się opinią",
+    "subtitle": "Pomóż nam ulepszyć Twoje doświadczenie",
+    "tellUs": "Powiedz nam, co możemy poprawić",
+    "submit": "Wyślij",
+    "thankYouTitle": "Dziękujemy!",
+    "thankYouMessage": "Twoja opinia pomaga nam ulepszać aplikację.",
+    "feedbackRequired": "Wymagana opinia",
+    "feedbackRequiredMessage": "Wpisz swoją opinię przed wysłaniem."
+  },
+  "history": {
+    "search": "Szukaj",
+    "noConversationsYet": "Brak rozmów",
+    "noConversationsMessage": "Twoje sesje pomocy pojawią się tutaj, gdy zaczniesz zadawać pytania.",
+    "deleteTitle": "Usuń",
+    "deleteMessage": "Czy na pewno chcesz to usunąć? Tej czynności nie można cofnąć.",
+    "sortQuestionAZ": "Pytanie (A-Z)",
+    "sortQuestionZA": "Pytanie (Z-A)",
+    "sortDateNewest": "Data (Najnowsze)",
+    "sortDateOldest": "Data (Najstarsze)"
+  },
+  "chat": {
+    "askFollowUp": "Zadaj pytanie uzupełniające..."
+  },
+  "signIn": {
+    "title": "Utwórz konto",
+    "subtitle": "Zaloguj się, aby dzielić się ze społecznością. To super szybkie!"
+  },
+  "calendar": {
+    "noRecords": "Brak wpisów",
+    "noRecordsMessage": "Brak wpisów bólów głowy dla tej daty.",
+    "firstLogPrompt": "Dotknij +, aby dodać swój pierwszy wpis!",
+    "addLog": "Dodaj wpis"
+  },
+  "camera": {
+    "loading": "Ładowanie...",
+    "continue": "Kontynuuj",
+    "permissionTitle": "Uprawnienia kamery",
+    "permissionMessage": "Potrzebujemy Twojej zgody, aby pokazać kamerę"
+  },
+  "rating": {
+    "howWouldYouRate": "Jak oceniasz naszą analizę?"
+  },
+  "tabs": {
+    "dashboard": "Panel",
+    "calendar": "Kalendarz",
+    "settings": "Ustawienia"
+  },
+  "dashboard": {
+    "severity": "Nasilenie",
+    "noData": "Brak bólów głowy w tym tygodniu",
+    "totalHeadaches": "Łącznie bólów",
+    "avgSeverity": "Śr. nasilenie",
+    "avgDuration": "Śr. czas trwania",
+    "topTrigger": "Główny wyzwalacz",
+    "noDataTitle": "Brak zarejestrowanych bólów głowy",
+    "noDataDescription": "Zarejestruj swój pierwszy ból głowy, aby zobaczyć tygodniowe statystyki",
+    "addLog": "Dodaj wpis"
+  },
+  "navigation": {
+    "back": "Wstecz",
+    "createPost": "Utwórz post",
+    "reportPost": "Zgłoś post",
+    "account": "Konto",
+    "editProfile": "Edytuj profil",
+    "deleteAccount": "Usuń konto",
+    "editLog": "Edytuj wpis",
+    "community": "Społeczność",
+    "history": "Historia",
+    "logHeadache": "Zapisz ból głowy",
+    "language": "Język"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Nie można znaleźć tej strony."
+  },
+  "imageEdit": {
+    "brightness": "Jasność",
+    "contrast": "Kontrast",
+    "invert": "Odwróć",
+    "bw": "Cz-B"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Wymagania dotyczące zdjęcia",
+    "whatToAvoid": "Czego unikać",
+    "bullets": {
+      "ensureBothLines": "Upewnij się, że zarówno linia kontrolna, jak i testowa są widoczne z bliska.",
+      "testStraight": "Test powinien być prosty i poziomy.",
+      "clearPhoto": "Użyj wyraźnego, wysokiej jakości zdjęcia z równomiernym oświetleniem.",
+      "simpleBackground": "Zachowaj proste tło, najlepiej jednokolorowe.",
+      "avoidBlurry": "Unikaj rozmazanych zdjęć.",
+      "dontCrop": "Nie przycinaj części okna testowego.",
+      "avoidShadows": "Unikaj ostrych cieni lub odblasków na teście.",
+      "dontAngle": "Nie rób zdjęć pod kątem.",
+      "darkPhotos": "Ciemne zdjęcia bez kontrastu."
+    },
+    "summary": {
+      "title": "O słabych liniach, odparowaniu i wgłębieniach",
+      "intro": "Ekstremalnie słabe linie mogą być trudne do wykrycia przez AI. Zwróć uwagę na potencjalne fałszywe wyniki pozytywne z:",
+      "evapLines": "Linie odparowania: ",
+      "evapDesc": "Słabe, bezbarwne ślady pojawiające się podczas wysychania testu, zwykle po zalecanym oknie odczytu.",
+      "indentLines": "Linie wgłębień: ",
+      "indentDesc": "Subtelne ślady z procesu produkcyjnego paska testowego, które mogą być widoczne niezależnie od wyniku.",
+      "revisitGuide": "Możesz wrócić do tego przewodnika w dowolnym momencie, klikając ikonę informacji w prawym dolnym rogu."
+    },
+    "next": "Dalej"
+  },
+  "videoDemo": {
+    "title": "Skanuj i otrzymuj wyniki natychmiast",
+    "subtitle": "Pomogliśmy ponad 10 000 kobietom uzyskać wyniki"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Zastrzeżenie",
+    "content": "Ta aplikacja wykorzystuje technologię AI, która może generować niedokładne lub niekompletne wyniki. Zawsze weryfikuj ważne informacje z wiarygodnych źródeł i kieruj się własnym osądem przy podejmowaniu decyzji na podstawie treści generowanych przez AI."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "To bardzo dobra aplikacja, której używam codziennie. Jest tak łatwa w użyciu i uwielbiam widżety.",
+      "zlassenp": "Widok odliczania do mojej podróży lub urodzin znajomego mnie nakręca.",
+      "rajgha": "Sprawia, że trudno zapomnieć o ważnych wydarzeniach. Szkoda tylko, że nie ma opcji czcionek.",
+      "jaynacc": "Nie sądziłem, że będę często korzystać z tej aplikacji… ale teraz sprawdzam ją każdego ranka."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Czas na rejestrację!",
+      "body": "Jak się czuje Twoja głowa? Zaloguj status swojego bólu głowy."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Witaj! 🧠",
+        "body": "Śledź bóle głowy i odkrywaj wzorce. Zaloguj swój pierwszy ból głowy już dziś!"
+      },
+      "reminder1": {
+        "title": "Śledź bóle głowy 📊",
+        "body": "Regularne logowanie pomaga znaleźć wyzwalacze. Ulepsz, aby uzyskać nieograniczone śledzenie i szczegółowe spostrzeżenia."
+      },
+      "reminder2": {
+        "title": "Szczegółowe spostrzeżenia 🎓",
+        "body": "Dołącz do tysięcy, które ulepszyły do spersonalizowanych rekomendacji wzorców bólów głowy."
+      },
+      "reminder3": {
+        "title": "Ograniczona oferta: Odblokuj wszystko 🔓",
+        "body": "Uzyskaj nieograniczone logowanie + szczegółową analizę. Rozpocznij bezpłatny okres próbny!"
+      },
+      "reminder4": {
+        "title": "Śledź mądrzej 📱",
+        "body": "Użytkownicy premium otrzymują szczegółowe spostrzeżenia, śledzenie wyzwalaczy i nieograniczone logi."
+      },
+      "reminder5": {
+        "title": "Twoja podróż z bólami głowy 🌟",
+        "body": "Ulepsz teraz i przejmij kontrolę nad bólami głowy. Dostępny bezpłatny okres próbny!"
+      },
+      "reminder6": {
+        "title": "Ostatnia szansa: Funkcje premium 🚨",
+        "body": "Nie przegap nieograniczonego śledzenia i analizy wzorców."
+      },
+      "reminder7": {
+        "title": "Tęsknimy za Tobą! 🧠",
+        "body": "Wróć i kontynuuj swoją podróż z śledzeniem bólów głowy. Funkcje premium czekają na Ciebie."
+      },
+      "trialEnds": "Twój okres próbny kończy się jutro"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Obudziłem się z tym, nadwrażliwość na światło",
+      "afterLongMeeting": "Zaczęło się po długim spotkaniu",
+      "leftWorkEarly": "Musiałem wyjść wcześniej z pracy, nudności i aura",
+      "worstThisMonth": "Najgorszy w tym miesiącu, tryptan pomógł po 1 godz.",
+      "rainyDay": "Deszczowy dzień, zmiana ciśnienia prawdopodobnie przyczyną",
+      "onlySleptFourHours": "Spałem tylko 4 godziny, potrzebowałem obu leków",
+      "tooMuchCoffee": "Za dużo kawy wczoraj, dziś za to zapłaciłem"
+    }
+  }
+}

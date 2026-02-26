@@ -1,0 +1,55 @@
+---
+description: Preferences for async function return types
+globs: **/*.ts, **/*.tsx
+---
+
+# Return Type Conventions
+
+When writing async functions that can fail:
+
+## Functions that only return success/failure (no data)
+
+Use `Promise<{ error?: Error }>`:
+
+```typescript
+const doSomething = async (): Promise<{ error?: Error }> => {
+  // On success:
+  return {};
+
+  // On failure:
+  return { error: new Error('Something went wrong') };
+};
+```
+
+## Functions that return data or an error
+
+Use `Promise<MutuallyExclusiveResult<T>>` from `@/utils/try-catch`:
+
+```typescript
+import { MutuallyExclusiveResult } from '@/utils/try-catch';
+
+const fetchSomething = async (): Promise<
+  MutuallyExclusiveResult<{ value: string }>
+> => {
+  // On success:
+  return { data: { value: 'hello' } };
+
+  // On failure:
+  return { error: new Error('Failed to fetch') };
+};
+
+// Usage:
+const { data, error } = await fetchSomething();
+if (error) {
+  // handle error
+  return;
+}
+// data is guaranteed to exist here
+console.log(data.value);
+```
+
+This pattern ensures:
+
+- Mutually exclusive results (either data or error, never both)
+- Type-safe error handling
+- Consistent patterns across the codebase

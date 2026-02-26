@@ -1,0 +1,10 @@
+appId: ${APP_ID}
+---
+# Wait for the dashboard screen to fully load
+- extendedWaitUntil:
+    visible:
+      id: 'dashboard-screen'
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: '${LOCALE}/01-dashboard'

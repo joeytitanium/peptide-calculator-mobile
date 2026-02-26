@@ -1,0 +1,110 @@
+{
+  "expo": {
+    "name": "Peptide Calculator",
+    "slug": "peptide-calculator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon.png",
+    "scheme": "peptide-calculator",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "appleTeamId": "43CZULUQGR",
+      "appStoreUrl": "6759279921",
+      "buildNumber": "2",
+      "bundleIdentifier": "dev.titanium.peptide-calculator",
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "locales": {
+      "en": "./locales/en/native.json",
+      "ko": "./locales/ko/native.json",
+      "es": "./locales/es/native.json",
+      "pt": "./locales/pt/native.json",
+      "ja": "./locales/ja/native.json",
+      "zh": "./locales/zh/native.json",
+      "de": "./locales/de/native.json",
+      "fr": "./locales/fr/native.json",
+      "hi": "./locales/hi/native.json",
+      "it": "./locales/it/native.json",
+      "tr": "./locales/tr/native.json",
+      "th": "./locales/th/native.json",
+      "nl": "./locales/nl/native.json",
+      "pl": "./locales/pl/native.json",
+      "ro": "./locales/ro/native.json",
+      "ru": "./locales/ru/native.json",
+      "uk": "./locales/uk/native.json",
+      "vi": "./locales/vi/native.json"
+    },
+    "plugins": [
+      [
+        "expo-dev-client",
+        {
+          "launchMode": "most-recent"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to save photos to your photo library",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos to your photo library",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      "expo-apple-authentication",
+      "react-native-cloud-storage",
+      "expo-video",
+      "expo-router",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d4660c58-f1d3-46a4-9bcd-d8710501d53b"
+      }
+    },
+    "owner": "joeytitanium",
+    "android": {
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ],
+      "package": "dev.titanium.headache_tracker"
+    }
+  }
+}

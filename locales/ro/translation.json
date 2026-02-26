@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "delete": "Șterge",
+    "edit": "Editează",
+    "error": "Eroare",
+    "ok": "OK",
+    "enabled": "Activat",
+    "disabled": "Dezactivat"
+  },
+  "settings": {
+    "unlockPro": "Deblochează Pro",
+    "unlockProSubtitle": "Obține Acces Complet",
+    "contactSupport": "Contactează suportul",
+    "contactSupportSubtitle": "Ajutor, comentarii sau sugestii",
+    "rateApp": "Evaluează aplicația",
+    "rateAppSubtitle": "Împărtășește-ți feedbackul",
+    "shareApp": "Distribuie aplicația",
+    "shareAppSubtitle": "Spune-le prietenilor",
+    "shareMessage": "Descoperă {{appName}}!",
+    "appearance": "Aspect",
+    "appearanceSubtitle": "Alege tema ta",
+    "themeSystem": "Sistem",
+    "themeLight": "Luminos",
+    "themeDark": "Întunecat",
+    "privacyPolicy": "Politica de confidențialitate",
+    "privacyPolicySubtitle": "Vezi politica noastră de confidențialitate",
+    "termsOfService": "Termeni și condiții",
+    "termsOfServiceSubtitle": "Vezi termenii și condițiile noastre",
+    "account": "Cont",
+    "signedInWithApple": "Conectat cu Apple",
+    "resetOnboarding": "Resetează introducerea",
+    "resetOnboardingSubtitle": "Șterge starea de introducere",
+    "onboardingResetTitle": "Introducere resetată",
+    "onboardingResetMessage": "Repornește aplicația pentru a vedea introducerea.",
+    "version": "Versiune",
+    "emailPlaceholder": "Te rugăm să lași mesajul deasupra acestei linii",
+    "emailAppName": "Aplicație:",
+    "emailAppVersion": "Versiune aplicație:",
+    "emailOS": "SO:",
+    "emailUserId": "ID utilizator:",
+    "checkInReminders": "Memento-uri de verificare",
+    "language": "Limbă",
+    "systemDefault": "Implicit sistem",
+    "reminderTime": "Memento",
+    "addReminder": "Adaugă memento"
+  },
+  "account": {
+    "editProfile": "Editează profilul",
+    "editProfileSubtitle": "Actualizează-ți fotografia de profil",
+    "signOut": "Deconectare",
+    "signOutConfirmTitle": "Deconectare",
+    "signOutConfirmMessage": "Ești sigur că vrei să te deconectezi?",
+    "deleteAccount": "Șterge contul",
+    "deleteAccountSubtitle": "Șterge permanent contul și datele tale",
+    "deleteAccountTitle": "Șterge contul",
+    "deleteAccountWarning": "Această acțiune este permanentă și nu poate fi anulată. Toate datele tale, inclusiv postările, comentariile și informațiile contului vor fi șterse permanent.",
+    "deleteAccountConfirmPrompt": "Pentru confirmare, scrie \"{{confirmText}}\" mai jos:",
+    "deleteAccountConfirmText": "șterge permanent contul",
+    "deleteAccountScheduledTitle": "Cont programat pentru ștergere",
+    "deleteAccountScheduledMessage": "Contul tău va fi șters în următoarele 24 de ore.",
+    "deleteAccountConfirmError": "Te rugăm să scrii textul de confirmare exact."
+  },
+  "profile": {
+    "tapToChangePhoto": "Atinge pentru a schimba fotografia de profil",
+    "username": "Nume de utilizator",
+    "notSet": "Nesetat",
+    "failedToUpdate": "Actualizarea profilului a eșuat"
+  },
+  "log": {
+    "whenDidItStart": "Când a început?",
+    "dateTime": "Data și ora",
+    "severity": "Severitate",
+    "severityScale": "din 10",
+    "severityValue": "Severitate: {{value}}/10",
+    "severityLevels": {
+      "mild": "Ușor",
+      "moderate": "Moderat",
+      "severe": "Sever"
+    },
+    "headacheType": "Tip",
+    "headacheTypes": {
+      "tension": "Tensiune",
+      "migraine": "Migrenă",
+      "cluster": "Cluster",
+      "sinus": "Sinusal",
+      "not-sure": "Nu sunt sigur"
+    },
+    "location": "Localizare",
+    "locations": {
+      "front": "Față",
+      "back": "Spate",
+      "left-side": "Partea stângă",
+      "right-side": "Partea dreaptă",
+      "top": "Vârf",
+      "all-over": "Peste tot"
+    },
+    "duration": "Durată",
+    "minutes": "min",
+    "triggers": "Factori declanșatori",
+    "selectAllThatApply": "Selectează toate care se aplică",
+    "triggerOptions": {
+      "stress": "Stres",
+      "lack-of-sleep": "Lipsă de somn",
+      "dehydration": "Deshidratare",
+      "screen-time": "Timp pe ecran",
+      "weather": "Vreme",
+      "food": "Mâncare",
+      "alcohol": "Alcool",
+      "caffeine": "Cofeină",
+      "hormones": "Hormoni",
+      "exercise": "Exerciții"
+    },
+    "medications": "Medicamente",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofen",
+      "acetaminophen": "Paracetamol",
+      "aspirin": "Aspirină",
+      "triptan": "Triptan",
+      "none": "Niciunul"
+    },
+    "notes": "Note",
+    "optional": "Opțional",
+    "upgradeToProNotes": "Treci la PRO pentru a adăuga note",
+    "update": "Actualizează",
+    "logButton": "Înregistrează",
+    "logDetails": "Detalii înregistrare",
+    "date": "Data",
+    "time": "Ora",
+    "deleteLog": "Șterge înregistrarea",
+    "deleteLogTitle": "Șterge înregistrarea",
+    "deleteLogMessage": "Ești sigur că vrei să ștergi această înregistrare? Această acțiune nu poate fi anulată.",
+    "scanWithAI": "Scanează cu AI",
+    "analysisFailed": "Nu s-a putut analiza fotografia. Încearcă din nou sau introdu manual.",
+    "noContainerDetected": "Nu s-a detectat niciun obiect în fotografie. Încearcă din nou cu o imagine mai clară."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Începe",
+      "next": "Următorul",
+      "continue": "Continuă",
+      "skip": "Omite"
+    },
+    "welcome": {
+      "title": "Urmărește-ți durerile de cap,\npreia controlul",
+      "subtitle": "Să răspundem la câteva întrebări rapide pentru a-ți personaliza experiența"
+    },
+    "painPoints": {
+      "title": "Te chinui să îți gestionezi durerile de cap?",
+      "subtitle": "Fără urmărirea tiparelor și factorilor declanșatori, e greu să găsești ce te ajută. Aplicația noastră facilitează înregistrarea, identificarea tiparelor și preluarea controlului.",
+      "buttonText": "Arată-mi cum funcționează"
+    },
+    "benefits": {
+      "title": "Această aplicație te ajută să",
+      "benefit1": "Urmărești durerile de cap fără efort",
+      "benefit2": "Identifici tipare și factori declanșatori",
+      "benefit3": "Obții informații personalizate",
+      "benefit4": "Preiei controlul asupra sănătății tale",
+      "buttonText": "Asta am nevoie"
+    },
+    "comparison": {
+      "title": "Urmărirea funcționează",
+      "subtitle": "Persoanele care își urmăresc durerile de cap raportează rezultate mai bune",
+      "withoutTracking": "Fără urmărire",
+      "withApp": "Cu această aplicație",
+      "buttonText": "Vreau să preiau controlul"
+    },
+    "personalization": {
+      "title": "Personalizarea experienței tale",
+      "subtitle": "Configurarea tracker-ului de dureri de cap...",
+      "steps": {
+        "profile": {
+          "title": "Profilul tău",
+          "description": "Configurarea preferințelor de urmărire"
+        },
+        "calendar": {
+          "title": "Configurare calendar",
+          "description": "Pregătirea calendarului personal de înregistrări"
+        },
+        "insights": {
+          "title": "Perspective inteligente",
+          "description": "Antrenarea recomandărilor personalizate"
+        },
+        "preferences": {
+          "title": "Preferințe",
+          "description": "Aplicarea setărilor tale"
+        },
+        "ready": {
+          "title": "Gata!",
+          "description": "Tracker-ul tău este pregătit"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Ești pregătit!",
+      "subtitle": "Tracker-ul tău personalizat este gata. Înregistrează prima durere de cap și începe să identifici tipare!"
+    },
+    "finished": {
+      "title": "Bine ai venit",
+      "subtitle": "Tracker-ul tău de dureri de cap este gata",
+      "numberLabel": "persoane care își urmăresc durerile de cap",
+      "bottomTitle": "Pregătit să înregistrezi prima durere de cap?",
+      "bottomSubtitle": "Începe să urmărești azi și descoperă-ți tiparele",
+      "buttonText": "Da, sunt pregătit!"
+    },
+    "community": {
+      "title": "Învățăm împreună",
+      "subtitle": "Conectează-te cu alții, împărtășește sfaturi și primește ajutor de la o comunitate susținătoare",
+      "buttonText": "Minunat!"
+    },
+    "notifications": {
+      "title": "Fii la curent",
+      "subtitle": "Primește notificări când membrii comunității comentează sau votează postările tale",
+      "votesOnResults": "Voturi pe rezultatele tale",
+      "repliesToPosts": "Răspunsuri la postările tale",
+      "turnOn": "Activează notificările"
+    },
+    "checkInNotifications": {
+      "title": "Activează reamintirile de verificare",
+      "subtitle": "Permite notificările pentru a primi reamintirile personalizate",
+      "reason1": "Primește reamintiri să înregistrezi durerile de cap la orele preferate",
+      "reason2": "Construiește obiceiuri consistente de urmărire",
+      "turnOn": "Activează notificările"
+    },
+    "sheet": {
+      "welcomeTo": "Bine ai venit la"
+    },
+    "question1": {
+      "title": "Cât de des ai dureri de cap?",
+      "subtitle": "Aceasta ne ajută să personalizăm experiența ta de urmărire.",
+      "options": {
+        "daily": "Zilnic",
+        "severalPerWeek": "De mai multe ori pe săptămână",
+        "weekly": "Aproximativ o dată pe săptămână",
+        "fewPerMonth": "De câteva ori pe lună",
+        "rarely": "Rar"
+      }
+    },
+    "question2": {
+      "title": "Ce tip de dureri de cap ai de obicei?",
+      "subtitle": "Nu-ți face griji dacă nu ești sigur — poți schimba oricând mai târziu.",
+      "options": {
+        "tension": "Durere de cap de tensiune",
+        "migraine": "Migrenă",
+        "cluster": "Durere de cap în cluster",
+        "sinus": "Durere de cap sinusală",
+        "notSure": "Nu sunt sigur"
+      }
+    },
+    "notifications": {
+      "title": "Când să îți reamintim?",
+      "subtitle": "Alege o oră pentru verificarea zilnică. Poți adăuga mai multe mai târziu din setări."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Nicio postare încă",
+    "beFirstToShare": "Fii primul care împărtășește cu comunitatea!",
+    "couldntLoadPosts": "Nu s-au putut încărca postările",
+    "somethingWentWrong": "Ceva a mers greșit. Verifică conexiunea și încearcă din nou.",
+    "tryAgain": "Încearcă din nou",
+    "deletePostTitle": "Șterge postarea",
+    "deletePostMessage": "Ești sigur că vrei să ștergi această postare?",
+    "viewAllComments": "Vezi toate cele {{count}} comentarii"
+  },
+  "post": {
+    "delete": "Șterge",
+    "report": "Raportează",
+    "post": "Postează"
+  },
+  "comments": {
+    "title": "Comentarii",
+    "noCommentsYet": "Niciun comentariu încă",
+    "beFirstToComment": "Fii primul care comentează!",
+    "loadingComments": "Se încarcă comentariile",
+    "postNotFound": "Postarea nu a fost găsită",
+    "addComment": "Adaugă un comentariu..."
+  },
+  "createPost": {
+    "post": "Postează",
+    "placeholders": {
+      "shareResults": "Împărtășește rezultatele tale...",
+      "shareStory": "Împărtășește povestea ta...",
+      "whatsOnMind": "La ce te gândești?",
+      "howFeeling": "Cum te simți azi?",
+      "writeCaption": "Scrie o legendă...",
+      "shareCommunity": "Împărtășește cu comunitatea...",
+      "tellJourney": "Povestește despre călătoria ta...",
+      "shareMoment": "Împărtășește momentul tău..."
+    }
+  },
+  "reportPost": {
+    "description": "Spune-ne de ce raportezi această postare. O vom analiza și vom lua măsuri corespunzătoare.",
+    "placeholder": "Descrie problema...",
+    "submit": "Trimite",
+    "successTitle": "Raport trimis",
+    "successMessage": "Mulțumim pentru raport. Vom analiza această postare.",
+    "errorNoReason": "Te rugăm să oferi un motiv pentru raport."
+  },
+  "paywall": {
+    "tryForFree": "Încearcă gratuit",
+    "continue": "Continuă",
+    "noCommitment": "Fără angajament, anulează oricând",
+    "freeTrialEnabled": "Perioadă de probă gratuită activată",
+    "noPurchasesFound": "Nu s-au găsit achiziții",
+    "tryAgain": "Încearcă din nou",
+    "errorTitle": "Eroare",
+    "errorDescription": "Nu s-au putut încărca abonamentele. Încearcă din nou sau contactează suportul.",
+    "footer": {
+      "terms": "Termeni",
+      "restorePurchase": "Restaurează achiziția",
+      "privacy": "Confidențialitate"
+    },
+    "trial": {
+      "title": "Obține acces nelimitat pentru {{days}} zile",
+      "subtitle": "Te vom anunța înainte ca perioada de probă să se termine",
+      "today": "Azi",
+      "todaySubtitle": "Deblochează acces complet la tracker-ul de dureri de cap.",
+      "inTwoDays": "În 2 zile",
+      "inTwoDaysSubtitle": "Vom trimite un memento înainte ca perioada de probă să se termine.",
+      "inThreeDays": "În 3 zile",
+      "inThreeDaysSubtitle": "Abonamentul tău va începe dacă nu anulezi înainte."
+    },
+    "nonTrial": {
+      "titleHard": "Deblochează aplicația pentru a continua",
+      "titleSoft": "Obține Acces Complet",
+      "subtitle": "Companionul tău de monitorizare a durerilor de cap"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Înregistrare rapidă și ușoară",
+        "description": "Înregistrează intrări în secunde cu interfața noastră simplificată"
+      },
+      "reminders": {
+        "title": "Mementouri personalizate",
+        "description": "Setează mementouri personalizate pentru a-ți înregistra și urmări durerile de cap"
+      },
+      "noPaywall": {
+        "title": "Elimină paywall-ul enervant",
+        "description": "Fără popupuri de paywall de fiecare dată când deschizi aplicația"
+      },
+      "unlimited": {
+        "title": "Înregistrări Nelimitate",
+        "description": "Înregistrează de câte ori vrei - fără limite lunare"
+      },
+      "indieDeveloper": {
+        "title": "Susține un Dezvoltator Independent",
+        "description": "Ajută la modelarea viitorului acestei aplicații și bucură-te de funcții exclusive create cu grijă de un dezvoltator independent."
+      }
+    },
+    "reviews": {
+      "sarah": "Am găsit în sfârșit o aplicație care face urmărirea durerilor de cap ușoară! Vederea calendar este perfectă pentru a observa tipare în timp.",
+      "isaac": "Am migrene de ani de zile. Această aplicație m-a ajutat să îmi identific factorii declanșatori — acum chiar pot să le previn!",
+      "emma": "Neurologul meu mi-a recomandat să îmi urmăresc durerile de cap și asta a făcut totul atât de simplu. Îmi place să am date reale pentru consultații!",
+      "arthur": "Urmărirea factorilor declanșatori este genială! Am descoperit că cafeina era principalul meu vinovat. O schimbare de joc pentru sănătatea mea!",
+      "zoe": "Super rapid de înregistrat - durează doar secunde. Sunt consecventă de 3 luni și durerile de cap s-au redus semnificativ!",
+      "maya": "Ca cineva care se luptă cu migrene cronice, să am totul într-un singur loc îmi dă liniște sufletească. Ador mementourile zilnice!"
+    },
+    "package": {
+      "freeTrial": "PERIOADĂ DE PROBĂ GRATUITĂ",
+      "perWeek": "/săptămână",
+      "perMonth": "/lună",
+      "perYear": "/an",
+      "once": "o singură dată",
+      "percentOff": "{{percent}}% reducere",
+      "savePercent": "ECONOMISEȘTE {{percent}}%",
+      "yearly": "anual",
+      "weekly": "săptămânal",
+      "monthly": "lunar",
+      "then": "apoi ",
+      "daysFree": "{{count}} zile gratuit",
+      "introSubtitle": "{{count}} zile gratuit · apoi {{price}}",
+      "weeklyIntroSubtitle": "{{count}} zile gratuit · Anulează oricând",
+      "weeklySubtitle": "Reînnoire automată · Anulează oricând",
+      "monthlySubtitle": "Reînnoire automată · Anulează oricând",
+      "annualSubtitle": "Facturare anuală · Anulează oricând",
+      "lifetimeSubtitle": "Plată unică",
+      "yearlyTitle": "Anual",
+      "monthlyTitle": "Lunar",
+      "weeklyTitle": "Săptămânal",
+      "lifetimeTitle": "Pe viață"
+    },
+    "wreath": {
+      "bestHealthApp": "Cea mai bună aplicație de urmărire a durerilor de cap"
+    },
+    "v2": {
+      "title": "Alege-ți planul",
+      "perksIntro": "Abonându-te vei debloca următoarele avantaje:"
+    }
+  },
+  "setupProfile": {
+    "title": "Configurează-ți profilul",
+    "subtitle": "Așa vei apărea pentru alții în comunitate.",
+    "addPhoto": "Adaugă o fotografie de profil (opțional)",
+    "placeholder": "nume de utilizator",
+    "next": "Următorul",
+    "usernameTaken": "Acest nume de utilizator este deja luat.",
+    "failedToUpdate": "Actualizarea profilului a eșuat",
+    "onlyLettersNumbersUnderscores": "Doar litere, cifre și underscore",
+    "checking": "Se verifică...",
+    "usernameIsTaken": "Numele de utilizator este luat",
+    "usernameIsAvailable": "Numele de utilizator este disponibil",
+    "usernameMinLength": "Trebuie să aibă cel puțin 3 caractere",
+    "usernameMaxLength": "Trebuie să aibă mai puțin de 20 de caractere",
+    "usernameInstructions": "3-20 caractere. Doar litere, cifre și underscore.",
+    "usernameErrorInstructions": "Numele de utilizator trebuie să aibă 3-20 caractere și să conțină doar litere, cifre și underscore."
+  },
+  "confirm": {
+    "analyze": "Analizează",
+    "noPhotoToAnalyze": "Nicio fotografie de analizat",
+    "failedToProcessImage": "Procesarea imaginii a eșuat"
+  },
+  "feedback": {
+    "title": "Împărtășește feedbackul tău",
+    "subtitle": "Ajută-ne să îmbunătățim experiența ta",
+    "tellUs": "Spune-ne ce putem îmbunătăți",
+    "submit": "Trimite",
+    "thankYouTitle": "Mulțumim!",
+    "thankYouMessage": "Feedbackul tău ne ajută să îmbunătățim aplicația.",
+    "feedbackRequired": "Feedback necesar",
+    "feedbackRequiredMessage": "Te rugăm să introduci feedbackul înainte de trimitere."
+  },
+  "history": {
+    "search": "Caută",
+    "noConversationsYet": "Nicio conversație încă",
+    "noConversationsMessage": "Sesiunile tale de ajutor vor apărea aici odată ce începi să pui întrebări.",
+    "deleteTitle": "Șterge",
+    "deleteMessage": "Ești sigur că vrei să ștergi? Această acțiune nu poate fi anulată.",
+    "sortQuestionAZ": "Întrebare (A-Z)",
+    "sortQuestionZA": "Întrebare (Z-A)",
+    "sortDateNewest": "Data (Cele mai noi)",
+    "sortDateOldest": "Data (Cele mai vechi)"
+  },
+  "chat": {
+    "askFollowUp": "Pune o întrebare suplimentară..."
+  },
+  "signIn": {
+    "title": "Creează un cont",
+    "subtitle": "Conectează-te pentru a împărtăși cu comunitatea. Este super rapid!"
+  },
+  "calendar": {
+    "noRecords": "Fără înregistrări",
+    "noRecordsMessage": "Nu există înregistrări de dureri de cap pentru această dată.",
+    "firstLogPrompt": "Atinge + pentru a adăuga prima înregistrare!",
+    "addLog": "Adaugă înregistrare"
+  },
+  "camera": {
+    "loading": "Se încarcă...",
+    "continue": "Continuă",
+    "permissionTitle": "Permisiune cameră",
+    "permissionMessage": "Avem nevoie de permisiunea ta pentru a afișa camera"
+  },
+  "rating": {
+    "howWouldYouRate": "Cum ai evalua analiza noastră?"
+  },
+  "tabs": {
+    "dashboard": "Panou",
+    "calendar": "Calendar",
+    "settings": "Setări"
+  },
+  "dashboard": {
+    "severity": "Severitate",
+    "noData": "Nicio durere de cap săptămâna aceasta",
+    "totalHeadaches": "Total dureri",
+    "avgSeverity": "Severitate medie",
+    "avgDuration": "Durată medie",
+    "topTrigger": "Principalul factor",
+    "noDataTitle": "Nicio durere de cap înregistrată",
+    "noDataDescription": "Înregistrați prima durere de cap pentru a vedea statisticile săptămânale",
+    "addLog": "Adaugă înregistrare"
+  },
+  "navigation": {
+    "back": "Înapoi",
+    "createPost": "Creează postare",
+    "reportPost": "Raportează postarea",
+    "account": "Cont",
+    "editProfile": "Editează profilul",
+    "deleteAccount": "Șterge contul",
+    "editLog": "Editează înregistrarea",
+    "community": "Comunitate",
+    "history": "Istoric",
+    "logHeadache": "Înregistrează durerea de cap",
+    "language": "Limbă"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Această pagină nu a putut fi găsită."
+  },
+  "imageEdit": {
+    "brightness": "Luminozitate",
+    "contrast": "Contrast",
+    "invert": "Inversează",
+    "bw": "A&N"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Cerințe foto",
+    "whatToAvoid": "Ce să eviți",
+    "bullets": {
+      "ensureBothLines": "Asigură-te că ambele linii de control și test sunt vizibile de aproape.",
+      "testStraight": "Testul trebuie să fie drept și orizontal.",
+      "clearPhoto": "Folosește o fotografie clară, de calitate, cu iluminare uniformă.",
+      "simpleBackground": "Păstrează fundalul simplu, ideal o culoare solidă.",
+      "avoidBlurry": "Evită fotografiile neclare.",
+      "dontCrop": "Nu decupa părți din fereastra testului.",
+      "avoidShadows": "Evită umbrele dure sau reflexiile pe test.",
+      "dontAngle": "Nu fotografia din unghi.",
+      "darkPhotos": "Fotografii întunecate fără contrast."
+    },
+    "summary": {
+      "title": "Despre linii slabe, evaporare și indentări",
+      "intro": "Liniile extrem de slabe pot fi dificil de detectat de AI. Fii atent la potențialele rezultate fals pozitive de la:",
+      "evapLines": "Linii de evaporare: ",
+      "evapDesc": "Urme slabe, incolore care apar pe măsură ce testul se usucă, de obicei după fereastra de citire recomandată.",
+      "indentLines": "Linii de indentare: ",
+      "indentDesc": "Urme subtile din procesul de fabricare a benzii de test, care pot fi vizibile indiferent de rezultat.",
+      "revisitGuide": "Poți revizita acest ghid oricând din pictograma de informații din colțul din dreapta jos."
+    },
+    "next": "Următorul"
+  },
+  "videoDemo": {
+    "title": "Scanează și primește rezultate instant",
+    "subtitle": "Am ajutat peste 10.000 de femei să își obțină rezultatele"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "Această aplicație folosește tehnologie AI care poate produce rezultate inexacte sau incomplete. Verifică întotdeauna informațiile importante din surse autorizate și folosește-ți propria judecată când iei decizii bazate pe conținut generat de AI."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Este o aplicație foarte bună pe care o folosesc zilnic. Este atât de ușor de folosit și ador widget-urile.",
+      "zlassenp": "Să văd un numărătoare inversă până la călătoria mea sau ziua de naștere a unui prieten mă entuziasmează.",
+      "rajgha": "Face dificil să uiți de evenimentele importante. Aș vrea doar să existe opțiuni de fonturi.",
+      "jaynacc": "Nu credeam că voi folosi mult această aplicație… dar acum o verific în fiecare dimineață."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Memento de înregistrare a durerilor de cap 🧠",
+      "body": "Este timp să îți înregistrezi durerile de cap de azi. Urmărirea consistentă ajută la identificarea tiparelor!"
+    },
+    "drip": {
+      "welcome": {
+        "title": "Bine ai venit! 🧠",
+        "body": "Urmărește-ți durerile de cap și descoperă tipare. Înregistrează prima intrare azi!"
+      },
+      "reminder1": {
+        "title": "Urmărește-ți durerile de cap 📊",
+        "body": "Înregistrarea consistentă ajută la identificarea tiparelor. Fă upgrade pentru urmărire nelimitată și perspective detaliate."
+      },
+      "reminder2": {
+        "title": "Perspective detaliate 🎓",
+        "body": "Alătură-te miilor care au făcut upgrade pentru recomandări personalizate de gestionare a durerilor de cap."
+      },
+      "reminder3": {
+        "title": "Timp limitat: Deblochează totul 🔓",
+        "body": "Obține înregistrare nelimitată + analiză detaliată. Începe perioada de probă gratuită!"
+      },
+      "reminder4": {
+        "title": "Urmărește mai inteligent 📱",
+        "body": "Utilizatorii premium primesc perspective detaliate, detectarea tiparelor și înregistrări nelimitate."
+      },
+      "reminder5": {
+        "title": "Călătoria ta cu durerile de cap 🌟",
+        "body": "Fă upgrade acum și preia controlul sănătății tale. Perioadă de probă gratuită disponibilă!"
+      },
+      "reminder6": {
+        "title": "Ultima șansă: Funcții premium 🚨",
+        "body": "Nu rata urmărirea nelimitată și analiza durerilor de cap."
+      },
+      "reminder7": {
+        "title": "Ne este dor de tine! 💚",
+        "body": "Revino și continuă urmărirea durerilor de cap. Funcțiile premium te așteaptă."
+      },
+      "trialEnds": "Perioada ta de probă se termină mâine"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "M-am trezit cu ea, sensibilitate la lumină",
+      "afterLongMeeting": "A început după o ședință lungă",
+      "leftWorkEarly": "A trebuit să plec mai devreme de la muncă, greață și aură",
+      "worstThisMonth": "Cea mai gravă din luna aceasta, triptanul a ajutat după 1 oră",
+      "rainyDay": "Zi ploioasă, schimbarea presiunii probabil cauza",
+      "onlySleptFourHours": "Am dormit doar 4 ore, am avut nevoie de ambele medicamente",
+      "tooMuchCoffee": "Prea multă cafea ieri, am plătit azi pentru asta"
+    }
+  }
+}

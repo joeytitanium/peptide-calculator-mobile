@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "error": "Errore",
+    "ok": "OK",
+    "enabled": "Attivato",
+    "disabled": "Disattivato"
+  },
+  "settings": {
+    "unlockPro": "Sblocca Pro",
+    "unlockProSubtitle": "Ottieni Accesso Completo",
+    "contactSupport": "Contatta il supporto",
+    "contactSupportSubtitle": "Aiuto, commenti o suggerimenti",
+    "rateApp": "Valuta l'app",
+    "rateAppSubtitle": "Condividi il tuo feedback",
+    "shareApp": "Condividi l'app",
+    "shareAppSubtitle": "Dillo ai tuoi amici",
+    "shareMessage": "Dai un'occhiata a {{appName}}!",
+    "appearance": "Aspetto",
+    "appearanceSubtitle": "Scegli il tuo tema",
+    "themeSystem": "Sistema",
+    "themeLight": "Chiaro",
+    "themeDark": "Scuro",
+    "privacyPolicy": "Informativa sulla privacy",
+    "privacyPolicySubtitle": "Visualizza la nostra informativa sulla privacy",
+    "termsOfService": "Termini di servizio",
+    "termsOfServiceSubtitle": "Visualizza i nostri termini di servizio",
+    "account": "Account",
+    "signedInWithApple": "Accesso con Apple",
+    "resetOnboarding": "Reimposta onboarding",
+    "resetOnboardingSubtitle": "Cancella stato onboarding",
+    "onboardingResetTitle": "Onboarding reimpostato",
+    "onboardingResetMessage": "Riavvia l'app per vedere il flusso di onboarding.",
+    "version": "Versione",
+    "emailPlaceholder": "Per favore lascia il tuo messaggio sopra questa riga",
+    "emailAppName": "App:",
+    "emailAppVersion": "Versione app:",
+    "emailOS": "SO:",
+    "emailUserId": "ID utente:",
+    "checkInReminders": "Promemoria check-in",
+    "language": "Lingua",
+    "systemDefault": "Predefinito di sistema",
+    "reminderTime": "Promemoria",
+    "addReminder": "Aggiungi promemoria"
+  },
+  "account": {
+    "editProfile": "Modifica profilo",
+    "editProfileSubtitle": "Aggiorna la tua foto profilo",
+    "signOut": "Esci",
+    "signOutConfirmTitle": "Esci",
+    "signOutConfirmMessage": "Sei sicuro di voler uscire?",
+    "deleteAccount": "Elimina account",
+    "deleteAccountSubtitle": "Elimina permanentemente il tuo account e i dati",
+    "deleteAccountTitle": "Elimina account",
+    "deleteAccountWarning": "Questa azione è permanente e non può essere annullata. Tutti i tuoi dati, inclusi post, commenti e informazioni dell'account saranno eliminati permanentemente.",
+    "deleteAccountConfirmPrompt": "Per confermare, digita \"{{confirmText}}\" qui sotto:",
+    "deleteAccountConfirmText": "elimina account permanentemente",
+    "deleteAccountScheduledTitle": "Account programmato per l'eliminazione",
+    "deleteAccountScheduledMessage": "Il tuo account sarà eliminato entro le prossime 24 ore.",
+    "deleteAccountConfirmError": "Per favore digita il testo di conferma esattamente."
+  },
+  "profile": {
+    "tapToChangePhoto": "Tocca per cambiare la foto profilo",
+    "username": "Nome utente",
+    "notSet": "Non impostato",
+    "failedToUpdate": "Aggiornamento profilo fallito"
+  },
+  "log": {
+    "whenDidItStart": "Quando è iniziato?",
+    "dateTime": "Data e ora",
+    "severity": "Severità",
+    "severityScale": "su 10",
+    "severityValue": "Gravità: {{value}}/10",
+    "severityLevels": {
+      "mild": "Lieve",
+      "moderate": "Moderato",
+      "severe": "Grave"
+    },
+    "headacheType": "Tipo",
+    "headacheTypes": {
+      "tension": "Cefalea tensiva",
+      "migraine": "Emicrania",
+      "cluster": "Cefalea a grappolo",
+      "sinus": "Cefalea sinusale",
+      "not-sure": "Non sono sicuro"
+    },
+    "location": "Posizione",
+    "locations": {
+      "front": "Fronte",
+      "back": "Nuca",
+      "left-side": "Lato sinistro",
+      "right-side": "Lato destro",
+      "top": "Sommità",
+      "all-over": "Ovunque"
+    },
+    "duration": "Durata",
+    "minutes": "min",
+    "triggers": "Fattori scatenanti",
+    "selectAllThatApply": "Seleziona tutte le opzioni applicabili",
+    "triggerOptions": {
+      "stress": "Stress",
+      "lack-of-sleep": "Mancanza di sonno",
+      "dehydration": "Disidratazione",
+      "screen-time": "Tempo schermo",
+      "weather": "Meteo",
+      "food": "Cibo",
+      "alcohol": "Alcol",
+      "caffeine": "Caffeina",
+      "hormones": "Ormoni",
+      "exercise": "Esercizio"
+    },
+    "medications": "Farmaci",
+    "medicationOptions": {
+      "ibuprofen": "Ibuprofene",
+      "acetaminophen": "Paracetamolo",
+      "aspirin": "Aspirina",
+      "triptan": "Triptano",
+      "none": "Nessuno"
+    },
+    "notes": "Note",
+    "optional": "Facoltativo",
+    "upgradeToProNotes": "Passa a PRO per aggiungere note",
+    "update": "Aggiorna",
+    "logButton": "Registra",
+    "logDetails": "Dettagli registro",
+    "date": "Data",
+    "time": "Ora",
+    "deleteLog": "Elimina registro",
+    "deleteLogTitle": "Elimina registro",
+    "deleteLogMessage": "Sei sicuro di voler eliminare questo registro? Questa azione non può essere annullata.",
+    "scanWithAI": "Scansiona con IA",
+    "analysisFailed": "Impossibile analizzare la foto. Riprova o inserisci manualmente.",
+    "noContainerDetected": "Nessun oggetto rilevato nella foto. Riprova con un'immagine più chiara."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Inizia",
+      "next": "Avanti",
+      "continue": "Continua",
+      "skip": "Salta"
+    },
+    "welcome": {
+      "title": "Monitora il tuo mal di testa,\nriprendi il controllo",
+      "subtitle": "Rispondiamo a qualche domanda rapida per personalizzare la tua esperienza"
+    },
+    "painPoints": {
+      "title": "Fai fatica a gestire il tuo mal di testa?",
+      "subtitle": "Senza monitorare schemi e fattori scatenanti, è difficile capire cosa aiuta. La nostra app rende facile registrare, identificare schemi e riprendere il controllo.",
+      "buttonText": "Mostrami come funziona"
+    },
+    "benefits": {
+      "title": "Questa app ti aiuta a",
+      "benefit1": "Monitorare il tuo mal di testa senza sforzo",
+      "benefit2": "Identificare schemi e fattori scatenanti",
+      "benefit3": "Ottenere informazioni personalizzate",
+      "benefit4": "Riprendere il controllo della tua salute",
+      "buttonText": "È quello che mi serve"
+    },
+    "comparison": {
+      "title": "Il monitoraggio funziona",
+      "subtitle": "Le persone che monitorano il loro mal di testa riportano risultati migliori",
+      "withoutTracking": "Senza monitoraggio",
+      "withApp": "Con questa app",
+      "buttonText": "Voglio riprendere il controllo"
+    },
+    "personalization": {
+      "title": "Personalizzazione della tua esperienza",
+      "subtitle": "Configurazione del tuo tracker per il mal di testa...",
+      "steps": {
+        "profile": {
+          "title": "Il tuo profilo",
+          "description": "Configurazione delle preferenze di monitoraggio"
+        },
+        "calendar": {
+          "title": "Configurazione calendario",
+          "description": "Preparazione del tuo calendario personale"
+        },
+        "insights": {
+          "title": "Informazioni intelligenti",
+          "description": "Preparazione delle raccomandazioni personalizzate"
+        },
+        "preferences": {
+          "title": "Preferenze",
+          "description": "Applicazione delle tue impostazioni"
+        },
+        "ready": {
+          "title": "Pronto!",
+          "description": "Il tuo tracker è pronto"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Tutto pronto!",
+      "subtitle": "Il tuo tracker personalizzato è pronto. Registra il tuo primo mal di testa e inizia a identificare gli schemi!"
+    },
+    "finished": {
+      "title": "Benvenuto",
+      "subtitle": "Il tuo tracker per il mal di testa è pronto",
+      "numberLabel": "persone monitorano il loro mal di testa",
+      "bottomTitle": "Pronto a registrare il tuo primo mal di testa?",
+      "bottomSubtitle": "Inizia a monitorare oggi e scopri i tuoi schemi",
+      "buttonText": "Sì, sono pronto!"
+    },
+    "community": {
+      "title": "Impariamo insieme",
+      "subtitle": "Connettiti con gli altri, condividi consigli e ricevi aiuto da una comunità solidale",
+      "buttonText": "Fantastico!"
+    },
+    "notifications": {
+      "title": "Resta aggiornato",
+      "subtitle": "Ricevi notifiche quando i membri della comunità commentano o votano i tuoi post",
+      "votesOnResults": "Voti sui tuoi risultati",
+      "repliesToPosts": "Risposte ai tuoi post",
+      "turnOn": "Attiva notifiche"
+    },
+    "checkInNotifications": {
+      "title": "Attiva i promemoria di check-in",
+      "subtitle": "Consenti le notifiche per ricevere i tuoi promemoria personalizzati",
+      "reason1": "Ricevi promemoria per registrare il mal di testa negli orari che preferisci",
+      "reason2": "Sviluppa abitudini di monitoraggio costanti",
+      "turnOn": "Attiva notifiche"
+    },
+    "sheet": {
+      "welcomeTo": "Benvenuto su"
+    },
+    "question1": {
+      "title": "Con quale frequenza soffri di mal di testa?",
+      "subtitle": "Questo ci aiuta a personalizzare la tua esperienza di monitoraggio.",
+      "options": {
+        "daily": "Ogni giorno",
+        "severalPerWeek": "Diverse volte a settimana",
+        "weekly": "Circa una volta a settimana",
+        "fewPerMonth": "Qualche volta al mese",
+        "rarely": "Raramente"
+      }
+    },
+    "question2": {
+      "title": "Che tipo di mal di testa hai di solito?",
+      "subtitle": "Non preoccuparti se non sei sicuro — puoi sempre cambiarlo in seguito.",
+      "options": {
+        "tension": "Cefalea tensiva",
+        "migraine": "Emicrania",
+        "cluster": "Cefalea a grappolo",
+        "sinus": "Cefalea sinusale",
+        "notSure": "Non sono sicuro"
+      }
+    },
+    "notifications": {
+      "title": "Quando dobbiamo ricordarti?",
+      "subtitle": "Scegli un orario per il tuo check-in giornaliero. Potrai aggiungerne altri nelle impostazioni."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Ancora nessun post",
+    "beFirstToShare": "Sii il primo a condividere con la comunità!",
+    "couldntLoadPosts": "Impossibile caricare i post",
+    "somethingWentWrong": "Qualcosa è andato storto. Controlla la connessione e riprova.",
+    "tryAgain": "Riprova",
+    "deletePostTitle": "Elimina post",
+    "deletePostMessage": "Sei sicuro di voler eliminare questo post?",
+    "viewAllComments": "Vedi tutti i {{count}} commenti"
+  },
+  "post": {
+    "delete": "Elimina",
+    "report": "Segnala",
+    "post": "Pubblica"
+  },
+  "comments": {
+    "title": "Commenti",
+    "noCommentsYet": "Ancora nessun commento",
+    "beFirstToComment": "Sii il primo a commentare!",
+    "loadingComments": "Caricamento commenti",
+    "postNotFound": "Post non trovato",
+    "addComment": "Aggiungi un commento..."
+  },
+  "createPost": {
+    "post": "Pubblica",
+    "placeholders": {
+      "shareResults": "Condividi i tuoi risultati...",
+      "shareStory": "Condividi la tua storia...",
+      "whatsOnMind": "A cosa stai pensando?",
+      "howFeeling": "Come ti senti oggi?",
+      "writeCaption": "Scrivi una didascalia...",
+      "shareCommunity": "Condividi con la comunità...",
+      "tellJourney": "Raccontaci la tua esperienza...",
+      "shareMoment": "Condividi il tuo momento..."
+    }
+  },
+  "reportPost": {
+    "description": "Dicci perché stai segnalando questo post. Lo esamineremo e prenderemo le misure appropriate.",
+    "placeholder": "Descrivi il problema...",
+    "submit": "Invia",
+    "successTitle": "Segnalazione inviata",
+    "successMessage": "Grazie per la segnalazione. Esamineremo questo post.",
+    "errorNoReason": "Per favore fornisci un motivo per la segnalazione."
+  },
+  "paywall": {
+    "tryForFree": "Prova gratis",
+    "continue": "Continua",
+    "noCommitment": "Senza impegno, cancella quando vuoi",
+    "freeTrialEnabled": "Prova gratuita attivata",
+    "noPurchasesFound": "Nessun acquisto trovato",
+    "tryAgain": "Riprova",
+    "errorTitle": "Errore",
+    "errorDescription": "Impossibile caricare gli abbonamenti. Riprova o contatta il supporto.",
+    "footer": {
+      "terms": "Termini",
+      "restorePurchase": "Ripristina acquisto",
+      "privacy": "Privacy"
+    },
+    "trial": {
+      "title": "Ottieni accesso illimitato per {{days}} giorni",
+      "subtitle": "Ti ricorderemo prima della fine della prova",
+      "today": "Oggi",
+      "todaySubtitle": "Sblocca l'accesso completo al tuo tracker per il mal di testa.",
+      "inTwoDays": "Tra 2 giorni",
+      "inTwoDaysSubtitle": "Ti invieremo un promemoria prima della fine della prova.",
+      "inThreeDays": "Tra 3 giorni",
+      "inThreeDaysSubtitle": "Il tuo abbonamento inizierà se non cancelli prima."
+    },
+    "nonTrial": {
+      "titleHard": "Sblocca l'app per continuare",
+      "titleSoft": "Ottieni Accesso Completo",
+      "subtitle": "Il tuo compagno per il monitoraggio del mal di testa"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Registrazione rapida e facile",
+        "description": "Registra voci in pochi secondi con la nostra interfaccia ottimizzata - senza problemi"
+      },
+      "reminders": {
+        "title": "Promemoria personalizzati",
+        "description": "Imposta promemoria personalizzati per registrare e monitorare il tuo mal di testa"
+      },
+      "noPaywall": {
+        "title": "Rimuovi il paywall fastidioso",
+        "description": "Niente più popup del paywall ogni volta che apri l'app"
+      },
+      "unlimited": {
+        "title": "Registrazione Illimitata",
+        "description": "Registra tutte le volte che vuoi - nessun limite mensile"
+      },
+      "indieDeveloper": {
+        "title": "Sostieni uno Sviluppatore Indipendente",
+        "description": "Aiuta a plasmare il futuro di questa app e goditi funzionalità esclusive create con cura da uno sviluppatore indipendente."
+      }
+    },
+    "reviews": {
+      "sarah": "Finalmente ho trovato un'app che rende il monitoraggio del mal di testa facile! La vista calendario è perfetta per individuare gli schemi nel tempo.",
+      "isaac": "Ho sofferto di emicranie per anni. Questa app mi ha aiutato a identificare i fattori scatenanti — ora riesco davvero a prevenirle!",
+      "emma": "Il mio neurologo mi ha consigliato di monitorare il mal di testa e questo ha reso tutto semplicissimo. Adoro avere dati reali per le visite!",
+      "arthur": "Il monitoraggio dei fattori scatenanti è brillante! Ho scoperto che la caffeina era il mio principale colpevole. Un vero game changer per la mia salute!",
+      "zoe": "Velocissimo da registrare - bastano pochi secondi. Sono costante da 3 mesi e i miei mal di testa si sono ridotti significativamente!",
+      "maya": "Come persona con emicranie croniche, avere tutto in un posto mi dà tranquillità. Adoro anche i promemoria giornalieri!"
+    },
+    "package": {
+      "freeTrial": "PROVA GRATUITA",
+      "perWeek": "/settimana",
+      "perMonth": "/mese",
+      "perYear": "/anno",
+      "once": "una tantum",
+      "percentOff": "{{percent}}% di sconto",
+      "savePercent": "RISPARMIA {{percent}}%",
+      "yearly": "annuale",
+      "weekly": "settimanale",
+      "monthly": "mensile",
+      "then": "poi ",
+      "daysFree": "{{count}} giorni gratis",
+      "introSubtitle": "{{count}} giorni gratis · poi {{price}}",
+      "weeklyIntroSubtitle": "{{count}} giorni gratis · Annulla in qualsiasi momento",
+      "weeklySubtitle": "Rinnovo automatico · Annulla in qualsiasi momento",
+      "monthlySubtitle": "Rinnovo automatico · Annulla in qualsiasi momento",
+      "annualSubtitle": "Fatturazione annuale · Annulla in qualsiasi momento",
+      "lifetimeSubtitle": "Pagamento unico",
+      "yearlyTitle": "Annuale",
+      "monthlyTitle": "Mensile",
+      "weeklyTitle": "Settimanale",
+      "lifetimeTitle": "A vita"
+    },
+    "wreath": {
+      "bestHealthApp": "Miglior app tracker mal di testa"
+    },
+    "v2": {
+      "title": "Scegli il tuo piano",
+      "perksIntro": "Abbonandoti sbloccherai i seguenti vantaggi:"
+    }
+  },
+  "setupProfile": {
+    "title": "Configura il tuo profilo",
+    "subtitle": "Ecco come apparirai agli altri nella comunità.",
+    "addPhoto": "Aggiungi foto profilo (facoltativo)",
+    "placeholder": "nome utente",
+    "next": "Avanti",
+    "usernameTaken": "Questo nome utente è già in uso.",
+    "failedToUpdate": "Aggiornamento profilo fallito",
+    "onlyLettersNumbersUnderscores": "Solo lettere, numeri e trattini bassi",
+    "checking": "Verifica in corso...",
+    "usernameIsTaken": "Nome utente già in uso",
+    "usernameIsAvailable": "Nome utente disponibile",
+    "usernameMinLength": "Almeno 3 caratteri",
+    "usernameMaxLength": "Massimo 20 caratteri",
+    "usernameInstructions": "3-20 caratteri. Solo lettere, numeri e trattini bassi.",
+    "usernameErrorInstructions": "Il nome utente deve avere 3-20 caratteri e contenere solo lettere, numeri e trattini bassi."
+  },
+  "confirm": {
+    "analyze": "Analizza",
+    "noPhotoToAnalyze": "Nessuna foto da analizzare",
+    "failedToProcessImage": "Elaborazione immagine fallita"
+  },
+  "feedback": {
+    "title": "Condividi il tuo feedback",
+    "subtitle": "Aiutaci a migliorare la tua esperienza",
+    "tellUs": "Dicci cosa possiamo migliorare",
+    "submit": "Invia",
+    "thankYouTitle": "Grazie!",
+    "thankYouMessage": "Il tuo feedback ci aiuta a migliorare l'app.",
+    "feedbackRequired": "Feedback richiesto",
+    "feedbackRequiredMessage": "Per favore inserisci il tuo feedback prima di inviare."
+  },
+  "history": {
+    "search": "Cerca",
+    "noConversationsYet": "Ancora nessuna conversazione",
+    "noConversationsMessage": "Le tue sessioni di aiuto appariranno qui quando inizierai a fare domande.",
+    "deleteTitle": "Elimina",
+    "deleteMessage": "Sei sicuro di voler eliminare? Questa azione non può essere annullata.",
+    "sortQuestionAZ": "Domanda (A-Z)",
+    "sortQuestionZA": "Domanda (Z-A)",
+    "sortDateNewest": "Data (Più recente)",
+    "sortDateOldest": "Data (Più vecchio)"
+  },
+  "chat": {
+    "askFollowUp": "Fai una domanda di follow-up..."
+  },
+  "signIn": {
+    "title": "Crea un account",
+    "subtitle": "Accedi per condividere con la comunità. È velocissimo!"
+  },
+  "calendar": {
+    "noRecords": "Nessun registro",
+    "noRecordsMessage": "Nessun registro di mal di testa per questa data.",
+    "firstLogPrompt": "Tocca + per aggiungere il tuo primo registro!",
+    "addLog": "Aggiungi registro"
+  },
+  "camera": {
+    "loading": "Caricamento...",
+    "continue": "Continua",
+    "permissionTitle": "Permesso fotocamera",
+    "permissionMessage": "Abbiamo bisogno del tuo permesso per mostrare la fotocamera"
+  },
+  "rating": {
+    "howWouldYouRate": "Come valuteresti la nostra analisi?"
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "calendar": "Calendario",
+    "settings": "Impostazioni"
+  },
+  "dashboard": {
+    "severity": "Severità",
+    "noData": "Nessun mal di testa questa settimana",
+    "totalHeadaches": "Totale cefalee",
+    "avgSeverity": "Severità media",
+    "avgDuration": "Durata media",
+    "topTrigger": "Causa principale",
+    "noDataTitle": "Nessun mal di testa registrato",
+    "noDataDescription": "Registra il tuo primo mal di testa per vedere le statistiche settimanali",
+    "addLog": "Aggiungi registro"
+  },
+  "navigation": {
+    "back": "Indietro",
+    "createPost": "Crea post",
+    "reportPost": "Segnala post",
+    "account": "Account",
+    "editProfile": "Modifica profilo",
+    "deleteAccount": "Elimina account",
+    "editLog": "Modifica registro",
+    "community": "Comunità",
+    "history": "Cronologia",
+    "logHeadache": "Registra mal di testa",
+    "language": "Lingua"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Questa pagina non è stata trovata."
+  },
+  "imageEdit": {
+    "brightness": "Luminosità",
+    "contrast": "Contrasto",
+    "invert": "Inverti",
+    "bw": "B&N"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Requisiti foto",
+    "whatToAvoid": "Cosa evitare",
+    "bullets": {
+      "ensureBothLines": "Assicurati che le aree della linea di controllo e di test siano visibili e ravvicinate.",
+      "testStraight": "Il test deve essere dritto e orizzontale.",
+      "clearPhoto": "Usa una foto chiara e di alta qualità con illuminazione uniforme.",
+      "simpleBackground": "Mantieni lo sfondo semplice, idealmente un colore solido.",
+      "avoidBlurry": "Evita foto sfocate o fuori fuoco.",
+      "dontCrop": "Non tagliare parti della finestra del test.",
+      "avoidShadows": "Evita ombre forti o riflessi sul test.",
+      "dontAngle": "Non scattare foto in angolo.",
+      "darkPhotos": "Foto scure senza contrasto."
+    },
+    "summary": {
+      "title": "Riguardo linee deboli, evaporazione e indentature",
+      "intro": "Le linee estremamente deboli possono essere difficili da rilevare per l'IA. Fai attenzione ai potenziali falsi positivi da:",
+      "evapLines": "Linee di evaporazione: ",
+      "evapDesc": "Segni deboli e incolori che appaiono quando il test si asciuga, tipicamente dopo la finestra di lettura raccomandata.",
+      "indentLines": "Linee di indentatura: ",
+      "indentDesc": "Segni sottili dal processo di produzione della striscia, che possono essere visibili indipendentemente dal risultato.",
+      "revisitGuide": "Puoi rivisitare questa guida in qualsiasi momento dall'icona info in basso a destra."
+    },
+    "next": "Avanti"
+  },
+  "videoDemo": {
+    "title": "Scansiona e ottieni risultati istantaneamente",
+    "subtitle": "Abbiamo aiutato oltre 10.000 donne a ottenere i loro risultati"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "Questa applicazione utilizza tecnologia IA che può produrre risultati imprecisi o incompleti. Verifica sempre le informazioni importanti da fonti autorevoli e usa il tuo giudizio quando prendi decisioni basate su contenuti generati dall'IA."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Questa è un'ottima app che uso ogni giorno. È facilissima da usare e adoro i widget.",
+      "zlassenp": "Vedere un conto alla rovescia per il mio viaggio o il compleanno di un amico mi entusiasma.",
+      "rajgha": "Rende difficile dimenticare eventi importanti. Vorrei solo ci fossero opzioni per i font.",
+      "jaynacc": "Non pensavo di usare molto questa app… ma ora la controllo ogni mattina."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Ora del check-in!",
+      "body": "Come stai con la testa? Registra il tuo stato di mal di testa."
+    },
+    "drip": {
+      "welcome": {
+        "title": "Benvenuto! 🧠",
+        "body": "Monitora il tuo mal di testa e scopri gli schemi. Registra il tuo primo mal di testa oggi!"
+      },
+      "reminder1": {
+        "title": "Monitora il tuo mal di testa 📊",
+        "body": "Il monitoraggio costante aiuta a trovare i fattori scatenanti. Passa alla versione premium per monitoraggio illimitato e analisi dettagliata."
+      },
+      "reminder2": {
+        "title": "Analisi Dettagliata 🎓",
+        "body": "Unisciti a migliaia di persone che hanno fatto l'upgrade per raccomandazioni personalizzate sugli schemi del mal di testa."
+      },
+      "reminder3": {
+        "title": "Offerta limitata: Sblocca tutto 🔓",
+        "body": "Ottieni monitoraggio illimitato + analisi dettagliata. Inizia la tua prova gratuita ora!"
+      },
+      "reminder4": {
+        "title": "Monitora in modo intelligente 📱",
+        "body": "Gli utenti premium ottengono analisi dettagliate, monitoraggio dei fattori scatenanti e registri illimitati."
+      },
+      "reminder5": {
+        "title": "Il tuo percorso contro il mal di testa 🌟",
+        "body": "Fai l'upgrade ora e prendi il controllo del tuo mal di testa. Prova gratuita disponibile!"
+      },
+      "reminder6": {
+        "title": "Ultima occasione: Funzionalità premium 🚨",
+        "body": "Non perdere il monitoraggio illimitato e l'analisi degli schemi."
+      },
+      "reminder7": {
+        "title": "Ci manchi! 🧠",
+        "body": "Torna e continua il tuo percorso di monitoraggio del mal di testa. Le funzionalità premium ti aspettano."
+      },
+      "trialEnds": "La tua prova termina domani"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Mi sono svegliato con il dolore, sensibilità alla luce",
+      "afterLongMeeting": "Iniziato dopo una lunga riunione",
+      "leftWorkEarly": "Ho dovuto lasciare il lavoro presto, nausea e aura",
+      "worstThisMonth": "Il peggiore questo mese, il triptan ha aiutato dopo 1 ora",
+      "rainyDay": "Giorno di pioggia, probabilmente per il cambio di pressione",
+      "onlySleptFourHours": "Ho dormito solo 4 ore, servivano entrambi i farmaci",
+      "tooMuchCoffee": "Troppo caffè ieri, ne ho pagato il prezzo oggi"
+    }
+  }
+}

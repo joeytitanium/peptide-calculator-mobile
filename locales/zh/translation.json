@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "error": "错误",
+    "ok": "确定",
+    "enabled": "已启用",
+    "disabled": "已禁用"
+  },
+  "settings": {
+    "unlockPro": "解锁Pro",
+    "unlockProSubtitle": "获取完整访问",
+    "contactSupport": "联系客服",
+    "contactSupportSubtitle": "帮助、评论或建议",
+    "rateApp": "评价应用",
+    "rateAppSubtitle": "分享您的反馈",
+    "shareApp": "分享应用",
+    "shareAppSubtitle": "告诉您的朋友",
+    "shareMessage": "快来看看{{appName}}！",
+    "appearance": "外观",
+    "appearanceSubtitle": "选择您的主题",
+    "themeSystem": "跟随系统",
+    "themeLight": "浅色",
+    "themeDark": "深色",
+    "privacyPolicy": "隐私政策",
+    "privacyPolicySubtitle": "查看我们的隐私政策",
+    "termsOfService": "服务条款",
+    "termsOfServiceSubtitle": "查看我们的服务条款",
+    "account": "账户",
+    "signedInWithApple": "已通过Apple登录",
+    "resetOnboarding": "重置引导",
+    "resetOnboardingSubtitle": "清除引导状态",
+    "onboardingResetTitle": "引导已重置",
+    "onboardingResetMessage": "重启应用以查看引导流程。",
+    "version": "版本",
+    "emailPlaceholder": "请在此行上方留言",
+    "emailAppName": "应用：",
+    "emailAppVersion": "应用版本：",
+    "emailOS": "操作系统：",
+    "emailUserId": "用户ID：",
+    "checkInReminders": "签到提醒",
+    "language": "语言",
+    "systemDefault": "系统默认",
+    "reminderTime": "提醒",
+    "addReminder": "添加提醒"
+  },
+  "account": {
+    "editProfile": "编辑个人资料",
+    "editProfileSubtitle": "更新您的头像",
+    "signOut": "退出登录",
+    "signOutConfirmTitle": "退出登录",
+    "signOutConfirmMessage": "确定要退出登录吗？",
+    "deleteAccount": "删除账户",
+    "deleteAccountSubtitle": "永久删除您的账户和数据",
+    "deleteAccountTitle": "删除账户",
+    "deleteAccountWarning": "此操作不可逆。您的所有数据，包括帖子、评论和账户信息将被永久删除。",
+    "deleteAccountConfirmPrompt": "请在下方输入\"{{confirmText}}\"以确认：",
+    "deleteAccountConfirmText": "永久删除账户",
+    "deleteAccountScheduledTitle": "账户已安排删除",
+    "deleteAccountScheduledMessage": "您的账户将在24小时内被删除。",
+    "deleteAccountConfirmError": "请准确输入确认文本。"
+  },
+  "profile": {
+    "tapToChangePhoto": "点击更换头像",
+    "username": "用户名",
+    "notSet": "未设置",
+    "failedToUpdate": "更新个人资料失败"
+  },
+  "log": {
+    "whenDidItStart": "什么时候开始的？",
+    "dateTime": "日期和时间",
+    "severity": "严重程度",
+    "severityScale": "满分10分",
+    "severityValue": "严重程度: {{value}}/10",
+    "severityLevels": {
+      "mild": "轻度",
+      "moderate": "中度",
+      "severe": "重度"
+    },
+    "headacheType": "类型",
+    "headacheTypes": {
+      "tension": "紧张型",
+      "migraine": "偏头痛",
+      "cluster": "丛集型",
+      "sinus": "鼻窦型",
+      "not-sure": "不确定"
+    },
+    "location": "位置",
+    "locations": {
+      "front": "前额",
+      "back": "后脑",
+      "left-side": "左侧",
+      "right-side": "右侧",
+      "top": "头顶",
+      "all-over": "全头"
+    },
+    "duration": "持续时间",
+    "minutes": "分钟",
+    "triggers": "诱因",
+    "selectAllThatApply": "选择所有适用项",
+    "triggerOptions": {
+      "stress": "压力",
+      "lack-of-sleep": "睡眠不足",
+      "dehydration": "脱水",
+      "screen-time": "屏幕时间",
+      "weather": "天气",
+      "food": "饮食",
+      "alcohol": "酒精",
+      "caffeine": "咖啡因",
+      "hormones": "激素",
+      "exercise": "运动"
+    },
+    "medications": "药物",
+    "medicationOptions": {
+      "ibuprofen": "布洛芬",
+      "acetaminophen": "对乙酰氨基酚",
+      "aspirin": "阿司匹林",
+      "triptan": "曲坦类",
+      "none": "无"
+    },
+    "notes": "备注",
+    "optional": "可选",
+    "upgradeToProNotes": "升级到PRO以添加备注",
+    "update": "更新",
+    "logButton": "记录",
+    "logDetails": "记录详情",
+    "date": "日期",
+    "time": "时间",
+    "deleteLog": "删除记录",
+    "deleteLogTitle": "删除记录",
+    "deleteLogMessage": "确定要删除此记录吗？此操作不可撤销。",
+    "scanWithAI": "AI扫描",
+    "analysisFailed": "无法分析照片。请重试或手动输入。",
+    "noContainerDetected": "照片中未检测到对象。请用更清晰的图片重试。"
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "开始使用",
+      "next": "下一步",
+      "continue": "继续",
+      "skip": "跳过"
+    },
+    "welcome": {
+      "title": "记录头痛，\n掌控健康",
+      "subtitle": "让我们回答几个简单的问题来个性化你的体验"
+    },
+    "painPoints": {
+      "title": "头痛管理让你感到困扰？",
+      "subtitle": "不追踪模式和诱因，就很难找到有效的方法。这个应用让你轻松记录、识别模式、掌控健康。",
+      "buttonText": "看看怎么用"
+    },
+    "benefits": {
+      "title": "这个应用帮助你",
+      "benefit1": "轻松记录头痛",
+      "benefit2": "识别模式和诱因",
+      "benefit3": "获取个性化的洞察",
+      "benefit4": "掌控你的健康",
+      "buttonText": "这正是我需要的"
+    },
+    "comparison": {
+      "title": "记录有效",
+      "subtitle": "记录头痛的人反馈了更好的效果",
+      "withoutTracking": "没有记录",
+      "withApp": "使用这个应用",
+      "buttonText": "我想掌控健康"
+    },
+    "personalization": {
+      "title": "正在个性化你的体验",
+      "subtitle": "正在设置你的头痛追踪器...",
+      "steps": {
+        "profile": {
+          "title": "你的个人资料",
+          "description": "正在配置你的记录偏好"
+        },
+        "calendar": {
+          "title": "日历设置",
+          "description": "正在准备你的个人记录日历"
+        },
+        "insights": {
+          "title": "智能洞察",
+          "description": "正在训练个性化推荐"
+        },
+        "preferences": {
+          "title": "偏好设置",
+          "description": "正在应用你的设置"
+        },
+        "ready": {
+          "title": "准备就绪！",
+          "description": "你的追踪器已准备好"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "一切就绪！",
+      "subtitle": "你的个性化追踪器已准备好。记录第一次头痛，开始识别模式！"
+    },
+    "finished": {
+      "title": "欢迎",
+      "subtitle": "你的头痛追踪器已准备就绪",
+      "numberLabel": "人正在追踪头痛",
+      "bottomTitle": "准备好记录第一次头痛了吗？",
+      "bottomSubtitle": "从今天开始记录，发现你的模式",
+      "buttonText": "是的，我准备好了！"
+    },
+    "community": {
+      "title": "一起学习",
+      "subtitle": "与他人交流，分享技巧，从互助社区获得帮助",
+      "buttonText": "太棒了！"
+    },
+    "notifications": {
+      "title": "保持更新",
+      "subtitle": "当社区成员评论或投票你的帖子时获得通知",
+      "votesOnResults": "对你结果的投票",
+      "repliesToPosts": "对你帖子的回复",
+      "turnOn": "开启通知"
+    },
+    "checkInNotifications": {
+      "title": "开启签到提醒",
+      "subtitle": "允许通知以接收你的个性化提醒",
+      "reason1": "在你偏好的时间收到头痛记录提醒",
+      "reason2": "养成持续记录的习惯",
+      "turnOn": "开启通知"
+    },
+    "sheet": {
+      "welcomeTo": "欢迎来到"
+    },
+    "question1": {
+      "title": "你多久经历一次头痛？",
+      "subtitle": "这有助于我们个性化你的追踪体验。",
+      "options": {
+        "daily": "每天",
+        "severalPerWeek": "每周几次",
+        "weekly": "大约每周一次",
+        "fewPerMonth": "每月几次",
+        "rarely": "很少"
+      }
+    },
+    "question2": {
+      "title": "你通常会得哪种类型的头痛？",
+      "subtitle": "不确定也没关系 — 你随时可以更改。",
+      "options": {
+        "tension": "紧张型头痛",
+        "migraine": "偏头痛",
+        "cluster": "丛集性头痛",
+        "sinus": "鼻窦头痛",
+        "notSure": "不确定"
+      }
+    },
+    "notifications": {
+      "title": "什么时候提醒您？",
+      "subtitle": "选择每日签到的时间。您可以稍后在设置中添加更多。"
+    }
+  },
+  "feed": {
+    "noPostsYet": "还没有帖子",
+    "beFirstToShare": "成为第一个与社区分享的人！",
+    "couldntLoadPosts": "无法加载帖子",
+    "somethingWentWrong": "出了点问题。请检查你的连接并重试。",
+    "tryAgain": "重试",
+    "deletePostTitle": "删除帖子",
+    "deletePostMessage": "确定要删除这个帖子吗？",
+    "viewAllComments": "查看全部{{count}}条评论"
+  },
+  "post": {
+    "delete": "删除",
+    "report": "举报",
+    "post": "发布"
+  },
+  "comments": {
+    "title": "评论",
+    "noCommentsYet": "还没有评论",
+    "beFirstToComment": "成为第一个评论的人！",
+    "loadingComments": "正在加载评论",
+    "postNotFound": "帖子未找到",
+    "addComment": "添加评论..."
+  },
+  "createPost": {
+    "post": "发布",
+    "placeholders": {
+      "shareResults": "分享你的结果...",
+      "shareStory": "分享你的故事...",
+      "whatsOnMind": "你在想什么？",
+      "howFeeling": "今天感觉怎么样？",
+      "writeCaption": "写个说明...",
+      "shareCommunity": "与社区分享...",
+      "tellJourney": "告诉我们你的经历...",
+      "shareMoment": "分享你的时刻..."
+    }
+  },
+  "reportPost": {
+    "description": "请告诉我们你举报这个帖子的原因。我们会审核并采取适当措施。",
+    "placeholder": "描述问题...",
+    "submit": "提交",
+    "successTitle": "举报已提交",
+    "successMessage": "感谢你的举报。我们会审核这个帖子。",
+    "errorNoReason": "请提供举报原因。"
+  },
+  "paywall": {
+    "tryForFree": "免费试用",
+    "continue": "继续",
+    "noCommitment": "无需承诺，随时取消",
+    "freeTrialEnabled": "免费试用已启用",
+    "noPurchasesFound": "未找到购买记录",
+    "tryAgain": "重试",
+    "errorTitle": "错误",
+    "errorDescription": "无法加载订阅。请重试或联系客服。",
+    "footer": {
+      "terms": "条款",
+      "restorePurchase": "恢复购买",
+      "privacy": "隐私"
+    },
+    "trial": {
+      "title": "获取 {{days}} 天无限访问权限",
+      "subtitle": "我们会在试用结束前提醒你",
+      "today": "今天",
+      "todaySubtitle": "解锁头痛追踪器的完整访问。",
+      "inTwoDays": "2天后",
+      "inTwoDaysSubtitle": "我们会在试用结束前发送提醒。",
+      "inThreeDays": "3天后",
+      "inThreeDaysSubtitle": "除非你在之前取消，否则订阅将开始。"
+    },
+    "nonTrial": {
+      "titleHard": "解锁应用以继续",
+      "titleSoft": "获取完整访问",
+      "subtitle": "你的头痛追踪伙伴"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "快速轻松记录",
+        "description": "用我们简洁的界面几秒钟内完成记录 - 毫无麻烦"
+      },
+      "reminders": {
+        "title": "自定义提醒",
+        "description": "设置个性化提醒来记录和追踪头痛"
+      },
+      "noPaywall": {
+        "title": "移除烦人的付费墙",
+        "description": "每次打开应用不再弹出付费墙"
+      },
+      "unlimited": {
+        "title": "无限记录",
+        "description": "想记多少次就记多少次 - 没有每月限制"
+      },
+      "indieDeveloper": {
+        "title": "支持独立开发者",
+        "description": "帮助塑造这款应用的未来，享受由独立开发者用心打造的专属功能。"
+      }
+    },
+    "reviews": {
+      "sarah": "终于找到一个让头痛记录变得简单的应用！日历视图非常适合查看长期模式。",
+      "isaac": "我多年来饱受偏头痛之苦。这个应用帮我找到了诱因——现在我可以真正预防它们了！",
+      "emma": "我的神经科医生建议我追踪头痛，这让一切变得简单。我喜欢有真实数据可以在就诊时分享！",
+      "arthur": "追踪诱因太棒了！发现咖啡因是我的主要元凶，对我的健康来说是一个改变游戏规则的发现！",
+      "zoe": "记录超快——只需几秒。我已经坚持3个月，头痛明显减少了！",
+      "maya": "作为慢性偏头痛患者，把所有东西放在一个地方让我很安心。非常喜欢每日提醒！"
+    },
+    "package": {
+      "freeTrial": "免费试用",
+      "perWeek": "/周",
+      "perMonth": "/月",
+      "perYear": "/年",
+      "once": "一次性",
+      "percentOff": "优惠{{percent}}%",
+      "savePercent": "节省{{percent}}%",
+      "yearly": "年付",
+      "weekly": "周付",
+      "monthly": "月付",
+      "then": "之后 ",
+      "daysFree": "{{count}}天免费",
+      "introSubtitle": "免费{{count}}天 · 之后{{price}}",
+      "weeklyIntroSubtitle": "免费{{count}}天 · 随时取消",
+      "weeklySubtitle": "自动续订 · 随时取消",
+      "monthlySubtitle": "自动续订 · 随时取消",
+      "annualSubtitle": "按年计费 · 随时取消",
+      "lifetimeSubtitle": "一次性付款",
+      "yearlyTitle": "年度",
+      "monthlyTitle": "月度",
+      "weeklyTitle": "每周",
+      "lifetimeTitle": "终身"
+    },
+    "wreath": {
+      "bestHealthApp": "最佳头痛追踪应用"
+    },
+    "v2": {
+      "title": "选择您的计划",
+      "perksIntro": "订阅后将解锁以下特权："
+    }
+  },
+  "setupProfile": {
+    "title": "设置你的个人资料",
+    "subtitle": "这是你在社区中展示给其他人的样子。",
+    "addPhoto": "添加头像（可选）",
+    "placeholder": "用户名",
+    "next": "下一步",
+    "usernameTaken": "此用户名已被使用。",
+    "failedToUpdate": "更新个人资料失败",
+    "onlyLettersNumbersUnderscores": "仅限字母、数字和下划线",
+    "checking": "检查中...",
+    "usernameIsTaken": "用户名已被使用",
+    "usernameIsAvailable": "用户名可用",
+    "usernameMinLength": "至少需要3个字符",
+    "usernameMaxLength": "不能超过20个字符",
+    "usernameInstructions": "3-20个字符。仅限字母、数字和下划线。",
+    "usernameErrorInstructions": "用户名必须为3-20个字符，且只能包含字母、数字和下划线。"
+  },
+  "confirm": {
+    "analyze": "分析",
+    "noPhotoToAnalyze": "没有照片可分析",
+    "failedToProcessImage": "处理图片失败"
+  },
+  "feedback": {
+    "title": "分享你的反馈",
+    "subtitle": "帮助我们改善你的体验",
+    "tellUs": "告诉我们可以改进什么",
+    "submit": "提交",
+    "thankYouTitle": "谢谢！",
+    "thankYouMessage": "你的反馈帮助我们改善应用。",
+    "feedbackRequired": "需要反馈",
+    "feedbackRequiredMessage": "请在提交前输入你的反馈。"
+  },
+  "history": {
+    "search": "搜索",
+    "noConversationsYet": "还没有对话",
+    "noConversationsMessage": "开始提问后，你的帮助会话将显示在这里。",
+    "deleteTitle": "删除",
+    "deleteMessage": "确定要删除吗？此操作不可撤销。",
+    "sortQuestionAZ": "问题（A-Z）",
+    "sortQuestionZA": "问题（Z-A）",
+    "sortDateNewest": "日期（最新）",
+    "sortDateOldest": "日期（最旧）"
+  },
+  "chat": {
+    "askFollowUp": "提一个后续问题..."
+  },
+  "signIn": {
+    "title": "创建账户",
+    "subtitle": "登录与社区分享。超级快捷！"
+  },
+  "calendar": {
+    "noRecords": "没有记录",
+    "noRecordsMessage": "该日期没有头痛记录。",
+    "firstLogPrompt": "点击+添加你的第一条记录！",
+    "addLog": "添加记录"
+  },
+  "camera": {
+    "loading": "加载中...",
+    "continue": "继续",
+    "permissionTitle": "相机权限",
+    "permissionMessage": "我们需要你的权限来显示相机"
+  },
+  "rating": {
+    "howWouldYouRate": "你如何评价我们的分析？"
+  },
+  "tabs": {
+    "dashboard": "仪表盘",
+    "calendar": "日历",
+    "settings": "设置"
+  },
+  "dashboard": {
+    "severity": "严重程度",
+    "noData": "本周无头痛",
+    "totalHeadaches": "头痛总次数",
+    "avgSeverity": "平均严重程度",
+    "avgDuration": "平均持续时间",
+    "topTrigger": "主要诱因",
+    "noDataTitle": "尚未记录任何头痛",
+    "noDataDescription": "记录第一次头痛以查看每周统计数据",
+    "addLog": "添加记录"
+  },
+  "navigation": {
+    "back": "返回",
+    "createPost": "创建帖子",
+    "reportPost": "举报帖子",
+    "account": "账户",
+    "editProfile": "编辑个人资料",
+    "deleteAccount": "删除账户",
+    "editLog": "编辑记录",
+    "community": "社区",
+    "history": "历史",
+    "logHeadache": "记录头痛",
+    "language": "语言"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "找不到此页面。"
+  },
+  "imageEdit": {
+    "brightness": "亮度",
+    "contrast": "对比度",
+    "invert": "反转",
+    "bw": "黑白"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "照片要求",
+    "whatToAvoid": "需要避免的",
+    "bullets": {
+      "ensureBothLines": "确保控制线和测试线区域都清晰可见。",
+      "testStraight": "测试条应保持水平放置。",
+      "clearPhoto": "使用光线均匀的清晰高质量照片。",
+      "simpleBackground": "保持背景简洁，最好是纯色。",
+      "avoidBlurry": "避免模糊或失焦的照片。",
+      "dontCrop": "不要裁剪测试窗口的部分。",
+      "avoidShadows": "避免测试上的强烈阴影或反光。",
+      "dontAngle": "不要以角度拍照。",
+      "darkPhotos": "没有对比度的暗照片。"
+    },
+    "summary": {
+      "title": "关于微弱线、蒸发线和压痕线",
+      "intro": "极微弱的线可能难以被AI检测。请注意可能的误报来源：",
+      "evapLines": "蒸发线：",
+      "evapDesc": "测试干燥时出现的微弱无色痕迹，通常在推荐阅读时间后出现。",
+      "indentLines": "压痕线：",
+      "indentDesc": "测试条制造过程中的微妙痕迹，无论结果如何都可能可见。",
+      "revisitGuide": "你可以随时通过右下角的信息图标重新查看本指南。"
+    },
+    "next": "下一步"
+  },
+  "videoDemo": {
+    "title": "扫描即刻获得结果",
+    "subtitle": "我们已帮助超过10,000名女性获得结果"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "免责声明",
+    "content": "此应用使用AI技术，可能产生不准确或不完整的结果。请始终从权威来源验证重要信息，并在基于AI生成内容做出决策时使用自己的判断。"
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "这是一个非常好的应用，我每天都在用。使用起来很方便，我喜欢小组件。",
+      "zlassenp": "看到旅行或朋友生日的倒计时让我很兴奋。",
+      "rajgha": "让重要事件难以忘记。只是希望有字体选项。",
+      "jaynacc": "没想到会经常用这个应用…但现在我每天早上都会看。"
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "头痛记录提醒 🧠",
+      "body": "该记录今天的头痛数据了。持续记录有助于识别规律！"
+    },
+    "drip": {
+      "welcome": {
+        "title": "欢迎！🧠",
+        "body": "追踪你的头痛并发现规律。今天记录第一个条目！"
+      },
+      "reminder1": {
+        "title": "追踪你的头痛 📊",
+        "body": "持续记录有助于识别规律。升级获取无限记录和详细洞察。"
+      },
+      "reminder2": {
+        "title": "详细分析 🎓",
+        "body": "加入数千名升级用户，获取个性化头痛管理建议。"
+      },
+      "reminder3": {
+        "title": "限时优惠：解锁全部 🔓",
+        "body": "获取无限记录 + 详细分析。立即开始免费试用！"
+      },
+      "reminder4": {
+        "title": "更智能地记录 📱",
+        "body": "高级用户可获取详细洞察、模式检测和无限记录。"
+      },
+      "reminder5": {
+        "title": "你的头痛管理之旅 🌟",
+        "body": "立即升级，掌控你的健康。免费试用可用！"
+      },
+      "reminder6": {
+        "title": "最后机会：高级功能 🚨",
+        "body": "不要错过无限记录和头痛详细分析。"
+      },
+      "reminder7": {
+        "title": "我们想你了！💚",
+        "body": "回来继续你的头痛追踪之旅。高级功能正等着你。"
+      },
+      "trialEnds": "你的试用明天到期"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "一醒来就痛，对光敏感",
+      "afterLongMeeting": "长会议后开始的",
+      "leftWorkEarly": "不得不提前下班，恶心和先兆",
+      "worstThisMonth": "这个月最严重的，曲坦1小时后起效",
+      "rainyDay": "下雨天，可能是气压变化引起的",
+      "onlySleptFourHours": "只睡了4小时，两种药都需要",
+      "tooMuchCoffee": "昨天咖啡喝太多，今天就遭罪了"
+    }
+  }
+}

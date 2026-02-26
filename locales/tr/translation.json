@@ -1,0 +1,591 @@
+{
+  "common": {
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "error": "Hata",
+    "ok": "Tamam",
+    "enabled": "Etkin",
+    "disabled": "Devre dışı"
+  },
+  "settings": {
+    "unlockPro": "Pro'yu Aç",
+    "unlockProSubtitle": "Tam Erişim Elde Edin",
+    "contactSupport": "Destek ile iletişime geçin",
+    "contactSupportSubtitle": "Yardım, yorumlar veya öneriler",
+    "rateApp": "Uygulamayı değerlendir",
+    "rateAppSubtitle": "Görüşlerinizi paylaşın",
+    "shareApp": "Uygulamayı paylaş",
+    "shareAppSubtitle": "Arkadaşlarınıza anlatın",
+    "shareMessage": "{{appName}}'a göz atın!",
+    "appearance": "Görünüm",
+    "appearanceSubtitle": "Temanızı seçin",
+    "themeSystem": "Sistem",
+    "themeLight": "Açık",
+    "themeDark": "Koyu",
+    "privacyPolicy": "Gizlilik politikası",
+    "privacyPolicySubtitle": "Gizlilik politikamızı görüntüleyin",
+    "termsOfService": "Hizmet şartları",
+    "termsOfServiceSubtitle": "Hizmet şartlarımızı görüntüleyin",
+    "account": "Hesap",
+    "signedInWithApple": "Apple ile giriş yapıldı",
+    "resetOnboarding": "Tanıtımı sıfırla",
+    "resetOnboardingSubtitle": "Tanıtım durumunu temizle",
+    "onboardingResetTitle": "Tanıtım sıfırlandı",
+    "onboardingResetMessage": "Tanıtım akışını görmek için uygulamayı yeniden başlatın.",
+    "version": "Sürüm",
+    "emailPlaceholder": "Lütfen mesajınızı bu satırın üzerine bırakın",
+    "emailAppName": "Uygulama:",
+    "emailAppVersion": "Uygulama Sürümü:",
+    "emailOS": "İşletim Sistemi:",
+    "emailUserId": "Kullanıcı Kimliği:",
+    "checkInReminders": "Check-in hatırlatıcıları",
+    "language": "Dil",
+    "systemDefault": "Sistem varsayılanı",
+    "reminderTime": "Hatırlatıcı",
+    "addReminder": "Hatırlatıcı ekle"
+  },
+  "account": {
+    "editProfile": "Profili düzenle",
+    "editProfileSubtitle": "Profil fotoğrafınızı güncelleyin",
+    "signOut": "Çıkış yap",
+    "signOutConfirmTitle": "Çıkış Yap",
+    "signOutConfirmMessage": "Çıkış yapmak istediğinizden emin misiniz?",
+    "deleteAccount": "Hesabı sil",
+    "deleteAccountSubtitle": "Hesabınızı ve verilerinizi kalıcı olarak silin",
+    "deleteAccountTitle": "Hesabı Sil",
+    "deleteAccountWarning": "Bu işlem kalıcıdır ve geri alınamaz. Gönderileriniz, yorumlarınız ve hesap bilgileriniz dahil tüm verileriniz kalıcı olarak silinecektir.",
+    "deleteAccountConfirmPrompt": "Onaylamak için aşağıya \"{{confirmText}}\" yazın:",
+    "deleteAccountConfirmText": "hesabı kalıcı olarak sil",
+    "deleteAccountScheduledTitle": "Hesap Silinmek Üzere Planlandı",
+    "deleteAccountScheduledMessage": "Hesabınız önümüzdeki 24 saat içinde silinecektir.",
+    "deleteAccountConfirmError": "Lütfen onay metnini tam olarak yazın."
+  },
+  "profile": {
+    "tapToChangePhoto": "Profil fotoğrafını değiştirmek için dokunun",
+    "username": "Kullanıcı adı",
+    "notSet": "Ayarlanmadı",
+    "failedToUpdate": "Profil güncellenemedi"
+  },
+  "log": {
+    "whenDidItStart": "Ne zaman başladı?",
+    "dateTime": "Tarih ve Saat",
+    "severity": "Şiddet",
+    "severityScale": "10 üzerinden",
+    "severityValue": "Şiddet: {{value}}/10",
+    "severityLevels": {
+      "mild": "Hafif",
+      "moderate": "Orta",
+      "severe": "Şiddetli"
+    },
+    "headacheType": "Tür",
+    "headacheTypes": {
+      "tension": "Gerilim",
+      "migraine": "Migren",
+      "cluster": "Küme",
+      "sinus": "Sinüs",
+      "not-sure": "Emin değilim"
+    },
+    "location": "Konum",
+    "locations": {
+      "front": "Ön",
+      "back": "Arka",
+      "left-side": "Sol taraf",
+      "right-side": "Sağ taraf",
+      "top": "Tepe",
+      "all-over": "Her yer"
+    },
+    "duration": "Süre",
+    "minutes": "dk",
+    "triggers": "Tetikleyiciler",
+    "selectAllThatApply": "Geçerli olanları seçin",
+    "triggerOptions": {
+      "stress": "Stres",
+      "lack-of-sleep": "Uyku eksikliği",
+      "dehydration": "Dehidrasyon",
+      "screen-time": "Ekran süresi",
+      "weather": "Hava durumu",
+      "food": "Gıda",
+      "alcohol": "Alkol",
+      "caffeine": "Kafein",
+      "hormones": "Hormonlar",
+      "exercise": "Egzersiz"
+    },
+    "medications": "İlaçlar",
+    "medicationOptions": {
+      "ibuprofen": "İbuprofen",
+      "acetaminophen": "Parasetamol",
+      "aspirin": "Aspirin",
+      "triptan": "Triptan",
+      "none": "Hiçbiri"
+    },
+    "notes": "Notlar",
+    "optional": "İsteğe bağlı",
+    "upgradeToProNotes": "Not eklemek için PRO'ya yükseltin",
+    "update": "Güncelle",
+    "logButton": "Kaydet",
+    "logDetails": "Kayıt Detayları",
+    "date": "Tarih",
+    "time": "Saat",
+    "deleteLog": "Kaydı sil",
+    "deleteLogTitle": "Kaydı Sil",
+    "deleteLogMessage": "Bu kaydı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "scanWithAI": "Yapay Zeka ile Tara",
+    "analysisFailed": "Fotoğraf analiz edilemedi. Lütfen tekrar deneyin veya manuel olarak girin.",
+    "noContainerDetected": "Fotoğrafta nesne algılanmadı. Lütfen daha net bir görüntü ile tekrar deneyin."
+  },
+  "onboarding": {
+    "button": {
+      "getStarted": "Başla",
+      "next": "İleri",
+      "continue": "Devam",
+      "skip": "Atla"
+    },
+    "welcome": {
+      "title": "Baş ağrılarınızı takip edin,\nkontrolü elinize alın",
+      "subtitle": "Deneyiminizi kişiselleştirmek için birkaç hızlı soruyu cevaplayalım"
+    },
+    "painPoints": {
+      "title": "Baş ağrılarınızı yönetmekte zorlanıyor musunuz?",
+      "subtitle": "Kalıpları ve tetikleyicileri takip etmeden neyin yardımcı olduğunu bulmak zordur. Uygulamamız kayıt tutmayı, kalıpları belirlemeyi ve kontrolü ele almayı kolaylaştırır.",
+      "buttonText": "Nasıl çalıştığını göster"
+    },
+    "benefits": {
+      "title": "Bu uygulama size yardımcı olur",
+      "benefit1": "Baş ağrılarınızı zahmetsizce takip edin",
+      "benefit2": "Kalıpları ve tetikleyicileri belirleyin",
+      "benefit3": "Kişiselleştirilmiş içgörüler elde edin",
+      "benefit4": "Sağlığınızın kontrolünü elinize alın",
+      "buttonText": "Tam da buna ihtiyacım var"
+    },
+    "comparison": {
+      "title": "Takip işe yarıyor",
+      "subtitle": "Baş ağrılarını takip eden insanlar daha iyi sonuçlar bildiriyor",
+      "withoutTracking": "Takip olmadan",
+      "withApp": "Bu uygulama ile",
+      "buttonText": "Kontrolü ele almak istiyorum"
+    },
+    "personalization": {
+      "title": "Deneyiminiz Kişiselleştiriliyor",
+      "subtitle": "Baş ağrısı takipçiniz kuruluyor...",
+      "steps": {
+        "profile": {
+          "title": "Profiliniz",
+          "description": "Takip tercihleriniz ayarlanıyor"
+        },
+        "calendar": {
+          "title": "Takvim Kurulumu",
+          "description": "Kişisel kayıt takviminiz hazırlanıyor"
+        },
+        "insights": {
+          "title": "Akıllı İçgörüler",
+          "description": "Kişiselleştirilmiş öneriler hazırlanıyor"
+        },
+        "preferences": {
+          "title": "Tercihler",
+          "description": "Ayarlarınız uygulanıyor"
+        },
+        "ready": {
+          "title": "Hazır!",
+          "description": "Takipçiniz kullanıma hazır"
+        }
+      }
+    },
+    "personalizationDone": {
+      "title": "Her şey hazır!",
+      "subtitle": "Kişiselleştirilmiş takipçiniz hazır. İlk baş ağrınızı kaydedin ve kalıpları belirlemeye başlayın!"
+    },
+    "finished": {
+      "title": "Hoş geldiniz",
+      "subtitle": "Baş ağrısı takipçiniz hazır",
+      "numberLabel": "kişi baş ağrılarını takip ediyor",
+      "bottomTitle": "İlk baş ağrınızı kaydetmeye hazır mısınız?",
+      "bottomSubtitle": "Bugün takibe başlayın ve kalıplarınızı keşfedin",
+      "buttonText": "Evet, hazırım!"
+    },
+    "community": {
+      "title": "Birlikte öğrenelim",
+      "subtitle": "Başkalarıyla bağlantı kurun, ipuçları paylaşın ve destekleyici bir topluluktan yardım alın",
+      "buttonText": "Harika!"
+    },
+    "notifications": {
+      "title": "Haberdar olun",
+      "subtitle": "Topluluk üyeleri gönderilerinize yorum yaptığında veya oy verdiğinde bildirim alın",
+      "votesOnResults": "Sonuçlarınıza verilen oylar",
+      "repliesToPosts": "Gönderilerinize verilen yanıtlar",
+      "turnOn": "Bildirimleri aç"
+    },
+    "checkInNotifications": {
+      "title": "Kontrol Hatırlatıcılarını Etkinleştir",
+      "subtitle": "Kişiselleştirilmiş hatırlatıcılarınızı almak için bildirimlere izin verin",
+      "reason1": "Tercih ettiğiniz saatlerde baş ağrılarınızı kaydetmeniz için hatırlatma alın",
+      "reason2": "Tutarlı takip alışkanlıkları oluşturun",
+      "turnOn": "Bildirimleri aç"
+    },
+    "sheet": {
+      "welcomeTo": "Hoş geldiniz"
+    },
+    "question1": {
+      "title": "Ne sıklıkla baş ağrısı yaşıyorsunuz?",
+      "subtitle": "Bu, takip deneyiminizi kişiselleştirmemize yardımcı olur.",
+      "options": {
+        "daily": "Her gün",
+        "severalPerWeek": "Haftada birkaç kez",
+        "weekly": "Haftada yaklaşık bir kez",
+        "fewPerMonth": "Ayda birkaç kez",
+        "rarely": "Nadiren"
+      }
+    },
+    "question2": {
+      "title": "Genellikle ne tür baş ağrısı yaşıyorsunuz?",
+      "subtitle": "Emin değilseniz endişelenmeyin — bunu daha sonra her zaman değiştirebilirsiniz.",
+      "options": {
+        "tension": "Gerilim tipi baş ağrısı",
+        "migraine": "Migren",
+        "cluster": "Küme baş ağrısı",
+        "sinus": "Sinüs baş ağrısı",
+        "notSure": "Emin değilim"
+      }
+    },
+    "notifications": {
+      "title": "Sizi ne zaman hatırlatalım?",
+      "subtitle": "Günlük check-in'iniz için bir saat seçin. Daha sonra ayarlardan daha fazlasını ekleyebilirsiniz."
+    }
+  },
+  "feed": {
+    "noPostsYet": "Henüz gönderi yok",
+    "beFirstToShare": "Toplulukla ilk paylaşan siz olun!",
+    "couldntLoadPosts": "Gönderiler yüklenemedi",
+    "somethingWentWrong": "Bir şeyler ters gitti. Lütfen bağlantınızı kontrol edip tekrar deneyin.",
+    "tryAgain": "Tekrar Dene",
+    "deletePostTitle": "Gönderiyi Sil",
+    "deletePostMessage": "Bu gönderiyi silmek istediğinizden emin misiniz?",
+    "viewAllComments": "Tüm {{count}} yorumu görüntüle"
+  },
+  "post": {
+    "delete": "Sil",
+    "report": "Şikayet Et",
+    "post": "Paylaş"
+  },
+  "comments": {
+    "title": "Yorumlar",
+    "noCommentsYet": "Henüz yorum yok",
+    "beFirstToComment": "İlk yorum yapan siz olun!",
+    "loadingComments": "Yorumlar yükleniyor",
+    "postNotFound": "Gönderi bulunamadı",
+    "addComment": "Yorum ekle..."
+  },
+  "createPost": {
+    "post": "Paylaş",
+    "placeholders": {
+      "shareResults": "Sonuçlarınızı paylaşın...",
+      "shareStory": "Hikayenizi paylaşın...",
+      "whatsOnMind": "Aklınızda ne var?",
+      "howFeeling": "Bugün nasıl hissediyorsunuz?",
+      "writeCaption": "Açıklama yazın...",
+      "shareCommunity": "Toplulukla paylaşın...",
+      "tellJourney": "Deneyiminizi anlatın...",
+      "shareMoment": "Anınızı paylaşın..."
+    }
+  },
+  "reportPost": {
+    "description": "Lütfen bu gönderiyi neden şikayet ettiğinizi bize söyleyin. İnceleyip gerekli önlemleri alacağız.",
+    "placeholder": "Sorunu açıklayın...",
+    "submit": "Gönder",
+    "successTitle": "Şikayet Gönderildi",
+    "successMessage": "Şikayetiniz için teşekkürler. Bu gönderiyi inceleyeceğiz.",
+    "errorNoReason": "Lütfen şikayetiniz için bir neden belirtin."
+  },
+  "paywall": {
+    "tryForFree": "Ücretsiz dene",
+    "continue": "Devam",
+    "noCommitment": "Taahhüt yok, istediğiniz zaman iptal edin",
+    "freeTrialEnabled": "Ücretsiz deneme etkinleştirildi",
+    "noPurchasesFound": "Satın alma bulunamadı",
+    "tryAgain": "Tekrar Dene",
+    "errorTitle": "Hata",
+    "errorDescription": "Abonelikler yüklenemedi. Lütfen tekrar deneyin veya sorun devam ederse destek ile iletişime geçin.",
+    "footer": {
+      "terms": "Şartlar",
+      "restorePurchase": "Satın Almayı Geri Yükle",
+      "privacy": "Gizlilik"
+    },
+    "trial": {
+      "title": "{{days}} gün sınırsız erişim alın",
+      "subtitle": "Deneme süreniz bitmeden hatırlatacağız",
+      "today": "Bugün",
+      "todaySubtitle": "Baş ağrısı takipçinize tam erişim açın.",
+      "inTwoDays": "2 Gün İçinde",
+      "inTwoDaysSubtitle": "Deneme süreniz bitmeden bir hatırlatma göndereceğiz.",
+      "inThreeDays": "3 Gün İçinde",
+      "inThreeDaysSubtitle": "İptal etmezseniz aboneliğiniz başlayacaktır."
+    },
+    "nonTrial": {
+      "titleHard": "Devam etmek için uygulamayı açın",
+      "titleSoft": "Tam Erişim Elde Edin",
+      "subtitle": "Baş ağrısı takip arkadaşınız"
+    },
+    "perks": {
+      "quickLogging": {
+        "title": "Hızlı ve Kolay Kayıt",
+        "description": "Optimize edilmiş arayüzümüzle saniyeler içinde kayıt yapın - zahmetsiz"
+      },
+      "reminders": {
+        "title": "Özel Hatırlatmalar",
+        "description": "Baş ağrılarınızı kaydetmek ve takip etmek için kişisel hatırlatmalar ayarlayın"
+      },
+      "noPaywall": {
+        "title": "Sinir bozucu paywall'ı kaldır",
+        "description": "Uygulamayı her açtığınızda paywall açılır pencereleri yok"
+      },
+      "unlimited": {
+        "title": "Sınırsız Kayıt",
+        "description": "İstediğiniz kadar kayıt yapın - aylık sınır yok"
+      },
+      "indieDeveloper": {
+        "title": "Bağımsız Bir Geliştiriciyi Destekle",
+        "description": "Bu uygulamanın geleceğini şekillendirmeye yardımcı olun ve bağımsız bir geliştirici tarafından özenle oluşturulan özel özelliklerin keyfini çıkarın."
+      }
+    },
+    "reviews": {
+      "sarah": "Sonunda baş ağrısı takibini kolaylaştıran bir uygulama buldum! Takvim görünümü zaman içindeki kalıpları görmek için mükemmel.",
+      "isaac": "Yıllardır migrenden muzdaribim. Bu uygulama tetikleyicilerimi belirlememe yardımcı oldu — artık onları önleyebiliyorum!",
+      "emma": "Nörologum baş ağrılarımı takip etmemi önerdi ve bu her şeyi çok kolaylaştırdı. Randevularda paylaşacak gerçek verilerim var!",
+      "arthur": "Tetikleyici takibi harika! Kafeinin ana sorunum olduğunu keşfettim. Sağlığım için oyun değiştirici oldu!",
+      "zoe": "Kayıt yapmak süper hızlı - sadece birkaç saniye. 3 aydır düzenli yapıyorum ve baş ağrılarım önemli ölçüde azaldı!",
+      "maya": "Kronik migrenden muzdarip biri olarak, her şeyin tek bir yerde olması bana huzur veriyor. Günlük hatırlatıcıları çok seviyorum!"
+    },
+    "package": {
+      "freeTrial": "ÜCRETSİZ DENEME",
+      "perWeek": "/hafta",
+      "perMonth": "/ay",
+      "perYear": "/yıl",
+      "once": "tek seferlik",
+      "percentOff": "%{{percent}} indirim",
+      "savePercent": "%{{percent}} TASARRUF",
+      "yearly": "yıllık",
+      "weekly": "haftalık",
+      "monthly": "aylık",
+      "then": "sonra ",
+      "daysFree": "{{count}} gün ücretsiz",
+      "introSubtitle": "{{count}} gün ücretsiz · sonra {{price}}",
+      "weeklyIntroSubtitle": "{{count}} gün ücretsiz · İstediğiniz zaman iptal edin",
+      "weeklySubtitle": "Otomatik yenileme · İstediğiniz zaman iptal edin",
+      "monthlySubtitle": "Otomatik yenileme · İstediğiniz zaman iptal edin",
+      "annualSubtitle": "Yıllık faturalandırma · İstediğiniz zaman iptal edin",
+      "lifetimeSubtitle": "Tek seferlik ödeme",
+      "yearlyTitle": "Yıllık",
+      "monthlyTitle": "Aylık",
+      "weeklyTitle": "Haftalık",
+      "lifetimeTitle": "Ömür boyu"
+    },
+    "wreath": {
+      "bestHealthApp": "En İyi Baş Ağrısı Takip Uygulaması"
+    },
+    "v2": {
+      "title": "Planınızı seçin",
+      "perksIntro": "Abone olarak aşağıdaki avantajları açarsınız:"
+    }
+  },
+  "setupProfile": {
+    "title": "Profilinizi kurun",
+    "subtitle": "Toplulukta diğerlerine böyle görüneceksiniz.",
+    "addPhoto": "Profil fotoğrafı ekle (isteğe bağlı)",
+    "placeholder": "kullanıcı adı",
+    "next": "İleri",
+    "usernameTaken": "Bu kullanıcı adı zaten alınmış.",
+    "failedToUpdate": "Profil güncellenemedi",
+    "onlyLettersNumbersUnderscores": "Yalnızca harfler, rakamlar ve alt çizgiler",
+    "checking": "Kontrol ediliyor...",
+    "usernameIsTaken": "Kullanıcı adı alınmış",
+    "usernameIsAvailable": "Kullanıcı adı müsait",
+    "usernameMinLength": "En az 3 karakter olmalı",
+    "usernameMaxLength": "20 karakterden az olmalı",
+    "usernameInstructions": "3-20 karakter. Yalnızca harfler, rakamlar ve alt çizgiler.",
+    "usernameErrorInstructions": "Kullanıcı adı 3-20 karakter olmalı ve yalnızca harf, rakam ve alt çizgi içermelidir."
+  },
+  "confirm": {
+    "analyze": "Analiz Et",
+    "noPhotoToAnalyze": "Analiz edilecek fotoğraf yok",
+    "failedToProcessImage": "Görüntü işlenemedi"
+  },
+  "feedback": {
+    "title": "Geri Bildiriminizi Paylaşın",
+    "subtitle": "Deneyiminizi geliştirmemize yardımcı olun",
+    "tellUs": "Neleri geliştirebileceğimizi söyleyin",
+    "submit": "Gönder",
+    "thankYouTitle": "Teşekkürler!",
+    "thankYouMessage": "Geri bildiriminiz uygulamayı geliştirmemize yardımcı oluyor.",
+    "feedbackRequired": "Geri Bildirim Gerekli",
+    "feedbackRequiredMessage": "Lütfen göndermeden önce geri bildiriminizi girin."
+  },
+  "history": {
+    "search": "Ara",
+    "noConversationsYet": "Henüz konuşma yok",
+    "noConversationsMessage": "Soru sormaya başladığınızda yardım oturumlarınız burada görünecek.",
+    "deleteTitle": "Sil",
+    "deleteMessage": "Bunu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "sortQuestionAZ": "Soru (A-Z)",
+    "sortQuestionZA": "Soru (Z-A)",
+    "sortDateNewest": "Tarih (En yeni)",
+    "sortDateOldest": "Tarih (En eski)"
+  },
+  "chat": {
+    "askFollowUp": "Takip sorusu sorun..."
+  },
+  "signIn": {
+    "title": "Hesap oluşturun",
+    "subtitle": "Toplulukla paylaşmak için giriş yapın. Çok hızlı!"
+  },
+  "calendar": {
+    "noRecords": "Kayıt yok",
+    "noRecordsMessage": "Bu tarih için baş ağrısı kaydı yok.",
+    "firstLogPrompt": "İlk kaydınızı eklemek için +'ya dokunun!",
+    "addLog": "Kayıt ekle"
+  },
+  "camera": {
+    "loading": "Yükleniyor...",
+    "continue": "Devam",
+    "permissionTitle": "Kamera izni",
+    "permissionMessage": "Kamerayı göstermek için izninize ihtiyacımız var"
+  },
+  "rating": {
+    "howWouldYouRate": "Analizimizi nasıl değerlendirirsiniz?"
+  },
+  "tabs": {
+    "dashboard": "Pano",
+    "calendar": "Takvim",
+    "settings": "Ayarlar"
+  },
+  "dashboard": {
+    "severity": "Şiddet",
+    "noData": "Bu hafta baş ağrısı yok",
+    "totalHeadaches": "Toplam baş ağrısı",
+    "avgSeverity": "Ort. şiddet",
+    "avgDuration": "Ort. süre",
+    "topTrigger": "Ana tetikleyici",
+    "noDataTitle": "Henüz baş ağrısı kaydedilmedi",
+    "noDataDescription": "Haftalık istatistiklerinizi görmek için ilk baş ağrınızı kaydedin",
+    "addLog": "Kayıt ekle"
+  },
+  "navigation": {
+    "back": "Geri",
+    "createPost": "Gönderi Oluştur",
+    "reportPost": "Gönderiyi Şikayet Et",
+    "account": "Hesap",
+    "editProfile": "Profili Düzenle",
+    "deleteAccount": "Hesabı Sil",
+    "editLog": "Kaydı Düzenle",
+    "community": "Topluluk",
+    "history": "Geçmiş",
+    "logHeadache": "Baş Ağrısı Kaydet",
+    "language": "Dil"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Bu sayfa bulunamadı."
+  },
+  "imageEdit": {
+    "brightness": "Parlaklık",
+    "contrast": "Kontrast",
+    "invert": "Ters Çevir",
+    "bw": "S&B"
+  },
+  "photoGuidelines": {
+    "photoRequirements": "Fotoğraf Gereksinimleri",
+    "whatToAvoid": "Nelerden Kaçınmalı",
+    "bullets": {
+      "ensureBothLines": "Hem kontrol hem de test çizgisi alanlarının yakın çekim ve görünür olduğundan emin olun.",
+      "testStraight": "Test düz ve yatay olmalıdır.",
+      "clearPhoto": "Düzgün aydınlatmalı net, yüksek kaliteli bir fotoğraf kullanın.",
+      "simpleBackground": "Arka planı basit tutun, ideal olarak düz bir renk.",
+      "avoidBlurry": "Bulanık veya odak dışı fotoğraflardan kaçının.",
+      "dontCrop": "Test penceresinin bölümlerini kırpmayın.",
+      "avoidShadows": "Test üzerinde sert gölgeler veya parlamadan kaçının.",
+      "dontAngle": "Açılı fotoğraf çekmeyin.",
+      "darkPhotos": "Kontrastsız karanlık fotoğraflar."
+    },
+    "summary": {
+      "title": "Soluk Çizgiler, Buharlaşma ve Girintiler Hakkında",
+      "intro": "Son derece soluk çizgiler yapay zeka tarafından algılanması zor olabilir. Olası yanlış pozitifler konusunda dikkatli olun:",
+      "evapLines": "Buharlaşma Çizgileri: ",
+      "evapDesc": "Test kurudukça ortaya çıkan soluk, renksiz izler, genellikle önerilen okuma penceresinden sonra.",
+      "indentLines": "Girinti Çizgileri: ",
+      "indentDesc": "Test şeridi üretim sürecinden kaynaklanan ince izler, sonuçtan bağımsız olarak görünür olabilir.",
+      "revisitGuide": "Bu kılavuzu istediğiniz zaman sağ alttaki bilgi simgesinden tekrar ziyaret edebilirsiniz."
+    },
+    "next": "İleri"
+  },
+  "videoDemo": {
+    "title": "Tarayın ve anında sonuç alın",
+    "subtitle": "10.000'den fazla kadının sonuçlarını almasına yardımcı olduk"
+  },
+  "proBadge": {
+    "pro": "PRO"
+  },
+  "disclaimer": {
+    "title": "Sorumluluk Reddi",
+    "content": "Bu uygulama, hatalı veya eksik sonuçlar üretebilen yapay zeka teknolojisi kullanmaktadır. Önemli bilgileri her zaman yetkili kaynaklardan doğrulayın ve yapay zeka tarafından üretilen içeriğe dayalı kararlar alırken kendi muhakemenizi kullanın."
+  },
+  "reviewCarousel": {
+    "reviews": {
+      "emilea": "Her gün kullandığım çok iyi bir uygulama. Kullanımı çok kolay ve widget'ları çok seviyorum.",
+      "zlassenp": "Gezime veya arkadaşımın doğum gününe geri sayım görmek beni heyecanlandırıyor.",
+      "rajgha": "Önemli etkinlikleri unutmayı zorlaştırıyor. Keşke yazı tipi seçenekleri olsaydı.",
+      "jaynacc": "Bu uygulamayı çok kullanacağımı düşünmemiştim… ama artık her sabah kontrol ediyorum."
+    }
+  },
+  "notifications": {
+    "checkInReminder": {
+      "title": "Baş Ağrısı Kayıt Hatırlatıcısı 🧠",
+      "body": "Bugünkü baş ağrısı verilerinizi kaydetme zamanı. Düzenli kayıt kalıpları belirlemeye yardımcı olur!"
+    },
+    "drip": {
+      "welcome": {
+        "title": "Hoş geldiniz! 🧠",
+        "body": "Baş ağrılarınızı takip edin ve kalıpları keşfedin. İlk kaydınızı bugün girin!"
+      },
+      "reminder1": {
+        "title": "Baş Ağrılarınızı Takip Edin 📊",
+        "body": "Düzenli kayıt kalıpları belirlemeye yardımcı olur. Sınırsız takip ve ayrıntılı içgörüler için yükseltin."
+      },
+      "reminder2": {
+        "title": "Ayrıntılı İçgörüler 🎓",
+        "body": "Kişiselleştirilmiş baş ağrısı yönetimi önerileri için yükseltme yapan binlerce kişiye katılın."
+      },
+      "reminder3": {
+        "title": "Sınırlı Süre: Her Şeyi Açın 🔓",
+        "body": "Sınırsız kayıt + ayrıntılı analiz edinin. Ücretsiz denemenizi şimdi başlatın!"
+      },
+      "reminder4": {
+        "title": "Daha Akıllı Takip Edin 📱",
+        "body": "Premium kullanıcılar detaylı içgörüler, kalıp tespiti ve sınırsız kayıt alır."
+      },
+      "reminder5": {
+        "title": "Baş Ağrısı Yolculuğunuz 🌟",
+        "body": "Şimdi yükseltin ve sağlığınızın kontrolünü elinize alın. Ücretsiz deneme mevcut!"
+      },
+      "reminder6": {
+        "title": "Son Şans: Premium Özellikler 🚨",
+        "body": "Sınırsız takip ve baş ağrısı analizini kaçırmayın."
+      },
+      "reminder7": {
+        "title": "Sizi Özledik! 💚",
+        "body": "Geri dönün ve baş ağrısı takip yolculuğunuza devam edin. Premium özellikler sizi bekliyor."
+      },
+      "trialEnds": "Deneme süreniz yarın bitiyor"
+    }
+  },
+  "seedData": {
+    "notes": {
+      "wokeUpWithIt": "Onunla uyandım, ışığa hassasiyet",
+      "afterLongMeeting": "Uzun toplantıdan sonra başladı",
+      "leftWorkEarly": "İşten erken çıkmak zorunda kaldım, mide bulantısı ve aura",
+      "worstThisMonth": "Bu ayın en kötüsü, triptan 1 saat sonra yardımcı oldu",
+      "rainyDay": "Yağmurlu gün, muhtemelen basınç değişikliği nedeniyle",
+      "onlySleptFourHours": "Sadece 4 saat uyudum, her iki ilaca da ihtiyaç duydum",
+      "tooMuchCoffee": "Dün çok fazla kahve içtim, bugün bedelini ödedim"
+    }
+  }
+}
