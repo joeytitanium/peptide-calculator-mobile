@@ -2,7 +2,7 @@ import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { CONFIG } from '@/config';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { Tabs } from 'expo-router';
-import { Icon, Label, NativeTabs } from 'expo-router/unstable-native-tabs';
+import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { BarChart3, CalendarDays, Settings } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
@@ -94,22 +94,28 @@ function IosTabs() {
       labelVisibilityMode="labeled"
     >
       <NativeTabs.Trigger name="dashboard">
-        <Label>{t('tabs.dashboard')}</Label>
-        <Icon
+        <NativeTabs.Trigger.Label>
+          {t('tabs.dashboard')}
+        </NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
           sf="chart.xyaxis.line"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="home">
-        <Label>{t('tabs.calendar')}</Label>
-        <Icon
+        <NativeTabs.Trigger.Label>
+          {t('tabs.calendar')}
+        </NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
           sf="calendar"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <Label>{t('tabs.settings')}</Label>
-        <Icon
+        <NativeTabs.Trigger.Label>
+          {t('tabs.settings')}
+        </NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
           sf="gearshape"
           selectedColor={CONFIG.tintColor.hex}
         />

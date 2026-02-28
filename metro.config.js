@@ -3,7 +3,6 @@ const { mergeConfig } = require('metro-config');
 const { withNativeWind } = require('nativewind/metro');
 
 const defaultConfig = getDefaultConfig(__dirname);
-const { sourceExts } = defaultConfig.resolver;
 
 /**
  * Metro configuration
@@ -13,9 +12,6 @@ const { sourceExts } = defaultConfig.resolver;
  */
 const customConfig = {
   cacheVersion: 'my-app',
-  resolver: {
-    sourceExts: [...sourceExts, 'cjs', 'mjs'],
-  },
   watchFolders: [],
 };
 

@@ -39,7 +39,7 @@ export const LocalVideoView = ({
     <VideoView
       className={className}
       player={player}
-      allowsFullscreen={false}
+      fullscreenOptions={{ enable: false }}
       allowsPictureInPicture={false}
       nativeControls={false}
       contentFit="cover"
