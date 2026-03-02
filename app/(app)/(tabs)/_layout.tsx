@@ -34,7 +34,10 @@ function AndroidTabs() {
         options={{
           title: 'Peptide',
           tabBarIcon: ({ color, size }) => (
-            <Calculator size={size} color={color} />
+            <Calculator
+              size={size}
+              color={color}
+            />
           ),
         }}
       />
@@ -43,16 +46,22 @@ function AndroidTabs() {
         options={{
           title: 'Blend',
           tabBarIcon: ({ color, size }) => (
-            <Beaker size={size} color={color} />
+            <Beaker
+              size={size}
+              color={color}
+            />
           ),
         }}
       />
       <Tabs.Screen
         name="reconstitution"
         options={{
-          title: 'Reconst.',
+          title: 'Reconstitution',
           tabBarIcon: ({ color, size }) => (
-            <Droplets size={size} color={color} />
+            <Droplets
+              size={size}
+              color={color}
+            />
           ),
         }}
       />
@@ -61,7 +70,10 @@ function AndroidTabs() {
         options={{
           title: 'Settings',
           tabBarIcon: ({ color, size }) => (
-            <Settings size={size} color={color} />
+            <Settings
+              size={size}
+              color={color}
+            />
           ),
         }}
       />
@@ -115,7 +127,7 @@ function IosTabs() {
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="reconstitution">
-        <NativeTabs.Trigger.Label>Reconst.</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>Reconstitution</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="drop.fill"
           selectedColor={CONFIG.tintColor.hex}

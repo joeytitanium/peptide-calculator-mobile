@@ -42,7 +42,10 @@ const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
 };
 
 export function BlendScreen() {
-  const { paddingTop, bottom } = useSafeAreaInsets();
+  const { paddingTop, bottom } = useSafeAreaInsets({
+    navigationBarPadding: 'none',
+    nativePadding: 'none',
+  });
 
   const [peptides, setPeptides] = useState<BlendPeptideInput[]>([
     { key: Math.random().toString(36).slice(2), peptideName: 'BPC-157', peptideAmountMg: '5', desiredDoseMcg: '250' },
@@ -116,10 +119,10 @@ export function BlendScreen() {
     <>
       <KeyboardAwareScrollView
         className="flex-1 bg-background"
-        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 16 }}
+        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 32 }}
         keyboardDismissMode="on-drag"
       >
-        <View className="gap-6">
+        <View className="gap-6 px-4">
           {/* Syringe Config */}
           <Card>
             <CardContent className="gap-4">
@@ -240,7 +243,7 @@ export function BlendScreen() {
           ))}
 
           {/* Add peptide button */}
-          <Button variant="outline" onPress={addPeptide} className="mx-4">
+          <Button variant="outline" onPress={addPeptide}>
             <Plus size={18} className="text-foreground" />
             <Text>Add Peptide</Text>
           </Button>

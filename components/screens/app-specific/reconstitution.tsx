@@ -1,18 +1,28 @@
-import { GlowIcon } from '@/components/core/glow-icon';
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
+import { GlowIcon } from '@/components/core/glow-icon';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Text } from '@/components/ui/text';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { useSafeAreaInsets } from '@/hooks/use-safe-area-insets';
-import type { SyringeDisplayMode, SyringeSize } from '@/types/app-specific/calculation';
-import { SYRINGE_DISPLAY_MODES, SYRINGE_SIZES } from '@/types/app-specific/calculation';
+import type {
+  SyringeDisplayMode,
+  SyringeSize,
+} from '@/types/app-specific/calculation';
+import {
+  SYRINGE_DISPLAY_MODES,
+  SYRINGE_SIZES,
+} from '@/types/app-specific/calculation';
 import {
   calculateReconstitution,
   parseNumericInput,
 } from '@/utils/app-specific/calculator-math';
-import { Droplets, FlaskConical, Syringe as SyringeIcon } from 'lucide-react-native';
+import {
+  Droplets,
+  FlaskConical,
+  Syringe as SyringeIcon,
+} from 'lucide-react-native';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
@@ -27,7 +37,10 @@ const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
 };
 
 export function ReconstitutionScreen() {
-  const { paddingTop, bottom } = useSafeAreaInsets();
+  const { paddingTop, bottom } = useSafeAreaInsets({
+    navigationBarPadding: 'none',
+    nativePadding: 'none',
+  });
 
   const [peptideAmountMg, setPeptideAmountMg] = useState('5');
   const [desiredDoseMcg, setDesiredDoseMcg] = useState('250');
@@ -62,16 +75,22 @@ export function ReconstitutionScreen() {
     <>
       <KeyboardAwareScrollView
         className="flex-1 bg-background"
-        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 16 }}
+        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 32 }}
         keyboardDismissMode="on-drag"
       >
-        <View className="gap-6">
+        <View className="gap-6 px-4">
           {/* Syringe Config */}
           <Card>
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={SyringeIcon} color="violet" size={18} />
-                <Text className="text-base font-semibold">Syringe Configuration</Text>
+                <GlowIcon
+                  icon={SyringeIcon}
+                  color="violet"
+                  size={18}
+                />
+                <Text className="text-base font-semibold">
+                  Syringe Configuration
+                </Text>
               </View>
 
               <Text className="text-sm font-medium">Syringe Type</Text>
@@ -126,12 +145,18 @@ export function ReconstitutionScreen() {
           <Card>
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={FlaskConical} color="blue" size={18} />
+                <GlowIcon
+                  icon={FlaskConical}
+                  color="blue"
+                  size={18}
+                />
                 <Text className="text-base font-semibold">Peptide Details</Text>
               </View>
 
               <View className="gap-1.5">
-                <Text className="text-sm font-medium">Peptide amount in vial</Text>
+                <Text className="text-sm font-medium">
+                  Peptide amount in vial
+                </Text>
                 <Input
                   value={peptideAmountMg}
                   onChangeText={setPeptideAmountMg}
@@ -156,7 +181,8 @@ export function ReconstitutionScreen() {
 
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">
-                  Desired {displayMode === 'units' ? 'units' : 'mL'} to draw per dose
+                  Desired {displayMode === 'units' ? 'units' : 'mL'} to draw per
+                  dose
                 </Text>
                 <Input
                   value={desiredUnits}
@@ -167,14 +193,13 @@ export function ReconstitutionScreen() {
                 />
                 <Text className="text-xs text-muted-foreground">
                   {displayMode === 'units' ? 'units' : 'mL'}
-                  {displayMode === 'units' && desiredMl != null && (
-                    ` (≈ ${desiredMl} mL)`
-                  )}
+                  {displayMode === 'units' &&
+                    desiredMl != null &&
+                    ` (≈ ${desiredMl} mL)`}
                 </Text>
               </View>
             </CardContent>
           </Card>
-
         </View>
       </KeyboardAwareScrollView>
 
@@ -187,7 +212,11 @@ export function ReconstitutionScreen() {
           <Card className="rounded-none bg-transparent">
             <CardContent className="gap-3">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={Droplets} color="teal" size={18} />
+                <GlowIcon
+                  icon={Droplets}
+                  color="teal"
+                  size={18}
+                />
                 <Text className="text-base font-semibold">Result</Text>
               </View>
 
@@ -202,14 +231,20 @@ export function ReconstitutionScreen() {
 
               <View className="gap-2 border-t border-border pt-3">
                 <View className="flex-row justify-between">
-                  <Text className="text-sm text-muted-foreground">Concentration</Text>
+                  <Text className="text-sm text-muted-foreground">
+                    Concentration
+                  </Text>
                   <Text className="text-sm font-medium">
                     {result.concentrationMcgPerMl} mcg/mL
                   </Text>
                 </View>
                 <View className="flex-row justify-between">
-                  <Text className="text-sm text-muted-foreground">Doses per vial</Text>
-                  <Text className="text-sm font-medium">{result.dosesPerVial}</Text>
+                  <Text className="text-sm text-muted-foreground">
+                    Doses per vial
+                  </Text>
+                  <Text className="text-sm font-medium">
+                    {result.dosesPerVial}
+                  </Text>
                 </View>
               </View>
             </CardContent>
@@ -218,7 +253,11 @@ export function ReconstitutionScreen() {
           <Card className="rounded-none bg-transparent">
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={Droplets} color="teal" size={18} />
+                <GlowIcon
+                  icon={Droplets}
+                  color="teal"
+                  size={18}
+                />
                 <Text className="text-base font-semibold">Result</Text>
               </View>
               <View className="items-center py-4">

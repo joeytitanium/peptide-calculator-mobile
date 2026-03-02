@@ -66,7 +66,7 @@ export function CalculatorScreen() {
     <>
       <KeyboardAwareScrollView
         className="flex-1 bg-background"
-        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 16 }}
+        contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 32 }}
         keyboardDismissMode="on-drag"
       >
         <View className="gap-6 px-4">
