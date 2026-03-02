@@ -21,6 +21,7 @@ import {
 import {
   Droplets,
   FlaskConical,
+  Info,
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useMemo, useState } from 'react';
@@ -30,6 +31,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 iconWithClassName(SyringeIcon);
 iconWithClassName(FlaskConical);
 iconWithClassName(Droplets);
+iconWithClassName(Info);
 
 const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
   units: 'Units',
@@ -211,39 +213,34 @@ export function ReconstitutionScreen() {
         {result ? (
           <Card className="rounded-none bg-transparent">
             <CardContent className="gap-3">
-              <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon
-                  icon={Droplets}
-                  color="teal"
-                  size={18}
-                />
-                <Text className="text-base font-semibold">Result</Text>
-              </View>
-
-              <View className="items-center py-4">
-                <Text className="text-5xl font-bold text-foreground">
-                  {result.waterToAddMl}
-                </Text>
-                <Text className="text-lg text-muted-foreground">
-                  mL of BAC water to add
-                </Text>
-              </View>
-
-              <View className="gap-2 border-t border-border pt-3">
-                <View className="flex-row justify-between">
-                  <Text className="text-sm text-muted-foreground">
-                    Concentration
+              {/* Main value */}
+              <View className="flex-row items-baseline justify-between">
+                <View className="flex-row items-baseline gap-2">
+                  <Text className="text-3xl font-bold text-foreground">
+                    {result.waterToAddMl} mL
                   </Text>
-                  <Text className="text-sm font-medium">
-                    {result.concentrationMcgPerMl} mcg/mL
+                  <Text className="text-sm text-muted-foreground">to add</Text>
+                </View>
+                <View className="flex-row items-baseline gap-1">
+                  <Text className="text-3xl font-bold text-foreground">
+                    {result.dosesPerVial}
+                  </Text>
+                  <Text className="text-sm text-muted-foreground">doses</Text>
+                </View>
+              </View>
+
+              {/* Stats */}
+              <View className="flex-row justify-between">
+                <View className="flex-row items-center gap-1.5">
+                  <Droplets size={13} className="text-muted-foreground" />
+                  <Text className="text-sm text-muted-foreground">
+                    BAC water
                   </Text>
                 </View>
-                <View className="flex-row justify-between">
+                <View className="flex-row items-center gap-1.5">
+                  <Info size={13} className="text-muted-foreground" />
                   <Text className="text-sm text-muted-foreground">
-                    Doses per vial
-                  </Text>
-                  <Text className="text-sm font-medium">
-                    {result.dosesPerVial}
+                    {result.concentrationMcgPerMl} mcg/mL
                   </Text>
                 </View>
               </View>
