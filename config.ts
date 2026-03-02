@@ -94,7 +94,7 @@ export const CONFIG: {
   },
   revenuecat: {
     apiKey: {
-      ios: 'appl_TODO',
+      ios: 'appl_ZKeTbWJFgIChwhBWwXKQTnWuRIZ',
       android: 'goog_TODO',
     },
   },

@@ -1,5 +1,5 @@
-import { GlassView } from '@/components/core/glass-view';
 import { GlowIcon } from '@/components/core/glow-icon';
+import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/core/syringe-result';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Card, CardContent } from '@/components/ui/card';
@@ -69,7 +69,7 @@ export function CalculatorScreen() {
         contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 16 }}
         keyboardDismissMode="on-drag"
       >
-        <View className="gap-6">
+        <View className="gap-6 px-4">
           {/* Syringe Config */}
           <Card>
             <CardContent className="gap-4">
@@ -201,24 +201,15 @@ export function CalculatorScreen() {
                   </CardContent>
                 </Card>
               )}
-
             </>
           )}
         </View>
       </KeyboardAwareScrollView>
 
       {/* Sticky preparation output */}
-      <GlassView
+      <StickyOutputPanel
+        bottom={bottom}
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
-        style={{
-          position: 'absolute',
-          bottom: bottom + 8,
-          left: 16,
-          right: 16,
-          borderTopLeftRadius: 24,
-          borderTopRightRadius: 24,
-          borderRadius: 24,
-        }}
       >
         {result ? (
           <SyringeResult
@@ -251,7 +242,7 @@ export function CalculatorScreen() {
             </CardContent>
           </Card>
         )}
-      </GlassView>
+      </StickyOutputPanel>
     </>
   );
 }

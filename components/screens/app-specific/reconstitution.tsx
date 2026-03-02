@@ -1,5 +1,5 @@
-import { GlassView } from '@/components/core/glass-view';
 import { GlowIcon } from '@/components/core/glow-icon';
+import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -179,15 +179,9 @@ export function ReconstitutionScreen() {
       </KeyboardAwareScrollView>
 
       {/* Sticky result */}
-      <GlassView
+      <StickyOutputPanel
+        bottom={bottom}
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
-        style={{
-          position: 'absolute',
-          bottom: bottom + 8,
-          left: 16,
-          right: 16,
-          borderRadius: 24,
-        }}
       >
         {result ? (
           <Card className="rounded-none bg-transparent">
@@ -235,7 +229,7 @@ export function ReconstitutionScreen() {
             </CardContent>
           </Card>
         )}
-      </GlassView>
+      </StickyOutputPanel>
     </>
   );
 }

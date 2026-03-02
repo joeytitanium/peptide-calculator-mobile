@@ -85,7 +85,7 @@ function ToggleGroupItem({
       value={cn(
         'text-sm text-foreground font-medium',
         isSelected
-          ? 'text-accent-foreground'
+          ? 'text-background'
           : Platform.select({ web: 'group-hover:text-muted-foreground' })
       )}
     >
@@ -96,7 +96,7 @@ function ToggleGroupItem({
             size: context.size || size,
           }),
           props.disabled && 'opacity-50',
-          isSelected && (selectedClassName ?? 'bg-accent'),
+          isSelected && (selectedClassName ?? 'bg-foreground'),
           'min-w-0 shrink-0 rounded-none shadow-none',
           isFirst && 'rounded-l-md',
           isLast && 'rounded-r-md',

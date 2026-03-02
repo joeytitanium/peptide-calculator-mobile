@@ -1,5 +1,5 @@
-import { GlassView } from '@/components/core/glass-view';
 import { GlowIcon } from '@/components/core/glow-icon';
+import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/core/syringe-result';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Button } from '@/components/ui/button';
@@ -303,15 +303,9 @@ export function BlendScreen() {
       </KeyboardAwareScrollView>
 
       {/* Sticky preparation output */}
-      <GlassView
+      <StickyOutputPanel
+        bottom={bottom}
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
-        style={{
-          position: 'absolute',
-          bottom: bottom + 8,
-          left: 16,
-          right: 16,
-          borderRadius: 24,
-        }}
       >
         {result ? (
           <SyringeResult
@@ -337,7 +331,7 @@ export function BlendScreen() {
             </CardContent>
           </Card>
         )}
-      </GlassView>
+      </StickyOutputPanel>
     </>
   );
 }
