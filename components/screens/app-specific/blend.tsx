@@ -1,6 +1,6 @@
-import { GlowIcon } from '@/components/core/glow-icon';
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/app-specific/syringe-result';
+import { GlowIcon } from '@/components/core/glow-icon';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -8,10 +8,25 @@ import { Input } from '@/components/ui/input';
 import { Text } from '@/components/ui/text';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { useSafeAreaInsets } from '@/hooks/use-safe-area-insets';
-import type { SyringeDisplayMode, SyringeSize } from '@/types/app-specific/calculation';
-import { SYRINGE_DISPLAY_MODES, SYRINGE_SIZES } from '@/types/app-specific/calculation';
-import { calculateBlendDose, parseNumericInput } from '@/utils/app-specific/calculator-math';
-import { Droplets, FlaskConical, Minus, Plus, Syringe as SyringeIcon } from 'lucide-react-native';
+import type {
+  SyringeDisplayMode,
+  SyringeSize,
+} from '@/types/app-specific/calculation';
+import {
+  SYRINGE_DISPLAY_MODES,
+  SYRINGE_SIZES,
+} from '@/types/app-specific/calculation';
+import {
+  calculateBlendDose,
+  parseNumericInput,
+} from '@/utils/app-specific/calculator-math';
+import {
+  Droplets,
+  FlaskConical,
+  Minus,
+  Plus,
+  Syringe as SyringeIcon,
+} from 'lucide-react-native';
 import { useCallback, useMemo, useState } from 'react';
 import { View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
@@ -48,8 +63,18 @@ export function BlendScreen() {
   });
 
   const [peptides, setPeptides] = useState<BlendPeptideInput[]>([
-    { key: Math.random().toString(36).slice(2), peptideName: 'BPC-157', peptideAmountMg: '5', desiredDoseMcg: '250' },
-    { key: Math.random().toString(36).slice(2), peptideName: 'TB-500', peptideAmountMg: '5', desiredDoseMcg: '500' },
+    {
+      key: Math.random().toString(36).slice(2),
+      peptideName: 'BPC-157',
+      peptideAmountMg: '5',
+      desiredDoseMcg: '250',
+    },
+    {
+      key: Math.random().toString(36).slice(2),
+      peptideName: 'TB-500',
+      peptideAmountMg: '5',
+      desiredDoseMcg: '500',
+    },
   ]);
   const [waterVolumeMl, setWaterVolumeMl] = useState('2');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
@@ -127,8 +152,14 @@ export function BlendScreen() {
           <Card>
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={SyringeIcon} color="violet" size={18} />
-                <Text className="text-base font-semibold">Syringe Configuration</Text>
+                <GlowIcon
+                  icon={SyringeIcon}
+                  color="violet"
+                  size={18}
+                />
+                <Text className="text-base font-semibold">
+                  Syringe Configuration
+                </Text>
               </View>
 
               <Text className="text-sm font-medium">Syringe Type</Text>
@@ -185,8 +216,14 @@ export function BlendScreen() {
               <CardContent className="gap-4">
                 <View className="flex-row items-center justify-between">
                   <View className="flex-row items-center gap-3 pb-2">
-                    <GlowIcon icon={FlaskConical} color="blue" size={18} />
-                    <Text className="text-base font-semibold">Peptide {index + 1}</Text>
+                    <GlowIcon
+                      icon={FlaskConical}
+                      color="blue"
+                      size={18}
+                    />
+                    <Text className="text-base font-semibold">
+                      Peptide {index + 1}
+                    </Text>
                   </View>
                   {peptides.length > 1 && (
                     <Button
@@ -194,7 +231,10 @@ export function BlendScreen() {
                       size="icon"
                       onPress={() => removePeptide({ index })}
                     >
-                      <Minus size={18} className="text-destructive" />
+                      <Minus
+                        size={18}
+                        className="text-destructive"
+                      />
                     </Button>
                   )}
                 </View>
@@ -243,8 +283,14 @@ export function BlendScreen() {
           ))}
 
           {/* Add peptide button */}
-          <Button variant="outline" onPress={addPeptide}>
-            <Plus size={18} className="text-foreground" />
+          <Button
+            variant="default"
+            onPress={addPeptide}
+          >
+            <Plus
+              size={18}
+              className="text-foreground"
+            />
             <Text>Add Peptide</Text>
           </Button>
 
@@ -252,12 +298,18 @@ export function BlendScreen() {
           <Card>
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={Droplets} color="teal" size={18} />
+                <GlowIcon
+                  icon={Droplets}
+                  color="teal"
+                  size={18}
+                />
                 <Text className="text-base font-semibold">Reconstitution</Text>
               </View>
 
               <View className="gap-1.5">
-                <Text className="text-sm font-medium">Bacteriostatic water added</Text>
+                <Text className="text-sm font-medium">
+                  Bacteriostatic water added
+                </Text>
                 <Input
                   value={waterVolumeMl}
                   onChangeText={setWaterVolumeMl}
@@ -277,11 +329,16 @@ export function BlendScreen() {
                 <CardContent className="gap-2">
                   <Text className="text-sm font-semibold">Breakdown</Text>
                   {result.peptideResults.map((pr, i) => (
-                    <View key={peptides[i]?.key} className="flex-row justify-between">
+                    <View
+                      key={peptides[i]?.key}
+                      className="flex-row justify-between"
+                    >
                       <Text className="text-sm text-muted-foreground">
                         {peptides[i]?.peptideName || `Peptide ${i + 1}`}
                       </Text>
-                      <Text className="text-sm font-medium">{pr.unitsToDraw} units</Text>
+                      <Text className="text-sm font-medium">
+                        {pr.unitsToDraw} units
+                      </Text>
                     </View>
                   ))}
                 </CardContent>
@@ -299,7 +356,6 @@ export function BlendScreen() {
                   </CardContent>
                 </Card>
               )}
-
             </>
           )}
         </View>
@@ -323,8 +379,14 @@ export function BlendScreen() {
           <Card className="rounded-none bg-transparent">
             <CardContent className="gap-4">
               <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon icon={SyringeIcon} color="violet" size={18} />
-                <Text className="text-base font-semibold">Preparation Output</Text>
+                <GlowIcon
+                  icon={SyringeIcon}
+                  color="violet"
+                  size={18}
+                />
+                <Text className="text-base font-semibold">
+                  Preparation Output
+                </Text>
               </View>
               <View className="items-center py-4">
                 <Text className="text-sm text-muted-foreground">

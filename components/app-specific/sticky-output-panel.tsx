@@ -1,5 +1,4 @@
 import { GlassView } from '@/components/core/glass-view';
-import { useColorScheme } from '@/lib/use-color-scheme';
 import { ReactNode } from 'react';
 import { LayoutChangeEvent } from 'react-native';
 
@@ -10,13 +9,9 @@ type Props = {
 };
 
 export function StickyOutputPanel({ bottom, onLayout, children }: Props) {
-  const { isDarkColorScheme } = useColorScheme();
-
   return (
     <GlassView
       onLayout={onLayout}
-      glassEffectStyle="clear"
-      tintColor={isDarkColorScheme ? 'black' : 'white'}
       style={{
         position: 'absolute',
         bottom: bottom + 8,
