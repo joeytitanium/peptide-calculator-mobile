@@ -29,7 +29,7 @@ type RecordsContextType<TRecord extends { id: string }> = {
   replaceAllRecords: ({ records }: { records: TRecord[] }) => void;
 };
 
-function createRecordsContext<TRecord extends { id: string }>() {
+export function createRecordsContext<TRecord extends { id: string }>() {
   return createContext<RecordsContextType<TRecord> | undefined>(undefined);
 }
 
@@ -39,7 +39,7 @@ interface RecordsProviderProps {
   cloudFilePath?: string;
 }
 
-function createRecordsProvider<TRecord extends { id: string }>(
+export function createRecordsProvider<TRecord extends { id: string }>(
   Context: React.Context<RecordsContextType<TRecord> | undefined>,
   displayName: string = 'RecordsProvider'
 ) {
@@ -142,7 +142,7 @@ function createRecordsProvider<TRecord extends { id: string }>(
   return Provider;
 }
 
-function createUseRecords<TRecord extends { id: string }>(
+export function createUseRecords<TRecord extends { id: string }>(
   Context: React.Context<RecordsContextType<TRecord> | undefined>
 ) {
   return (): RecordsContextType<TRecord> => {

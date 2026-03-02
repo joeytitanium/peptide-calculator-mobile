@@ -3,16 +3,16 @@ import { CONFIG } from '@/config';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { Tabs } from 'expo-router';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
-import { BarChart3, CalendarDays, Settings } from 'lucide-react-native';
-import { useTranslation } from 'react-i18next';
+import { Beaker, Calculator, Droplets, Settings } from 'lucide-react-native';
 import { Platform } from 'react-native';
 import colors from 'tailwindcss/colors';
 
-iconWithClassName(BarChart3);
+iconWithClassName(Calculator);
+iconWithClassName(Beaker);
+iconWithClassName(Droplets);
 
 function AndroidTabs() {
   const { isDarkColorScheme } = useColorScheme();
-  const { t } = useTranslation();
 
   return (
     <Tabs
@@ -30,40 +30,48 @@ function AndroidTabs() {
       }}
     >
       <Tabs.Screen
-        name="dashboard"
+        name="calculator"
         options={{
-          title: t('tabs.dashboard'),
+          title: 'Peptide',
           tabBarIcon: ({ color, size }) => (
-            <BarChart3
-              size={size}
-              color={color}
-            />
+            <Calculator size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="home"
+        name="blend"
         options={{
-          title: t('tabs.calendar'),
+          title: 'Blend',
           tabBarIcon: ({ color, size }) => (
-            <CalendarDays
-              size={size}
-              color={color}
-            />
+            <Beaker size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="reconstitution"
+        options={{
+          title: 'Reconst.',
+          tabBarIcon: ({ color, size }) => (
+            <Droplets size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          title: t('tabs.settings'),
+          title: 'Settings',
           tabBarIcon: ({ color, size }) => (
-            <Settings
-              size={size}
-              color={color}
-            />
+            <Settings size={size} color={color} />
           ),
         }}
+      />
+      <Tabs.Screen
+        name="dashboard"
+        options={{ href: null }}
+      />
+      <Tabs.Screen
+        name="home"
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="feed"
@@ -83,7 +91,6 @@ function AndroidTabs() {
 
 function IosTabs() {
   const { isDarkColorScheme } = useColorScheme();
-  const { t } = useTranslation();
 
   return (
     <NativeTabs
@@ -93,28 +100,29 @@ function IosTabs() {
       tintColor={CONFIG.tintColor.hex}
       labelVisibilityMode="labeled"
     >
-      <NativeTabs.Trigger name="dashboard">
-        <NativeTabs.Trigger.Label>
-          {t('tabs.dashboard')}
-        </NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="calculator">
+        <NativeTabs.Trigger.Label>Peptide</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          sf="chart.xyaxis.line"
+          sf="flask.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="home">
-        <NativeTabs.Trigger.Label>
-          {t('tabs.calendar')}
-        </NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="blend">
+        <NativeTabs.Trigger.Label>Blend</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          sf="calendar"
+          sf="testtube.2"
+          selectedColor={CONFIG.tintColor.hex}
+        />
+      </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="reconstitution">
+        <NativeTabs.Trigger.Label>Reconst.</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          sf="drop.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <NativeTabs.Trigger.Label>
-          {t('tabs.settings')}
-        </NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>Settings</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="gearshape"
           selectedColor={CONFIG.tintColor.hex}

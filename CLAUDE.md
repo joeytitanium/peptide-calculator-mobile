@@ -4,6 +4,8 @@
 
 - **Do NOT add custom components to `components/ui/`** - This folder is reserved for shadcn/ui primitives only
 - Custom components should go in `components/core/` or other appropriate folders
+- **App-specific screens go in `components/screens/app-specific/`** - The `components/screens/` root is for boilerplate screens shared across apps
+- **App-specific utils go in `utils/app-specific/`** - The `utils/` root is for boilerplate utilities shared across apps
 
 ## Route Files
 
@@ -44,6 +46,10 @@
   iconWithClassName(Bell);
   iconWithClassName(Target);
   ```
+
+## Styling
+
+- **Screen backgrounds should use `bg-background`** on the outermost content container - This gives a light gray background in light mode and near-black in dark mode. Cards (`bg-card`) render as white/dark gray on top of this background.
 
 ## Localization
 

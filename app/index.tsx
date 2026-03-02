@@ -42,7 +42,7 @@ const IndexScreen = () => {
   }
 
   // Users with active subscription: go to app
-  return <Redirect href="/(app)/(tabs)/dashboard" />;
+  return <Redirect href="/(app)/(tabs)/calculator" />;
 };
 
 export default IndexScreen;

@@ -6,7 +6,7 @@ import { isDevelopment } from './utils/is-development';
 const useSimulator = false;
 
 // > ifconfig -> en0 -> inet
-const DEVICE_IP = '172.30.1.62';
+const DEVICE_IP = '192.0.0.2';
 
 // Simulator
 const LOCALHOST_PORT = 3000;
@@ -83,10 +83,10 @@ export const CONFIG: {
           ? `http://localhost:${LOCALHOST_PORT}`
           : `http://${DEVICE_IP}:${LOCALHOST_PORT}`;
       }
-      return 'https://headache-tracker.titanium.dev';
+      return 'https://peptide-calculator.titanium.dev';
     })(),
-    name: 'Headache and Migraine Diary',
-    description: 'Track your headaches & migraines',
+    name: 'Peptide Calculator',
+    description: 'Calculate your peptide dose',
   },
   layout: {
     navigationBarPadding: Platform.OS === 'ios' ? 50 : 50, // TODO:
@@ -94,8 +94,8 @@ export const CONFIG: {
   },
   revenuecat: {
     apiKey: {
-      ios: 'appl_ZKeTbWJFgIChwhBWwXKQTnWuRIZ',
-      android: 'goog_pNneTyjZfmTADjRHwKZSpuJhJoJ',
+      ios: 'appl_TODO',
+      android: 'goog_TODO',
     },
   },
   posthog: {
@@ -116,9 +116,9 @@ export const CONFIG: {
     },
   },
   tintColor: {
-    base: 'violet',
-    hex: colors.violet[500],
-    className: 'text-violet-500',
-    fillClassName: 'fill-violet-500',
+    base: 'rose',
+    hex: colors.rose[500],
+    className: 'text-rose-500',
+    fillClassName: 'fill-rose-500',
   },
 } as const;
