@@ -1,10 +1,13 @@
+import { ProBadge } from '@/components/pro-badge';
 import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import { Platform } from 'react-native';
 
 export default function Layout() {
   const { isDarkColorScheme } = useColorScheme();
+  const router = useRouter();
+
   return (
     <Stack
       screenOptions={{
@@ -22,7 +25,19 @@ export default function Layout() {
         }),
       }}
     >
-      <Stack.Screen name="index" />
+      <Stack.Screen
+        name="index"
+        options={{
+          headerLeft: () => (
+            <ProBadge
+              hideText
+              onPress={() =>
+                router.push('/(app)/(tabs)/calculator/paywall')
+              }
+            />
+          ),
+        }}
+      />
       <Stack.Screen
         name="paywall"
         options={{
