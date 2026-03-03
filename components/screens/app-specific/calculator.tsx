@@ -21,20 +21,35 @@ import {
   calculatePeptideDose,
   parseNumericInput,
 } from '@/utils/app-specific/calculator-math';
-import { FlaskConical, Syringe as SyringeIcon } from 'lucide-react-native';
+import {
+  FlaskConical,
+  Lock,
+  Syringe as SyringeIcon,
+} from 'lucide-react-native';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 
 iconWithClassName(SyringeIcon);
 iconWithClassName(FlaskConical);
+iconWithClassName(Lock);
 
 const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
   units: 'Units',
   ml: 'mL',
 };
 
-export function CalculatorScreen() {
+const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
+
+type CalculatorScreenProps = {
+  hasActiveSubscription: boolean;
+  onPresentPaywall: () => void;
+};
+
+export function CalculatorScreen({
+  hasActiveSubscription,
+  onPresentPaywall,
+}: CalculatorScreenProps) {
   const { paddingTop, bottom } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
@@ -127,22 +142,44 @@ export function CalculatorScreen() {
                 type="single"
                 value={String(syringeSize)}
                 onValueChange={(value) => {
-                  if (value) setSyringeSize(Number(value) as SyringeSize);
+                  if (!value) return;
+                  const size = Number(value) as SyringeSize;
+                  if (
+                    !hasActiveSubscription &&
+                    PRO_SYRINGE_SIZES.includes(size)
+                  ) {
+                    onPresentPaywall();
+                    return;
+                  }
+                  setSyringeSize(size);
                 }}
                 variant="outline"
                 className="w-full"
               >
-                {SYRINGE_SIZES.map((size, index) => (
-                  <ToggleGroupItem
-                    key={size}
-                    value={String(size)}
-                    isFirst={index === 0}
-                    isLast={index === SYRINGE_SIZES.length - 1}
-                    className="flex-1"
-                  >
-                    <Text>{size}</Text>
-                  </ToggleGroupItem>
-                ))}
+                {SYRINGE_SIZES.map((size, index) => {
+                  const isLocked =
+                    !hasActiveSubscription &&
+                    PRO_SYRINGE_SIZES.includes(size);
+                  return (
+                    <ToggleGroupItem
+                      key={size}
+                      value={String(size)}
+                      isFirst={index === 0}
+                      isLast={index === SYRINGE_SIZES.length - 1}
+                      className="flex-1"
+                    >
+                      <View className="flex-row items-center gap-1">
+                        <Text>{size}</Text>
+                        {isLocked && (
+                          <Lock
+                            size={12}
+                            className="text-muted-foreground"
+                          />
+                        )}
+                      </View>
+                    </ToggleGroupItem>
+                  );
+                })}
               </ToggleGroup>
             </CardContent>
           </Card>

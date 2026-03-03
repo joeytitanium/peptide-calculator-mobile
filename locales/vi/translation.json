@@ -208,11 +208,8 @@
       "buttonText": "Tuyệt vời!"
     },
     "notifications": {
-      "title": "Luôn cập nhật",
-      "subtitle": "Nhận thông báo khi thành viên cộng đồng bình luận hoặc bỏ phiếu cho bài đăng của bạn",
-      "votesOnResults": "Bỏ phiếu cho kết quả của bạn",
-      "repliesToPosts": "Trả lời bài đăng của bạn",
-      "turnOn": "Bật thông báo"
+      "title": "Khi nào chúng tôi nên nhắc bạn?",
+      "subtitle": "Chọn thời gian cho lần ghi chép hàng ngày. Bạn có thể thêm nhiều hơn sau trong cài đặt."
     },
     "checkInNotifications": {
       "title": "Bật nhắc nhở kiểm tra",
@@ -245,10 +242,6 @@
         "sinus": "Đau đầu do xoang",
         "notSure": "Không chắc"
       }
-    },
-    "notifications": {
-      "title": "Khi nào chúng tôi nên nhắc bạn?",
-      "subtitle": "Chọn thời gian cho lần ghi chép hàng ngày. Bạn có thể thêm nhiều hơn sau trong cài đặt."
     }
   },
   "feed": {
@@ -583,6 +576,14 @@
       "rainyDay": "Ngày mưa, thay đổi áp suất có thể là nguyên nhân",
       "onlySleptFourHours": "Chỉ ngủ 4 tiếng, cần cả hai loại thuốc",
       "tooMuchCoffee": "Uống quá nhiều cà phê hôm qua, hôm nay trả giá"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Tính năng Pro",
+      "description": "Nâng cấp lên Pro để mở khóa tính năng này",
+      "unlock": "Mở khóa Pro"
     }
   }
 }

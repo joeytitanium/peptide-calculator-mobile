@@ -210,11 +210,8 @@
       "buttonText": "Harika!"
     },
     "notifications": {
-      "title": "Haberdar olun",
-      "subtitle": "Topluluk üyeleri gönderilerinize yorum yaptığında veya oy verdiğinde bildirim alın",
-      "votesOnResults": "Sonuçlarınıza verilen oylar",
-      "repliesToPosts": "Gönderilerinize verilen yanıtlar",
-      "turnOn": "Bildirimleri aç"
+      "title": "Sizi ne zaman hatırlatalım?",
+      "subtitle": "Günlük check-in'iniz için bir saat seçin. Daha sonra ayarlardan daha fazlasını ekleyebilirsiniz."
     },
     "checkInNotifications": {
       "title": "Kontrol Hatırlatıcılarını Etkinleştir",
@@ -247,10 +244,6 @@
         "sinus": "Sinüs baş ağrısı",
         "notSure": "Emin değilim"
       }
-    },
-    "notifications": {
-      "title": "Sizi ne zaman hatırlatalım?",
-      "subtitle": "Günlük check-in'iniz için bir saat seçin. Daha sonra ayarlardan daha fazlasını ekleyebilirsiniz."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Yağmurlu gün, muhtemelen basınç değişikliği nedeniyle",
       "onlySleptFourHours": "Sadece 4 saat uyudum, her iki ilaca da ihtiyaç duydum",
       "tooMuchCoffee": "Dün çok fazla kahve içtim, bugün bedelini ödedim"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro Özellik",
+      "description": "Bu özelliğin kilidini açmak için Pro'ya yükseltin",
+      "unlock": "Pro'yu Aç"
     }
   }
 }

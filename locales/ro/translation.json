@@ -210,11 +210,8 @@
       "buttonText": "Minunat!"
     },
     "notifications": {
-      "title": "Fii la curent",
-      "subtitle": "Primește notificări când membrii comunității comentează sau votează postările tale",
-      "votesOnResults": "Voturi pe rezultatele tale",
-      "repliesToPosts": "Răspunsuri la postările tale",
-      "turnOn": "Activează notificările"
+      "title": "Când să îți reamintim?",
+      "subtitle": "Alege o oră pentru verificarea zilnică. Poți adăuga mai multe mai târziu din setări."
     },
     "checkInNotifications": {
       "title": "Activează reamintirile de verificare",
@@ -247,10 +244,6 @@
         "sinus": "Durere de cap sinusală",
         "notSure": "Nu sunt sigur"
       }
-    },
-    "notifications": {
-      "title": "Când să îți reamintim?",
-      "subtitle": "Alege o oră pentru verificarea zilnică. Poți adăuga mai multe mai târziu din setări."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Zi ploioasă, schimbarea presiunii probabil cauza",
       "onlySleptFourHours": "Am dormit doar 4 ore, am avut nevoie de ambele medicamente",
       "tooMuchCoffee": "Prea multă cafea ieri, am plătit azi pentru asta"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Funcție Pro",
+      "description": "Faceți upgrade la Pro pentru a debloca această funcție",
+      "unlock": "Deblocați Pro"
     }
   }
 }

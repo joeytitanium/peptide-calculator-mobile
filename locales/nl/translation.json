@@ -210,11 +210,8 @@
       "buttonText": "Geweldig!"
     },
     "notifications": {
-      "title": "Blijf op de hoogte",
-      "subtitle": "Krijg meldingen wanneer communityleden reageren of stemmen op je berichten",
-      "votesOnResults": "Stemmen op je resultaten",
-      "repliesToPosts": "Reacties op je berichten",
-      "turnOn": "Meldingen inschakelen"
+      "title": "Wanneer moeten we je herinneren?",
+      "subtitle": "Kies een tijd voor je dagelijkse check-in. Je kunt er later meer toevoegen in de instellingen."
     },
     "checkInNotifications": {
       "title": "Check-in herinneringen inschakelen",
@@ -247,10 +244,6 @@
         "sinus": "Sinushoofdpijn",
         "notSure": "Niet zeker"
       }
-    },
-    "notifications": {
-      "title": "Wanneer moeten we je herinneren?",
-      "subtitle": "Kies een tijd voor je dagelijkse check-in. Je kunt er later meer toevoegen in de instellingen."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Regenachtige dag, drukverandering waarschijnlijk de oorzaak",
       "onlySleptFourHours": "Slechts 4 uur geslapen, beide medicijnen nodig",
       "tooMuchCoffee": "Gisteren te veel koffie, vandaag de rekening"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro-functie",
+      "description": "Upgrade naar Pro om deze functie te ontgrendelen",
+      "unlock": "Pro ontgrendelen"
     }
   }
 }

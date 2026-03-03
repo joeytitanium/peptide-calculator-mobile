@@ -210,11 +210,8 @@
       "buttonText": "¡Me encanta!"
     },
     "notifications": {
-      "title": "Mantente informado",
-      "subtitle": "Recibe notificaciones cuando miembros de la comunidad comenten o voten en tus publicaciones",
-      "votesOnResults": "Votos en tus resultados",
-      "repliesToPosts": "Respuestas a tus publicaciones",
-      "turnOn": "Activar notificaciones"
+      "title": "¿Cuándo deberíamos recordarte?",
+      "subtitle": "Elige una hora para tu seguimiento diario. Puedes añadir más después en ajustes."
     },
     "checkInNotifications": {
       "title": "Activar recordatorios de seguimiento",
@@ -247,10 +244,6 @@
         "sinus": "Cefalea sinusal",
         "notSure": "No estoy seguro"
       }
-    },
-    "notifications": {
-      "title": "¿Cuándo deberíamos recordarte?",
-      "subtitle": "Elige una hora para tu seguimiento diario. Puedes añadir más después en ajustes."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Día lluvioso, probablemente por cambio de presión",
       "onlySleptFourHours": "Solo dormí 4 horas, necesité ambos medicamentos",
       "tooMuchCoffee": "Demasiado café ayer, lo pagué hoy"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Función Pro",
+      "description": "Actualiza a Pro para desbloquear esta función",
+      "unlock": "Desbloquear Pro"
     }
   }
 }

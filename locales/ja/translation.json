@@ -210,11 +210,8 @@
       "buttonText": "いいね！"
     },
     "notifications": {
-      "title": "最新情報をキャッチ",
-      "subtitle": "コミュニティメンバーがあなたの投稿にコメントや投票した時に通知を受け取る",
-      "votesOnResults": "あなたの結果への投票",
-      "repliesToPosts": "あなたの投稿への返信",
-      "turnOn": "通知をオンにする"
+      "title": "いつリマインドしますか？",
+      "subtitle": "毎日のチェックインの時間を選んでください。設定で後から追加できます。"
     },
     "checkInNotifications": {
       "title": "チェックインリマインダーを有効にする",
@@ -247,10 +244,6 @@
         "sinus": "副鼻腔頭痛",
         "notSure": "わからない"
       }
-    },
-    "notifications": {
-      "title": "いつリマインドしますか？",
-      "subtitle": "毎日のチェックインの時間を選んでください。設定で後から追加できます。"
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "雨の日、気圧の変化が原因",
       "onlySleptFourHours": "4時間しか寝ていない、両方の薬が必要だった",
       "tooMuchCoffee": "昨日コーヒーを飲みすぎた、今日そのツケが来た"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro機能",
+      "description": "この機能のロックを解除するにはProにアップグレードしてください",
+      "unlock": "Proを解除"
     }
   }
 }

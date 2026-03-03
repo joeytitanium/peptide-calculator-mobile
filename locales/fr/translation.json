@@ -210,11 +210,8 @@
       "buttonText": "J'adore !"
     },
     "notifications": {
-      "title": "Restez informé",
-      "subtitle": "Recevez des notifications quand les membres commentent ou votent sur vos publications",
-      "votesOnResults": "Votes sur vos résultats",
-      "repliesToPosts": "Réponses à vos publications",
-      "turnOn": "Activer les notifications"
+      "title": "Quand devons-nous vous rappeler ?",
+      "subtitle": "Choisissez une heure pour votre suivi quotidien. Vous pourrez en ajouter d'autres dans les paramètres."
     },
     "checkInNotifications": {
       "title": "Activer les rappels de suivi",
@@ -247,10 +244,6 @@
         "sinus": "Céphalée sinusale",
         "notSure": "Pas sûr"
       }
-    },
-    "notifications": {
-      "title": "Quand devons-nous vous rappeler ?",
-      "subtitle": "Choisissez une heure pour votre suivi quotidien. Vous pourrez en ajouter d'autres dans les paramètres."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Jour de pluie, probablement dû au changement de pression",
       "onlySleptFourHours": "N'ai dormi que 4 heures, les deux médicaments étaient nécessaires",
       "tooMuchCoffee": "Trop de café hier, j'en ai payé le prix aujourd'hui"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Fonction Pro",
+      "description": "Passez à Pro pour débloquer cette fonctionnalité",
+      "unlock": "Débloquer Pro"
     }
   }
 }

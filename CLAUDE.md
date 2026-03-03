@@ -51,6 +51,10 @@
 
 - **Screen backgrounds should use `bg-background`** on the outermost content container - This gives a light gray background in light mode and near-black in dark mode. Cards (`bg-card`) render as white/dark gray on top of this background.
 
+## Cleanup
+
+- **Delete new files that are no longer used** - If you create a new file during a task and it later becomes unused (no imports), delete it immediately rather than leaving dead code in the repo
+
 ## Localization
 
 - **When adding a new language**, always add both the translation file in `locales/<code>/translation.json` **and** register it in `app.json` under the `locales` key

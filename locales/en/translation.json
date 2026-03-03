@@ -524,6 +524,14 @@
   "proBadge": {
     "pro": "PRO"
   },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro Feature",
+      "description": "Upgrade to Pro to unlock this feature",
+      "unlock": "Unlock Pro"
+    }
+  },
   "disclaimer": {
     "title": "Disclaimer",
     "content": "This application uses AI technology which may produce inaccurate or incomplete results. Always verify important information from authoritative sources and use your own judgment when making decisions based on AI-generated content."

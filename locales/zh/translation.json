@@ -210,11 +210,8 @@
       "buttonText": "太棒了！"
     },
     "notifications": {
-      "title": "保持更新",
-      "subtitle": "当社区成员评论或投票你的帖子时获得通知",
-      "votesOnResults": "对你结果的投票",
-      "repliesToPosts": "对你帖子的回复",
-      "turnOn": "开启通知"
+      "title": "什么时候提醒您？",
+      "subtitle": "选择每日签到的时间。您可以稍后在设置中添加更多。"
     },
     "checkInNotifications": {
       "title": "开启签到提醒",
@@ -247,10 +244,6 @@
         "sinus": "鼻窦头痛",
         "notSure": "不确定"
       }
-    },
-    "notifications": {
-      "title": "什么时候提醒您？",
-      "subtitle": "选择每日签到的时间。您可以稍后在设置中添加更多。"
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "下雨天，可能是气压变化引起的",
       "onlySleptFourHours": "只睡了4小时，两种药都需要",
       "tooMuchCoffee": "昨天咖啡喝太多，今天就遭罪了"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro 功能",
+      "description": "升级到 Pro 以解锁此功能",
+      "unlock": "解锁 Pro"
     }
   }
 }

@@ -210,11 +210,8 @@
       "buttonText": "Toll!"
     },
     "notifications": {
-      "title": "Bleib auf dem Laufenden",
-      "subtitle": "Erhalte Benachrichtigungen, wenn Community-Mitglieder deine Beiträge kommentieren oder bewerten",
-      "votesOnResults": "Stimmen für deine Ergebnisse",
-      "repliesToPosts": "Antworten auf deine Beiträge",
-      "turnOn": "Benachrichtigungen aktivieren"
+      "title": "Wann sollen wir dich erinnern?",
+      "subtitle": "Wähle eine Zeit für deinen täglichen Check-in. Du kannst später in den Einstellungen weitere hinzufügen."
     },
     "checkInNotifications": {
       "title": "Check-in-Erinnerungen aktivieren",
@@ -247,10 +244,6 @@
         "sinus": "Sinuskopfschmerz",
         "notSure": "Nicht sicher"
       }
-    },
-    "notifications": {
-      "title": "Wann sollen wir dich erinnern?",
-      "subtitle": "Wähle eine Zeit für deinen täglichen Check-in. Du kannst später in den Einstellungen weitere hinzufügen."
     }
   },
   "feed": {
@@ -586,6 +579,14 @@
       "rainyDay": "Regentag, wahrscheinlich Druckveränderung",
       "onlySleptFourHours": "Nur 4 Stunden geschlafen, brauchte beide Medikamente",
       "tooMuchCoffee": "Gestern zu viel Kaffee, heute dafür bezahlt"
+    }
+  },
+  "pro": {
+    "badge": "PRO",
+    "lockedFeature": {
+      "title": "Pro-Funktion",
+      "description": "Upgrade auf Pro, um diese Funktion freizuschalten",
+      "unlock": "Pro freischalten"
     }
   }
 }

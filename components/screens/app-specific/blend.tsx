@@ -25,6 +25,7 @@ import {
 import {
   Droplets,
   FlaskConical,
+  Lock,
   Minus,
   Plus,
   Syringe as SyringeIcon,
@@ -38,6 +39,7 @@ iconWithClassName(FlaskConical);
 iconWithClassName(Droplets);
 iconWithClassName(Plus);
 iconWithClassName(Minus);
+iconWithClassName(Lock);
 
 type BlendPeptideInput = {
   key: string;
@@ -58,7 +60,18 @@ const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
   ml: 'mL',
 };
 
-export function BlendScreen() {
+const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
+const MAX_FREE_PEPTIDES = 2;
+
+type BlendScreenProps = {
+  hasActiveSubscription: boolean;
+  onPresentPaywall: () => void;
+};
+
+export function BlendScreen({
+  hasActiveSubscription,
+  onPresentPaywall,
+}: BlendScreenProps) {
   const { paddingTop, bottom } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
@@ -211,22 +224,44 @@ export function BlendScreen() {
                 type="single"
                 value={String(syringeSize)}
                 onValueChange={(value) => {
-                  if (value) setSyringeSize(Number(value) as SyringeSize);
+                  if (!value) return;
+                  const size = Number(value) as SyringeSize;
+                  if (
+                    !hasActiveSubscription &&
+                    PRO_SYRINGE_SIZES.includes(size)
+                  ) {
+                    onPresentPaywall();
+                    return;
+                  }
+                  setSyringeSize(size);
                 }}
                 variant="outline"
                 className="w-full"
               >
-                {SYRINGE_SIZES.map((size, index) => (
-                  <ToggleGroupItem
-                    key={size}
-                    value={String(size)}
-                    isFirst={index === 0}
-                    isLast={index === SYRINGE_SIZES.length - 1}
-                    className="flex-1"
-                  >
-                    <Text>{size}</Text>
-                  </ToggleGroupItem>
-                ))}
+                {SYRINGE_SIZES.map((size, index) => {
+                  const isLocked =
+                    !hasActiveSubscription &&
+                    PRO_SYRINGE_SIZES.includes(size);
+                  return (
+                    <ToggleGroupItem
+                      key={size}
+                      value={String(size)}
+                      isFirst={index === 0}
+                      isLast={index === SYRINGE_SIZES.length - 1}
+                      className="flex-1"
+                    >
+                      <View className="flex-row items-center gap-1">
+                        <Text>{size}</Text>
+                        {isLocked && (
+                          <Lock
+                            size={12}
+                            className="text-muted-foreground"
+                          />
+                        )}
+                      </View>
+                    </ToggleGroupItem>
+                  );
+                })}
               </ToggleGroup>
             </CardContent>
           </Card>
@@ -329,12 +364,18 @@ export function BlendScreen() {
           {/* Add peptide button */}
           <Button
             variant="default"
-            onPress={addPeptide}
+            onPress={
+              !hasActiveSubscription && peptides.length >= MAX_FREE_PEPTIDES
+                ? onPresentPaywall
+                : addPeptide
+            }
           >
-            <Plus
-              size={18}
-              className="text-foreground"
-            />
+            {!hasActiveSubscription &&
+            peptides.length >= MAX_FREE_PEPTIDES ? (
+              <Lock size={18} className="text-foreground" />
+            ) : (
+              <Plus size={18} className="text-foreground" />
+            )}
             <Text>Add Peptide</Text>
           </Button>
 
