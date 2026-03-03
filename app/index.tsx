@@ -31,9 +31,9 @@ const IndexScreen = () => {
     return null;
   }
 
-  // New users: show onboarding flow
+  // New users: show onboarding sheet
   if (!onboardingCompletedValue) {
-    return <Redirect href="/(auth)/onboarding-welcome" />;
+    return <Redirect href="/(auth)/onboarding-sheet" />;
   }
 
   // Returning users without subscription: redirect to paywall
