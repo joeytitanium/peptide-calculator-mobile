@@ -75,7 +75,7 @@
     "severityScale": "van 10",
     "severityValue": "Ernst: {{value}}/10",
     "severityLevels": {
-      "mild": "Mild",
+      "mild": "Licht",
       "moderate": "Matig",
       "severe": "Ernstig"
     },
@@ -439,7 +439,48 @@
   "rating": {
     "howWouldYouRate": "Hoe zou je onze analyse beoordelen?"
   },
+  "calculator": {
+    "syringeConfiguration": "Spuitconfiguratie",
+    "syringeType": "Spuittype",
+    "syringeSize": "Spuitgrootte",
+    "displayModeUnits": "Eenheden",
+    "displayModeMl": "mL",
+    "peptideDetails": "Peptide-details",
+    "peptideAmountInVial": "Peptide-hoeveelheid in flacon",
+    "placeholderAmount": "bijv. 5",
+    "unitMg": "mg",
+    "unitMl": "mL",
+    "bacWaterAdded": "Bacteriostatisch water toegevoegd",
+    "placeholderWater": "bijv. 2",
+    "desiredDose": "Gewenste dosis",
+    "placeholderDoseMcg": "bijv. 250",
+    "placeholderDoseMg": "bijv. 0,25",
+    "exceedsSyringe": "Deze dosis overschrijdt een {{syringeSize}}-eenhedenspuit. Gebruik een grotere spuit of pas uw reconstitutie aan.",
+    "preparationOutput": "Bereidingsresultaat",
+    "enterValues": "Voer bovenstaande waarden in om het resultaat te zien",
+    "peptideNumber": "Peptide {{number}}",
+    "nameOptional": "Naam (optioneel)",
+    "placeholderName": "bijv. BPC-157",
+    "amountInVial": "Hoeveelheid in flacon",
+    "addPeptide": "Peptide toevoegen",
+    "reconstitution": "Reconstitutie",
+    "breakdown": "Uitsplitsing",
+    "units": "eenheden",
+    "desiredDrawUnits": "Gewenste eenheden per dosis",
+    "desiredDrawMl": "Gewenste mL per dosis",
+    "placeholderDraw": "bijv. 25",
+    "approxMl": "≈ {{value}} mL",
+    "toAdd": "toe te voegen",
+    "doses": "doses",
+    "bacWater": "BAC-water",
+    "result": "Resultaat",
+    "draws": "trekkingen",
+    "concentrationUnit": "mcg/mL"
+  },
   "tabs": {
+    "peptide": "Peptide",
+    "blend": "Mengsel",
+    "reconstitution": "Reconstitutie",
     "dashboard": "Dashboard",
     "calendar": "Kalender",
     "settings": "Instellingen"
@@ -466,7 +507,10 @@
     "community": "Community",
     "history": "Geschiedenis",
     "logHeadache": "Hoofdpijn loggen",
-    "language": "Taal"
+    "language": "Taal",
+    "peptideCalculator": "Peptide-calculator",
+    "blend": "Mengsel",
+    "reconstitution": "Reconstitutie"
   },
   "notFound": {
     "title": "404",

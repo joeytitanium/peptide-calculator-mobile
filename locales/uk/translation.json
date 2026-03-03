@@ -42,7 +42,9 @@
     "emailUserId": "ID користувача:",
     "checkInReminders": "Нагадування про запис",
     "reminderTime": "Нагадування",
-    "addReminder": "Додати нагадування"
+    "addReminder": "Додати нагадування",
+    "language": "Мова",
+    "systemDefault": "Системна за замовчуванням"
   },
   "account": {
     "editProfile": "Редагувати профіль",
@@ -437,7 +439,48 @@
   "rating": {
     "howWouldYouRate": "Як би ви оцінили наш аналіз?"
   },
+  "calculator": {
+    "syringeConfiguration": "Налаштування шприца",
+    "syringeType": "Тип шприца",
+    "syringeSize": "Розмір шприца",
+    "displayModeUnits": "Одиниці",
+    "displayModeMl": "мл",
+    "peptideDetails": "Деталі пептиду",
+    "peptideAmountInVial": "Кількість пептиду у флаконі",
+    "placeholderAmount": "напр. 5",
+    "unitMg": "мг",
+    "unitMl": "мл",
+    "bacWaterAdded": "Додано бактеріостатичної води",
+    "placeholderWater": "напр. 2",
+    "desiredDose": "Бажана доза",
+    "placeholderDoseMcg": "напр. 250",
+    "placeholderDoseMg": "напр. 0,25",
+    "exceedsSyringe": "Ця доза перевищує шприц на {{syringeSize}} одиниць. Використовуйте більший шприц або скоригуйте розчинення.",
+    "preparationOutput": "Результат підготовки",
+    "enterValues": "Введіть значення вище, щоб побачити результат",
+    "peptideNumber": "Пептид {{number}}",
+    "nameOptional": "Назва (необов'язково)",
+    "placeholderName": "напр. BPC-157",
+    "amountInVial": "Кількість у флаконі",
+    "addPeptide": "Додати пептид",
+    "reconstitution": "Розчинення",
+    "breakdown": "Розбивка",
+    "units": "одиниць",
+    "desiredDrawUnits": "Бажані одиниці на дозу",
+    "desiredDrawMl": "Бажані мл на дозу",
+    "placeholderDraw": "напр. 25",
+    "approxMl": "≈ {{value}} мл",
+    "toAdd": "додати",
+    "doses": "доз",
+    "bacWater": "BAC вода",
+    "result": "Результат",
+    "draws": "заборів",
+    "concentrationUnit": "мкг/мл"
+  },
   "tabs": {
+    "peptide": "Пептид",
+    "blend": "Суміш",
+    "reconstitution": "Розчинення",
     "dashboard": "Панель",
     "calendar": "Календар",
     "settings": "Налаштування"
@@ -464,7 +507,10 @@
     "community": "Спільнота",
     "history": "Історія",
     "logHeadache": "Записати головний біль",
-    "language": "Мова"
+    "language": "Мова",
+    "peptideCalculator": "Калькулятор пептидів",
+    "blend": "Суміш",
+    "reconstitution": "Розчинення"
   },
   "notFound": {
     "title": "404",

@@ -439,8 +439,49 @@
   "rating": {
     "howWouldYouRate": "Come valuteresti la nostra analisi?"
   },
+  "calculator": {
+    "syringeConfiguration": "Configurazione siringa",
+    "syringeType": "Tipo di siringa",
+    "syringeSize": "Dimensione siringa",
+    "displayModeUnits": "Unità",
+    "displayModeMl": "mL",
+    "peptideDetails": "Dettagli peptide",
+    "peptideAmountInVial": "Quantità di peptide nel flacone",
+    "placeholderAmount": "es. 5",
+    "unitMg": "mg",
+    "unitMl": "mL",
+    "bacWaterAdded": "Acqua batteriostatica aggiunta",
+    "placeholderWater": "es. 2",
+    "desiredDose": "Dose desiderata",
+    "placeholderDoseMcg": "es. 250",
+    "placeholderDoseMg": "es. 0,25",
+    "exceedsSyringe": "Questa dose supera una siringa da {{syringeSize}} unità. Usa una siringa più grande o regola la ricostituzione.",
+    "preparationOutput": "Risultato preparazione",
+    "enterValues": "Inserisci i valori sopra per vedere il risultato",
+    "peptideNumber": "Peptide {{number}}",
+    "nameOptional": "Nome (opzionale)",
+    "placeholderName": "es. BPC-157",
+    "amountInVial": "Quantità nel flacone",
+    "addPeptide": "Aggiungi peptide",
+    "reconstitution": "Ricostituzione",
+    "breakdown": "Dettagli",
+    "units": "unità",
+    "desiredDrawUnits": "Unità desiderate per dose",
+    "desiredDrawMl": "mL desiderati per dose",
+    "placeholderDraw": "es. 25",
+    "approxMl": "≈ {{value}} mL",
+    "toAdd": "da aggiungere",
+    "doses": "dosi",
+    "bacWater": "Acqua BAC",
+    "result": "Risultato",
+    "draws": "prelievi",
+    "concentrationUnit": "mcg/mL"
+  },
   "tabs": {
-    "dashboard": "Dashboard",
+    "peptide": "Peptide",
+    "blend": "Miscela",
+    "reconstitution": "Ricostituzione",
+    "dashboard": "Panoramica",
     "calendar": "Calendario",
     "settings": "Impostazioni"
   },
@@ -466,7 +507,10 @@
     "community": "Comunità",
     "history": "Cronologia",
     "logHeadache": "Registra mal di testa",
-    "language": "Lingua"
+    "language": "Lingua",
+    "peptideCalculator": "Calcolatrice peptidi",
+    "blend": "Miscela",
+    "reconstitution": "Ricostituzione"
   },
   "notFound": {
     "title": "404",
@@ -511,7 +555,7 @@
     "pro": "PRO"
   },
   "disclaimer": {
-    "title": "Disclaimer",
+    "title": "Avvertenza",
     "content": "Questa applicazione utilizza tecnologia IA che può produrre risultati imprecisi o incompleti. Verifica sempre le informazioni importanti da fonti autorevoli e usa il tuo giudizio quando prendi decisioni basate su contenuti generati dall'IA."
   },
   "reviewCarousel": {

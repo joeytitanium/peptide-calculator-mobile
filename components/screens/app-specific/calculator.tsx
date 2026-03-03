@@ -27,17 +27,13 @@ import {
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 
 iconWithClassName(SyringeIcon);
 iconWithClassName(FlaskConical);
 iconWithClassName(Lock);
-
-const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
-  units: 'Units',
-  ml: 'mL',
-};
 
 const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
 
@@ -50,6 +46,7 @@ export function CalculatorScreen({
   hasActiveSubscription,
   onPresentPaywall,
 }: CalculatorScreenProps) {
+  const { t } = useTranslation();
   const { paddingTop, bottom } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
@@ -110,11 +107,11 @@ export function CalculatorScreen({
                   size={18}
                 />
                 <Text className="text-base font-semibold">
-                  Syringe Configuration
+                  {t('calculator.syringeConfiguration')}
                 </Text>
               </View>
 
-              <Text className="text-sm font-medium">Syringe Type</Text>
+              <Text className="text-sm font-medium">{t('calculator.syringeType')}</Text>
               <ToggleGroup
                 type="single"
                 value={displayMode}
@@ -132,12 +129,12 @@ export function CalculatorScreen({
                     isLast={index === SYRINGE_DISPLAY_MODES.length - 1}
                     className="flex-1"
                   >
-                    <Text>{DISPLAY_MODE_LABELS[mode]}</Text>
+                    <Text>{t(`calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`)}</Text>
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
 
-              <Text className="text-sm font-medium">Syringe Size</Text>
+              <Text className="text-sm font-medium">{t('calculator.syringeSize')}</Text>
               <ToggleGroup
                 type="single"
                 value={String(syringeSize)}
@@ -193,43 +190,43 @@ export function CalculatorScreen({
                   color="blue"
                   size={18}
                 />
-                <Text className="text-base font-semibold">Peptide Details</Text>
+                <Text className="text-base font-semibold">{t('calculator.peptideDetails')}</Text>
               </View>
 
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">
-                  Peptide amount in vial
+                  {t('calculator.peptideAmountInVial')}
                 </Text>
                 <Input
                   value={peptideAmountMg}
                   onChangeText={setPeptideAmountMg}
-                  placeholder="e.g. 5"
+                  placeholder={t('calculator.placeholderAmount')}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">mg</Text>
+                <Text className="text-xs text-muted-foreground">{t('calculator.unitMg')}</Text>
               </View>
 
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">
-                  Bacteriostatic water added
+                  {t('calculator.bacWaterAdded')}
                 </Text>
                 <Input
                   value={waterVolumeMl}
                   onChangeText={setWaterVolumeMl}
-                  placeholder="e.g. 2"
+                  placeholder={t('calculator.placeholderWater')}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">mL</Text>
+                <Text className="text-xs text-muted-foreground">{t('calculator.unitMl')}</Text>
               </View>
 
               <View className="gap-1.5">
-                <Text className="text-sm font-medium">Desired dose</Text>
+                <Text className="text-sm font-medium">{t('calculator.desiredDose')}</Text>
                 <Input
                   value={desiredDose}
                   onChangeText={setDesiredDose}
-                  placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
+                  placeholder={doseUnit === 'mcg' ? t('calculator.placeholderDoseMcg') : t('calculator.placeholderDoseMg')}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
@@ -266,8 +263,7 @@ export function CalculatorScreen({
                   <CardContent>
                     <View className="rounded-lg bg-destructive/10 p-3">
                       <Text className="text-sm text-destructive">
-                        This dose exceeds a {syringeSize}-unit syringe. Use a
-                        larger syringe or adjust your reconstitution.
+                        {t('calculator.exceedsSyringe', { syringeSize })}
                       </Text>
                     </View>
                   </CardContent>
@@ -303,12 +299,12 @@ export function CalculatorScreen({
                   size={18}
                 />
                 <Text className="text-base font-semibold">
-                  Preparation Output
+                  {t('calculator.preparationOutput')}
                 </Text>
               </View>
               <View className="items-center py-4">
                 <Text className="text-sm text-muted-foreground">
-                  Enter values above to see result
+                  {t('calculator.enterValues')}
                 </Text>
               </View>
             </CardContent>

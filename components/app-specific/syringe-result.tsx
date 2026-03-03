@@ -5,6 +5,7 @@ import { CONFIG } from '@/config';
 import type { SyringeSize } from '@/types/app-specific/calculation';
 import { Droplet, Info, Ruler } from 'lucide-react-native';
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { View } from 'react-native';
 
 iconWithClassName(Droplet);
@@ -40,6 +41,7 @@ export function SyringeResult({
   estimatedDraws,
   className,
 }: SyringeResultProps) {
+  const { t } = useTranslation();
   const fillPercent = useMemo(
     () => Math.min((unitsToDraw / syringeSize) * 100, 100),
     [unitsToDraw, syringeSize]
@@ -56,17 +58,17 @@ export function SyringeResult({
   }, [tickCount, tickInterval]);
 
   const primaryValue =
-    displayMode === 'units' ? `${unitsToDraw} units` : `${volumeToDrawMl} mL`;
+    displayMode === 'units' ? `${unitsToDraw} ${t('calculator.units')}` : `${volumeToDrawMl} ${t('calculator.unitMl')}`;
 
   const secondaryValue =
     displayMode === 'units'
-      ? `≈ ${volumeToDrawMl} mL`
-      : `≈ ${unitsToDraw} units`;
+      ? `≈ ${volumeToDrawMl} ${t('calculator.unitMl')}`
+      : `≈ ${unitsToDraw} ${t('calculator.units')}`;
 
   const syringeLabel =
     displayMode === 'ml'
-      ? `${(syringeSize / 100).toFixed(1)} mL`
-      : `${syringeSize} units`;
+      ? `${(syringeSize / 100).toFixed(1)} ${t('calculator.unitMl')}`
+      : `${syringeSize} ${t('calculator.units')}`;
 
   return (
     <Card className={className}>
@@ -86,7 +88,7 @@ export function SyringeResult({
               <Text className="text-3xl font-bold text-foreground">
                 {estimatedDraws}
               </Text>
-              <Text className="text-sm text-muted-foreground">draws</Text>
+              <Text className="text-sm text-muted-foreground">{t('calculator.draws')}</Text>
             </View>
           )}
         </View>
@@ -188,7 +190,7 @@ export function SyringeResult({
               className="text-muted-foreground"
             />
             <Text className="text-sm text-muted-foreground">
-              {concentrationMcgPerMl} mcg/mL
+              {concentrationMcgPerMl} {t('calculator.concentrationUnit')}
             </Text>
           </View>
           <View className="flex-row items-center gap-1.5">

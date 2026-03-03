@@ -31,6 +31,7 @@ import {
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useCallback, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 
@@ -55,11 +56,6 @@ const createEmptyEntry = (): BlendPeptideInput => ({
   desiredDose: '',
 });
 
-const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
-  units: 'Units',
-  ml: 'mL',
-};
-
 const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
 const MAX_FREE_PEPTIDES = 2;
 
@@ -72,6 +68,7 @@ export function BlendScreen({
   hasActiveSubscription,
   onPresentPaywall,
 }: BlendScreenProps) {
+  const { t } = useTranslation();
   const { paddingTop, bottom } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
@@ -192,11 +189,11 @@ export function BlendScreen({
                   size={18}
                 />
                 <Text className="text-base font-semibold">
-                  Syringe Configuration
+                  {t('calculator.syringeConfiguration')}
                 </Text>
               </View>
 
-              <Text className="text-sm font-medium">Syringe Type</Text>
+              <Text className="text-sm font-medium">{t('calculator.syringeType')}</Text>
               <ToggleGroup
                 type="single"
                 value={displayMode}
@@ -214,12 +211,12 @@ export function BlendScreen({
                     isLast={index === SYRINGE_DISPLAY_MODES.length - 1}
                     className="flex-1"
                   >
-                    <Text>{DISPLAY_MODE_LABELS[mode]}</Text>
+                    <Text>{t(`calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`)}</Text>
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
 
-              <Text className="text-sm font-medium">Syringe Size</Text>
+              <Text className="text-sm font-medium">{t('calculator.syringeSize')}</Text>
               <ToggleGroup
                 type="single"
                 value={String(syringeSize)}
@@ -278,7 +275,7 @@ export function BlendScreen({
                       size={18}
                     />
                     <Text className="text-base font-semibold">
-                      Peptide {index + 1}
+                      {t('calculator.peptideNumber', { number: index + 1 })}
                     </Text>
                   </View>
                   {peptides.length > 1 && (
@@ -296,39 +293,39 @@ export function BlendScreen({
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">Name (optional)</Text>
+                  <Text className="text-sm font-medium">{t('calculator.nameOptional')}</Text>
                   <Input
                     value={entry.peptideName}
                     onChangeText={(value) =>
                       updatePeptide({ index, field: 'peptideName', value })
                     }
-                    placeholder="e.g. BPC-157"
+                    placeholder={t('calculator.placeholderName')}
                     returnKeyType="done"
                   />
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">Amount in vial</Text>
+                  <Text className="text-sm font-medium">{t('calculator.amountInVial')}</Text>
                   <Input
                     value={entry.peptideAmountMg}
                     onChangeText={(value) =>
                       updatePeptide({ index, field: 'peptideAmountMg', value })
                     }
-                    placeholder="e.g. 5"
+                    placeholder={t('calculator.placeholderAmount')}
                     keyboardType="decimal-pad"
                     returnKeyType="done"
                   />
-                  <Text className="text-xs text-muted-foreground">mg</Text>
+                  <Text className="text-xs text-muted-foreground">{t('calculator.unitMg')}</Text>
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">Desired dose</Text>
+                  <Text className="text-sm font-medium">{t('calculator.desiredDose')}</Text>
                   <Input
                     value={entry.desiredDose}
                     onChangeText={(value) =>
                       updatePeptide({ index, field: 'desiredDose', value })
                     }
-                    placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
+                    placeholder={doseUnit === 'mcg' ? t('calculator.placeholderDoseMcg') : t('calculator.placeholderDoseMg')}
                     keyboardType="decimal-pad"
                     returnKeyType="done"
                   />
@@ -376,7 +373,7 @@ export function BlendScreen({
             ) : (
               <Plus size={18} className="text-foreground" />
             )}
-            <Text>Add Peptide</Text>
+            <Text>{t('calculator.addPeptide')}</Text>
           </Button>
 
           {/* Shared water input */}
@@ -388,21 +385,21 @@ export function BlendScreen({
                   color="teal"
                   size={18}
                 />
-                <Text className="text-base font-semibold">Reconstitution</Text>
+                <Text className="text-base font-semibold">{t('calculator.reconstitution')}</Text>
               </View>
 
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">
-                  Bacteriostatic water added
+                  {t('calculator.bacWaterAdded')}
                 </Text>
                 <Input
                   value={waterVolumeMl}
                   onChangeText={setWaterVolumeMl}
-                  placeholder="e.g. 2"
+                  placeholder={t('calculator.placeholderWater')}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">mL</Text>
+                <Text className="text-xs text-muted-foreground">{t('calculator.unitMl')}</Text>
               </View>
             </CardContent>
           </Card>
@@ -412,17 +409,17 @@ export function BlendScreen({
             <>
               <Card>
                 <CardContent className="gap-2">
-                  <Text className="text-sm font-semibold">Breakdown</Text>
+                  <Text className="text-sm font-semibold">{t('calculator.breakdown')}</Text>
                   {result.peptideResults.map((pr, i) => (
                     <View
                       key={peptides[i]?.key}
                       className="flex-row justify-between"
                     >
                       <Text className="text-sm text-muted-foreground">
-                        {peptides[i]?.peptideName || `Peptide ${i + 1}`}
+                        {peptides[i]?.peptideName || t('calculator.peptideNumber', { number: i + 1 })}
                       </Text>
                       <Text className="text-sm font-medium">
-                        {pr.unitsToDraw} units
+                        {pr.unitsToDraw} {t('calculator.units')}
                       </Text>
                     </View>
                   ))}
@@ -434,8 +431,7 @@ export function BlendScreen({
                   <CardContent>
                     <View className="rounded-lg bg-destructive/10 p-3">
                       <Text className="text-sm text-destructive">
-                        This dose exceeds a {syringeSize}-unit syringe. Use a
-                        larger syringe or adjust your reconstitution.
+                        {t('calculator.exceedsSyringe', { syringeSize })}
                       </Text>
                     </View>
                   </CardContent>
@@ -470,12 +466,12 @@ export function BlendScreen({
                   size={18}
                 />
                 <Text className="text-base font-semibold">
-                  Preparation Output
+                  {t('calculator.preparationOutput')}
                 </Text>
               </View>
               <View className="items-center py-4">
                 <Text className="text-sm text-muted-foreground">
-                  Enter values above to see result
+                  {t('calculator.enterValues')}
                 </Text>
               </View>
             </CardContent>

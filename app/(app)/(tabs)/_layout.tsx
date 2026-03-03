@@ -4,6 +4,7 @@ import { useColorScheme } from '@/lib/use-color-scheme';
 import { Tabs } from 'expo-router';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { Beaker, Calculator, Droplets, Settings } from 'lucide-react-native';
+import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
 import colors from 'tailwindcss/colors';
 
@@ -13,6 +14,7 @@ iconWithClassName(Droplets);
 
 function AndroidTabs() {
   const { isDarkColorScheme } = useColorScheme();
+  const { t } = useTranslation();
 
   return (
     <Tabs
@@ -32,7 +34,7 @@ function AndroidTabs() {
       <Tabs.Screen
         name="calculator"
         options={{
-          title: 'Peptide',
+          title: t('tabs.peptide'),
           tabBarIcon: ({ color, size }) => (
             <Calculator
               size={size}
@@ -44,7 +46,7 @@ function AndroidTabs() {
       <Tabs.Screen
         name="blend"
         options={{
-          title: 'Blend',
+          title: t('tabs.blend'),
           tabBarIcon: ({ color, size }) => (
             <Beaker
               size={size}
@@ -56,7 +58,7 @@ function AndroidTabs() {
       <Tabs.Screen
         name="reconstitution"
         options={{
-          title: 'Reconstitution',
+          title: t('tabs.reconstitution'),
           tabBarIcon: ({ color, size }) => (
             <Droplets
               size={size}
@@ -68,7 +70,7 @@ function AndroidTabs() {
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
+          title: t('tabs.settings'),
           tabBarIcon: ({ color, size }) => (
             <Settings
               size={size}
@@ -103,6 +105,7 @@ function AndroidTabs() {
 
 function IosTabs() {
   const { isDarkColorScheme } = useColorScheme();
+  const { t } = useTranslation();
 
   return (
     <NativeTabs
@@ -113,28 +116,28 @@ function IosTabs() {
       labelVisibilityMode="labeled"
     >
       <NativeTabs.Trigger name="calculator">
-        <NativeTabs.Trigger.Label>Peptide</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.peptide')}</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="flask.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="blend">
-        <NativeTabs.Trigger.Label>Blend</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.blend')}</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="testtube.2"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="reconstitution">
-        <NativeTabs.Trigger.Label>Reconstitution</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.reconstitution')}</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="drop.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <NativeTabs.Trigger.Label>Settings</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.settings')}</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="gearshape"
           selectedColor={CONFIG.tintColor.hex}

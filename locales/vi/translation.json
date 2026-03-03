@@ -42,7 +42,9 @@
     "emailUserId": "ID người dùng:",
     "checkInReminders": "Nhắc nhở ghi chép",
     "reminderTime": "Nhắc nhở",
-    "addReminder": "Thêm nhắc nhở"
+    "addReminder": "Thêm nhắc nhở",
+    "language": "Ngôn ngữ",
+    "systemDefault": "Mặc định hệ thống"
   },
   "account": {
     "editProfile": "Chỉnh sửa hồ sơ",
@@ -437,7 +439,48 @@
   "rating": {
     "howWouldYouRate": "Bạn đánh giá phân tích của chúng tôi thế nào?"
   },
+  "calculator": {
+    "syringeConfiguration": "Cấu hình ống tiêm",
+    "syringeType": "Loại ống tiêm",
+    "syringeSize": "Kích thước ống tiêm",
+    "displayModeUnits": "Đơn vị",
+    "displayModeMl": "mL",
+    "peptideDetails": "Chi tiết peptide",
+    "peptideAmountInVial": "Lượng peptide trong lọ",
+    "placeholderAmount": "VD: 5",
+    "unitMg": "mg",
+    "unitMl": "mL",
+    "bacWaterAdded": "Nước kìm khuẩn đã thêm",
+    "placeholderWater": "VD: 2",
+    "desiredDose": "Liều mong muốn",
+    "placeholderDoseMcg": "VD: 250",
+    "placeholderDoseMg": "VD: 0,25",
+    "exceedsSyringe": "Liều này vượt quá ống tiêm {{syringeSize}} đơn vị. Sử dụng ống tiêm lớn hơn hoặc điều chỉnh pha hồi.",
+    "preparationOutput": "Kết quả pha chế",
+    "enterValues": "Nhập giá trị ở trên để xem kết quả",
+    "peptideNumber": "Peptide {{number}}",
+    "nameOptional": "Tên (tùy chọn)",
+    "placeholderName": "VD: BPC-157",
+    "amountInVial": "Lượng trong lọ",
+    "addPeptide": "Thêm peptide",
+    "reconstitution": "Pha hồi",
+    "breakdown": "Chi tiết",
+    "units": "đơn vị",
+    "desiredDrawUnits": "Đơn vị mong muốn mỗi liều",
+    "desiredDrawMl": "mL mong muốn mỗi liều",
+    "placeholderDraw": "VD: 25",
+    "approxMl": "≈ {{value}} mL",
+    "toAdd": "cần thêm",
+    "doses": "liều",
+    "bacWater": "Nước BAC",
+    "result": "Kết quả",
+    "draws": "lần lấy",
+    "concentrationUnit": "mcg/mL"
+  },
   "tabs": {
+    "peptide": "Peptide",
+    "blend": "Pha trộn",
+    "reconstitution": "Pha hồi",
     "dashboard": "Bảng điều khiển",
     "calendar": "Lịch",
     "settings": "Cài đặt"
@@ -463,7 +506,11 @@
     "editLog": "Chỉnh sửa ghi nhận",
     "community": "Cộng đồng",
     "history": "Lịch sử",
-    "logHeadache": "Ghi nhận đau đầu"
+    "logHeadache": "Ghi nhận đau đầu",
+    "language": "Ngôn ngữ",
+    "peptideCalculator": "Máy tính peptide",
+    "blend": "Pha trộn",
+    "reconstitution": "Pha hồi"
   },
   "notFound": {
     "title": "404",

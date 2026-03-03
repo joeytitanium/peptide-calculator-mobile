@@ -2,9 +2,11 @@ import { ProBadge } from '@/components/pro-badge';
 import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { Stack, useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
 
 export default function Layout() {
+  const { t } = useTranslation();
   const { isDarkColorScheme } = useColorScheme();
   const router = useRouter();
 
@@ -12,7 +14,7 @@ export default function Layout() {
     <Stack
       screenOptions={{
         headerShown: true,
-        title: 'Blend',
+        title: t('navigation.blend'),
         headerTransparent: Platform.OS === 'ios',
         headerShadowVisible: Platform.OS !== 'android',
         headerTitleAlign: Platform.OS === 'android' ? 'center' : undefined,
