@@ -9,10 +9,12 @@ import { Text } from '@/components/ui/text';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { useSafeAreaInsets } from '@/hooks/use-safe-area-insets';
 import type {
+  DoseUnit,
   SyringeDisplayMode,
   SyringeSize,
 } from '@/types/app-specific/calculation';
 import {
+  DOSE_UNITS,
   SYRINGE_DISPLAY_MODES,
   SYRINGE_SIZES,
 } from '@/types/app-specific/calculation';
@@ -41,14 +43,14 @@ type BlendPeptideInput = {
   key: string;
   peptideName: string;
   peptideAmountMg: string;
-  desiredDoseMcg: string;
+  desiredDose: string;
 };
 
 const createEmptyEntry = (): BlendPeptideInput => ({
   key: Math.random().toString(36).slice(2),
   peptideName: '',
   peptideAmountMg: '',
-  desiredDoseMcg: '',
+  desiredDose: '',
 });
 
 const DISPLAY_MODE_LABELS: Record<SyringeDisplayMode, string> = {
@@ -67,19 +69,35 @@ export function BlendScreen() {
       key: Math.random().toString(36).slice(2),
       peptideName: 'BPC-157',
       peptideAmountMg: '5',
-      desiredDoseMcg: '250',
+      desiredDose: '250',
     },
     {
       key: Math.random().toString(36).slice(2),
       peptideName: 'TB-500',
       peptideAmountMg: '5',
-      desiredDoseMcg: '500',
+      desiredDose: '500',
     },
   ]);
   const [waterVolumeMl, setWaterVolumeMl] = useState('2');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
+  const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
   const [stickyHeight, setStickyHeight] = useState(0);
+
+  const handleDoseUnitChange = useCallback((newUnit: DoseUnit) => {
+    setPeptides((prev) =>
+      prev.map((p) => {
+        const current = parseNumericInput(p.desiredDose);
+        if (isNaN(current) || current <= 0) return p;
+        const converted =
+          newUnit === 'mg'
+            ? String(+(current / 1000).toPrecision(6))
+            : String(+(current * 1000).toPrecision(6));
+        return { ...p, desiredDose: converted };
+      })
+    );
+    setDoseUnit(newUnit);
+  }, []);
 
   const updatePeptide = useCallback(
     ({
@@ -110,10 +128,13 @@ export function BlendScreen() {
     const water = parseNumericInput(waterVolumeMl);
     if (isNaN(water)) return null;
 
-    const parsedPeptides = peptides.map((p) => ({
-      peptideAmountMg: parseNumericInput(p.peptideAmountMg),
-      desiredDoseMcg: parseNumericInput(p.desiredDoseMcg),
-    }));
+    const parsedPeptides = peptides.map((p) => {
+      const raw = parseNumericInput(p.desiredDose);
+      return {
+        peptideAmountMg: parseNumericInput(p.peptideAmountMg),
+        desiredDoseMcg: doseUnit === 'mg' ? raw * 1000 : raw,
+      };
+    });
 
     if (
       parsedPeptides.some(
@@ -128,17 +149,17 @@ export function BlendScreen() {
       waterVolumeMl: water,
       syringeSize,
     });
-  }, [peptides, waterVolumeMl, syringeSize]);
+  }, [peptides, waterVolumeMl, syringeSize, doseUnit]);
 
   const blendedConcentration = useMemo(() => {
     if (!result) return 0;
-    const totalMcg = peptides.reduce(
-      (sum, p) => sum + parseNumericInput(p.desiredDoseMcg),
-      0
-    );
+    const totalMcg = peptides.reduce((sum, p) => {
+      const raw = parseNumericInput(p.desiredDose);
+      return sum + (doseUnit === 'mg' ? raw * 1000 : raw);
+    }, 0);
     if (result.totalVolumeMl <= 0) return 0;
     return Math.round((totalMcg / result.totalVolumeMl) * 100) / 100;
-  }, [result, peptides]);
+  }, [result, peptides, doseUnit]);
 
   return (
     <>
@@ -268,15 +289,38 @@ export function BlendScreen() {
                 <View className="gap-1.5">
                   <Text className="text-sm font-medium">Desired dose</Text>
                   <Input
-                    value={entry.desiredDoseMcg}
+                    value={entry.desiredDose}
                     onChangeText={(value) =>
-                      updatePeptide({ index, field: 'desiredDoseMcg', value })
+                      updatePeptide({ index, field: 'desiredDose', value })
                     }
-                    placeholder="e.g. 250"
+                    placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
                     keyboardType="decimal-pad"
                     returnKeyType="done"
                   />
-                  <Text className="text-xs text-muted-foreground">mcg</Text>
+                  {index === 0 && (
+                    <ToggleGroup
+                      size="sm"
+                      type="single"
+                      value={doseUnit}
+                      onValueChange={(value) => {
+                        if (value) handleDoseUnitChange(value as DoseUnit);
+                      }}
+                      variant="outline"
+                      className="w-full"
+                    >
+                      {DOSE_UNITS.map((unit, i) => (
+                        <ToggleGroupItem
+                          key={unit}
+                          value={unit}
+                          isFirst={i === 0}
+                          isLast={i === DOSE_UNITS.length - 1}
+                          className="flex-1"
+                        >
+                          <Text>{unit}</Text>
+                        </ToggleGroupItem>
+                      ))}
+                    </ToggleGroup>
+                  )}
                 </View>
               </CardContent>
             </Card>

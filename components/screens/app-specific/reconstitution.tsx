@@ -7,10 +7,12 @@ import { Text } from '@/components/ui/text';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { useSafeAreaInsets } from '@/hooks/use-safe-area-insets';
 import type {
+  DoseUnit,
   SyringeDisplayMode,
   SyringeSize,
 } from '@/types/app-specific/calculation';
 import {
+  DOSE_UNITS,
   SYRINGE_DISPLAY_MODES,
   SYRINGE_SIZES,
 } from '@/types/app-specific/calculation';
@@ -45,15 +47,28 @@ export function ReconstitutionScreen() {
   });
 
   const [peptideAmountMg, setPeptideAmountMg] = useState('5');
-  const [desiredDoseMcg, setDesiredDoseMcg] = useState('250');
+  const [desiredDose, setDesiredDose] = useState('250');
+  const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
   const [desiredUnits, setDesiredUnits] = useState('25');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
   const [stickyHeight, setStickyHeight] = useState(0);
 
+  const handleDoseUnitChange = (newUnit: DoseUnit) => {
+    const current = parseNumericInput(desiredDose);
+    if (!isNaN(current) && current > 0) {
+      setDesiredDose(
+        newUnit === 'mg'
+          ? String(+(current / 1000).toPrecision(6))
+          : String(+(current * 1000).toPrecision(6))
+      );
+    }
+    setDoseUnit(newUnit);
+  };
+
   const result = useMemo(() => {
     const peptide = parseNumericInput(peptideAmountMg);
-    const dose = parseNumericInput(desiredDoseMcg);
+    const dose = parseNumericInput(desiredDose);
     const units = parseNumericInput(desiredUnits);
 
     if (isNaN(peptide) || isNaN(dose) || isNaN(units)) {
@@ -62,10 +77,10 @@ export function ReconstitutionScreen() {
 
     return calculateReconstitution({
       peptideAmountMg: peptide,
-      desiredDoseMcg: dose,
+      desiredDoseMcg: doseUnit === 'mg' ? dose * 1000 : dose,
       desiredUnits: units,
     });
-  }, [peptideAmountMg, desiredDoseMcg, desiredUnits]);
+  }, [peptideAmountMg, desiredDose, doseUnit, desiredUnits]);
 
   const desiredMl = useMemo(() => {
     const units = parseNumericInput(desiredUnits);
@@ -172,13 +187,34 @@ export function ReconstitutionScreen() {
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">Desired dose</Text>
                 <Input
-                  value={desiredDoseMcg}
-                  onChangeText={setDesiredDoseMcg}
-                  placeholder="e.g. 250"
+                  value={desiredDose}
+                  onChangeText={setDesiredDose}
+                  placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">mcg</Text>
+                <ToggleGroup
+                  size="sm"
+                  type="single"
+                  value={doseUnit}
+                  onValueChange={(value) => {
+                    if (value) handleDoseUnitChange(value as DoseUnit);
+                  }}
+                  variant="outline"
+                  className="w-full"
+                >
+                  {DOSE_UNITS.map((unit, index) => (
+                    <ToggleGroupItem
+                      key={unit}
+                      value={unit}
+                      isFirst={index === 0}
+                      isLast={index === DOSE_UNITS.length - 1}
+                      className="flex-1"
+                    >
+                      <Text>{unit}</Text>
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
               </View>
 
               <View className="gap-1.5">
@@ -232,13 +268,19 @@ export function ReconstitutionScreen() {
               {/* Stats */}
               <View className="flex-row justify-between">
                 <View className="flex-row items-center gap-1.5">
-                  <Droplets size={13} className="text-muted-foreground" />
+                  <Droplets
+                    size={13}
+                    className="text-muted-foreground"
+                  />
                   <Text className="text-sm text-muted-foreground">
                     BAC water
                   </Text>
                 </View>
                 <View className="flex-row items-center gap-1.5">
-                  <Info size={13} className="text-muted-foreground" />
+                  <Info
+                    size={13}
+                    className="text-muted-foreground"
+                  />
                   <Text className="text-sm text-muted-foreground">
                     {result.concentrationMcgPerMl} mcg/mL
                   </Text>

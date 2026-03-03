@@ -7,6 +7,9 @@ export type SyringeSize = (typeof SYRINGE_SIZES)[number];
 export const SYRINGE_DISPLAY_MODES = ['units', 'ml'] as const;
 export type SyringeDisplayMode = (typeof SYRINGE_DISPLAY_MODES)[number];
 
+export const DOSE_UNITS = ['mcg', 'mg'] as const;
+export type DoseUnit = (typeof DOSE_UNITS)[number];
+
 export type BlendPeptideEntry = {
   peptideName: string;
   peptideAmountMg: number;

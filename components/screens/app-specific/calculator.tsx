@@ -8,10 +8,12 @@ import { Text } from '@/components/ui/text';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { useSafeAreaInsets } from '@/hooks/use-safe-area-insets';
 import type {
+  DoseUnit,
   SyringeDisplayMode,
   SyringeSize,
 } from '@/types/app-specific/calculation';
 import {
+  DOSE_UNITS,
   SYRINGE_DISPLAY_MODES,
   SYRINGE_SIZES,
 } from '@/types/app-specific/calculation';
@@ -40,15 +42,28 @@ export function CalculatorScreen() {
 
   const [peptideAmountMg, setPeptideAmountMg] = useState('5');
   const [waterVolumeMl, setWaterVolumeMl] = useState('2');
-  const [desiredDoseMcg, setDesiredDoseMcg] = useState('250');
+  const [desiredDose, setDesiredDose] = useState('250');
+  const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
   const [stickyHeight, setStickyHeight] = useState(0);
 
+  const handleDoseUnitChange = (newUnit: DoseUnit) => {
+    const current = parseNumericInput(desiredDose);
+    if (!isNaN(current) && current > 0) {
+      setDesiredDose(
+        newUnit === 'mg'
+          ? String(+(current / 1000).toPrecision(6))
+          : String(+(current * 1000).toPrecision(6))
+      );
+    }
+    setDoseUnit(newUnit);
+  };
+
   const result = useMemo(() => {
     const peptide = parseNumericInput(peptideAmountMg);
     const water = parseNumericInput(waterVolumeMl);
-    const dose = parseNumericInput(desiredDoseMcg);
+    const dose = parseNumericInput(desiredDose);
 
     if (isNaN(peptide) || isNaN(water) || isNaN(dose)) {
       return null;
@@ -57,10 +72,10 @@ export function CalculatorScreen() {
     return calculatePeptideDose({
       peptideAmountMg: peptide,
       waterVolumeMl: water,
-      desiredDoseMcg: dose,
+      desiredDoseMcg: doseUnit === 'mg' ? dose * 1000 : dose,
       syringeSize,
     });
-  }, [peptideAmountMg, waterVolumeMl, desiredDoseMcg, syringeSize]);
+  }, [peptideAmountMg, waterVolumeMl, desiredDose, doseUnit, syringeSize]);
 
   return (
     <>
@@ -175,13 +190,33 @@ export function CalculatorScreen() {
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">Desired dose</Text>
                 <Input
-                  value={desiredDoseMcg}
-                  onChangeText={setDesiredDoseMcg}
-                  placeholder="e.g. 250"
+                  value={desiredDose}
+                  onChangeText={setDesiredDose}
+                  placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">mcg</Text>
+                <ToggleGroup
+                  type="single"
+                  value={doseUnit}
+                  onValueChange={(value) => {
+                    if (value) handleDoseUnitChange(value as DoseUnit);
+                  }}
+                  variant="outline"
+                  className="w-full"
+                >
+                  {DOSE_UNITS.map((unit, index) => (
+                    <ToggleGroupItem
+                      key={unit}
+                      value={unit}
+                      isFirst={index === 0}
+                      isLast={index === DOSE_UNITS.length - 1}
+                      className="flex-1"
+                    >
+                      <Text>{unit}</Text>
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
               </View>
             </CardContent>
           </Card>
