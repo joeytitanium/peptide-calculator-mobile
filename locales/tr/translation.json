@@ -308,7 +308,7 @@
       "title": "{{days}} gün sınırsız erişim alın",
       "subtitle": "Deneme süreniz bitmeden hatırlatacağız",
       "today": "Bugün",
-      "todaySubtitle": "Baş ağrısı takipçinize tam erişim açın.",
+      "todaySubtitle": "Peptit Hesaplayıcısına tam erişimi açın.",
       "inTwoDays": "2 Gün İçinde",
       "inTwoDaysSubtitle": "Deneme süreniz bitmeden bir hatırlatma göndereceğiz.",
       "inThreeDays": "3 Gün İçinde",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Devam etmek için uygulamayı açın",
       "titleSoft": "Tam Erişim Elde Edin",
-      "subtitle": "Baş ağrısı takip arkadaşınız"
+      "subtitle": "Peptit dozlama yardımcınız"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Hızlı ve Kolay Kayıt",
-        "description": "Optimize edilmiş arayüzümüzle saniyeler içinde kayıt yapın - zahmetsiz"
+      "allSyringes": {
+        "title": "Tüm şırınga boyutları",
+        "description": "Hassas dozlama için 27, 30 ve 50 birimlik şırıngaları açın"
       },
-      "reminders": {
-        "title": "Özel Hatırlatmalar",
-        "description": "Baş ağrılarınızı kaydetmek ve takip etmek için kişisel hatırlatmalar ayarlayın"
-      },
-      "noPaywall": {
-        "title": "Sinir bozucu paywall'ı kaldır",
-        "description": "Uygulamayı her açtığınızda paywall açılır pencereleri yok"
-      },
-      "unlimited": {
-        "title": "Sınırsız Kayıt",
-        "description": "İstediğiniz kadar kayıt yapın - aylık sınır yok"
+      "unlimitedBlends": {
+        "title": "Sınırsız peptit karışımları",
+        "description": "Tek şırıngada 3 veya daha fazla peptiti karıştırın — sınır yok"
       },
       "indieDeveloper": {
         "title": "Bağımsız Bir Geliştiriciyi Destekle",
         "description": "Bu uygulamanın geleceğini şekillendirmeye yardımcı olun ve bağımsız bir geliştirici tarafından özenle oluşturulan özel özelliklerin keyfini çıkarın."
+      },
+      "noPopups": {
+        "title": "Sinir bozucu pop-up yok",
+        "description": "Ödeme ekranını atlayın ve her seferinde doğrudan uygulamaya girin"
       }
     },
     "reviews": {
-      "sarah": "Sonunda baş ağrısı takibini kolaylaştıran bir uygulama buldum! Takvim görünümü zaman içindeki kalıpları görmek için mükemmel.",
-      "isaac": "Yıllardır migrenden muzdaribim. Bu uygulama tetikleyicilerimi belirlememe yardımcı oldu — artık onları önleyebiliyorum!",
-      "emma": "Nörologum baş ağrılarımı takip etmemi önerdi ve bu her şeyi çok kolaylaştırdı. Randevularda paylaşacak gerçek verilerim var!",
-      "arthur": "Tetikleyici takibi harika! Kafeinin ana sorunum olduğunu keşfettim. Sağlığım için oyun değiştirici oldu!",
-      "zoe": "Kayıt yapmak süper hızlı - sadece birkaç saniye. 3 aydır düzenli yapıyorum ve baş ağrılarım önemli ölçüde azaldı!",
-      "maya": "Kronik migrenden muzdarip biri olarak, her şeyin tek bir yerde olması bana huzur veriyor. Günlük hatırlatıcıları çok seviyorum!"
+      "sarah": "Sonunda peptit hesaplamalarını doğru yapan bir hesap makinesi! Önceden her seferinde tereddüt ediyordum — şimdi saniyeler sürüyor.",
+      "isaac": "Karışım hesaplayıcısı oyun değiştirici. BPC-157 ve TB-500'u tek şırıngada karıştırmak hiç bu kadar kolay olmamıştı.",
+      "emma": "Süper temiz arayüz ve rekonstitüsyon hesaplayıcısı çok zaman kazandırdı. Pro yükseltme her kuruşuna değer."
     },
     "package": {
       "freeTrial": "ÜCRETSİZ DENEME",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Ömür boyu"
     },
     "wreath": {
-      "bestHealthApp": "En İyi Baş Ağrısı Takip Uygulaması"
+      "bestHealthApp": "En İyi Peptit Hesaplayıcı Uygulaması"
     },
     "v2": {
       "title": "Planınızı seçin",

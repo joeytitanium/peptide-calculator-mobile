@@ -308,7 +308,7 @@
       "title": "Erhalte unbegrenzten Zugang für {{days}} Tage",
       "subtitle": "Wir erinnern dich vor Ende deiner Testphase",
       "today": "Heute",
-      "todaySubtitle": "Schalte vollen Zugang zu deinem Kopfschmerz-Tracker frei.",
+      "todaySubtitle": "Schalte den vollen Zugang zum Peptid-Rechner frei.",
       "inTwoDays": "In 2 Tagen",
       "inTwoDaysSubtitle": "Wir senden eine Erinnerung vor Ende deiner Testphase.",
       "inThreeDays": "In 3 Tagen",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "App freischalten, um fortzufahren",
       "titleSoft": "Vollen Zugang Erhalten",
-      "subtitle": "Dein Kopfschmerz-Tracking-Begleiter"
+      "subtitle": "Dein Peptid-Dosierungsbegleiter"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Schnelles & einfaches Erfassen",
-        "description": "Erfasse Einträge in Sekunden mit unserer optimierten Oberfläche - ohne Aufwand"
+      "allSyringes": {
+        "title": "Alle Spritzengrößen",
+        "description": "Schalte 27, 30 und 50 Einheiten-Spritzen für präzise Dosierung frei"
       },
-      "reminders": {
-        "title": "Individuelle Erinnerungen",
-        "description": "Setze persönliche Erinnerungen zum Erfassen und Verfolgen deiner Kopfschmerzen"
-      },
-      "noPaywall": {
-        "title": "Nervige Paywall entfernen",
-        "description": "Keine Paywall-Popups mehr bei jedem Öffnen der App"
-      },
-      "unlimited": {
-        "title": "Unbegrenztes Protokollieren",
-        "description": "Protokolliere so oft du willst - keine monatlichen Limits"
+      "unlimitedBlends": {
+        "title": "Unbegrenzte Peptid-Mischungen",
+        "description": "Mische 3 oder mehr Peptide in einer Spritze — keine Limits"
       },
       "indieDeveloper": {
         "title": "Einen Indie-Entwickler unterstützen",
         "description": "Hilf mit, die Zukunft dieser App zu gestalten und genieße exklusive Funktionen, liebevoll entwickelt von einem Indie-Entwickler."
+      },
+      "noPopups": {
+        "title": "Keine nervigen Pop-ups",
+        "description": "Überspringe den Paywall-Bildschirm und starte jedes Mal direkt in die App"
       }
     },
     "reviews": {
-      "sarah": "Endlich eine App gefunden, die das Erfassen von Kopfschmerzen einfach macht! Die Kalenderansicht ist perfekt, um Muster im Zeitverlauf zu erkennen.",
-      "isaac": "Ich leide seit Jahren unter Migräne. Diese App hat mir geholfen, meine Auslöser zu identifizieren – jetzt kann ich sie tatsächlich verhindern!",
-      "emma": "Mein Neurologe empfahl mir, meine Kopfschmerzen zu dokumentieren und das hat es so einfach gemacht. Toll, echte Daten für Arzttermine zu haben!",
-      "arthur": "Das Auslöser-Tracking ist genial! Ich habe entdeckt, dass Koffein mein Hauptauslöser war. Ein echter Gamechanger für meine Gesundheit!",
-      "zoe": "Superschnell beim Erfassen – dauert nur Sekunden. Ich bin seit 3 Monaten dabei und meine Kopfschmerzen haben sich deutlich reduziert!",
-      "maya": "Als jemand, der mit chronischer Migräne kämpft, gibt es mir Ruhe, alles an einem Ort zu haben. Die täglichen Erinnerungen finde ich auch super!"
+      "sarah": "Endlich ein Rechner, der Peptid-Berechnungen richtig macht! Früher habe ich jedes Mal gezweifelt — jetzt dauert es Sekunden.",
+      "isaac": "Der Blend-Rechner ist genial. BPC-157 und TB-500 in einer Spritze zu mischen war noch nie so einfach.",
+      "emma": "Super saubere Oberfläche und der Rekonstitutions-Rechner hat mir so viel Zeit gespart. Das Pro-Upgrade lohnt sich."
     },
     "package": {
       "freeTrial": "KOSTENLOS TESTEN",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Lebenslang"
     },
     "wreath": {
-      "bestHealthApp": "Beste Kopfschmerz-Tracker-App"
+      "bestHealthApp": "Beste Peptid-Rechner-App"
     },
     "v2": {
       "title": "Wähle deinen Plan",

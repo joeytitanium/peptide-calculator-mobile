@@ -2,38 +2,32 @@ import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Text } from '@/components/ui/text';
 import { CONFIG } from '@/config';
 import { clsx } from 'clsx';
-import { Bell, Heart, Sparkles, Unlock, Zap } from 'lucide-react-native';
+import { Beaker, BellOff, Heart, Syringe } from 'lucide-react-native';
 
 import { GlassView } from '@/components/core/glass-view';
 import { useTranslation } from 'react-i18next';
 import { View } from 'react-native';
 
-iconWithClassName(Bell);
-iconWithClassName(Unlock);
+iconWithClassName(Syringe);
+iconWithClassName(Beaker);
+iconWithClassName(BellOff);
 iconWithClassName(Heart);
-iconWithClassName(Sparkles);
-iconWithClassName(Zap);
 
 const perks = [
   {
-    icon: Sparkles,
-    titleKey: 'paywall.perks.unlimited.title',
-    descriptionKey: 'paywall.perks.unlimited.description',
+    icon: Syringe,
+    titleKey: 'paywall.perks.allSyringes.title',
+    descriptionKey: 'paywall.perks.allSyringes.description',
   },
   {
-    icon: Zap,
-    titleKey: 'paywall.perks.quickLogging.title',
-    descriptionKey: 'paywall.perks.quickLogging.description',
+    icon: Beaker,
+    titleKey: 'paywall.perks.unlimitedBlends.title',
+    descriptionKey: 'paywall.perks.unlimitedBlends.description',
   },
   {
-    icon: Bell,
-    titleKey: 'paywall.perks.reminders.title',
-    descriptionKey: 'paywall.perks.reminders.description',
-  },
-  {
-    icon: Unlock,
-    titleKey: 'paywall.perks.noPaywall.title',
-    descriptionKey: 'paywall.perks.noPaywall.description',
+    icon: BellOff,
+    titleKey: 'paywall.perks.noPopups.title',
+    descriptionKey: 'paywall.perks.noPopups.description',
   },
   {
     icon: Heart,

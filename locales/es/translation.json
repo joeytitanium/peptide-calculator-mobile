@@ -308,7 +308,7 @@
       "title": "Obtén acceso ilimitado por {{days}} días",
       "subtitle": "Te recordaremos antes de que termine tu prueba",
       "today": "Hoy",
-      "todaySubtitle": "Desbloquea acceso completo a tu rastreador de dolores de cabeza.",
+      "todaySubtitle": "Desbloquea acceso completo a Peptide Calculator.",
       "inTwoDays": "En 2 días",
       "inTwoDaysSubtitle": "Te enviaremos un recordatorio antes de que termine tu prueba.",
       "inThreeDays": "En 3 días",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Desbloquea la app para continuar",
       "titleSoft": "Obtén Acceso Completo",
-      "subtitle": "Tu compañero de seguimiento de dolores de cabeza"
+      "subtitle": "Tu compañero de dosificación de péptidos"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Registro rápido y fácil",
-        "description": "Registra entradas en segundos con nuestra interfaz optimizada - sin complicaciones"
+      "allSyringes": {
+        "title": "Todos los tamaños de jeringa",
+        "description": "Desbloquea jeringas de 27, 30 y 50 unidades para dosificación precisa"
       },
-      "reminders": {
-        "title": "Recordatorios personalizados",
-        "description": "Configura recordatorios personalizados para registrar y seguir tus dolores de cabeza"
-      },
-      "noPaywall": {
-        "title": "Eliminar paywall molesto",
-        "description": "Sin más popups de paywall cada vez que abres la app"
-      },
-      "unlimited": {
-        "title": "Registro Ilimitado",
-        "description": "Registra todas las veces que necesites - sin límites mensuales"
+      "unlimitedBlends": {
+        "title": "Mezclas ilimitadas",
+        "description": "Mezcla 3 o más péptidos en una sola jeringa — sin límites"
       },
       "indieDeveloper": {
         "title": "Apoya a un Desarrollador Independiente",
         "description": "Ayuda a dar forma al futuro de esta app y disfruta de funciones exclusivas creadas con cariño por un desarrollador independiente."
+      },
+      "noPopups": {
+        "title": "Sin ventanas emergentes molestas",
+        "description": "Salta la pantalla de pago y entra directo a la app cada vez"
       }
     },
     "reviews": {
-      "sarah": "¡Por fin encontré una app que hace el seguimiento de dolores de cabeza fácil! La vista de calendario es perfecta para ver patrones con el tiempo.",
-      "isaac": "He tenido migrañas por años. Esta app me ayudó a identificar mis desencadenantes — ¡ahora puedo prevenirlos!",
-      "emma": "Mi neurólogo me recomendó registrar mis dolores de cabeza y esto lo hizo muy simple. ¡Me encanta tener datos reales para mis citas!",
-      "arthur": "¡El seguimiento de desencadenantes es brillante! Descubrí que la cafeína era mi principal culpable. ¡Un cambio total para mi salud!",
-      "zoe": "Súper rápido para registrar - toma solo segundos. ¡Llevo 3 meses consistente y mis dolores de cabeza se han reducido significativamente!",
-      "maya": "Como alguien que lucha con migrañas crónicas, tener todo en un lugar me da tranquilidad. ¡También me encantan los recordatorios diarios!"
+      "sarah": "¡Por fin una calculadora que hace bien las cuentas de péptidos! Antes dudaba cada vez — ahora toma segundos.",
+      "isaac": "La calculadora de mezclas es increíble. Mezclar BPC-157 y TB-500 en una jeringa nunca fue tan fácil.",
+      "emma": "Interfaz super limpia y la calculadora de reconstitución me ahorró mucho tiempo. Vale cada centavo."
     },
     "package": {
       "freeTrial": "PRUEBA GRATIS",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Vitalicio"
     },
     "wreath": {
-      "bestHealthApp": "Mejor app para dolores de cabeza"
+      "bestHealthApp": "Mejor App de Calculadora de Péptidos"
     },
     "v2": {
       "title": "Elige tu plan",

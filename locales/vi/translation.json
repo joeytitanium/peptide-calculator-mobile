@@ -306,7 +306,7 @@
       "title": "Nhận quyền truy cập không giới hạn trong {{days}} ngày",
       "subtitle": "Chúng tôi sẽ nhắc bạn trước khi hết thời gian dùng thử",
       "today": "Hôm nay",
-      "todaySubtitle": "Mở khóa toàn bộ quyền truy cập trình theo dõi đau đầu.",
+      "todaySubtitle": "Mở khóa toàn bộ quyền truy cập Máy tính Peptide.",
       "inTwoDays": "Trong 2 ngày",
       "inTwoDaysSubtitle": "Chúng tôi sẽ gửi nhắc nhở trước khi hết thời gian dùng thử.",
       "inThreeDays": "Trong 3 ngày",
@@ -315,37 +315,30 @@
     "nonTrial": {
       "titleHard": "Mở khóa ứng dụng để tiếp tục",
       "titleSoft": "Nhận Quyền Truy Cập Đầy Đủ",
-      "subtitle": "Trợ lý theo dõi đau đầu của bạn"
+      "subtitle": "Trợ lý tính liều peptide của bạn"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Ghi nhận nhanh & dễ dàng",
-        "description": "Ghi nhận trong vài giây với giao diện đơn giản"
+      "allSyringes": {
+        "title": "Tất cả kích thước ống tiêm",
+        "description": "Mở khóa ống tiêm 27, 30 và 50 đơn vị để tính liều chính xác"
       },
-      "reminders": {
-        "title": "Nhắc nhở tùy chỉnh",
-        "description": "Đặt nhắc nhở cá nhân để ghi lại và theo dõi cơn đau đầu"
-      },
-      "noPaywall": {
-        "title": "Xóa paywall phiền phức",
-        "description": "Không còn popup paywall mỗi khi mở ứng dụng"
-      },
-      "unlimited": {
-        "title": "Ghi Chép Không Giới Hạn",
-        "description": "Ghi bao nhiêu lần tùy thích - không giới hạn hàng tháng"
+      "unlimitedBlends": {
+        "title": "Pha trộn peptide không giới hạn",
+        "description": "Trộn 3 peptide trở lên trong một ống tiêm — không giới hạn"
       },
       "indieDeveloper": {
         "title": "Ủng Hộ Nhà Phát Triển Độc Lập",
         "description": "Giúp định hình tương lai của ứng dụng này và tận hưởng các tính năng độc quyền được tạo ra với tâm huyết bởi một nhà phát triển độc lập."
+      },
+      "noPopups": {
+        "title": "Không có cửa sổ bật lên phiền phức",
+        "description": "Bỏ qua màn hình thanh toán và vào thẳng ứng dụng mỗi lần"
       }
     },
     "reviews": {
-      "sarah": "Cuối cùng cũng tìm được ứng dụng giúp theo dõi đau đầu dễ dàng! Chế độ xem lịch hoàn hảo để thấy các mẫu theo thời gian.",
-      "isaac": "Tôi bị đau nửa đầu nhiều năm. Ứng dụng này giúp tôi xác định được các yếu tố kích hoạt — giờ tôi có thể phòng ngừa được!",
-      "emma": "Bác sĩ thần kinh khuyên tôi theo dõi đau đầu và ứng dụng này làm mọi thứ thật đơn giản. Tôi thích có dữ liệu thực để chia sẻ khi khám!",
-      "arthur": "Theo dõi yếu tố kích hoạt thật tuyệt! Phát hiện caffeine là thủ phạm chính. Thay đổi cuộc chơi cho sức khỏe của tôi!",
-      "zoe": "Ghi nhận siêu nhanh - chỉ mất vài giây. Tôi đã kiên trì 3 tháng và đau đầu đã giảm đáng kể!",
-      "maya": "Là người bị đau nửa đầu mãn tính, có mọi thứ ở một nơi cho tôi sự yên tâm. Rất thích nhắc nhở hàng ngày!"
+      "sarah": "Cuối cùng cũng tìm được máy tính tính đúng liều peptide! Trước đây lần nào cũng lo lắng — giờ chỉ mất vài giây.",
+      "isaac": "Máy tính pha trộn thật tuyệt vời. Trộn BPC-157 và TB-500 trong một ống tiêm chưa bao giờ dễ dàng đến thế.",
+      "emma": "Giao diện siêu sạch và máy tính pha chế tiết kiệm rất nhiều thời gian. Nâng cấp Pro đáng từng đồng."
     },
     "package": {
       "freeTrial": "DÙNG THỬ MIỄN PHÍ",
@@ -372,7 +365,7 @@
       "lifetimeTitle": "Trọn đời"
     },
     "wreath": {
-      "bestHealthApp": "Ứng dụng theo dõi đau đầu tốt nhất"
+      "bestHealthApp": "Ứng dụng Máy tính Peptide tốt nhất"
     },
     "v2": {
       "title": "Chọn gói của bạn",

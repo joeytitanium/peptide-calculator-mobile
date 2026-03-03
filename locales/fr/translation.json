@@ -308,7 +308,7 @@
       "title": "Obtenez un accès illimité pendant {{days}} jours",
       "subtitle": "Nous vous rappellerons avant la fin de votre essai",
       "today": "Aujourd'hui",
-      "todaySubtitle": "Débloquez l'accès complet à votre suivi de maux de tête.",
+      "todaySubtitle": "Débloquez l'accès complet au Calculateur de Peptides.",
       "inTwoDays": "Dans 2 jours",
       "inTwoDaysSubtitle": "Nous enverrons un rappel avant la fin de votre essai.",
       "inThreeDays": "Dans 3 jours",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Débloquez l'app pour continuer",
       "titleSoft": "Accès Complet",
-      "subtitle": "Votre compagnon de suivi des maux de tête"
+      "subtitle": "Votre compagnon de dosage peptidique"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Enregistrement rapide et facile",
-        "description": "Enregistrez des entrées en quelques secondes avec notre interface optimisée - sans tracas"
+      "allSyringes": {
+        "title": "Toutes les tailles de seringue",
+        "description": "Débloquez les seringues de 27, 30 et 50 unités pour un dosage précis"
       },
-      "reminders": {
-        "title": "Rappels personnalisés",
-        "description": "Définissez des rappels personnalisés pour enregistrer et suivre vos maux de tête"
-      },
-      "noPaywall": {
-        "title": "Supprimer le paywall agaçant",
-        "description": "Plus de popups de paywall à chaque ouverture de l'app"
-      },
-      "unlimited": {
-        "title": "Enregistrement Illimité",
-        "description": "Enregistrez autant que nécessaire - sans limites mensuelles"
+      "unlimitedBlends": {
+        "title": "Mélanges illimités",
+        "description": "Mélangez 3 peptides ou plus dans une seule seringue — sans limites"
       },
       "indieDeveloper": {
         "title": "Soutenir un Développeur Indépendant",
         "description": "Participez à l'avenir de cette app et profitez de fonctionnalités exclusives créées avec soin par un développeur indépendant."
+      },
+      "noPopups": {
+        "title": "Pas de pop-ups ennuyeux",
+        "description": "Passez l'écran d'abonnement et accédez directement à l'app à chaque fois"
       }
     },
     "reviews": {
-      "sarah": "J'ai enfin trouvé une app qui rend le suivi des maux de tête facile ! La vue calendrier est parfaite pour repérer les schémas au fil du temps.",
-      "isaac": "J'ai souffert de migraines pendant des années. Cette app m'a aidé à identifier mes déclencheurs — maintenant je peux vraiment les prévenir !",
-      "emma": "Mon neurologue m'a recommandé de suivre mes maux de tête et ça a rendu les choses si simples. J'adore avoir des données réelles pour mes rendez-vous !",
-      "arthur": "Le suivi des déclencheurs est brillant ! J'ai découvert que la caféine était mon principal coupable. Un vrai changement pour ma santé !",
-      "zoe": "Super rapide à enregistrer - quelques secondes seulement. Ça fait 3 mois que je suis régulière et mes maux de tête ont considérablement diminué !",
-      "maya": "En tant que personne souffrant de migraines chroniques, avoir tout au même endroit me rassure. J'adore aussi les rappels quotidiens !"
+      "sarah": "Enfin un calculateur qui fait bien les maths des peptides ! Avant je doutais à chaque fois — maintenant ça prend quelques secondes.",
+      "isaac": "Le calculateur de mélange est génial. Mélanger BPC-157 et TB-500 dans une seringue n'a jamais été aussi simple.",
+      "emma": "Interface super propre et le calculateur de reconstitution m'a fait gagner tellement de temps. Le Pro vaut le coup."
     },
     "package": {
       "freeTrial": "ESSAI GRATUIT",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "À vie"
     },
     "wreath": {
-      "bestHealthApp": "Meilleure app de suivi des maux de tête"
+      "bestHealthApp": "Meilleure App Calculateur de Peptides"
     },
     "v2": {
       "title": "Choisissez votre forfait",

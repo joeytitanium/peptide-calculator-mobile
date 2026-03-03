@@ -11,11 +11,11 @@ const OnboardingPaywallScreen = () => {
   return (
     <PaywallV2
       onAutoClose={() => {
-        router.replace('/(app)/(tabs)/home');
+        router.replace('/(app)/(tabs)/calculator');
         onboardingCompletedSetValue(true);
       }}
       onClose={() => {
-        router.replace('/(app)/(tabs)/home');
+        router.replace('/(app)/(tabs)/calculator');
         onboardingCompletedSetValue(true);
       }}
       onComplete={handlePaywallComplete}

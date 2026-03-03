@@ -308,7 +308,7 @@
       "title": "Krijg onbeperkte toegang voor {{days}} dagen",
       "subtitle": "We herinneren je voordat je proefperiode eindigt",
       "today": "Vandaag",
-      "todaySubtitle": "Ontgrendel volledige toegang tot je hoofdpijntracker.",
+      "todaySubtitle": "Ontgrendel volledige toegang tot Peptide Calculator.",
       "inTwoDays": "Over 2 dagen",
       "inTwoDaysSubtitle": "We sturen een herinnering voordat je proefperiode eindigt.",
       "inThreeDays": "Over 3 dagen",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Ontgrendel de app om door te gaan",
       "titleSoft": "Krijg Volledige Toegang",
-      "subtitle": "Je hoofdpijn tracking companion"
+      "subtitle": "Jouw peptide-doseringspartner"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Snel & eenvoudig loggen",
-        "description": "Log invoeren in seconden met onze gestroomlijnde interface - geen gedoe"
+      "allSyringes": {
+        "title": "Alle spuitformaten",
+        "description": "Ontgrendel 27, 30 en 50 eenheden spuiten voor nauwkeurige dosering"
       },
-      "reminders": {
-        "title": "Aangepaste herinneringen",
-        "description": "Stel persoonlijke herinneringen in om je hoofdpijn bij te houden"
-      },
-      "noPaywall": {
-        "title": "Vervelende paywall verwijderen",
-        "description": "Geen paywall-popups meer telkens als je de app opent"
-      },
-      "unlimited": {
-        "title": "Onbeperkt Loggen",
-        "description": "Log zo vaak als je wilt - geen maandelijkse limieten"
+      "unlimitedBlends": {
+        "title": "Onbeperkte peptide-mengsels",
+        "description": "Mix 3 of meer peptiden in één spuit — geen limieten"
       },
       "indieDeveloper": {
         "title": "Steun een Indie-ontwikkelaar",
         "description": "Help de toekomst van deze app vorm te geven en geniet van exclusieve functies met zorg gemaakt door een indie-ontwikkelaar."
+      },
+      "noPopups": {
+        "title": "Geen vervelende pop-ups",
+        "description": "Sla het betaalscherm over en ga elke keer direct naar de app"
       }
     },
     "reviews": {
-      "sarah": "Eindelijk een app gevonden die hoofdpijn bijhouden makkelijk maakt! Het kalenderoverzicht is perfect om patronen over tijd te zien.",
-      "isaac": "Ik heb al jaren migraines. Deze app hielp me mijn triggers te identificeren — nu kan ik ze echt voorkomen!",
-      "emma": "Mijn neuroloog adviseerde me mijn hoofdpijn bij te houden en dit maakte het zo simpel. Fijn om echte data te hebben voor mijn afspraken!",
-      "arthur": "De trigger-tracking is briljant! Ik ontdekte dat cafeïne mijn grootste boosdoener was. Zo'n gamechanger voor mijn gezondheid!",
-      "zoe": "Super snel te loggen - duurt maar seconden. Ik ben 3 maanden consistent en mijn hoofdpijnen zijn significant verminderd!",
-      "maya": "Als iemand die worstelt met chronische migraines geeft het me gemoedsrust om alles op één plek te hebben. Love de dagelijkse herinneringen!"
+      "sarah": "Eindelijk een calculator die peptide-berekeningen goed doet! Eerst twijfelde ik elke keer — nu duurt het seconden.",
+      "isaac": "De blend-calculator is geweldig. BPC-157 en TB-500 mengen in één spuit was nog nooit zo makkelijk.",
+      "emma": "Super schone interface en de reconstitutie-calculator bespaarde me zoveel tijd. De Pro-upgrade is het meer dan waard."
     },
     "package": {
       "freeTrial": "GRATIS PROEFPERIODE",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Levenslang"
     },
     "wreath": {
-      "bestHealthApp": "Beste hoofdpijntracker-app"
+      "bestHealthApp": "Beste Peptide Calculator App"
     },
     "v2": {
       "title": "Kies je abonnement",

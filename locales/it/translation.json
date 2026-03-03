@@ -308,7 +308,7 @@
       "title": "Ottieni accesso illimitato per {{days}} giorni",
       "subtitle": "Ti ricorderemo prima della fine della prova",
       "today": "Oggi",
-      "todaySubtitle": "Sblocca l'accesso completo al tuo tracker per il mal di testa.",
+      "todaySubtitle": "Sblocca l'accesso completo a Peptide Calculator.",
       "inTwoDays": "Tra 2 giorni",
       "inTwoDaysSubtitle": "Ti invieremo un promemoria prima della fine della prova.",
       "inThreeDays": "Tra 3 giorni",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Sblocca l'app per continuare",
       "titleSoft": "Ottieni Accesso Completo",
-      "subtitle": "Il tuo compagno per il monitoraggio del mal di testa"
+      "subtitle": "Il tuo compagno di dosaggio peptidico"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Registrazione rapida e facile",
-        "description": "Registra voci in pochi secondi con la nostra interfaccia ottimizzata - senza problemi"
+      "allSyringes": {
+        "title": "Tutte le dimensioni di siringa",
+        "description": "Sblocca siringhe da 27, 30 e 50 unità per un dosaggio preciso"
       },
-      "reminders": {
-        "title": "Promemoria personalizzati",
-        "description": "Imposta promemoria personalizzati per registrare e monitorare il tuo mal di testa"
-      },
-      "noPaywall": {
-        "title": "Rimuovi il paywall fastidioso",
-        "description": "Niente più popup del paywall ogni volta che apri l'app"
-      },
-      "unlimited": {
-        "title": "Registrazione Illimitata",
-        "description": "Registra tutte le volte che vuoi - nessun limite mensile"
+      "unlimitedBlends": {
+        "title": "Miscele illimitate",
+        "description": "Miscela 3 o più peptidi in una siringa — senza limiti"
       },
       "indieDeveloper": {
         "title": "Sostieni uno Sviluppatore Indipendente",
         "description": "Aiuta a plasmare il futuro di questa app e goditi funzionalità esclusive create con cura da uno sviluppatore indipendente."
+      },
+      "noPopups": {
+        "title": "Niente pop-up fastidiosi",
+        "description": "Salta la schermata di pagamento e accedi direttamente all'app ogni volta"
       }
     },
     "reviews": {
-      "sarah": "Finalmente ho trovato un'app che rende il monitoraggio del mal di testa facile! La vista calendario è perfetta per individuare gli schemi nel tempo.",
-      "isaac": "Ho sofferto di emicranie per anni. Questa app mi ha aiutato a identificare i fattori scatenanti — ora riesco davvero a prevenirle!",
-      "emma": "Il mio neurologo mi ha consigliato di monitorare il mal di testa e questo ha reso tutto semplicissimo. Adoro avere dati reali per le visite!",
-      "arthur": "Il monitoraggio dei fattori scatenanti è brillante! Ho scoperto che la caffeina era il mio principale colpevole. Un vero game changer per la mia salute!",
-      "zoe": "Velocissimo da registrare - bastano pochi secondi. Sono costante da 3 mesi e i miei mal di testa si sono ridotti significativamente!",
-      "maya": "Come persona con emicranie croniche, avere tutto in un posto mi dà tranquillità. Adoro anche i promemoria giornalieri!"
+      "sarah": "Finalmente un calcolatore che fa bene i calcoli dei peptidi! Prima dubitavo ogni volta — ora bastano pochi secondi.",
+      "isaac": "Il calcolatore di miscele è fantastico. Miscelare BPC-157 e TB-500 in una siringa non è mai stato così facile.",
+      "emma": "Interfaccia super pulita e il calcolatore di ricostituzione mi ha fatto risparmiare tanto tempo. Vale ogni centesimo."
     },
     "package": {
       "freeTrial": "PROVA GRATUITA",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "A vita"
     },
     "wreath": {
-      "bestHealthApp": "Miglior app tracker mal di testa"
+      "bestHealthApp": "Migliore App Calcolatore di Peptidi"
     },
     "v2": {
       "title": "Scegli il tuo piano",

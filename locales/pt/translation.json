@@ -308,7 +308,7 @@
       "title": "Obtenha acesso ilimitado por {{days}} dias",
       "subtitle": "Vamos te lembrar antes do fim do teste",
       "today": "Hoje",
-      "todaySubtitle": "Desbloqueie acesso completo ao seu rastreador de dores de cabeça.",
+      "todaySubtitle": "Desbloqueie acesso completo ao Calculador de Peptídeos.",
       "inTwoDays": "Em 2 dias",
       "inTwoDaysSubtitle": "Enviaremos um lembrete antes do fim do seu teste.",
       "inThreeDays": "Em 3 dias",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Desbloqueie o app para continuar",
       "titleSoft": "Obtenha Acesso Completo",
-      "subtitle": "Seu companheiro de rastreamento de dores de cabeça"
+      "subtitle": "Seu companheiro de dosagem de peptídeos"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Registro rápido e fácil",
-        "description": "Registre entradas em segundos com nossa interface otimizada - sem complicações"
+      "allSyringes": {
+        "title": "Todos os tamanhos de seringa",
+        "description": "Desbloqueie seringas de 27, 30 e 50 unidades para dosagem precisa"
       },
-      "reminders": {
-        "title": "Lembretes personalizados",
-        "description": "Defina lembretes personalizados para registrar e acompanhar suas dores de cabeça"
-      },
-      "noPaywall": {
-        "title": "Remover paywall chato",
-        "description": "Sem mais popups de paywall toda vez que abrir o app"
-      },
-      "unlimited": {
-        "title": "Registro Ilimitado",
-        "description": "Registre quantas vezes precisar - sem limites mensais"
+      "unlimitedBlends": {
+        "title": "Misturas ilimitadas",
+        "description": "Misture 3 ou mais peptídeos em uma seringa — sem limites"
       },
       "indieDeveloper": {
         "title": "Apoie um Desenvolvedor Independente",
         "description": "Ajude a moldar o futuro deste app e aproveite recursos exclusivos criados com carinho por um desenvolvedor independente."
+      },
+      "noPopups": {
+        "title": "Sem pop-ups irritantes",
+        "description": "Pule a tela de pagamento e entre direto no app toda vez"
       }
     },
     "reviews": {
-      "sarah": "Finalmente encontrei um app que torna o registro de dores de cabeça fácil! A visão do calendário é perfeita para identificar padrões ao longo do tempo.",
-      "isaac": "Tenho migraines há anos. Este app me ajudou a identificar meus gatilhos — agora consigo realmente preveni-las!",
-      "emma": "Meu neurologista recomendou que eu registrasse minhas dores de cabeça e isso tornou tudo tão simples. Adoro ter dados reais para minhas consultas!",
-      "arthur": "O rastreamento de gatilhos é brilhante! Descobri que a cafeína era meu principal culpado. Uma verdadeira mudança de jogo para minha saúde!",
-      "zoe": "Super rápido para registrar - leva apenas segundos. Estou consistente há 3 meses e minhas dores de cabeça reduziram significativamente!",
-      "maya": "Como alguém que sofre com migraines crônicas, ter tudo em um lugar me dá tranquilidade. Adoro os lembretes diários!"
+      "sarah": "Finalmente uma calculadora que acerta a matemática dos peptídeos! Antes eu duvidava toda vez — agora leva segundos.",
+      "isaac": "A calculadora de misturas é incrível. Misturar BPC-157 e TB-500 em uma seringa nunca foi tão fácil.",
+      "emma": "Interface super limpa e a calculadora de reconstituição me economizou muito tempo. Vale cada centavo pelo Pro."
     },
     "package": {
       "freeTrial": "TESTE GRÁTIS",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Vitalício"
     },
     "wreath": {
-      "bestHealthApp": "Melhor app de rastreamento de dores de cabeça"
+      "bestHealthApp": "Melhor App Calculadora de Peptídeos"
     },
     "v2": {
       "title": "Escolha seu plano",

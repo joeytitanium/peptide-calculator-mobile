@@ -315,7 +315,7 @@
       "title": "Get Unlimited access for {{days}} days",
       "subtitle": "We'll remind you before your trial ends",
       "today": "Today",
-      "todaySubtitle": "Unlock full access to your headache tracker.",
+      "todaySubtitle": "Unlock full access to Peptide Calculator.",
       "inTwoDays": "In 2 Days",
       "inTwoDaysSubtitle": "We'll send a reminder before your trial ends.",
       "inThreeDays": "In 3 Days",
@@ -324,24 +324,20 @@
     "nonTrial": {
       "titleHard": "Unlock the app to continue",
       "titleSoft": "Get Full Access",
-      "subtitle": "Your headache tracking companion"
+      "subtitle": "Your peptide dosing companion"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Quick & Easy Logging",
-        "description": "Log entries in seconds with our streamlined interface - no hassle"
+      "allSyringes": {
+        "title": "All Syringe Sizes",
+        "description": "Unlock 27, 30, and 50 unit syringes for precise dosing with any setup"
       },
-      "reminders": {
-        "title": "Custom Reminders",
-        "description": "Set personalized reminders to log and track your headaches"
+      "unlimitedBlends": {
+        "title": "Unlimited Peptide Blends",
+        "description": "Mix 3 or more peptides in a single blend — no limits"
       },
-      "noPaywall": {
-        "title": "Remove Annoying Paywall",
-        "description": "No more paywall popups every time you open the app"
-      },
-      "unlimited": {
-        "title": "Unlimited Logging",
-        "description": "Log as many times as you need - no monthly limits"
+      "noPopups": {
+        "title": "No Annoying Pop-ups",
+        "description": "Skip the paywall screen and jump straight into the app every time"
       },
       "indieDeveloper": {
         "title": "Support an Indie Developer",
@@ -349,12 +345,9 @@
       }
     },
     "reviews": {
-      "sarah": "Finally found an app that makes tracking headaches easy! The calendar view is perfect for spotting patterns over time.",
-      "isaac": "I've had migraines for years. This app helped me identify my triggers — now I can actually prevent them!",
-      "emma": "My neurologist recommended I track my headaches and this made it so simple. Love having real data for my appointments!",
-      "arthur": "The trigger tracking is brilliant! I discovered caffeine was my main culprit. Such a game changer for my health!",
-      "zoe": "Super quick to log - takes just seconds. I've been consistent for 3 months and my headaches have reduced significantly!",
-      "maya": "As someone who struggles with chronic migraines, having everything in one place gives me peace of mind. Love the daily reminders!"
+      "sarah": "Finally a calculator that gets peptide math right! I used to second-guess my doses every time — now it takes seconds.",
+      "isaac": "The blend calculator is a game changer. Mixing BPC-157 and TB-500 in one syringe has never been easier to figure out.",
+      "emma": "Super clean interface and the reconstitution calculator saved me so much time. Worth every penny for the Pro upgrade."
     },
     "package": {
       "freeTrial": "FREE TRIAL",
@@ -381,7 +374,7 @@
       "lifetimeTitle": "Lifetime"
     },
     "wreath": {
-      "bestHealthApp": "Best Headache Tracker App"
+      "bestHealthApp": "Best Peptide Calculator App"
     },
     "v2": {
       "title": "Choose your plan",

@@ -308,7 +308,7 @@
       "title": "Obține acces nelimitat pentru {{days}} zile",
       "subtitle": "Te vom anunța înainte ca perioada de probă să se termine",
       "today": "Azi",
-      "todaySubtitle": "Deblochează acces complet la tracker-ul de dureri de cap.",
+      "todaySubtitle": "Deblochează accesul complet la Calculatorul de Peptide.",
       "inTwoDays": "În 2 zile",
       "inTwoDaysSubtitle": "Vom trimite un memento înainte ca perioada de probă să se termine.",
       "inThreeDays": "În 3 zile",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Deblochează aplicația pentru a continua",
       "titleSoft": "Obține Acces Complet",
-      "subtitle": "Companionul tău de monitorizare a durerilor de cap"
+      "subtitle": "Partenerul tău de dozare a peptidelor"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Înregistrare rapidă și ușoară",
-        "description": "Înregistrează intrări în secunde cu interfața noastră simplificată"
+      "allSyringes": {
+        "title": "Toate dimensiunile de seringă",
+        "description": "Deblochează seringi de 27, 30 și 50 unități pentru dozare precisă"
       },
-      "reminders": {
-        "title": "Mementouri personalizate",
-        "description": "Setează mementouri personalizate pentru a-ți înregistra și urmări durerile de cap"
-      },
-      "noPaywall": {
-        "title": "Elimină paywall-ul enervant",
-        "description": "Fără popupuri de paywall de fiecare dată când deschizi aplicația"
-      },
-      "unlimited": {
-        "title": "Înregistrări Nelimitate",
-        "description": "Înregistrează de câte ori vrei - fără limite lunare"
+      "unlimitedBlends": {
+        "title": "Amestecuri nelimitate",
+        "description": "Amestecă 3 sau mai multe peptide într-o singură seringă — fără limite"
       },
       "indieDeveloper": {
         "title": "Susține un Dezvoltator Independent",
         "description": "Ajută la modelarea viitorului acestei aplicații și bucură-te de funcții exclusive create cu grijă de un dezvoltator independent."
+      },
+      "noPopups": {
+        "title": "Fără ferestre pop-up enervante",
+        "description": "Sari peste ecranul de plată și intră direct în aplicație de fiecare dată"
       }
     },
     "reviews": {
-      "sarah": "Am găsit în sfârșit o aplicație care face urmărirea durerilor de cap ușoară! Vederea calendar este perfectă pentru a observa tipare în timp.",
-      "isaac": "Am migrene de ani de zile. Această aplicație m-a ajutat să îmi identific factorii declanșatori — acum chiar pot să le previn!",
-      "emma": "Neurologul meu mi-a recomandat să îmi urmăresc durerile de cap și asta a făcut totul atât de simplu. Îmi place să am date reale pentru consultații!",
-      "arthur": "Urmărirea factorilor declanșatori este genială! Am descoperit că cafeina era principalul meu vinovat. O schimbare de joc pentru sănătatea mea!",
-      "zoe": "Super rapid de înregistrat - durează doar secunde. Sunt consecventă de 3 luni și durerile de cap s-au redus semnificativ!",
-      "maya": "Ca cineva care se luptă cu migrene cronice, să am totul într-un singur loc îmi dă liniște sufletească. Ador mementourile zilnice!"
+      "sarah": "În sfârșit un calculator care face corect matematica peptidelor! Înainte mă îndoiam de fiecare dată — acum durează secunde.",
+      "isaac": "Calculatorul de amestecuri e genial. Amestecarea BPC-157 și TB-500 într-o seringă n-a fost niciodată mai ușoară.",
+      "emma": "Interfață super curată și calculatorul de reconstituire mi-a economisit atât de mult timp. Merită fiecare bănuț."
     },
     "package": {
       "freeTrial": "PERIOADĂ DE PROBĂ GRATUITĂ",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Pe viață"
     },
     "wreath": {
-      "bestHealthApp": "Cea mai bună aplicație de urmărire a durerilor de cap"
+      "bestHealthApp": "Cea Mai Bună App Calculator de Peptide"
     },
     "v2": {
       "title": "Alege-ți planul",

@@ -308,7 +308,7 @@
       "title": "获取 {{days}} 天无限访问权限",
       "subtitle": "我们会在试用结束前提醒你",
       "today": "今天",
-      "todaySubtitle": "解锁头痛追踪器的完整访问。",
+      "todaySubtitle": "解锁肽计算器的完整访问权限。",
       "inTwoDays": "2天后",
       "inTwoDaysSubtitle": "我们会在试用结束前发送提醒。",
       "inThreeDays": "3天后",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "解锁应用以继续",
       "titleSoft": "获取完整访问",
-      "subtitle": "你的头痛追踪伙伴"
+      "subtitle": "您的肽剂量计算伙伴"
     },
     "perks": {
-      "quickLogging": {
-        "title": "快速轻松记录",
-        "description": "用我们简洁的界面几秒钟内完成记录 - 毫无麻烦"
+      "allSyringes": {
+        "title": "所有注射器尺寸",
+        "description": "解锁27、30和50单位注射器，精确计量"
       },
-      "reminders": {
-        "title": "自定义提醒",
-        "description": "设置个性化提醒来记录和追踪头痛"
-      },
-      "noPaywall": {
-        "title": "移除烦人的付费墙",
-        "description": "每次打开应用不再弹出付费墙"
-      },
-      "unlimited": {
-        "title": "无限记录",
-        "description": "想记多少次就记多少次 - 没有每月限制"
+      "unlimitedBlends": {
+        "title": "无限肽混合",
+        "description": "在一支注射器中混合3种或更多肽 — 无限制"
       },
       "indieDeveloper": {
         "title": "支持独立开发者",
         "description": "帮助塑造这款应用的未来，享受由独立开发者用心打造的专属功能。"
+      },
+      "noPopups": {
+        "title": "无烦人弹窗",
+        "description": "跳过付费墙，每次直接进入应用"
       }
     },
     "reviews": {
-      "sarah": "终于找到一个让头痛记录变得简单的应用！日历视图非常适合查看长期模式。",
-      "isaac": "我多年来饱受偏头痛之苦。这个应用帮我找到了诱因——现在我可以真正预防它们了！",
-      "emma": "我的神经科医生建议我追踪头痛，这让一切变得简单。我喜欢有真实数据可以在就诊时分享！",
-      "arthur": "追踪诱因太棒了！发现咖啡因是我的主要元凶，对我的健康来说是一个改变游戏规则的发现！",
-      "zoe": "记录超快——只需几秒。我已经坚持3个月，头痛明显减少了！",
-      "maya": "作为慢性偏头痛患者，把所有东西放在一个地方让我很安心。非常喜欢每日提醒！"
+      "sarah": "终于找到一个能正确计算肽剂量的计算器！以前每次都不确定 — 现在只需几秒钟。",
+      "isaac": "混合计算器太棒了。在一支注射器中混合BPC-157和TB-500从未如此简单。",
+      "emma": "界面非常干净，重组计算器帮我节省了很多时间。Pro升级物超所值。"
     },
     "package": {
       "freeTrial": "免费试用",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "终身"
     },
     "wreath": {
-      "bestHealthApp": "最佳头痛追踪应用"
+      "bestHealthApp": "最佳肽计算器应用"
     },
     "v2": {
       "title": "选择您的计划",

@@ -308,7 +308,7 @@
       "title": "Uzyskaj nieograniczony dostęp na {{days}} dni",
       "subtitle": "Przypomnimy Ci przed końcem okresu próbnego",
       "today": "Dziś",
-      "todaySubtitle": "Odblokuj pełny dostęp do trackera bólów głowy.",
+      "todaySubtitle": "Odblokuj pełny dostęp do Kalkulatora Peptydów.",
       "inTwoDays": "Za 2 dni",
       "inTwoDaysSubtitle": "Wyślemy przypomnienie przed końcem okresu próbnego.",
       "inThreeDays": "Za 3 dni",
@@ -317,37 +317,30 @@
     "nonTrial": {
       "titleHard": "Odblokuj aplikację, aby kontynuować",
       "titleSoft": "Uzyskaj Pełny Dostęp",
-      "subtitle": "Twój towarzysz śledzenia bólów głowy"
+      "subtitle": "Twój towarzysz dawkowania peptydów"
     },
     "perks": {
-      "quickLogging": {
-        "title": "Szybkie i łatwe logowanie",
-        "description": "Loguj wpisy w sekundach dzięki naszemu uproszczonemu interfejsowi"
+      "allSyringes": {
+        "title": "Wszystkie rozmiary strzykawek",
+        "description": "Odblokuj strzykawki 27, 30 i 50 jednostek dla precyzyjnego dawkowania"
       },
-      "reminders": {
-        "title": "Własne przypomnienia",
-        "description": "Ustaw spersonalizowane przypomnienia, aby rejestrować i śledzić bóle głowy"
-      },
-      "noPaywall": {
-        "title": "Usuń irytujący paywall",
-        "description": "Koniec z wyskakującymi oknami paywall przy każdym otwarciu aplikacji"
-      },
-      "unlimited": {
-        "title": "Nieograniczone Wpisy",
-        "description": "Loguj ile chcesz - bez miesięcznych limitów"
+      "unlimitedBlends": {
+        "title": "Nieograniczone mieszanki peptydów",
+        "description": "Mieszaj 3 lub więcej peptydów w jednej strzykawce — bez limitów"
       },
       "indieDeveloper": {
         "title": "Wesprzyj Niezależnego Dewelopera",
         "description": "Pomóż kształtować przyszłość tej aplikacji i ciesz się ekskluzywnymi funkcjami tworzonymi z pasją przez niezależnego dewelopera."
+      },
+      "noPopups": {
+        "title": "Żadnych irytujących wyskakujących okien",
+        "description": "Pomiń ekran płatności i przejdź od razu do aplikacji za każdym razem"
       }
     },
     "reviews": {
-      "sarah": "W końcu znalazłam aplikację, która sprawia, że śledzenie bólów głowy jest łatwe! Widok kalendarza jest idealny do obserwowania wzorców w czasie.",
-      "isaac": "Mam migreny od lat. Ta aplikacja pomogła mi zidentyfikować moje wyzwalacze — teraz naprawdę mogę im zapobiegać!",
-      "emma": "Mój neurolog zalecił mi śledzenie bólów głowy i to uczyniło to tak prostym. Uwielbiam mieć prawdziwe dane na wizyty!",
-      "arthur": "Śledzenie wyzwalaczy jest genialne! Odkryłem, że kofeina to mój główny winowajca. Taka zmiana zasad gry dla mojego zdrowia!",
-      "zoe": "Super szybkie logowanie - zajmuje tylko sekundy. Jestem konsekwentna od 3 miesięcy i moje bóle głowy znacznie się zmniejszyły!",
-      "maya": "Jako osoba zmagająca się z chronicznymi migrenami, posiadanie wszystkiego w jednym miejscu daje mi spokój ducha. Uwielbiam codzienne przypomnienia!"
+      "sarah": "Wreszcie kalkulator, który poprawnie liczy dawki peptydów! Wcześniej za każdym razem miałam wątpliwości — teraz zajmuje to sekundy.",
+      "isaac": "Kalkulator mieszanek to rewolucja. Mieszanie BPC-157 i TB-500 w jednej strzykawce nigdy nie było tak proste.",
+      "emma": "Super czysty interfejs i kalkulator rekonstytucji zaoszczędził mi mnóstwo czasu. Upgrade do Pro wart każdego grosza."
     },
     "package": {
       "freeTrial": "BEZPŁATNY OKRES PRÓBNY",
@@ -374,7 +367,7 @@
       "lifetimeTitle": "Dożywotni"
     },
     "wreath": {
-      "bestHealthApp": "Najlepsza aplikacja do śledzenia bólów głowy"
+      "bestHealthApp": "Najlepsza Aplikacja Kalkulator Peptydów"
     },
     "v2": {
       "title": "Wybierz swój plan",

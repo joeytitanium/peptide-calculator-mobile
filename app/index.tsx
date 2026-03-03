@@ -1,4 +1,5 @@
 import { useAsyncStorage } from '@/providers/async-storage-provider';
+import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { Redirect } from 'expo-router';
 import { isNil } from 'lodash';
 import { useEffect } from 'react';
@@ -11,6 +12,7 @@ const IndexScreen = () => {
     onboardingCompletedValue,
     onboardingCompletedIsLoaded,
   } = useAsyncStorage();
+  const { hasActiveSubscription, isLoadingCustomerInfo } = useRevenueCat();
 
   useEffect(() => {
     if (installDateIsLoaded && isNil(installDateValue)) {
@@ -18,7 +20,7 @@ const IndexScreen = () => {
     }
   }, [installDateIsLoaded, installDateValue, installDateSetValue]);
 
-  if (!onboardingCompletedIsLoaded) {
+  if (!onboardingCompletedIsLoaded || isLoadingCustomerInfo) {
     return null;
   }
 
@@ -27,7 +29,12 @@ const IndexScreen = () => {
     return <Redirect href="/(auth)/onboarding-sheet" />;
   }
 
-  // Go to app (free users get gated at the feature level)
+  // Non-subscribers: show paywall on every app launch
+  if (!hasActiveSubscription) {
+    return <Redirect href="/(auth)/paywall" />;
+  }
+
+  // Subscribers: go straight to app
   return <Redirect href="/(app)/(tabs)/calculator" />;
 };
 
