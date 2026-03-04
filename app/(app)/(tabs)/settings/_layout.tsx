@@ -14,6 +14,7 @@ export default function Layout() {
         title: t('tabs.settings'),
         headerTransparent: Platform.OS === 'ios',
         headerShadowVisible: Platform.OS !== 'android',
+        headerTitleAlign: Platform.OS === 'android' ? 'center' : undefined,
         ...(Platform.OS === 'android' && {
           headerStyle: {
             backgroundColor: isDarkColorScheme

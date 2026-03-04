@@ -1,6 +1,6 @@
 import { GlassView } from '@/components/core/glass-view';
 import { ReactNode } from 'react';
-import { LayoutChangeEvent } from 'react-native';
+import { LayoutChangeEvent, Platform } from 'react-native';
 
 type Props = {
   bottom: number;
@@ -9,12 +9,15 @@ type Props = {
 };
 
 export function StickyOutputPanel({ bottom, onLayout, children }: Props) {
+  const bottomOffset = Platform.OS === 'android' ? 8 : bottom + 8;
+
   return (
     <GlassView
       onLayout={onLayout}
+      showBorder={Platform.OS === 'android'}
       style={{
         position: 'absolute',
-        bottom: bottom + 8,
+        bottom: bottomOffset,
         left: 16,
         right: 16,
         borderRadius: 24,

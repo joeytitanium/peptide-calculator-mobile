@@ -9,15 +9,19 @@ import { Platform, Pressable, View } from 'react-native';
 export const GlassView = ({
   children,
   className,
+  showBorder,
   ...glassViewProps
 }: ExpoGlassViewProps & {
   children: ReactNode;
+  showBorder?: boolean;
 }) => {
   return (
     <View className={className}>
       {/* Note: On the calendar view. Expo Glassview can handle class names.  */}
       <ExpoGlassView
-        className="bg-card"
+        className={clsx('bg-card', {
+          'border border-border': showBorder,
+        })}
         {...glassViewProps}
       >
         {children}

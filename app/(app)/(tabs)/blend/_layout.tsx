@@ -1,3 +1,4 @@
+import { HeaderIconButton } from '@/components/core/header-button';
 import { ProBadge } from '@/components/pro-badge';
 import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
@@ -39,12 +40,13 @@ export default function Layout() {
         options={{
           headerLeft: showProBadge
             ? () => (
-                <ProBadge
-                  hideText
+                <HeaderIconButton
                   onPress={() =>
                     router.push('/(app)/(tabs)/blend/paywall')
                   }
-                />
+                >
+                  <ProBadge hideText />
+                </HeaderIconButton>
               )
             : undefined,
         }}

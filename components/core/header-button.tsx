@@ -1,5 +1,7 @@
 import { Text } from '@/components/ui/text';
 import { CONFIG } from '@/config';
+import { THEME } from '@/lib/theme';
+import { useColorScheme } from '@/lib/use-color-scheme';
 import { clsx } from 'clsx';
 import { X } from 'lucide-react-native';
 import { forwardRef, ReactNode } from 'react';
@@ -16,6 +18,9 @@ export const HeaderIconButton = forwardRef<
     testID?: string;
   }
 >(function HeaderIconButton({ onPress, disabled, children, testID }, ref) {
+  const { isDarkColorScheme } = useColorScheme();
+  const theme = isDarkColorScheme ? THEME.dark : THEME.light;
+
   return (
     <Pressable
       ref={ref}
@@ -74,6 +79,9 @@ export const HeaderSubmitButton = ({
   loading: boolean;
   icon?: ReactNode;
 }) => {
+  const { isDarkColorScheme } = useColorScheme();
+  const theme = isDarkColorScheme ? THEME.dark : THEME.light;
+
   return (
     <Pressable
       onPress={onPress}
@@ -83,12 +91,16 @@ export const HeaderSubmitButton = ({
         'flex-row items-center gap-2 rounded-full',
         {
           'px-3 py-1.5': Platform.OS === 'ios',
-          'px-4 py-2 bg-background rounded-full active:bg-accent dark:active:bg-accent/50':
+          'px-4 py-2 rounded-full active:bg-accent dark:active:bg-accent/50':
             Platform.OS === 'android',
         },
         buttonClassName
       )}
-      style={{ alignSelf: 'center' }}
+      style={
+        Platform.OS === 'android'
+          ? { alignSelf: 'center', backgroundColor: theme.background }
+          : { alignSelf: 'center' }
+      }
     >
       <Text
         className={clsx('font-semibold', titleClassName, {
