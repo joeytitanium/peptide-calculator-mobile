@@ -1,7 +1,6 @@
 appId: ${APP_ID}
 ---
 - runFlow: set-locale.yaml
-- runFlow: 01-dashboard.yaml
-- runFlow: 02-calendar.yaml
-- runFlow: 03-details.yaml
-- runFlow: 04-add-log.yaml
+- runFlow: 01-peptide.yaml
+- runFlow: 02-blend.yaml
+- runFlow: 03-reconstitution.yaml

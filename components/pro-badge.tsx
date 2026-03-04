@@ -1,5 +1,4 @@
 import { CONFIG } from '@/config';
-import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { clsx } from 'clsx';
 import { Zap } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
@@ -18,11 +17,6 @@ export const ProBadge = ({
   hideText?: boolean;
 }) => {
   const { t } = useTranslation();
-  const { isLoadingCustomerInfo, hasActiveSubscription } = useRevenueCat();
-
-  if (isLoadingCustomerInfo || hasActiveSubscription) {
-    return null;
-  }
 
   const content = (
     <>

@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+---
+# Navigate to Blend tab (second tab)
+- tapOn:
+    point: "37%,95%"
+- extendedWaitUntil:
+    visible:
+      id: "blend-screen"
+    timeout: 10000
+- swipe:
+    direction: UP
+    duration: 400
+- waitForAnimationToEnd:
+    timeout: 1000
+- takeScreenshot: "${OUTPUT_DIR}/${LOCALE}/02-blend"

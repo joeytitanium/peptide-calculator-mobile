@@ -39,7 +39,13 @@ import {
   PlusIcon,
   Zap,
 } from 'lucide-react-native';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useState,
+} from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, View } from 'react-native';
 

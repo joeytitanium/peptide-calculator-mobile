@@ -11,6 +11,7 @@ const IndexScreen = () => {
     installDateSetValue,
     onboardingCompletedValue,
     onboardingCompletedIsLoaded,
+    screenshotModeValue,
   } = useAsyncStorage();
   const { hasActiveSubscription, isLoadingCustomerInfo } = useRevenueCat();
 
@@ -29,8 +30,8 @@ const IndexScreen = () => {
     return <Redirect href="/(auth)/onboarding-sheet" />;
   }
 
-  // Non-subscribers: show paywall on every app launch
-  if (!hasActiveSubscription) {
+  // Non-subscribers: show paywall on every app launch (skip in screenshot mode)
+  if (!hasActiveSubscription && !screenshotModeValue) {
     return <Redirect href="/(auth)/paywall" />;
   }
 

@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+---
+# Navigate to Reconstitution tab (third tab)
+- tapOn:
+    point: "63%,95%"
+- extendedWaitUntil:
+    visible:
+      id: "reconstitution-screen"
+    timeout: 10000
+- swipe:
+    direction: UP
+    duration: 400
+- waitForAnimationToEnd:
+    timeout: 1000
+- takeScreenshot: "${OUTPUT_DIR}/${LOCALE}/03-reconstitution"

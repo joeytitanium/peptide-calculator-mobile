@@ -1,6 +1,8 @@
 import { ProBadge } from '@/components/pro-badge';
 import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
+import { useAsyncStorage } from '@/providers/async-storage-provider';
+import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { Stack, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
@@ -9,6 +11,11 @@ export default function Layout() {
   const { t } = useTranslation();
   const { isDarkColorScheme } = useColorScheme();
   const router = useRouter();
+  const { isLoadingCustomerInfo, hasActiveSubscription } = useRevenueCat();
+  const { screenshotModeValue: screenshotMode } = useAsyncStorage();
+
+  const showProBadge =
+    !isLoadingCustomerInfo && !hasActiveSubscription && !screenshotMode;
 
   return (
     <Stack
@@ -30,14 +37,16 @@ export default function Layout() {
       <Stack.Screen
         name="index"
         options={{
-          headerLeft: () => (
-            <ProBadge
-              hideText
-              onPress={() =>
-                router.push('/(app)/(tabs)/reconstitution/paywall')
-              }
-            />
-          ),
+          headerLeft: showProBadge
+            ? () => (
+                <ProBadge
+                  hideText
+                  onPress={() =>
+                    router.push('/(app)/(tabs)/reconstitution/paywall')
+                  }
+                />
+              )
+            : undefined,
         }}
       />
       <Stack.Screen

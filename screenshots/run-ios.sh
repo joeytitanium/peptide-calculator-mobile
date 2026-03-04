@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_ID="dev.titanium.headache-tracker"
+APP_ID="dev.titanium.peptide-calculator"
 
 # Find the booted iOS simulator
 DEVICE_ID=$(xcrun simctl list devices booted | grep -oE '[A-F0-9-]{36}' | head -1)
@@ -31,7 +31,7 @@ LOCALES=(
   vi
   zh
 )
-OUTPUT_DIR=".screenshots"
+OUTPUT_DIR=".screenshots/ios"
 FLOWS_DIR="screenshots/maestro/flows"
 
 mkdir -p "$OUTPUT_DIR"
@@ -43,7 +43,7 @@ for locale in "${LOCALES[@]}"; do
   mkdir -p "$OUTPUT_DIR/$locale"
   attempt=1
   while [ $attempt -le $MAX_RETRIES ]; do
-    if maestro --device "$DEVICE_ID" test "$FLOWS_DIR/full-run.yaml" --env LOCALE="$locale" --env APP_ID="$APP_ID" --output "$OUTPUT_DIR/$locale"; then
+    if maestro --device "$DEVICE_ID" test "$FLOWS_DIR/full-run.yaml" --env LOCALE="$locale" --env APP_ID="$APP_ID" --env OUTPUT_DIR="$OUTPUT_DIR" --output "$OUTPUT_DIR/$locale"; then
       echo "--- Done: $locale ---"
       break
     else

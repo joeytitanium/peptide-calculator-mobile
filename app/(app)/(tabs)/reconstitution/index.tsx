@@ -1,4 +1,5 @@
 import { ReconstitutionScreen } from '@/components/screens/app-specific/reconstitution';
+import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { useViewedScreen } from '@/utils/posthog';
 import { useRouter } from 'expo-router';
@@ -6,11 +7,12 @@ import { useRouter } from 'expo-router';
 export default function Reconstitution() {
   useViewedScreen('reconstitution');
   const { hasActiveSubscription } = useRevenueCat();
+  const { screenshotModeValue: screenshotMode } = useAsyncStorage();
   const router = useRouter();
 
   return (
     <ReconstitutionScreen
-      hasActiveSubscription={!!hasActiveSubscription}
+      hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
       onPresentPaywall={() =>
         router.push('/(app)/(tabs)/reconstitution/paywall')
       }

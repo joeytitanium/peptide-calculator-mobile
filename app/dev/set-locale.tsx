@@ -22,6 +22,7 @@ export default function SetLocaleScreen() {
   const {
     screenshotModeSetValue,
     onboardingCompletedSetValue,
+    localePreferenceSetValue,
   } = useAsyncStorage();
   const { setColorScheme } = useColorScheme();
   const { replaceAllRecords } = useRecords();
@@ -36,6 +37,7 @@ export default function SetLocaleScreen() {
     const setup = async () => {
       if (lang) {
         await i18n.changeLanguage(lang);
+        localePreferenceSetValue(lang);
       }
 
       if (seed === 'true') {
@@ -60,15 +62,15 @@ export default function SetLocaleScreen() {
       // Mark onboarding as completed so we skip the onboarding flow
       onboardingCompletedSetValue(true);
 
-      // Delay to let state settle, then navigate via index redirect
+      // Short delay to let React state settle, then navigate via index redirect
       // (direct deep route navigation fails on Android)
       setTimeout(() => {
         router.replace('/');
-      }, 1000);
+      }, 100);
     };
 
     void setup();
-  }, [lang, seed, colorSchemeParam, router, screenshotModeSetValue, onboardingCompletedSetValue, setColorScheme]);
+  }, [lang, seed, colorSchemeParam, router, screenshotModeSetValue, onboardingCompletedSetValue, localePreferenceSetValue, setColorScheme]);
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>

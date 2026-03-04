@@ -92,6 +92,7 @@ export function CalculatorScreen({
   return (
     <>
       <KeyboardAwareScrollView
+        testID="calculator-screen"
         className="flex-1 bg-background"
         contentContainerStyle={{ paddingTop, paddingBottom: stickyHeight + 32 }}
         keyboardDismissMode="on-drag"

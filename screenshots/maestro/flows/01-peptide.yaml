@@ -1,0 +1,13 @@
+appId: ${APP_ID}
+---
+# Wait for calculator screen to be fully loaded
+- extendedWaitUntil:
+    visible:
+      id: "calculator-screen"
+    timeout: 20000
+- swipe:
+    direction: UP
+    duration: 400
+- waitForAnimationToEnd:
+    timeout: 1000
+- takeScreenshot: "${OUTPUT_DIR}/${LOCALE}/01-peptide"
