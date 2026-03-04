@@ -130,14 +130,18 @@ function IosTabs() {
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="reconstitution">
-        <NativeTabs.Trigger.Label>{t('tabs.reconstitution')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>
+          {t('tabs.reconstitution')}
+        </NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="drop.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <NativeTabs.Trigger.Label>{t('tabs.settings')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>
+          {t('tabs.settings')}
+        </NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           sf="gearshape"
           selectedColor={CONFIG.tintColor.hex}

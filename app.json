@@ -7,6 +7,7 @@
     "icon": "./assets/images/app-icon.png",
     "scheme": "peptide-calculator",
     "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "ios": {
       "appleTeamId": "43CZULUQGR",
       "appStoreUrl": "https://apps.apple.com/app/idTODO",
@@ -69,11 +70,7 @@
       "react-native-cloud-storage",
       "expo-video",
       "expo-router",
-      "expo-localization",
-      "@react-native-community/datetimepicker",
-      "expo-font",
-      "expo-image",
-      "expo-web-browser"
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -107,7 +104,7 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
       ],
-      "package": "dev.titanium.headache_tracker"
+      "package": "dev.titanium.peptide_calculator"
     }
   }
 }
