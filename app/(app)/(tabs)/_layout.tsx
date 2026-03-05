@@ -2,7 +2,7 @@ import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { CONFIG } from '@/config';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { Tabs } from 'expo-router';
-import { NativeTabs } from 'expo-router/unstable-native-tabs';
+import { Icon, Label, NativeTabs } from 'expo-router/unstable-native-tabs';
 import { Beaker, Calculator, Droplets, Settings } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
@@ -116,33 +116,33 @@ function IosTabs() {
       labelVisibilityMode="labeled"
     >
       <NativeTabs.Trigger name="calculator">
-        <NativeTabs.Trigger.Label>{t('tabs.peptide')}</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
+        <Label>{t('tabs.peptide')}</Label>
+        <Icon
           sf="flask.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="blend">
-        <NativeTabs.Trigger.Label>{t('tabs.blend')}</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
+        <Label>{t('tabs.blend')}</Label>
+        <Icon
           sf="testtube.2"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="reconstitution">
-        <NativeTabs.Trigger.Label>
+        <Label>
           {t('tabs.reconstitution')}
-        </NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
+        </Label>
+        <Icon
           sf="drop.fill"
           selectedColor={CONFIG.tintColor.hex}
         />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
-        <NativeTabs.Trigger.Label>
+        <Label>
           {t('tabs.settings')}
-        </NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
+        </Label>
+        <Icon
           sf="gearshape"
           selectedColor={CONFIG.tintColor.hex}
         />
