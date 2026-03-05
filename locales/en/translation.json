@@ -446,6 +446,15 @@
   "rating": {
     "howWouldYouRate": "How would you rate our analysis?"
   },
+  "review": {
+    "title": "Enjoying the app?",
+    "subtitle": "We'd love to hear how we're doing!",
+    "feedbackTitle": "We'd love to improve",
+    "feedbackSubtitle": "What can we do better?",
+    "feedbackPlaceholder": "Tell us what you think...",
+    "submit": "Submit",
+    "noThanks": "No Thanks"
+  },
   "calculator": {
     "syringeConfiguration": "Syringe Configuration",
     "syringeType": "Syringe Type",

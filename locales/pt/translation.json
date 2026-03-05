@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Como você avaliaria nossa análise?"
   },
+  "review": {
+    "title": "Gostando do app?",
+    "subtitle": "Adoraríamos saber como estamos indo!",
+    "feedbackTitle": "Gostaríamos de melhorar",
+    "feedbackSubtitle": "O que podemos fazer melhor?",
+    "feedbackPlaceholder": "Conte-nos o que você acha...",
+    "submit": "Enviar",
+    "noThanks": "Não, obrigado"
+  },
   "calculator": {
     "syringeConfiguration": "Configuração da seringa",
     "syringeType": "Tipo de seringa",

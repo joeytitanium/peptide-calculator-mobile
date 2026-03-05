@@ -1,6 +1,7 @@
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { GlowIcon } from '@/components/core/glow-icon';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Text } from '@/components/ui/text';
@@ -25,6 +26,7 @@ import {
   FlaskConical,
   Info,
   Lock,
+  Star,
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useMemo, useState } from 'react';
@@ -37,17 +39,20 @@ iconWithClassName(FlaskConical);
 iconWithClassName(Droplets);
 iconWithClassName(Info);
 iconWithClassName(Lock);
+iconWithClassName(Star);
 
 const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
 
 type ReconstitutionScreenProps = {
   hasActiveSubscription: boolean;
   onPresentPaywall: () => void;
+  onRequestReview: () => void;
 };
 
 export function ReconstitutionScreen({
   hasActiveSubscription,
   onPresentPaywall,
+  onRequestReview,
 }: ReconstitutionScreenProps) {
   const { t } = useTranslation();
   const { paddingTop, bottom } = useSafeAreaInsets({
@@ -120,7 +125,9 @@ export function ReconstitutionScreen({
                 </Text>
               </View>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeType')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeType')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={displayMode}
@@ -138,12 +145,18 @@ export function ReconstitutionScreen({
                     isLast={index === SYRINGE_DISPLAY_MODES.length - 1}
                     className="flex-1"
                   >
-                    <Text>{t(`calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`)}</Text>
+                    <Text>
+                      {t(
+                        `calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`
+                      )}
+                    </Text>
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeSize')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeSize')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={String(syringeSize)}
@@ -164,8 +177,7 @@ export function ReconstitutionScreen({
               >
                 {SYRINGE_SIZES.map((size, index) => {
                   const isLocked =
-                    !hasActiveSubscription &&
-                    PRO_SYRINGE_SIZES.includes(size);
+                    !hasActiveSubscription && PRO_SYRINGE_SIZES.includes(size);
                   return (
                     <ToggleGroupItem
                       key={size}
@@ -199,7 +211,9 @@ export function ReconstitutionScreen({
                   color="blue"
                   size={18}
                 />
-                <Text className="text-base font-semibold">{t('calculator.peptideDetails')}</Text>
+                <Text className="text-base font-semibold">
+                  {t('calculator.peptideDetails')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
@@ -213,15 +227,23 @@ export function ReconstitutionScreen({
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">{t('calculator.unitMg')}</Text>
+                <Text className="text-xs text-muted-foreground">
+                  {t('calculator.unitMg')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
-                <Text className="text-sm font-medium">{t('calculator.desiredDose')}</Text>
+                <Text className="text-sm font-medium">
+                  {t('calculator.desiredDose')}
+                </Text>
                 <Input
                   value={desiredDose}
                   onChangeText={setDesiredDose}
-                  placeholder={doseUnit === 'mcg' ? t('calculator.placeholderDoseMcg') : t('calculator.placeholderDoseMg')}
+                  placeholder={
+                    doseUnit === 'mcg'
+                      ? t('calculator.placeholderDoseMcg')
+                      : t('calculator.placeholderDoseMg')
+                  }
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
@@ -251,7 +273,9 @@ export function ReconstitutionScreen({
 
               <View className="gap-1.5">
                 <Text className="text-sm font-medium">
-                  {displayMode === 'units' ? t('calculator.desiredDrawUnits') : t('calculator.desiredDrawMl')}
+                  {displayMode === 'units'
+                    ? t('calculator.desiredDrawUnits')
+                    : t('calculator.desiredDrawMl')}
                 </Text>
                 <Input
                   value={desiredUnits}
@@ -261,7 +285,9 @@ export function ReconstitutionScreen({
                   returnKeyType="done"
                 />
                 <Text className="text-xs text-muted-foreground">
-                  {displayMode === 'units' ? t('calculator.units') : t('calculator.unitMl')}
+                  {displayMode === 'units'
+                    ? t('calculator.units')
+                    : t('calculator.unitMl')}
                   {displayMode === 'units' &&
                     desiredMl != null &&
                     ` (${t('calculator.approxMl', { value: desiredMl })})`}
@@ -269,6 +295,16 @@ export function ReconstitutionScreen({
               </View>
             </CardContent>
           </Card>
+          <Button
+            variant="secondary"
+            onPress={onRequestReview}
+          >
+            <Star
+              size={16}
+              className="text-foreground"
+            />
+            <Text>{t('review.title')}</Text>
+          </Button>
         </View>
       </KeyboardAwareScrollView>
 
@@ -286,13 +322,17 @@ export function ReconstitutionScreen({
                   <Text className="text-3xl font-bold text-foreground">
                     {result.waterToAddMl} {t('calculator.unitMl')}
                   </Text>
-                  <Text className="text-sm text-muted-foreground">{t('calculator.toAdd')}</Text>
+                  <Text className="text-sm text-muted-foreground">
+                    {t('calculator.toAdd')}
+                  </Text>
                 </View>
                 <View className="flex-row items-baseline gap-1">
                   <Text className="text-3xl font-bold text-foreground">
                     {result.dosesPerVial}
                   </Text>
-                  <Text className="text-sm text-muted-foreground">{t('calculator.doses')}</Text>
+                  <Text className="text-sm text-muted-foreground">
+                    {t('calculator.doses')}
+                  </Text>
                 </View>
               </View>
 
@@ -313,7 +353,8 @@ export function ReconstitutionScreen({
                     className="text-muted-foreground"
                   />
                   <Text className="text-sm text-muted-foreground">
-                    {result.concentrationMcgPerMl} {t('calculator.concentrationUnit')}
+                    {result.concentrationMcgPerMl}{' '}
+                    {t('calculator.concentrationUnit')}
                   </Text>
                 </View>
               </View>
@@ -328,7 +369,9 @@ export function ReconstitutionScreen({
                   color="teal"
                   size={18}
                 />
-                <Text className="text-base font-semibold">{t('calculator.result')}</Text>
+                <Text className="text-base font-semibold">
+                  {t('calculator.result')}
+                </Text>
               </View>
               <View className="items-center py-4">
                 <Text className="text-sm text-muted-foreground">

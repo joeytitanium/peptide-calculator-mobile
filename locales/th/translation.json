@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "คุณให้คะแนนการวิเคราะห์ของเราอย่างไร?"
   },
+  "review": {
+    "title": "ชอบแอปไหม?",
+    "subtitle": "เราอยากรู้ว่าเราทำได้ดีแค่ไหน!",
+    "feedbackTitle": "เราอยากปรับปรุง",
+    "feedbackSubtitle": "เราสามารถทำอะไรได้ดีขึ้น?",
+    "feedbackPlaceholder": "บอกเราว่าคุณคิดอย่างไร...",
+    "submit": "ส่ง",
+    "noThanks": "ไม่ ขอบคุณ"
+  },
   "calculator": {
     "syringeConfiguration": "ตั้งค่าเข็มฉีดยา",
     "syringeType": "ประเภทเข็มฉีดยา",

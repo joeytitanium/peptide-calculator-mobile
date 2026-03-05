@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Analizimizi nasıl değerlendirirsiniz?"
   },
+  "review": {
+    "title": "Uygulamayı beğeniyor musunuz?",
+    "subtitle": "Nasıl olduğumuzu duymak isteriz!",
+    "feedbackTitle": "Gelişmek istiyoruz",
+    "feedbackSubtitle": "Neyi daha iyi yapabiliriz?",
+    "feedbackPlaceholder": "Bize ne düşündüğünüzü söyleyin...",
+    "submit": "Gönder",
+    "noThanks": "Hayır, teşekkürler"
+  },
   "calculator": {
     "syringeConfiguration": "Şırınga Yapılandırması",
     "syringeType": "Şırınga Tipi",

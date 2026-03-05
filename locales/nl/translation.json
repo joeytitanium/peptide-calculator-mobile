@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Hoe zou je onze analyse beoordelen?"
   },
+  "review": {
+    "title": "Bevalt de app?",
+    "subtitle": "We horen graag hoe het gaat!",
+    "feedbackTitle": "We willen graag verbeteren",
+    "feedbackSubtitle": "Wat kunnen we beter doen?",
+    "feedbackPlaceholder": "Vertel ons wat je denkt...",
+    "submit": "Versturen",
+    "noThanks": "Nee, bedankt"
+  },
   "calculator": {
     "syringeConfiguration": "Spuitconfiguratie",
     "syringeType": "Spuittype",

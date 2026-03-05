@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Cum ai evalua analiza noastră?"
   },
+  "review": {
+    "title": "Îți place aplicația?",
+    "subtitle": "Ne-ar plăcea să aflăm cum ne descurcăm!",
+    "feedbackTitle": "Am dori să ne îmbunătățim",
+    "feedbackSubtitle": "Ce putem face mai bine?",
+    "feedbackPlaceholder": "Spune-ne ce crezi...",
+    "submit": "Trimite",
+    "noThanks": "Nu, mulțumesc"
+  },
   "calculator": {
     "syringeConfiguration": "Configurare seringă",
     "syringeType": "Tip seringă",

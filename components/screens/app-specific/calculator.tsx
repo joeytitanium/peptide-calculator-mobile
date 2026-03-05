@@ -1,7 +1,8 @@
-import { GlowIcon } from '@/components/core/glow-icon';
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/app-specific/syringe-result';
+import { GlowIcon } from '@/components/core/glow-icon';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Text } from '@/components/ui/text';
@@ -24,6 +25,7 @@ import {
 import {
   FlaskConical,
   Lock,
+  Star,
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useMemo, useState } from 'react';
@@ -34,17 +36,20 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 iconWithClassName(SyringeIcon);
 iconWithClassName(FlaskConical);
 iconWithClassName(Lock);
+iconWithClassName(Star);
 
 const PRO_SYRINGE_SIZES: readonly SyringeSize[] = [27, 30, 50];
 
 type CalculatorScreenProps = {
   hasActiveSubscription: boolean;
   onPresentPaywall: () => void;
+  onRequestReview: () => void;
 };
 
 export function CalculatorScreen({
   hasActiveSubscription,
   onPresentPaywall,
+  onRequestReview,
 }: CalculatorScreenProps) {
   const { t } = useTranslation();
   const { paddingTop, bottom } = useSafeAreaInsets({
@@ -112,7 +117,9 @@ export function CalculatorScreen({
                 </Text>
               </View>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeType')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeType')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={displayMode}
@@ -130,12 +137,18 @@ export function CalculatorScreen({
                     isLast={index === SYRINGE_DISPLAY_MODES.length - 1}
                     className="flex-1"
                   >
-                    <Text>{t(`calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`)}</Text>
+                    <Text>
+                      {t(
+                        `calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`
+                      )}
+                    </Text>
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeSize')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeSize')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={String(syringeSize)}
@@ -156,8 +169,7 @@ export function CalculatorScreen({
               >
                 {SYRINGE_SIZES.map((size, index) => {
                   const isLocked =
-                    !hasActiveSubscription &&
-                    PRO_SYRINGE_SIZES.includes(size);
+                    !hasActiveSubscription && PRO_SYRINGE_SIZES.includes(size);
                   return (
                     <ToggleGroupItem
                       key={size}
@@ -191,7 +203,9 @@ export function CalculatorScreen({
                   color="blue"
                   size={18}
                 />
-                <Text className="text-base font-semibold">{t('calculator.peptideDetails')}</Text>
+                <Text className="text-base font-semibold">
+                  {t('calculator.peptideDetails')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
@@ -205,7 +219,9 @@ export function CalculatorScreen({
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">{t('calculator.unitMg')}</Text>
+                <Text className="text-xs text-muted-foreground">
+                  {t('calculator.unitMg')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
@@ -219,15 +235,23 @@ export function CalculatorScreen({
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">{t('calculator.unitMl')}</Text>
+                <Text className="text-xs text-muted-foreground">
+                  {t('calculator.unitMl')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
-                <Text className="text-sm font-medium">{t('calculator.desiredDose')}</Text>
+                <Text className="text-sm font-medium">
+                  {t('calculator.desiredDose')}
+                </Text>
                 <Input
                   value={desiredDose}
                   onChangeText={setDesiredDose}
-                  placeholder={doseUnit === 'mcg' ? t('calculator.placeholderDoseMcg') : t('calculator.placeholderDoseMg')}
+                  placeholder={
+                    doseUnit === 'mcg'
+                      ? t('calculator.placeholderDoseMcg')
+                      : t('calculator.placeholderDoseMg')
+                  }
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
@@ -272,6 +296,17 @@ export function CalculatorScreen({
               )}
             </>
           )}
+
+          <Button
+            variant="secondary"
+            onPress={onRequestReview}
+          >
+            <Star
+              size={16}
+              className="text-foreground"
+            />
+            <Text>{t('review.title')}</Text>
+          </Button>
         </View>
       </KeyboardAwareScrollView>
 

@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "분석 결과를 어떻게 평가하시겠습니까?"
   },
+  "review": {
+    "title": "앱이 마음에 드시나요?",
+    "subtitle": "어떻게 하고 있는지 알고 싶습니다!",
+    "feedbackTitle": "개선하고 싶습니다",
+    "feedbackSubtitle": "무엇을 더 잘할 수 있을까요?",
+    "feedbackPlaceholder": "생각을 알려주세요...",
+    "submit": "제출",
+    "noThanks": "괜찮습니다"
+  },
   "calculator": {
     "syringeConfiguration": "주사기 설정",
     "syringeType": "주사기 유형",

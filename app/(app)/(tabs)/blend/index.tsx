@@ -14,6 +14,7 @@ export default function Blend() {
     <BlendScreen
       hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
       onPresentPaywall={() => router.push('/(app)/(tabs)/blend/paywall')}
+      onRequestReview={() => router.push('/(app)/(tabs)/blend/review')}
     />
   );
 }

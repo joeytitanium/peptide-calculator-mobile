@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Як би ви оцінили наш аналіз?"
   },
+  "review": {
+    "title": "Подобається додаток?",
+    "subtitle": "Нам важливо знати, як у нас справи!",
+    "feedbackTitle": "Ми хочемо стати кращими",
+    "feedbackSubtitle": "Що ми можемо покращити?",
+    "feedbackPlaceholder": "Розкажіть, що ви думаєте...",
+    "submit": "Надіслати",
+    "noThanks": "Ні, дякую"
+  },
   "calculator": {
     "syringeConfiguration": "Налаштування шприца",
     "syringeType": "Тип шприца",

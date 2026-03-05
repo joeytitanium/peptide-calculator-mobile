@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Bạn đánh giá phân tích của chúng tôi thế nào?"
   },
+  "review": {
+    "title": "Bạn thích ứng dụng không?",
+    "subtitle": "Chúng tôi muốn biết bạn nghĩ gì!",
+    "feedbackTitle": "Chúng tôi muốn cải thiện",
+    "feedbackSubtitle": "Chúng tôi có thể làm gì tốt hơn?",
+    "feedbackPlaceholder": "Hãy cho chúng tôi biết bạn nghĩ gì...",
+    "submit": "Gửi",
+    "noThanks": "Không, cảm ơn"
+  },
   "calculator": {
     "syringeConfiguration": "Cấu hình ống tiêm",
     "syringeType": "Loại ống tiêm",

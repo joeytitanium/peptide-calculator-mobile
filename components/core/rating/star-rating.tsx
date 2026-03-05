@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { useColorScheme } from '@/lib/use-color-scheme';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as Haptics from 'expo-haptics';
 import { Star } from 'lucide-react-native';
@@ -38,6 +39,8 @@ export function StarRating({
   readonly = false,
   className,
 }: StarRatingProps) {
+  const { colors: themeColors } = useColorScheme();
+
   const stars = Array.from({ length: 5 }, (_, i) => {
     const starValue = i + 1;
     const isFilled = starValue <= value;
@@ -65,7 +68,7 @@ export function StarRating({
           >
             <Star
               size={starSize}
-              color={colors.yellow['400']}
+              color={isFilled ? colors.yellow['400'] : themeColors.grey2}
               fill={isFilled ? colors.yellow['400'] : 'transparent'}
               strokeWidth={1.5}
             />
@@ -74,7 +77,7 @@ export function StarRating({
           <Star
             key={starValue}
             size={starSize}
-            color={colors.yellow['400']}
+            color={isFilled ? colors.yellow['400'] : themeColors.grey2}
             fill={isFilled ? colors.yellow['400'] : 'transparent'}
             strokeWidth={1.5}
           />

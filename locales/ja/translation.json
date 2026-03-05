@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "分析をどう評価しますか？"
   },
+  "review": {
+    "title": "アプリを気に入っていますか？",
+    "subtitle": "ご感想をお聞かせください！",
+    "feedbackTitle": "改善したいと考えています",
+    "feedbackSubtitle": "どこを改善できますか？",
+    "feedbackPlaceholder": "ご意見をお聞かせください...",
+    "submit": "送信",
+    "noThanks": "いいえ、結構です"
+  },
   "calculator": {
     "syringeConfiguration": "シリンジ設定",
     "syringeType": "シリンジタイプ",

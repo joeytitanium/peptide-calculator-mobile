@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "Jak oceniasz naszą analizę?"
   },
+  "review": {
+    "title": "Podoba Ci się aplikacja?",
+    "subtitle": "Chcielibyśmy wiedzieć, jak sobie radzimy!",
+    "feedbackTitle": "Chcielibyśmy się poprawić",
+    "feedbackSubtitle": "Co możemy zrobić lepiej?",
+    "feedbackPlaceholder": "Powiedz nam, co myślisz...",
+    "submit": "Wyślij",
+    "noThanks": "Nie, dziękuję"
+  },
   "calculator": {
     "syringeConfiguration": "Konfiguracja strzykawki",
     "syringeType": "Typ strzykawki",

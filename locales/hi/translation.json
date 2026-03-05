@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "आप हमारे विश्लेषण को कैसे रेट करेंगे?"
   },
+  "review": {
+    "title": "ऐप पसंद आ रही है?",
+    "subtitle": "हम जानना चाहेंगे कि हम कैसा कर रहे हैं!",
+    "feedbackTitle": "हम सुधार करना चाहेंगे",
+    "feedbackSubtitle": "हम क्या बेहतर कर सकते हैं?",
+    "feedbackPlaceholder": "हमें बताएं आप क्या सोचते हैं...",
+    "submit": "भेजें",
+    "noThanks": "नहीं, धन्यवाद"
+  },
   "calculator": {
     "syringeConfiguration": "सिरिंज कॉन्फ़िगरेशन",
     "syringeType": "सिरिंज प्रकार",

@@ -439,6 +439,15 @@
   "rating": {
     "howWouldYouRate": "你如何评价我们的分析？"
   },
+  "review": {
+    "title": "喜欢这个应用吗？",
+    "subtitle": "我们很想知道您的使用体验！",
+    "feedbackTitle": "我们希望改进",
+    "feedbackSubtitle": "我们可以做得更好吗？",
+    "feedbackPlaceholder": "告诉我们您的想法...",
+    "submit": "提交",
+    "noThanks": "不了，谢谢"
+  },
   "calculator": {
     "syringeConfiguration": "注射器配置",
     "syringeType": "注射器类型",

@@ -28,6 +28,7 @@ import {
   Lock,
   Minus,
   Plus,
+  Star,
   Syringe as SyringeIcon,
 } from 'lucide-react-native';
 import { useCallback, useMemo, useState } from 'react';
@@ -41,6 +42,7 @@ iconWithClassName(Droplets);
 iconWithClassName(Plus);
 iconWithClassName(Minus);
 iconWithClassName(Lock);
+iconWithClassName(Star);
 
 type BlendPeptideInput = {
   key: string;
@@ -62,11 +64,13 @@ const MAX_FREE_PEPTIDES = 2;
 type BlendScreenProps = {
   hasActiveSubscription: boolean;
   onPresentPaywall: () => void;
+  onRequestReview: () => void;
 };
 
 export function BlendScreen({
   hasActiveSubscription,
   onPresentPaywall,
+  onRequestReview,
 }: BlendScreenProps) {
   const { t } = useTranslation();
   const { paddingTop, bottom } = useSafeAreaInsets({
@@ -440,6 +444,11 @@ export function BlendScreen({
               )}
             </>
           )}
+
+          <Button variant="secondary" onPress={onRequestReview}>
+            <Star size={16} className="text-foreground" />
+            <Text>{t('review.title')}</Text>
+          </Button>
         </View>
       </KeyboardAwareScrollView>
 

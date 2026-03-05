@@ -16,6 +16,9 @@ export default function Reconstitution() {
       onPresentPaywall={() =>
         router.push('/(app)/(tabs)/reconstitution/paywall')
       }
+      onRequestReview={() =>
+        router.push('/(app)/(tabs)/reconstitution/review')
+      }
     />
   );
 }

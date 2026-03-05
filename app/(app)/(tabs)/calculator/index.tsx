@@ -14,6 +14,7 @@ export default function Calculator() {
     <CalculatorScreen
       hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
       onPresentPaywall={() => router.push('/(app)/(tabs)/calculator/paywall')}
+      onRequestReview={() => router.push('/(app)/(tabs)/calculator/review')}
     />
   );
 }
