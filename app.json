@@ -10,8 +10,8 @@
     "newArchEnabled": true,
     "ios": {
       "appleTeamId": "43CZULUQGR",
-      "appStoreUrl": "https://apps.apple.com/app/idTODO",
-      "buildNumber": "2",
+      "appStoreUrl": "https://apps.apple.com/app/id6759960358",
+      "buildNumber": "1",
       "bundleIdentifier": "dev.titanium.peptide-calculator",
       "supportsTablet": false,
       "usesAppleSignIn": true,
@@ -79,7 +79,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "d4660c58-f1d3-46a4-9bcd-d8710501d53b"
+        "projectId": "076a1489-cc39-4704-8d3d-68baa8c50666"
       }
     },
     "owner": "joeytitanium",

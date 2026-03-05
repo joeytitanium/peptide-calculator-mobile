@@ -70,7 +70,7 @@ export const CONFIG: {
         ? `http://localhost:${LOCALHOST_PORT}/api/v1`
         : `http://${DEVICE_IP}:${LOCALHOST_PORT}/api/v1`;
     }
-    return 'https://headache-tracker.titanium.dev/api/v1';
+    return 'https://peptide-tracker.titanium.dev/api/v1';
   })(),
   supportEmail: 'support@titanium.dev',
   privacyPolicyUrl: 'https://www.titanium.dev/apps/privacy',
