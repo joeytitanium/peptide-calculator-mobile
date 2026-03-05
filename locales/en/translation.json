@@ -336,7 +336,7 @@
         "description": "Mix 3 or more peptides in a single blend — no limits"
       },
       "noPopups": {
-        "title": "No Annoying Pop-ups",
+        "title": "No Annoying Paywalls",
         "description": "Skip the paywall screen and jump straight into the app every time"
       },
       "indieDeveloper": {
@@ -371,7 +371,12 @@
       "yearlyTitle": "Yearly",
       "monthlyTitle": "Monthly",
       "weeklyTitle": "Weekly",
-      "lifetimeTitle": "Lifetime"
+      "lifetimeTitle": "Lifetime",
+      "trialTitle": "{{count}}-Day Trial",
+      "free": "FREE",
+      "thenPricePerWeek": "then {{price}} per week",
+      "thenPricePerMonth": "then {{price}} per month",
+      "thenPricePerYear": "then {{price}} per year"
     },
     "wreath": {
       "bestHealthApp": "Best Peptide Calculator App"
@@ -379,6 +384,12 @@
     "v2": {
       "title": "Choose your plan",
       "perksIntro": "By subscribing you'll unlock the following perks:"
+    },
+    "fallback": {
+      "lastChance": "Last chance",
+      "subtitle": "Unlock all syringe sizes, unlimited blends & more with your premium subscription",
+      "off": "OFF",
+      "cta": "Get {{percent}}% Off Now"
     }
   },
   "setupProfile": {

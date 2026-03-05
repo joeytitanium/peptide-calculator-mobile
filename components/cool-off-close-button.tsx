@@ -27,12 +27,14 @@ export const CoolOffCloseButton = ({
   className,
   style,
   onDelayFinished,
+  skipCoolOff = false,
 }: {
   className?: string;
   onClose: () => void;
   duration?: number; // in milliseconds
   style?: StyleProp<ViewStyle>;
   onDelayFinished?: () => void;
+  skipCoolOff?: boolean;
 }) => {
   const [progress, setProgress] = useState<number>(START_PROGRESS);
   const { isDarkColorScheme } = useColorScheme();
@@ -62,14 +64,17 @@ export const CoolOffCloseButton = ({
     }
   }, [progress, onDelayFinished]);
 
-  const color = isDarkColorScheme ? colors.stone[700] : colors.stone[300];
+  const color = isDarkColorScheme ? colors.zinc[700] : colors.stone[300];
 
   return (
     <View
-      className={clsx('items-center justify-center w-[44px] h-[44px]', className)}
+      className={clsx(
+        'items-center justify-center w-[44px] h-[44px]',
+        className
+      )}
       style={style}
     >
-      {progress < END_PROGRESS ? (
+      {!skipCoolOff && progress < END_PROGRESS ? (
         <CircularProgress
           progress={progress}
           size={SIZE}

@@ -333,7 +333,7 @@
         "description": "Ajude a moldar o futuro deste app e aproveite recursos exclusivos criados com carinho por um desenvolvedor independente."
       },
       "noPopups": {
-        "title": "Sem pop-ups irritantes",
+        "title": "Sem paywalls irritantes",
         "description": "Pule a tela de pagamento e entre direto no app toda vez"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Anual",
       "monthlyTitle": "Mensal",
       "weeklyTitle": "Semanal",
-      "lifetimeTitle": "Vitalício"
+      "lifetimeTitle": "Vitalício",
+      "trialTitle": "Teste de {{count}} dias",
+      "free": "GRÁTIS",
+      "thenPricePerWeek": "depois {{price}} por semana",
+      "thenPricePerMonth": "depois {{price}} por mês",
+      "thenPricePerYear": "depois {{price}} por ano"
     },
     "wreath": {
       "bestHealthApp": "Melhor App Calculadora de Peptídeos"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Escolha seu plano",
       "perksIntro": "Ao assinar, você desbloqueará os seguintes benefícios:"
+    },
+    "fallback": {
+      "lastChance": "Última chance",
+      "subtitle": "Desbloqueie todos os tamanhos de seringa, misturas ilimitadas e mais com sua assinatura premium",
+      "off": "DE DESCONTO",
+      "cta": "Ganhe {{percent}}% de desconto agora"
     }
   },
   "setupProfile": {

@@ -296,7 +296,7 @@ export function ReconstitutionScreen({
             </CardContent>
           </Card>
           <Button
-            variant="secondary"
+            variant="ghost"
             onPress={onRequestReview}
           >
             <Star

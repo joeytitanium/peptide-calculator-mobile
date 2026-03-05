@@ -1,7 +1,8 @@
+import { IMAGE_ASSETS } from '@/components/assets';
 import { CoolOffCloseButton } from '@/components/cool-off-close-button';
+import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { FooterLinks } from '@/components/paywall/main-content';
 import { PerksList } from '@/components/paywall/perks-list';
-import { Reviews } from '@/components/paywall/reviews';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -13,17 +14,20 @@ import {
   cancelTrialReminderNotification,
   PaywallResult,
 } from '@/lib/drip-notifications';
+import { useColorScheme } from '@/lib/use-color-scheme';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { capturePosthogEvent, useViewedScreen } from '@/utils/posthog';
 import { clsx } from 'clsx';
 import { useFocusEffect } from 'expo-router';
 import { first, isNil } from 'lodash';
+import { Check, Circle } from 'lucide-react-native';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
   Alert,
+  Image,
   Platform,
   Pressable,
   ScrollView,
@@ -34,6 +38,9 @@ import {
   PACKAGE_TYPE,
   PurchasesPackage,
 } from 'react-native-purchases';
+
+iconWithClassName(Check);
+iconWithClassName(Circle);
 
 const PackageCell = ({
   purchasePackage,
@@ -47,9 +54,17 @@ const PackageCell = ({
   selected: boolean;
 }) => {
   const { t } = useTranslation();
+  const { colors: themeColors } = useColorScheme();
+  const { introPrice } = purchasePackage.product;
+  const type = purchasePackage.packageType;
+  const hasTrial = !isNil(introPrice);
 
   const title = (() => {
-    const type = purchasePackage.packageType;
+    if (hasTrial) {
+      return t('paywall.package.trialTitle', {
+        count: introPrice.periodNumberOfUnits,
+      });
+    }
     if (type === PACKAGE_TYPE.ANNUAL) return t('paywall.package.yearlyTitle');
     if (type === PACKAGE_TYPE.MONTHLY) return t('paywall.package.monthlyTitle');
     if (type === PACKAGE_TYPE.WEEKLY) return t('paywall.package.weeklyTitle');
@@ -58,55 +73,29 @@ const PackageCell = ({
     return purchasePackage.product.title.replace(/\s*\(.*?\)/, '').trim();
   })();
 
-  const priceLabel = (() => {
+  const subtitle = (() => {
     const price = purchasePackage.product.priceString;
-    const type = purchasePackage.packageType;
-    if (type === PACKAGE_TYPE.ANNUAL) {
+    if (hasTrial) {
+      if (type === PACKAGE_TYPE.WEEKLY)
+        return t('paywall.package.thenPricePerWeek', { price });
+      if (type === PACKAGE_TYPE.MONTHLY)
+        return t('paywall.package.thenPricePerMonth', { price });
+      if (type === PACKAGE_TYPE.ANNUAL)
+        return t('paywall.package.thenPricePerYear', { price });
+    }
+    if (type === PACKAGE_TYPE.ANNUAL)
       return `${price}${t('paywall.package.perYear')}`;
-    }
-    if (type === PACKAGE_TYPE.MONTHLY) {
+    if (type === PACKAGE_TYPE.MONTHLY)
       return `${price}${t('paywall.package.perMonth')}`;
-    }
-    if (type === PACKAGE_TYPE.WEEKLY) {
+    if (type === PACKAGE_TYPE.WEEKLY)
       return `${price}${t('paywall.package.perWeek')}`;
-    }
-    if (type === PACKAGE_TYPE.LIFETIME) {
+    if (type === PACKAGE_TYPE.LIFETIME)
       return `${price} ${t('paywall.package.once')}`;
-    }
     return price;
   })();
 
-  const subtitle = (() => {
-    const { introPrice } = purchasePackage.product;
-    const type = purchasePackage.packageType;
-    if (!isNil(introPrice)) {
-      if (type === PACKAGE_TYPE.WEEKLY) {
-        return t('paywall.package.weeklyIntroSubtitle', {
-          count: introPrice.periodNumberOfUnits,
-        });
-      }
-      return t('paywall.package.introSubtitle', {
-        count: introPrice.periodNumberOfUnits,
-        price: purchasePackage.product.priceString,
-      });
-    }
-    if (type === PACKAGE_TYPE.WEEKLY) {
-      return t('paywall.package.weeklySubtitle');
-    }
-    if (type === PACKAGE_TYPE.ANNUAL) {
-      return t('paywall.package.annualSubtitle');
-    }
-    if (type === PACKAGE_TYPE.MONTHLY) {
-      return t('paywall.package.monthlySubtitle');
-    }
-    if (type === PACKAGE_TYPE.LIFETIME) {
-      return t('paywall.package.lifetimeSubtitle');
-    }
-    return '';
-  })();
-
   const percentageOff = (() => {
-    if (purchasePackage.packageType !== PACKAGE_TYPE.ANNUAL) return undefined;
+    if (type !== PACKAGE_TYPE.ANNUAL) return undefined;
     const monthlyPkg = allPackages.find(
       (x) => x.packageType === PACKAGE_TYPE.MONTHLY
     );
@@ -126,14 +115,23 @@ const PackageCell = ({
       <Card
         className={clsx('rounded-xl px-4 py-4 border-2', {
           'border-primary': selected,
-          'border-transparent': !selected,
+          'border-border': !selected,
         })}
       >
-        <View className="gap-2">
-          <View className="flex-row items-center justify-between">
-            <View className="flex-row items-center gap-2">
-              <Text className="text-xl font-bold leading-none">{title}</Text>
-              {percentageOff && (
+        <View className="flex-row items-center justify-between">
+          <View className="gap-2 flex-1">
+            <Text className="text-xl font-bold leading-none">{title}</Text>
+            <Text className="text-base text-muted-foreground leading-none">
+              {subtitle}
+            </Text>
+          </View>
+          <View className="flex-row items-center gap-2">
+            {hasTrial ? (
+              <Text className="text-lg font-semibold leading-none">
+                {t('paywall.package.free')}
+              </Text>
+            ) : (
+              percentageOff && (
                 <Badge className="bg-green-400 border-green-400 px-2 py-0.5">
                   <Text className="text-black text-xs font-semibold">
                     {t('paywall.package.savePercent', {
@@ -141,17 +139,33 @@ const PackageCell = ({
                     })}
                   </Text>
                 </Badge>
-              )}
-            </View>
-            <Text className="text-lg font-semibold leading-none">
-              {priceLabel}
-            </Text>
+              )
+            )}
+            {selected ? (
+              <View
+                style={{
+                  width: 28,
+                  height: 28,
+                  borderRadius: 14,
+                  backgroundColor: themeColors.foreground,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <Check
+                  size={16}
+                  color={themeColors.background}
+                  strokeWidth={4}
+                  className=""
+                />
+              </View>
+            ) : (
+              <Circle
+                size={28}
+                className="text-muted-foreground"
+              />
+            )}
           </View>
-          {!!subtitle && (
-            <Text className="text-base text-muted-foreground leading-none">
-              {subtitle}
-            </Text>
-          )}
         </View>
       </Card>
     </Pressable>
@@ -163,11 +177,13 @@ export const PaywallV2 = ({
   onClose,
   onAutoClose,
   onComplete,
+  excludePackageTypes,
 }: {
   className?: string;
   onClose: () => void;
   onAutoClose: () => void;
   onComplete?: (result: PaywallResult) => void;
+  excludePackageTypes?: PACKAGE_TYPE[];
 }) => {
   const { t } = useTranslation();
   const {
@@ -201,6 +217,12 @@ export const PaywallV2 = ({
 
   useViewedScreen('paywall-v2');
 
+  const filteredPackages = excludePackageTypes
+    ? availablePackages.filter(
+        (pkg) => !excludePackageTypes.includes(pkg.packageType)
+      )
+    : availablePackages;
+
   useEffect(() => {
     if (
       availablePackages.length === 0 &&
@@ -211,11 +233,12 @@ export const PaywallV2 = ({
       void loadOfferings();
       return;
     }
-    if (!selectedPackage && availablePackages.length > 0) {
-      setSelectedPackage(first(availablePackages));
+    if (!selectedPackage && filteredPackages.length > 0) {
+      setSelectedPackage(first(filteredPackages));
     }
   }, [
     availablePackages,
+    filteredPackages,
     loadOfferings,
     selectedPackage,
     hasAttemptedLoad,
@@ -280,11 +303,7 @@ export const PaywallV2 = ({
       style={{ paddingTop: Platform.OS === 'android' ? top : paddingTop }}
     >
       {/* Header */}
-      <View className="flex-row items-center justify-between px-4 py-3">
-        <View className="w-10" />
-        <Text className="text-xl font-bold">
-          {t('paywall.v2.title', { appName: CONFIG.site.name })}
-        </Text>
+      <View className="flex-row items-center justify-start px-4 py-3">
         {!CONFIG.isHardPaywall ? (
           <CoolOffCloseButton onClose={handleClose} />
         ) : (
@@ -294,17 +313,46 @@ export const PaywallV2 = ({
 
       {/* Scrollable content */}
       <ScrollView
-        className="flex-1 py-10"
-        contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }}
+        style={{ overflow: 'visible' }}
+        contentContainerStyle={{
+          paddingHorizontal: 16,
+          paddingBottom: 24,
+          flex: 1,
+        }}
         showsVerticalScrollIndicator={false}
       >
-        {/* Package list */}
-        <View className="gap-3">
-          {availablePackages.map((pkg) => (
+        {/* App Icon */}
+        <View className="items-center pt-4 pb-10">
+          <View
+            style={{
+              shadowColor: CONFIG.tintColor.hex,
+              shadowOffset: { width: 0, height: 0 },
+              shadowOpacity: 0.8,
+              shadowRadius: 40,
+            }}
+          >
+            <Image
+              source={IMAGE_ASSETS['app-icon']}
+              className="w-24 h-24 rounded-3xl"
+            />
+          </View>
+        </View>
+
+        {/* Perks */}
+        <PerksList />
+      </ScrollView>
+
+      {/* Bottom: packages + continue button + footer links */}
+      <View
+        className="border-t border-border bg-background px-4 pt-3"
+        style={{ paddingBottom }}
+      >
+        <View className="gap-3 mb-3">
+          {filteredPackages.map((pkg) => (
             <PackageCell
               key={pkg.product.identifier}
               purchasePackage={pkg}
-              allPackages={availablePackages}
+              allPackages={filteredPackages}
               onPress={() => setSelectedPackage(pkg)}
               selected={
                 selectedPackage?.product.identifier === pkg.product.identifier
@@ -312,42 +360,26 @@ export const PaywallV2 = ({
             />
           ))}
         </View>
-
-        {/* Perks */}
-        <View className="mt-10">
-          <Text className="mb-6 text-base text-muted-foreground text-center self-center">
-            {t('paywall.v2.perksIntro')}
-          </Text>
-          <PerksList />
-        </View>
-
-        {/* Reviews */}
-        <Reviews className="mt-4" />
-
-        {/* Footer links */}
-        <FooterLinks
-          className="mt-4"
-          onRestorePurchase={handleRestorePurchases}
-        />
-      </ScrollView>
-
-      {/* Floating continue button */}
-      <View
-        className="border-t border-border bg-background px-4 pt-3"
-        style={{ paddingBottom }}
-      >
         <Button
           size="lg"
           className="mb-2"
-          disabled={isLoading || availablePackages.length === 0}
+          disabled={isLoading || filteredPackages.length === 0}
           onPress={handlePurchase}
         >
           {isLoading ? (
             <ActivityIndicator size="small" />
           ) : (
-            <Text className="text-lg">{t('paywall.continue')}</Text>
+            <Text className="text-lg">
+              {!isNil(selectedPackage?.product.introPrice)
+                ? t('paywall.tryForFree')
+                : t('paywall.continue')}
+            </Text>
           )}
         </Button>
+        <FooterLinks
+          className="mt-2"
+          onRestorePurchase={handleRestorePurchases}
+        />
       </View>
     </View>
   );

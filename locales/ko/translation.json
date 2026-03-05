@@ -333,7 +333,7 @@
         "description": "이 앱의 미래를 함께 만들고, 인디 개발자가 정성껏 만든 독점 기능을 즐기세요."
       },
       "noPopups": {
-        "title": "성가신 팝업 없음",
+        "title": "성가신 페이월 없음",
         "description": "결제 화면을 건너뛰고 매번 바로 앱을 시작하세요"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "연간",
       "monthlyTitle": "월간",
       "weeklyTitle": "주간",
-      "lifetimeTitle": "평생"
+      "lifetimeTitle": "평생",
+      "trialTitle": "{{count}}일 체험판",
+      "free": "무료",
+      "thenPricePerWeek": "이후 주당 {{price}}",
+      "thenPricePerMonth": "이후 월 {{price}}",
+      "thenPricePerYear": "이후 연 {{price}}"
     },
     "wreath": {
       "bestHealthApp": "최고의 펩타이드 계산기 앱"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "플랜을 선택하세요",
       "perksIntro": "구독하시면 다음 혜택이 잠금 해제됩니다:"
+    },
+    "fallback": {
+      "lastChance": "마지막 기회",
+      "subtitle": "프리미엄 구독으로 모든 주사기 크기, 무제한 블렌드 등을 잠금 해제하세요",
+      "off": "할인",
+      "cta": "지금 {{percent}}% 할인 받기"
     }
   },
   "setupProfile": {

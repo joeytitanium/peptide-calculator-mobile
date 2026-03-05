@@ -14,6 +14,12 @@ export default function AppLayout() {
           headerShown: false,
         }}
       />
+      <Stack.Screen
+        name="paywall-fallback"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }

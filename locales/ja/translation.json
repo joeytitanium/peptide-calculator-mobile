@@ -333,7 +333,7 @@
         "description": "このアプリの未来を一緒に作り、インディー開発者が心を込めて作った限定機能をお楽しみください。"
       },
       "noPopups": {
-        "title": "煩わしいポップアップなし",
+        "title": "煩わしいペイウォールなし",
         "description": "ペイウォール画面をスキップして、毎回すぐにアプリを起動"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "年間",
       "monthlyTitle": "月間",
       "weeklyTitle": "週間",
-      "lifetimeTitle": "買い切り"
+      "lifetimeTitle": "買い切り",
+      "trialTitle": "{{count}}日間トライアル",
+      "free": "無料",
+      "thenPricePerWeek": "その後{{price}}/週",
+      "thenPricePerMonth": "その後{{price}}/月",
+      "thenPricePerYear": "その後{{price}}/年"
     },
     "wreath": {
       "bestHealthApp": "最高のペプチド計算機アプリ"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "プランを選択",
       "perksIntro": "登録すると以下の特典がアンロックされます："
+    },
+    "fallback": {
+      "lastChance": "ラストチャンス",
+      "subtitle": "プレミアムサブスクリプションですべての注射器サイズ、無制限のブレンドなどをアンロック",
+      "off": "オフ",
+      "cta": "今すぐ{{percent}}%オフで入手"
     }
   },
   "setupProfile": {

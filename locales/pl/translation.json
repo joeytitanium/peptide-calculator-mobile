@@ -333,7 +333,7 @@
         "description": "Pomóż kształtować przyszłość tej aplikacji i ciesz się ekskluzywnymi funkcjami tworzonymi z pasją przez niezależnego dewelopera."
       },
       "noPopups": {
-        "title": "Żadnych irytujących wyskakujących okien",
+        "title": "Żadnych irytujących paywalli",
         "description": "Pomiń ekran płatności i przejdź od razu do aplikacji za każdym razem"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Roczny",
       "monthlyTitle": "Miesięczny",
       "weeklyTitle": "Tygodniowy",
-      "lifetimeTitle": "Dożywotni"
+      "lifetimeTitle": "Dożywotni",
+      "trialTitle": "{{count}}-dniowy okres próbny",
+      "free": "ZA DARMO",
+      "thenPricePerWeek": "potem {{price}} tygodniowo",
+      "thenPricePerMonth": "potem {{price}} miesięcznie",
+      "thenPricePerYear": "potem {{price}} rocznie"
     },
     "wreath": {
       "bestHealthApp": "Najlepsza Aplikacja Kalkulator Peptydów"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Wybierz swój plan",
       "perksIntro": "Subskrybując, odblokujesz następujące korzyści:"
+    },
+    "fallback": {
+      "lastChance": "Ostatnia szansa",
+      "subtitle": "Odblokuj wszystkie rozmiary strzykawek, nieograniczone mieszanki i więcej z subskrypcją premium",
+      "off": "ZNIŻKI",
+      "cta": "Uzyskaj {{percent}}% zniżki teraz"
     }
   },
   "setupProfile": {

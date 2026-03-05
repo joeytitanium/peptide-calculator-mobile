@@ -333,7 +333,7 @@
         "description": "Giúp định hình tương lai của ứng dụng này và tận hưởng các tính năng độc quyền được tạo ra với tâm huyết bởi một nhà phát triển độc lập."
       },
       "noPopups": {
-        "title": "Không có cửa sổ bật lên phiền phức",
+        "title": "Không có paywall phiền phức",
         "description": "Bỏ qua màn hình thanh toán và vào thẳng ứng dụng mỗi lần"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Hàng năm",
       "monthlyTitle": "Hàng tháng",
       "weeklyTitle": "Hàng tuần",
-      "lifetimeTitle": "Trọn đời"
+      "lifetimeTitle": "Trọn đời",
+      "trialTitle": "Dùng thử {{count}} ngày",
+      "free": "MIỄN PHÍ",
+      "thenPricePerWeek": "sau đó {{price}} mỗi tuần",
+      "thenPricePerMonth": "sau đó {{price}} mỗi tháng",
+      "thenPricePerYear": "sau đó {{price}} mỗi năm"
     },
     "wreath": {
       "bestHealthApp": "Ứng dụng Máy tính Peptide tốt nhất"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Chọn gói của bạn",
       "perksIntro": "Khi đăng ký, bạn sẽ mở khóa các quyền lợi sau:"
+    },
+    "fallback": {
+      "lastChance": "Cơ hội cuối cùng",
+      "subtitle": "Mở khóa tất cả kích thước ống tiêm, pha trộn không giới hạn và nhiều hơn nữa với đăng ký premium",
+      "off": "GIẢM GIÁ",
+      "cta": "Giảm {{percent}}% ngay bây giờ"
     }
   },
   "setupProfile": {

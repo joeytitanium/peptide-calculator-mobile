@@ -333,7 +333,7 @@
         "description": "帮助塑造这款应用的未来，享受由独立开发者用心打造的专属功能。"
       },
       "noPopups": {
-        "title": "无烦人弹窗",
+        "title": "无烦人付费墙",
         "description": "跳过付费墙，每次直接进入应用"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "年度",
       "monthlyTitle": "月度",
       "weeklyTitle": "每周",
-      "lifetimeTitle": "终身"
+      "lifetimeTitle": "终身",
+      "trialTitle": "{{count}}天试用",
+      "free": "免费",
+      "thenPricePerWeek": "之后每周{{price}}",
+      "thenPricePerMonth": "之后每月{{price}}",
+      "thenPricePerYear": "之后每年{{price}}"
     },
     "wreath": {
       "bestHealthApp": "最佳肽计算器应用"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "选择您的计划",
       "perksIntro": "订阅后将解锁以下特权："
+    },
+    "fallback": {
+      "lastChance": "最后机会",
+      "subtitle": "通过高级订阅解锁所有注射器尺寸、无限混合等更多功能",
+      "off": "折扣",
+      "cta": "立即享受{{percent}}%折扣"
     }
   },
   "setupProfile": {

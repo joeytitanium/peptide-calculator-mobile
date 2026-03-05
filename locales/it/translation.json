@@ -333,7 +333,7 @@
         "description": "Aiuta a plasmare il futuro di questa app e goditi funzionalità esclusive create con cura da uno sviluppatore indipendente."
       },
       "noPopups": {
-        "title": "Niente pop-up fastidiosi",
+        "title": "Niente paywall fastidiosi",
         "description": "Salta la schermata di pagamento e accedi direttamente all'app ogni volta"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Annuale",
       "monthlyTitle": "Mensile",
       "weeklyTitle": "Settimanale",
-      "lifetimeTitle": "A vita"
+      "lifetimeTitle": "A vita",
+      "trialTitle": "Prova di {{count}} giorni",
+      "free": "GRATIS",
+      "thenPricePerWeek": "poi {{price}} a settimana",
+      "thenPricePerMonth": "poi {{price}} al mese",
+      "thenPricePerYear": "poi {{price}} all'anno"
     },
     "wreath": {
       "bestHealthApp": "Migliore App Calcolatore di Peptidi"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Scegli il tuo piano",
       "perksIntro": "Abbonandoti sbloccherai i seguenti vantaggi:"
+    },
+    "fallback": {
+      "lastChance": "Ultima occasione",
+      "subtitle": "Sblocca tutte le dimensioni delle siringhe, miscele illimitate e altro con il tuo abbonamento premium",
+      "off": "DI SCONTO",
+      "cta": "Ottieni {{percent}}% di sconto ora"
     }
   },
   "setupProfile": {

@@ -1,27 +1,23 @@
-import { PaywallV2 } from '@/components/paywall-v2';
+import { PaywallFallbackScreen } from '@/components/screens/app-specific/paywall-fallback';
 import { handlePaywallComplete } from '@/lib/drip-notifications';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
-
 import { useRouter } from 'expo-router';
-import { PACKAGE_TYPE } from 'react-native-purchases';
 
-const OnboardingPaywallScreen = () => {
+export default function PaywallFallback() {
   const router = useRouter();
   const { onboardingCompletedSetValue } = useAsyncStorage();
 
   return (
-    <PaywallV2
-      excludePackageTypes={[PACKAGE_TYPE.CUSTOM]}
+    <PaywallFallbackScreen
       onAutoClose={() => {
         router.replace('/(app)/(tabs)/calculator');
         onboardingCompletedSetValue(true);
       }}
       onClose={() => {
-        router.replace('/(auth)/paywall-fallback');
+        router.replace('/(app)/(tabs)/calculator');
+        onboardingCompletedSetValue(true);
       }}
       onComplete={handlePaywallComplete}
     />
   );
-};
-
-export default OnboardingPaywallScreen;
+}

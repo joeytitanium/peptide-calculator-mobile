@@ -25,6 +25,9 @@ type RestorePurchasesResult = {
 
 type RevenueCatContextType = {
   loadOfferings: () => Promise<void>;
+  loadOfferingByIdentifier: (params: {
+    identifier: string;
+  }) => Promise<PurchasesPackage[]>;
   refreshSubscriptionStatus: () => Promise<void>;
   setPushToken: (pushToken: string) => void;
   availablePackages: PurchasesPackage[];
@@ -232,6 +235,25 @@ export function RevenueCatProvider({
     }
   };
 
+  const loadOfferingByIdentifier = async ({
+    identifier,
+  }: {
+    identifier: string;
+  }): Promise<PurchasesPackage[]> => {
+    try {
+      const offerings = await Purchases.getOfferings();
+      const offering = offerings.all[identifier];
+      if (!offering) return [];
+      return offering.availablePackages as PurchasesPackage[];
+    } catch (error) {
+      logError({
+        message: `Failed to load offering: ${identifier}`,
+        error,
+      });
+      return [];
+    }
+  };
+
   const restorePurchases = async (): Promise<RestorePurchasesResult> => {
     try {
       setIsRestoringPurchases(true);
@@ -279,6 +301,7 @@ export function RevenueCatProvider({
     <RevenueCatContext.Provider
       value={{
         loadOfferings,
+        loadOfferingByIdentifier,
         refreshSubscriptionStatus,
         setPushToken,
         availablePackages,

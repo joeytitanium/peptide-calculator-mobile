@@ -13,7 +13,7 @@ export default function Dashboard() {
           params: { date: selectedDate },
         })
       }
-      onPresentPaywall={() => router.push('/paywall')}
+      onPresentPaywall={() => router.push('/(app)/paywall')}
     />
   );
 }

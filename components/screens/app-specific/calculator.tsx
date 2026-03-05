@@ -298,7 +298,7 @@ export function CalculatorScreen({
           )}
 
           <Button
-            variant="secondary"
+            variant="ghost"
             onPress={onRequestReview}
           >
             <Star

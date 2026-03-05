@@ -24,7 +24,7 @@ const SettingsModal = () => {
         onNavigateToAccount={handleNavigateToAccount}
         onNavigateToLocale={() => router.push('/settings/locale')}
         accountSupportDisabled
-        onPresentPaywall={() => router.push('/paywall')}
+        onPresentPaywall={() => router.push('/(app)/paywall')}
       />
     </>
   );

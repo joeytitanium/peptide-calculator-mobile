@@ -333,7 +333,7 @@
         "description": "Bu uygulamanın geleceğini şekillendirmeye yardımcı olun ve bağımsız bir geliştirici tarafından özenle oluşturulan özel özelliklerin keyfini çıkarın."
       },
       "noPopups": {
-        "title": "Sinir bozucu pop-up yok",
+        "title": "Sinir bozucu paywall yok",
         "description": "Ödeme ekranını atlayın ve her seferinde doğrudan uygulamaya girin"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Yıllık",
       "monthlyTitle": "Aylık",
       "weeklyTitle": "Haftalık",
-      "lifetimeTitle": "Ömür boyu"
+      "lifetimeTitle": "Ömür boyu",
+      "trialTitle": "{{count}} günlük deneme",
+      "free": "ÜCRETSİZ",
+      "thenPricePerWeek": "sonra haftada {{price}}",
+      "thenPricePerMonth": "sonra ayda {{price}}",
+      "thenPricePerYear": "sonra yılda {{price}}"
     },
     "wreath": {
       "bestHealthApp": "En İyi Peptit Hesaplayıcı Uygulaması"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Planınızı seçin",
       "perksIntro": "Abone olarak aşağıdaki avantajları açarsınız:"
+    },
+    "fallback": {
+      "lastChance": "Son şans",
+      "subtitle": "Premium aboneliğinizle tüm şırınga boyutlarını, sınırsız karışımları ve daha fazlasını açın",
+      "off": "İNDİRİM",
+      "cta": "Şimdi %{{percent}} indirim alın"
     }
   },
   "setupProfile": {

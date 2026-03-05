@@ -30,7 +30,7 @@ export default function LogModal() {
       <LogHeadacheForm
         initialRecord={record}
         initialDate={date}
-        onPresentPaywall={() => router.push('/paywall')}
+        onPresentPaywall={() => router.push('/(app)/paywall')}
         onNavigateHome={() => router.replace('/(app)/(tabs)/dashboard')}
       />
     </>

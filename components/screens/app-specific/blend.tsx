@@ -198,7 +198,9 @@ export function BlendScreen({
                 </Text>
               </View>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeType')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeType')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={displayMode}
@@ -216,12 +218,18 @@ export function BlendScreen({
                     isLast={index === SYRINGE_DISPLAY_MODES.length - 1}
                     className="flex-1"
                   >
-                    <Text>{t(`calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`)}</Text>
+                    <Text>
+                      {t(
+                        `calculator.displayMode${mode === 'units' ? 'Units' : 'Ml'}`
+                      )}
+                    </Text>
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
 
-              <Text className="text-sm font-medium">{t('calculator.syringeSize')}</Text>
+              <Text className="text-sm font-medium">
+                {t('calculator.syringeSize')}
+              </Text>
               <ToggleGroup
                 type="single"
                 value={String(syringeSize)}
@@ -242,8 +250,7 @@ export function BlendScreen({
               >
                 {SYRINGE_SIZES.map((size, index) => {
                   const isLocked =
-                    !hasActiveSubscription &&
-                    PRO_SYRINGE_SIZES.includes(size);
+                    !hasActiveSubscription && PRO_SYRINGE_SIZES.includes(size);
                   return (
                     <ToggleGroupItem
                       key={size}
@@ -298,7 +305,9 @@ export function BlendScreen({
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">{t('calculator.nameOptional')}</Text>
+                  <Text className="text-sm font-medium">
+                    {t('calculator.nameOptional')}
+                  </Text>
                   <Input
                     value={entry.peptideName}
                     onChangeText={(value) =>
@@ -310,7 +319,9 @@ export function BlendScreen({
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">{t('calculator.amountInVial')}</Text>
+                  <Text className="text-sm font-medium">
+                    {t('calculator.amountInVial')}
+                  </Text>
                   <Input
                     value={entry.peptideAmountMg}
                     onChangeText={(value) =>
@@ -320,17 +331,25 @@ export function BlendScreen({
                     keyboardType="decimal-pad"
                     returnKeyType="done"
                   />
-                  <Text className="text-xs text-muted-foreground">{t('calculator.unitMg')}</Text>
+                  <Text className="text-xs text-muted-foreground">
+                    {t('calculator.unitMg')}
+                  </Text>
                 </View>
 
                 <View className="gap-1.5">
-                  <Text className="text-sm font-medium">{t('calculator.desiredDose')}</Text>
+                  <Text className="text-sm font-medium">
+                    {t('calculator.desiredDose')}
+                  </Text>
                   <Input
                     value={entry.desiredDose}
                     onChangeText={(value) =>
                       updatePeptide({ index, field: 'desiredDose', value })
                     }
-                    placeholder={doseUnit === 'mcg' ? t('calculator.placeholderDoseMcg') : t('calculator.placeholderDoseMg')}
+                    placeholder={
+                      doseUnit === 'mcg'
+                        ? t('calculator.placeholderDoseMcg')
+                        : t('calculator.placeholderDoseMg')
+                    }
                     keyboardType="decimal-pad"
                     returnKeyType="done"
                   />
@@ -372,11 +391,16 @@ export function BlendScreen({
                 : addPeptide
             }
           >
-            {!hasActiveSubscription &&
-            peptides.length >= MAX_FREE_PEPTIDES ? (
-              <Lock size={18} className="text-foreground" />
+            {!hasActiveSubscription && peptides.length >= MAX_FREE_PEPTIDES ? (
+              <Lock
+                size={18}
+                className="text-foreground"
+              />
             ) : (
-              <Plus size={18} className="text-foreground" />
+              <Plus
+                size={18}
+                className="text-foreground"
+              />
             )}
             <Text>{t('calculator.addPeptide')}</Text>
           </Button>
@@ -390,7 +414,9 @@ export function BlendScreen({
                   color="teal"
                   size={18}
                 />
-                <Text className="text-base font-semibold">{t('calculator.reconstitution')}</Text>
+                <Text className="text-base font-semibold">
+                  {t('calculator.reconstitution')}
+                </Text>
               </View>
 
               <View className="gap-1.5">
@@ -404,7 +430,9 @@ export function BlendScreen({
                   keyboardType="decimal-pad"
                   returnKeyType="done"
                 />
-                <Text className="text-xs text-muted-foreground">{t('calculator.unitMl')}</Text>
+                <Text className="text-xs text-muted-foreground">
+                  {t('calculator.unitMl')}
+                </Text>
               </View>
             </CardContent>
           </Card>
@@ -414,14 +442,17 @@ export function BlendScreen({
             <>
               <Card>
                 <CardContent className="gap-2">
-                  <Text className="text-sm font-semibold">{t('calculator.breakdown')}</Text>
+                  <Text className="text-sm font-semibold">
+                    {t('calculator.breakdown')}
+                  </Text>
                   {result.peptideResults.map((pr, i) => (
                     <View
                       key={peptides[i]?.key}
                       className="flex-row justify-between"
                     >
                       <Text className="text-sm text-muted-foreground">
-                        {peptides[i]?.peptideName || t('calculator.peptideNumber', { number: i + 1 })}
+                        {peptides[i]?.peptideName ||
+                          t('calculator.peptideNumber', { number: i + 1 })}
                       </Text>
                       <Text className="text-sm font-medium">
                         {pr.unitsToDraw} {t('calculator.units')}
@@ -445,8 +476,14 @@ export function BlendScreen({
             </>
           )}
 
-          <Button variant="secondary" onPress={onRequestReview}>
-            <Star size={16} className="text-foreground" />
+          <Button
+            variant="ghost"
+            onPress={onRequestReview}
+          >
+            <Star
+              size={16}
+              className="text-foreground"
+            />
             <Text>{t('review.title')}</Text>
           </Button>
         </View>

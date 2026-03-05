@@ -31,6 +31,7 @@ export const FooterLinks = ({
       <View className="flex-row justify-center items-center gap-4">
         <Button
           variant="link"
+          className="h-auto native:h-auto py-0 native:py-0"
           onPress={() => presentInAppBrowser({ url: CONFIG.termsOfServiceUrl })}
         >
           <Text className="underline text-muted-foreground">
@@ -39,6 +40,7 @@ export const FooterLinks = ({
         </Button>
         <Button
           variant="link"
+          className="h-auto native:h-auto py-0 native:py-0"
           onPress={onRestorePurchase}
         >
           <Text className="underline text-muted-foreground">
@@ -47,6 +49,7 @@ export const FooterLinks = ({
         </Button>
         <Button
           variant="link"
+          className="h-auto native:h-auto py-0 native:py-0"
           onPress={() => presentInAppBrowser({ url: CONFIG.privacyPolicyUrl })}
         >
           <Text className="underline text-muted-foreground">
@@ -100,9 +103,7 @@ const ContainerView = ({
         )}
       </Animated.View>
     </Animated.View>
-    <View className="px-4">
-      {children}
-    </View>
+    <View className="px-4">{children}</View>
     <Animated.View
       entering={FadeInUp.delay(700).duration(600).springify()}
       className="px-4"

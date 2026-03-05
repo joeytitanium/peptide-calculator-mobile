@@ -333,7 +333,7 @@
         "description": "Help de toekomst van deze app vorm te geven en geniet van exclusieve functies met zorg gemaakt door een indie-ontwikkelaar."
       },
       "noPopups": {
-        "title": "Geen vervelende pop-ups",
+        "title": "Geen vervelende paywalls",
         "description": "Sla het betaalscherm over en ga elke keer direct naar de app"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Jaarlijks",
       "monthlyTitle": "Maandelijks",
       "weeklyTitle": "Wekelijks",
-      "lifetimeTitle": "Levenslang"
+      "lifetimeTitle": "Levenslang",
+      "trialTitle": "{{count}}-daagse proefperiode",
+      "free": "GRATIS",
+      "thenPricePerWeek": "daarna {{price}} per week",
+      "thenPricePerMonth": "daarna {{price}} per maand",
+      "thenPricePerYear": "daarna {{price}} per jaar"
     },
     "wreath": {
       "bestHealthApp": "Beste Peptide Calculator App"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Kies je abonnement",
       "perksIntro": "Met een abonnement ontgrendel je de volgende voordelen:"
+    },
+    "fallback": {
+      "lastChance": "Laatste kans",
+      "subtitle": "Ontgrendel alle spuitmaten, onbeperkte mengsels en meer met je premium abonnement",
+      "off": "KORTING",
+      "cta": "Krijg nu {{percent}}% korting"
     }
   },
   "setupProfile": {

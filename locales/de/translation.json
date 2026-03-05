@@ -333,7 +333,7 @@
         "description": "Hilf mit, die Zukunft dieser App zu gestalten und genieße exklusive Funktionen, liebevoll entwickelt von einem Indie-Entwickler."
       },
       "noPopups": {
-        "title": "Keine nervigen Pop-ups",
+        "title": "Keine nervigen Paywalls",
         "description": "Überspringe den Paywall-Bildschirm und starte jedes Mal direkt in die App"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Jährlich",
       "monthlyTitle": "Monatlich",
       "weeklyTitle": "Wöchentlich",
-      "lifetimeTitle": "Lebenslang"
+      "lifetimeTitle": "Lebenslang",
+      "trialTitle": "{{count}}-Tage-Testversion",
+      "free": "KOSTENLOS",
+      "thenPricePerWeek": "dann {{price}} pro Woche",
+      "thenPricePerMonth": "dann {{price}} pro Monat",
+      "thenPricePerYear": "dann {{price}} pro Jahr"
     },
     "wreath": {
       "bestHealthApp": "Beste Peptid-Rechner-App"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Wähle deinen Plan",
       "perksIntro": "Mit einem Abo schaltest du folgende Vorteile frei:"
+    },
+    "fallback": {
+      "lastChance": "Letzte Chance",
+      "subtitle": "Alle Spritzengrößen, unbegrenzte Mischungen & mehr mit deinem Premium-Abonnement freischalten",
+      "off": "RABATT",
+      "cta": "Jetzt {{percent}}% Rabatt sichern"
     }
   },
   "setupProfile": {

@@ -10,7 +10,7 @@ export default function Settings() {
     <SettingsScreen
       onNavigateToAccount={() => router.push('/settings/account')}
       onNavigateToLocale={() => router.push('/settings/locale')}
-      onPresentPaywall={() => router.push('/paywall')}
+      onPresentPaywall={() => router.push('/(app)/paywall')}
     />
   );
 }

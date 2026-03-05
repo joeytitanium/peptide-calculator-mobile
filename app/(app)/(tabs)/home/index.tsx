@@ -22,7 +22,7 @@ export default function Home() {
           params: { recordId },
         })
       }
-      onPresentPaywall={() => router.push('/paywall')}
+      onPresentPaywall={() => router.push('/(app)/paywall')}
     />
   );
 }

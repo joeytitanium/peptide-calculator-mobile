@@ -333,7 +333,7 @@
         "description": "Ayuda a dar forma al futuro de esta app y disfruta de funciones exclusivas creadas con cariño por un desarrollador independiente."
       },
       "noPopups": {
-        "title": "Sin ventanas emergentes molestas",
+        "title": "Sin paywalls molestos",
         "description": "Salta la pantalla de pago y entra directo a la app cada vez"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Anual",
       "monthlyTitle": "Mensual",
       "weeklyTitle": "Semanal",
-      "lifetimeTitle": "Vitalicio"
+      "lifetimeTitle": "Vitalicio",
+      "trialTitle": "Prueba de {{count}} días",
+      "free": "GRATIS",
+      "thenPricePerWeek": "luego {{price}} por semana",
+      "thenPricePerMonth": "luego {{price}} por mes",
+      "thenPricePerYear": "luego {{price}} por año"
     },
     "wreath": {
       "bestHealthApp": "Mejor App de Calculadora de Péptidos"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Elige tu plan",
       "perksIntro": "Al suscribirte desbloquearás los siguientes beneficios:"
+    },
+    "fallback": {
+      "lastChance": "Última oportunidad",
+      "subtitle": "Desbloquea todos los tamaños de jeringa, mezclas ilimitadas y más con tu suscripción premium",
+      "off": "DE DESCUENTO",
+      "cta": "Obtén {{percent}}% de descuento ahora"
     }
   },
   "setupProfile": {

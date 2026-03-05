@@ -333,7 +333,7 @@
         "description": "Ajută la modelarea viitorului acestei aplicații și bucură-te de funcții exclusive create cu grijă de un dezvoltator independent."
       },
       "noPopups": {
-        "title": "Fără ferestre pop-up enervante",
+        "title": "Fără paywall-uri enervante",
         "description": "Sari peste ecranul de plată și intră direct în aplicație de fiecare dată"
       }
     },
@@ -364,7 +364,12 @@
       "yearlyTitle": "Anual",
       "monthlyTitle": "Lunar",
       "weeklyTitle": "Săptămânal",
-      "lifetimeTitle": "Pe viață"
+      "lifetimeTitle": "Pe viață",
+      "trialTitle": "Perioadă de probă de {{count}} zile",
+      "free": "GRATUIT",
+      "thenPricePerWeek": "apoi {{price}} pe săptămână",
+      "thenPricePerMonth": "apoi {{price}} pe lună",
+      "thenPricePerYear": "apoi {{price}} pe an"
     },
     "wreath": {
       "bestHealthApp": "Cea Mai Bună App Calculator de Peptide"
@@ -372,6 +377,12 @@
     "v2": {
       "title": "Alege-ți planul",
       "perksIntro": "Abonându-te vei debloca următoarele avantaje:"
+    },
+    "fallback": {
+      "lastChance": "Ultima șansă",
+      "subtitle": "Deblochează toate dimensiunile de seringă, amestecuri nelimitate și mai mult cu abonamentul tău premium",
+      "off": "REDUCERE",
+      "cta": "Obține {{percent}}% reducere acum"
     }
   },
   "setupProfile": {
