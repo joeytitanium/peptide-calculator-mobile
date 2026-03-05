@@ -90,7 +90,7 @@ export const CONFIG: {
   },
   layout: {
     navigationBarPadding: Platform.OS === 'ios' ? 50 : 50, // TODO:
-    tabBarPadding: Platform.OS === 'ios' ? 83 : 0, // TODO:
+    tabBarPadding: Platform.OS === 'ios' ? 49 : 0, // TODO:
   },
   revenuecat: {
     apiKey: {
