@@ -377,7 +377,7 @@ export const PaywallV2 = ({
           )}
         </Button>
         <FooterLinks
-          className="mt-2"
+          className="mt-2 mb-4"
           onRestorePurchase={handleRestorePurchases}
         />
       </View>

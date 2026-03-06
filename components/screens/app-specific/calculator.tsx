@@ -1,7 +1,6 @@
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/app-specific/syringe-result';
 import { GlowIcon } from '@/components/core/glow-icon';
-import { Screen } from '@/components/core/screen';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -96,7 +95,7 @@ export function CalculatorScreen({
   }, [peptideAmountMg, waterVolumeMl, desiredDose, doseUnit, syringeSize]);
 
   return (
-    <Screen>
+    <>
       <KeyboardAwareScrollView
         testID="calculator-screen"
         className="flex-1 bg-background"
@@ -347,6 +346,6 @@ export function CalculatorScreen({
           </Card>
         )}
       </StickyOutputPanel>
-    </Screen>
+    </>
   );
 }

@@ -4,6 +4,7 @@ import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
+import { Screen } from '@/components/core/screen';
 import { Stack, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Platform } from 'react-native';
@@ -19,56 +20,58 @@ export default function Layout() {
     !isLoadingCustomerInfo && !hasActiveSubscription && !screenshotMode;
 
   return (
-    <Stack
-      screenOptions={{
-        headerShown: true,
-        title: t('navigation.blend'),
-        headerTransparent: Platform.OS === 'ios',
-        headerShadowVisible: Platform.OS !== 'android',
-        headerTitleAlign: Platform.OS === 'android' ? 'center' : undefined,
-        ...(Platform.OS === 'android' && {
-          headerStyle: {
-            backgroundColor: isDarkColorScheme
-              ? THEME.dark.background
-              : THEME.light.background,
-          },
-        }),
-      }}
-    >
-      <Stack.Screen
-        name="index"
-        options={{
-          headerLeft: showProBadge
-            ? () => (
-                <HeaderIconButton
-                  onPress={() =>
-                    router.push('/(app)/(tabs)/blend/paywall')
-                  }
-                >
-                  <ProBadge hideText />
-                </HeaderIconButton>
-              )
-            : undefined,
+    <Screen>
+      <Stack
+        screenOptions={{
+          headerShown: true,
+          title: t('navigation.blend'),
+          headerTransparent: Platform.OS === 'ios',
+          headerShadowVisible: Platform.OS !== 'android',
+          headerTitleAlign: Platform.OS === 'android' ? 'center' : undefined,
+          ...(Platform.OS === 'android' && {
+            headerStyle: {
+              backgroundColor: isDarkColorScheme
+                ? THEME.dark.background
+                : THEME.light.background,
+            },
+          }),
         }}
-      />
-      <Stack.Screen
-        name="paywall"
-        options={{
-          headerShown: false,
-          presentation: 'modal',
-        }}
-      />
-      <Stack.Screen
-        name="review"
-        options={{
-          headerShown: false,
-          presentation: 'formSheet',
-          sheetGrabberVisible: true,
-          sheetAllowedDetents: [0.35, 0.65],
-          sheetInitialDetentIndex: 0,
-          contentStyle: { backgroundColor: 'transparent' },
-        }}
-      />
-    </Stack>
+      >
+        <Stack.Screen
+          name="index"
+          options={{
+            headerLeft: showProBadge
+              ? () => (
+                  <HeaderIconButton
+                    onPress={() =>
+                      router.push('/(app)/(tabs)/blend/paywall')
+                    }
+                  >
+                    <ProBadge hideText />
+                  </HeaderIconButton>
+                )
+              : undefined,
+          }}
+        />
+        <Stack.Screen
+          name="paywall"
+          options={{
+            headerShown: false,
+            presentation: 'modal',
+          }}
+        />
+        <Stack.Screen
+          name="review"
+          options={{
+            headerShown: false,
+            presentation: 'formSheet',
+            sheetGrabberVisible: true,
+            sheetAllowedDetents: [0.35, 0.65],
+            sheetInitialDetentIndex: 0,
+            contentStyle: { backgroundColor: 'transparent' },
+          }}
+        />
+      </Stack>
+    </Screen>
   );
 }
