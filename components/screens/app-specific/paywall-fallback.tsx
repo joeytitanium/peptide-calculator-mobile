@@ -13,11 +13,25 @@ import {
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
 import { capturePosthogEvent, useViewedScreen } from '@/utils/posthog';
 import { isNil } from 'lodash';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Alert, Platform, View } from 'react-native';
-import { CustomerInfo, PACKAGE_TYPE } from 'react-native-purchases';
+import {
+  ActivityIndicator,
+  Alert,
+  Platform,
+  Pressable,
+  View,
+} from 'react-native';
+import {
+  CustomerInfo,
+  PACKAGE_TYPE,
+  PurchasesPackage,
+} from 'react-native-purchases';
 import Animated, { FadeInDown } from 'react-native-reanimated';
+
+const isDiscountedPackage = (pkg: PurchasesPackage) =>
+  pkg.identifier.toLowerCase().includes('discounted') ||
+  pkg.product.identifier.toLowerCase().includes('discounted');
 
 type PaywallFallbackScreenProps = {
   onClose: () => void;
@@ -41,10 +55,16 @@ export function PaywallFallbackScreen({
     isLoadingAvailablePackages,
   } = useRevenueCat();
 
-  // Use the CUSTOM package from the main offering
-  const customPackage = availablePackages.find(
-    (x) => x.packageType === PACKAGE_TYPE.CUSTOM
-  );
+  const discountedPackages = availablePackages.filter(isDiscountedPackage);
+  const [selectedPackage, setSelectedPackage] = useState<
+    PurchasesPackage | undefined
+  >(undefined);
+
+  useEffect(() => {
+    if (!selectedPackage && discountedPackages.length > 0) {
+      setSelectedPackage(discountedPackages[0]);
+    }
+  }, [discountedPackages, selectedPackage]);
 
   const { paddingTop, paddingBottom, top } = useSafeAreaInsets({
     navigationBarPadding: 'none',
@@ -86,8 +106,8 @@ export function PaywallFallbackScreen({
   };
 
   const handlePurchase = async () => {
-    if (!customPackage) return;
-    const { error, userCancelled } = await purchasePackage(customPackage);
+    if (!selectedPackage) return;
+    const { error, userCancelled } = await purchasePackage(selectedPackage);
     if (error) {
       if (!userCancelled) {
         capturePosthogEvent('purchases-purchase-failed', { error });
@@ -96,35 +116,54 @@ export function PaywallFallbackScreen({
       return;
     }
     capturePosthogEvent('purchases-purchase-succeeded', {
-      purchasePackage: customPackage.identifier,
+      purchasePackage: selectedPackage.identifier,
       source: 'fallback',
     });
     await cancelAllDripNotifications();
-    const startedTrial = !isNil(customPackage.product.introPrice);
+    const startedTrial = !isNil(selectedPackage.product.introPrice);
     onComplete?.(startedTrial ? 'trial' : 'subscribed');
   };
 
-  // Use the standard yearly package as the reference for percentage off + strikethrough
-  const yearlyPackage = availablePackages.find(
-    (x) => x.packageType === PACKAGE_TYPE.ANNUAL
+  // Use the non-discounted yearly package as the reference for percentage off
+  const referencePackage = availablePackages.find(
+    (x) => x.packageType === PACKAGE_TYPE.ANNUAL && !isDiscountedPackage(x)
   );
 
-  const percentageOff = (() => {
-    if (!customPackage || !yearlyPackage) return undefined;
-    const yearlyPrice = yearlyPackage.product.price;
-    const customPrice = customPackage.product.price;
-    if (yearlyPrice === 0) return undefined;
-    return Math.round(((yearlyPrice - customPrice) / yearlyPrice) * 100);
-  })();
+  const getPercentageOff = (pkg: PurchasesPackage | undefined) => {
+    if (!pkg || !referencePackage) return undefined;
+    const refPerYear = referencePackage.product.pricePerYear;
+    const discountedPerYear = pkg.product.pricePerYear;
+    if (isNil(refPerYear) || isNil(discountedPerYear) || refPerYear === 0)
+      return undefined;
+    return Math.round(((refPerYear - discountedPerYear) / refPerYear) * 100);
+  };
 
-  // Show the standard yearly price as the strikethrough
-  const referenceYearlyPriceString = yearlyPackage?.product.priceString;
+  const percentageOff = getPercentageOff(selectedPackage);
+  const referenceYearlyPriceString = referencePackage?.product.priceString;
 
-  const priceLabel = (() => {
-    if (!customPackage) return '';
-    const price = customPackage.product.priceString;
-    return `${price}${t('paywall.package.perYear')}`;
-  })();
+  const getPackageTitle = (pkg: PurchasesPackage) => {
+    const type = pkg.packageType;
+    if (type === PACKAGE_TYPE.ANNUAL) return t('paywall.package.yearlyTitle');
+    if (type === PACKAGE_TYPE.MONTHLY) return t('paywall.package.monthlyTitle');
+    if (type === PACKAGE_TYPE.WEEKLY) return t('paywall.package.weeklyTitle');
+    if (type === PACKAGE_TYPE.LIFETIME)
+      return t('paywall.package.lifetimeTitle');
+    return pkg.product.title.replace(/\s*\(.*?\)/, '').trim();
+  };
+
+  const getPriceLabel = (pkg: PurchasesPackage) => {
+    const price = pkg.product.priceString;
+    const type = pkg.packageType;
+    if (type === PACKAGE_TYPE.ANNUAL)
+      return `${price}${t('paywall.package.perYear')}`;
+    if (type === PACKAGE_TYPE.MONTHLY)
+      return `${price}${t('paywall.package.perMonth')}`;
+    if (type === PACKAGE_TYPE.WEEKLY)
+      return `${price}${t('paywall.package.perWeek')}`;
+    if (type === PACKAGE_TYPE.LIFETIME)
+      return `${price} ${t('paywall.package.once')}`;
+    return price;
+  };
 
   const isLoading =
     isPurchasing || isRestoringPurchases || isLoadingAvailablePackages;
@@ -188,46 +227,60 @@ export function PaywallFallbackScreen({
         )}
       </View>
 
-      {/* Bottom: package + CTA + footer */}
+      {/* Bottom: packages + CTA + footer */}
       <Animated.View
         entering={FadeInDown.delay(800).duration(600)}
         className="border-t border-border bg-background px-4 pt-3"
         style={{ paddingBottom }}
       >
-        {customPackage && (
-          <Card className="rounded-xl px-4 py-4 border-2 border-primary mb-3">
-            <View className="flex-row items-center justify-between">
-              <View className="gap-1">
-                <Text className="text-xl font-bold leading-none">
-                  {t('paywall.package.yearlyTitle')}
-                </Text>
-                <View className="flex-row items-center gap-2">
-                  <Text className="text-base font-semibold text-primary leading-none">
-                    {priceLabel}
-                  </Text>
-                  {referenceYearlyPriceString && (
-                    <Text className="text-sm text-muted-foreground line-through leading-none">
-                      {referenceYearlyPriceString}
-                    </Text>
-                  )}
-                </View>
-              </View>
-              {percentageOff && (
-                <Badge className="bg-green-400 border-green-400 px-2 py-0.5">
-                  <Text className="text-black text-xs font-semibold">
-                    {t('paywall.package.savePercent', {
-                      percent: percentageOff,
-                    })}
-                  </Text>
-                </Badge>
-              )}
-            </View>
-          </Card>
-        )}
+        <View className="gap-3 mb-3">
+          {discountedPackages.map((pkg) => {
+            const isSelected =
+              selectedPackage?.product.identifier === pkg.product.identifier;
+            const pkgPercentOff = getPercentageOff(pkg);
+            return (
+              <Pressable
+                key={pkg.product.identifier}
+                onPress={() => setSelectedPackage(pkg)}
+              >
+                <Card
+                  className={`rounded-xl px-4 py-4 border-2 ${isSelected ? 'border-primary' : 'border-border'}`}
+                >
+                  <View className="flex-row items-center justify-between">
+                    <View className="gap-1">
+                      <Text className="text-xl font-bold leading-none">
+                        {getPackageTitle(pkg)}
+                      </Text>
+                      <View className="flex-row items-center gap-2">
+                        <Text className="text-base font-semibold text-primary leading-none">
+                          {getPriceLabel(pkg)}
+                        </Text>
+                        {isSelected && referenceYearlyPriceString && (
+                          <Text className="text-sm text-muted-foreground line-through leading-none">
+                            {referenceYearlyPriceString}
+                          </Text>
+                        )}
+                      </View>
+                    </View>
+                    {pkgPercentOff && (
+                      <Badge className="bg-green-400 border-green-400 px-2 py-0.5">
+                        <Text className="text-black text-xs font-semibold">
+                          {t('paywall.package.savePercent', {
+                            percent: pkgPercentOff,
+                          })}
+                        </Text>
+                      </Badge>
+                    )}
+                  </View>
+                </Card>
+              </Pressable>
+            );
+          })}
+        </View>
         <Button
           size="lg"
           className="mb-2"
-          disabled={isLoading || !customPackage}
+          disabled={isLoading || discountedPackages.length === 0}
           onPress={handlePurchase}
         >
           {isLoading ? (

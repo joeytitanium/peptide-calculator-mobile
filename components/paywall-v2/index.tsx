@@ -42,6 +42,10 @@ import {
 iconWithClassName(Check);
 iconWithClassName(Circle);
 
+const isDiscountedPackage = (pkg: PurchasesPackage) =>
+  pkg.identifier.toLowerCase().includes('discounted') ||
+  pkg.product.identifier.toLowerCase().includes('discounted');
+
 const PackageCell = ({
   purchasePackage,
   allPackages,
@@ -217,11 +221,13 @@ export const PaywallV2 = ({
 
   useViewedScreen('paywall-v2');
 
-  const filteredPackages = excludePackageTypes
-    ? availablePackages.filter(
-        (pkg) => !excludePackageTypes.includes(pkg.packageType)
-      )
-    : availablePackages;
+  const filteredPackages = (
+    excludePackageTypes
+      ? availablePackages.filter(
+          (pkg) => !excludePackageTypes.includes(pkg.packageType)
+        )
+      : availablePackages
+  ).filter((pkg) => !isDiscountedPackage(pkg));
 
   useEffect(() => {
     if (
