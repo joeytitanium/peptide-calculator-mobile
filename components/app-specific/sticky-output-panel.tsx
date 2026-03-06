@@ -1,17 +1,18 @@
 import { GlassView } from '@/components/core/glass-view';
-import { CONFIG } from '@/config';
 import { ReactNode } from 'react';
 import { LayoutChangeEvent, Platform } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+const GAP = 8;
 
 type Props = {
-  bottom: number;
   onLayout: (e: LayoutChangeEvent) => void;
   children: ReactNode;
 };
 
-export function StickyOutputPanel({ bottom, onLayout, children }: Props) {
-  const bottomOffset =
-    Platform.OS === 'android' ? 8 : bottom + CONFIG.layout.tabBarPadding + 8;
+export function StickyOutputPanel({ onLayout, children }: Props) {
+  const { bottom } = useSafeAreaInsets();
+  const bottomOffset = Platform.OS === 'android' ? GAP : bottom + GAP;
 
   return (
     <GlassView

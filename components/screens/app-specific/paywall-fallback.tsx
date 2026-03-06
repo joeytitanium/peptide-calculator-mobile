@@ -167,14 +167,14 @@ export function PaywallFallbackScreen({
             <Text
               className="font-extrabold leading-none"
               style={{
-                fontSize: 120,
+                fontSize: 90,
               }}
             >
               {percentageOff}%
             </Text>
             <Text
               className="font-extrabold leading-none"
-              style={{ fontSize: 100 }}
+              style={{ fontSize: 72 }}
             >
               {t('paywall.fallback.off')}
             </Text>

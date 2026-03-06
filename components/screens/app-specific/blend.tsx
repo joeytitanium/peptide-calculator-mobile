@@ -1,6 +1,7 @@
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
 import { SyringeResult } from '@/components/app-specific/syringe-result';
 import { GlowIcon } from '@/components/core/glow-icon';
+import { Screen } from '@/components/core/screen';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -73,7 +74,7 @@ export function BlendScreen({
   onRequestReview,
 }: BlendScreenProps) {
   const { t } = useTranslation();
-  const { paddingTop, bottom } = useSafeAreaInsets({
+  const { paddingTop } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
   });
@@ -176,7 +177,7 @@ export function BlendScreen({
   }, [result, peptides, doseUnit]);
 
   return (
-    <>
+    <Screen>
       <KeyboardAwareScrollView
         testID="blend-screen"
         className="flex-1 bg-background"
@@ -491,7 +492,6 @@ export function BlendScreen({
 
       {/* Sticky preparation output */}
       <StickyOutputPanel
-        bottom={bottom}
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
       >
         {result ? (
@@ -525,6 +525,6 @@ export function BlendScreen({
           </Card>
         )}
       </StickyOutputPanel>
-    </>
+    </Screen>
   );
 }

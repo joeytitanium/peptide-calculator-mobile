@@ -1,4 +1,5 @@
 import { StickyOutputPanel } from '@/components/app-specific/sticky-output-panel';
+import { Screen } from '@/components/core/screen';
 import { GlowIcon } from '@/components/core/glow-icon';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Button } from '@/components/ui/button';
@@ -55,7 +56,7 @@ export function ReconstitutionScreen({
   onRequestReview,
 }: ReconstitutionScreenProps) {
   const { t } = useTranslation();
-  const { paddingTop, bottom } = useSafeAreaInsets({
+  const { paddingTop } = useSafeAreaInsets({
     navigationBarPadding: 'none',
     nativePadding: 'none',
   });
@@ -103,7 +104,7 @@ export function ReconstitutionScreen({
   }, [desiredUnits]);
 
   return (
-    <>
+    <Screen>
       <KeyboardAwareScrollView
         testID="reconstitution-screen"
         className="flex-1 bg-background"
@@ -310,7 +311,6 @@ export function ReconstitutionScreen({
 
       {/* Sticky result */}
       <StickyOutputPanel
-        bottom={bottom}
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
       >
         {result ? (
@@ -382,6 +382,6 @@ export function ReconstitutionScreen({
           </Card>
         )}
       </StickyOutputPanel>
-    </>
+    </Screen>
   );
 }
