@@ -241,7 +241,7 @@ export function PaywallFallbackScreen({
           )}
         </Button>
         <FooterLinks
-          className="mt-2 mb-4"
+          className="mt-2"
           onRestorePurchase={handleRestorePurchases}
         />
       </Animated.View>
