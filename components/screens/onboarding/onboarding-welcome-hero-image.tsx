@@ -10,7 +10,9 @@ type OnboardingWelcomeProps = {
   currentHref: Href;
 };
 
-export function OnboardingWelcomeHeroImage({ currentHref }: OnboardingWelcomeProps) {
+export function OnboardingWelcomeHeroImage({
+  currentHref,
+}: OnboardingWelcomeProps) {
   const { t } = useTranslation();
 
   return (
@@ -41,13 +43,13 @@ export function OnboardingWelcomeHeroImage({ currentHref }: OnboardingWelcomePro
               marginTop: -24,
             }}
           >
-            <Text className="text-sm text-muted-foreground/70 text-center tracking-widest mb-2">
+            <Text className="text-sm text-muted-foreground text-center mb-2">
               {t('onboarding.sheet.welcomeTo')}
             </Text>
-            <Text className="text-4xl text-center font-bold text-foreground mb-4 leading-tight tracking-tight">
+            <Text className="text-4xl text-center font-bold text-foreground mb-2 leading-tight tracking-tight">
               {CONFIG.site.name}
             </Text>
-            <Text className="text-base text-muted-foreground text-center px-4">
+            <Text className="text-base text-center px-4">
               {CONFIG.site.description}
             </Text>
           </View>

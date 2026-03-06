@@ -78,7 +78,7 @@ export function OnboardingAppScreenshot({
 
             {/* Title + subtitle pinned above button */}
             <View
-              className="items-center justify-center px-6 bg-card rounded-t-3xl"
+              className="flex-1 items-center justify-start px-6 bg-card rounded-t-3xl"
               style={{
                 paddingBottom: bottomToolbarHeight + bottom + 8,
                 paddingTop: 24,
