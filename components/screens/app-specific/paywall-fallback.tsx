@@ -20,6 +20,7 @@ import {
   Alert,
   Platform,
   Pressable,
+  useColorScheme,
   View,
 } from 'react-native';
 import {
@@ -27,11 +28,146 @@ import {
   PACKAGE_TYPE,
   PurchasesPackage,
 } from 'react-native-purchases';
-import Animated, { FadeInDown } from 'react-native-reanimated';
+import Animated, {
+  Easing,
+  FadeInDown,
+  useAnimatedProps,
+  useSharedValue,
+  withDelay,
+  withTiming,
+} from 'react-native-reanimated';
+import Svg, {
+  Defs,
+  Line,
+  LinearGradient,
+  Path,
+  Stop,
+  Circle as SvgCircle,
+} from 'react-native-svg';
+import twColors from 'tailwindcss/colors';
 
 const isDiscountedPackage = (pkg: PurchasesPackage) =>
   pkg.identifier.toLowerCase().includes('discounted') ||
   pkg.product.identifier.toLowerCase().includes('discounted');
+
+const AnimatedPath = Animated.createAnimatedComponent(Path);
+const AnimatedLine = Animated.createAnimatedComponent(Line);
+
+const PaywallGauge = ({
+  percentage,
+  size = 180,
+}: {
+  percentage: number;
+  size?: number;
+}) => {
+  const colorScheme = useColorScheme();
+  const isDark = colorScheme === 'dark';
+
+  const strokeWidth = 22;
+  const radius = (size - strokeWidth) / 2;
+  const cx = size / 2;
+  const cy = radius + strokeWidth / 2;
+  const svgHeight = cy + 16;
+  const halfCircumference = Math.PI * radius;
+
+  const progress = Math.min(Math.max(percentage / 100, 0), 1);
+  const needleLength = radius - strokeWidth;
+
+  // Semicircle arc left to right (used for both background and progress)
+  const arcPath = `M ${cx - radius} ${cy} A ${radius} ${radius} 0 0 1 ${cx + radius} ${cy}`;
+
+  // Animate on iOS, static on Android
+  const animatedProgress = useSharedValue(Platform.OS === 'ios' ? 0 : progress);
+
+  useEffect(() => {
+    if (Platform.OS === 'ios') {
+      animatedProgress.value = withDelay(
+        600,
+        withTiming(progress, {
+          duration: 1200,
+          easing: Easing.out(Easing.cubic),
+        })
+      );
+    } else {
+      animatedProgress.value = progress;
+    }
+  }, [animatedProgress, progress]);
+
+  const arcAnimatedProps = useAnimatedProps(() => ({
+    strokeDashoffset: halfCircumference * (1 - animatedProgress.value),
+  }));
+
+  const needleAnimatedProps = useAnimatedProps(() => {
+    const a = Math.PI * (1 - animatedProgress.value);
+    return {
+      x2: cx + needleLength * Math.cos(a),
+      y2: cy - needleLength * Math.sin(a),
+    };
+  });
+
+  const trackColor = isDark ? twColors.green[900] : twColors.green[200];
+  const gradientStart = isDark ? twColors.green[600] : twColors.green[700];
+  const gradientEnd = isDark ? twColors.green[300] : twColors.green[400];
+  const needleColor = isDark ? twColors.green[100] : twColors.green[900];
+
+  return (
+    <Svg
+      width={size}
+      height={svgHeight}
+    >
+      <Defs>
+        <LinearGradient
+          id="gaugeGradient"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="0"
+        >
+          <Stop
+            offset="0"
+            stopColor={gradientStart}
+          />
+          <Stop
+            offset="1"
+            stopColor={gradientEnd}
+          />
+        </LinearGradient>
+      </Defs>
+      <Path
+        d={arcPath}
+        stroke={trackColor}
+        strokeWidth={strokeWidth}
+        fill="none"
+        strokeLinecap="round"
+      />
+      <AnimatedPath
+        d={arcPath}
+        stroke="url(#gaugeGradient)"
+        strokeWidth={strokeWidth}
+        fill="none"
+        strokeLinecap="round"
+        strokeDasharray={`${halfCircumference},${halfCircumference}`}
+        animatedProps={arcAnimatedProps}
+      />
+      <AnimatedLine
+        x1={cx}
+        y1={cy}
+        x2={cx}
+        y2={cy}
+        stroke={needleColor}
+        strokeWidth={3}
+        strokeLinecap="round"
+        animatedProps={needleAnimatedProps}
+      />
+      <SvgCircle
+        cx={cx}
+        cy={cy}
+        r={5}
+        fill={needleColor}
+      />
+    </Svg>
+  );
+};
 
 type PaywallFallbackScreenProps = {
   onClose: () => void;
@@ -197,24 +333,20 @@ export function PaywallFallbackScreen({
           </Text>
         </Animated.View>
 
-        {/* Big percentage + OFF */}
+        {/* Gauge + percentage */}
         {percentageOff ? (
           <Animated.View
             entering={FadeInDown.delay(450).duration(700).springify()}
             className="items-center"
           >
-            <Text
-              className="font-extrabold leading-none"
-              style={{
-                fontSize: 90,
-              }}
-            >
-              {percentageOff}%
-            </Text>
+            <PaywallGauge percentage={percentageOff} />
             <Text
               className="font-extrabold leading-none"
               style={{ fontSize: 72 }}
             >
+              {percentageOff}%
+            </Text>
+            <Text className="text-2xl font-bold text-muted-foreground mt-1">
               {t('paywall.fallback.off')}
             </Text>
           </Animated.View>
