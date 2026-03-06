@@ -20,10 +20,10 @@ export function OnboardingAppScreenshot({
   title,
   subtitle,
 }: OnboardingAppScreenshotProps) {
-  const { width: windowWidth, height: windowHeight } = useWindowDimensions();
+  const { width: windowWidth } = useWindowDimensions();
 
   const PHONE_ASPECT_RATIO = 2.05;
-  const TEXT_AREA_HEIGHT = 140; // title + subtitle + padding estimate
+  const idealWidth = windowWidth * 0.65;
 
   return (
     <Onboarding.Container
@@ -34,30 +34,20 @@ export function OnboardingAppScreenshot({
     >
       {({ top, bottom, topToolbarHeight, bottomToolbarHeight }) => {
         const topChrome = topToolbarHeight + top + 16;
-        const bottomChrome =
-          bottomToolbarHeight + bottom + 8 + TEXT_AREA_HEIGHT;
-        const maxHeight = windowHeight - topChrome - bottomChrome;
-        const idealWidth = windowWidth * 0.65;
-        const idealHeight = idealWidth * PHONE_ASPECT_RATIO;
-        // If height-constrained, shrink width proportionally to maintain aspect ratio
-        const phoneHeight = Math.min(idealHeight, maxHeight);
-        const phoneWidth =
-          phoneHeight < idealHeight
-            ? phoneHeight / PHONE_ASPECT_RATIO
-            : idealWidth;
 
         return (
           <View className="flex-1 bg-background">
-            {/* Screenshot in phone frame */}
+            {/* Screenshot in phone frame — fills remaining space after text */}
             <View
-              className="items-center"
+              className="flex-1 items-center justify-center"
               style={{ paddingTop: topChrome }}
             >
               <View
                 className="rounded-[28px] overflow-hidden bg-neutral-300 dark:bg-neutral-400"
                 style={{
-                  width: phoneWidth,
-                  height: phoneHeight,
+                  width: idealWidth,
+                  aspectRatio: 1 / PHONE_ASPECT_RATIO,
+                  maxHeight: '100%',
                   padding: 4,
                 }}
               >
@@ -76,9 +66,9 @@ export function OnboardingAppScreenshot({
               </View>
             </View>
 
-            {/* Title + subtitle pinned above button */}
+            {/* Title + subtitle — sizes to content, never clipped */}
             <View
-              className="flex-1 items-center justify-start px-6 bg-card rounded-t-3xl"
+              className="items-center justify-start px-6 bg-card rounded-t-3xl"
               style={{
                 paddingBottom: bottomToolbarHeight + bottom + 8,
                 paddingTop: 24,
