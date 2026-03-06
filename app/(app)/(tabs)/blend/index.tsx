@@ -1,3 +1,4 @@
+import { Screen } from '@/components/core/screen';
 import { BlendScreen } from '@/components/screens/app-specific/blend';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
@@ -11,10 +12,12 @@ export default function Blend() {
   const router = useRouter();
 
   return (
-    <BlendScreen
-      hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
-      onPresentPaywall={() => router.push('/(app)/(tabs)/blend/paywall')}
-      onRequestReview={() => router.push('/(app)/(tabs)/blend/review')}
-    />
+    <Screen>
+      <BlendScreen
+        hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
+        onPresentPaywall={() => router.push('/(app)/(tabs)/blend/paywall')}
+        onRequestReview={() => router.push('/(app)/(tabs)/blend/review')}
+      />
+    </Screen>
   );
 }

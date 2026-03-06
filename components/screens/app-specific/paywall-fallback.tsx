@@ -135,7 +135,7 @@ export function PaywallFallbackScreen({
       style={{ paddingTop: Platform.OS === 'android' ? top : paddingTop }}
     >
       {/* Header */}
-      <View className="flex-row items-center justify-start px-4 py-3">
+      <View className="flex-row items-center justify-start px-4">
         <CoolOffCloseButton
           onClose={handleClose}
           skipCoolOff

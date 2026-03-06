@@ -1,3 +1,4 @@
+import { Screen } from '@/components/core/screen';
 import { ReconstitutionScreen } from '@/components/screens/app-specific/reconstitution';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
@@ -11,14 +12,16 @@ export default function Reconstitution() {
   const router = useRouter();
 
   return (
-    <ReconstitutionScreen
-      hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
-      onPresentPaywall={() =>
-        router.push('/(app)/(tabs)/reconstitution/paywall')
-      }
-      onRequestReview={() =>
-        router.push('/(app)/(tabs)/reconstitution/review')
-      }
-    />
+    <Screen>
+      <ReconstitutionScreen
+        hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
+        onPresentPaywall={() =>
+          router.push('/(app)/(tabs)/reconstitution/paywall')
+        }
+        onRequestReview={() =>
+          router.push('/(app)/(tabs)/reconstitution/review')
+        }
+      />
+    </Screen>
   );
 }

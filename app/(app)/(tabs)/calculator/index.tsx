@@ -1,3 +1,4 @@
+import { Screen } from '@/components/core/screen';
 import { CalculatorScreen } from '@/components/screens/app-specific/calculator';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
@@ -11,10 +12,12 @@ export default function Calculator() {
   const router = useRouter();
 
   return (
-    <CalculatorScreen
-      hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
-      onPresentPaywall={() => router.push('/(app)/(tabs)/calculator/paywall')}
-      onRequestReview={() => router.push('/(app)/(tabs)/calculator/review')}
-    />
+    <Screen>
+      <CalculatorScreen
+        hasActiveSubscription={!!hasActiveSubscription || !!screenshotMode}
+        onPresentPaywall={() => router.push('/(app)/(tabs)/calculator/paywall')}
+        onRequestReview={() => router.push('/(app)/(tabs)/calculator/review')}
+      />
+    </Screen>
   );
 }
