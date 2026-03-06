@@ -317,7 +317,7 @@ export const PaywallV2 = ({
         contentContainerStyle={{
           paddingHorizontal: 16,
           paddingBottom: 24,
-          flex: 1,
+          flexGrow: 1,
         }}
         showsVerticalScrollIndicator={false}
       >
