@@ -142,6 +142,18 @@
       "continue": "Tiếp tục",
       "skip": "Bỏ qua"
     },
+    "screen1": {
+      "title": "Liều lượng chính xác",
+      "subtitle": "Nhận tính toán chính xác cho mọi peptide, nồng độ và kích thước ống tiêm"
+    },
+    "screen2": {
+      "title": "Nhiều peptide",
+      "subtitle": "Quản lý tất cả peptide của bạn tại một nơi với các hỗn hợp và quy trình tùy chỉnh"
+    },
+    "screen3": {
+      "title": "Tất cả kích thước ống tiêm",
+      "subtitle": "Hỗ trợ mọi loại ống tiêm — từ insulin đến ống tiêm lớn hơn"
+    },
     "welcome": {
       "title": "Theo dõi đau đầu,\nkiểm soát sức khỏe",
       "subtitle": "Hãy trả lời một vài câu hỏi nhanh để cá nhân hóa trải nghiệm của bạn"

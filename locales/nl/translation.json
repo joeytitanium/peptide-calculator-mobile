@@ -142,6 +142,18 @@
       "continue": "Doorgaan",
       "skip": "Overslaan"
     },
+    "screen1": {
+      "title": "Nauwkeurige dosering",
+      "subtitle": "Krijg precieze berekeningen voor elk peptide, concentratie en spuitgrootte"
+    },
+    "screen2": {
+      "title": "Meerdere peptiden",
+      "subtitle": "Beheer al je peptiden op één plek met aangepaste mengsels en protocollen"
+    },
+    "screen3": {
+      "title": "Alle spuitmaten",
+      "subtitle": "Ondersteuning voor elk spuittype — van insuline tot grotere spuiten"
+    },
     "welcome": {
       "title": "Houd je hoofdpijn bij,\nneem de controle",
       "subtitle": "Laten we een paar snelle vragen beantwoorden om je ervaring te personaliseren"

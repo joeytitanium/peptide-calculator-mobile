@@ -142,6 +142,18 @@
       "continue": "Continuă",
       "skip": "Omite"
     },
+    "screen1": {
+      "title": "Dozare precisă",
+      "subtitle": "Obține calcule precise pentru orice peptidă, concentrație și dimensiune a seringii"
+    },
+    "screen2": {
+      "title": "Mai multe peptide",
+      "subtitle": "Gestionează toate peptidele tale într-un singur loc cu amestecuri și protocoale personalizate"
+    },
+    "screen3": {
+      "title": "Toate dimensiunile de seringă",
+      "subtitle": "Suport pentru orice tip de seringă — de la insulină la seringi mai mari"
+    },
     "welcome": {
       "title": "Urmărește-ți durerile de cap,\npreia controlul",
       "subtitle": "Să răspundem la câteva întrebări rapide pentru a-ți personaliza experiența"

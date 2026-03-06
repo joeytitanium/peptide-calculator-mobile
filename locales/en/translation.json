@@ -142,6 +142,18 @@
       "continue": "Continue",
       "skip": "Skip"
     },
+    "screen1": {
+      "title": "Accurate Dosing",
+      "subtitle": "Get precise calculations for any peptide, concentration, and syringe size"
+    },
+    "screen2": {
+      "title": "Multiple Peptides",
+      "subtitle": "Manage all your peptides in one place with custom blends and protocols"
+    },
+    "screen3": {
+      "title": "All Syringe Sizes",
+      "subtitle": "Support for every syringe type — from insulin to larger syringes"
+    },
     "welcome": {
       "title": "Track your headaches,\ntake control",
       "subtitle": "Let's answer a few quick questions to personalize your experience"

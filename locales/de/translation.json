@@ -142,6 +142,18 @@
       "continue": "Fortfahren",
       "skip": "Überspringen"
     },
+    "screen1": {
+      "title": "Präzise Dosierung",
+      "subtitle": "Erhalten Sie genaue Berechnungen für jedes Peptid, jede Konzentration und Spritzengröße"
+    },
+    "screen2": {
+      "title": "Mehrere Peptide",
+      "subtitle": "Verwalten Sie alle Ihre Peptide an einem Ort mit individuellen Mischungen und Protokollen"
+    },
+    "screen3": {
+      "title": "Alle Spritzengrößen",
+      "subtitle": "Unterstützung für jeden Spritzentyp — von Insulin bis zu größeren Spritzen"
+    },
     "welcome": {
       "title": "Erfasse deine Kopfschmerzen,\nübernimm die Kontrolle",
       "subtitle": "Lass uns ein paar kurze Fragen beantworten, um dein Erlebnis zu personalisieren"

@@ -25,9 +25,9 @@ const IndexScreen = () => {
     return null;
   }
 
-  // New users: show onboarding sheet
+  // New users: show onboarding
   if (!onboardingCompletedValue) {
-    return <Redirect href="/(auth)/onboarding-sheet" />;
+    return <Redirect href="/(auth)/onboarding-1" />;
   }
 
   // Non-subscribers: show paywall on every app launch (skip in screenshot mode)

@@ -142,6 +142,18 @@
       "continue": "Continuer",
       "skip": "Passer"
     },
+    "screen1": {
+      "title": "Dosage précis",
+      "subtitle": "Obtenez des calculs précis pour tout peptide, concentration et taille de seringue"
+    },
+    "screen2": {
+      "title": "Plusieurs peptides",
+      "subtitle": "Gérez tous vos peptides en un seul endroit avec des mélanges et protocoles personnalisés"
+    },
+    "screen3": {
+      "title": "Toutes les tailles de seringues",
+      "subtitle": "Compatible avec tous les types de seringues — des seringues à insuline aux plus grandes"
+    },
     "welcome": {
       "title": "Suivez vos maux de tête,\nreprenez le contrôle",
       "subtitle": "Répondons à quelques questions rapides pour personnaliser votre expérience"

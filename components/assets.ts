@@ -52,7 +52,7 @@ export const IMAGE_ASSETS: Record<ImageAssetName, number> = {
   'testimonial-joel': require('@/assets/testimonials/joel.jpg'),
   'testimonial-shawna': require('@/assets/testimonials/shawna.jpg'),
   'testimonial-wesley': require('@/assets/testimonials/wesley.jpg'),
-  'onboarding-welcome': require('@/assets/images/onboarding-welcome.jpg'),
+  'onboarding-welcome': require('@/assets/images/onboarding-welcome.jpeg'),
   star: require('@/assets/images/star.png'),
 };
 

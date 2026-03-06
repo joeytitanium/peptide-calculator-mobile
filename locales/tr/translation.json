@@ -142,6 +142,18 @@
       "continue": "Devam",
       "skip": "Atla"
     },
+    "screen1": {
+      "title": "Doğru dozlama",
+      "subtitle": "Herhangi bir peptit, konsantrasyon ve şırınga boyutu için hassas hesaplamalar alın"
+    },
+    "screen2": {
+      "title": "Birden fazla peptit",
+      "subtitle": "Tüm peptitlerinizi özel karışımlar ve protokollerle tek bir yerde yönetin"
+    },
+    "screen3": {
+      "title": "Tüm şırınga boyutları",
+      "subtitle": "Her şırınga tipi için destek — insülinden daha büyük şırıngalara kadar"
+    },
     "welcome": {
       "title": "Baş ağrılarınızı takip edin,\nkontrolü elinize alın",
       "subtitle": "Deneyiminizi kişiselleştirmek için birkaç hızlı soruyu cevaplayalım"

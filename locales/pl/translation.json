@@ -142,6 +142,18 @@
       "continue": "Kontynuuj",
       "skip": "Pomiń"
     },
+    "screen1": {
+      "title": "Dokładne dawkowanie",
+      "subtitle": "Uzyskaj precyzyjne obliczenia dla dowolnego peptydu, stężenia i rozmiaru strzykawki"
+    },
+    "screen2": {
+      "title": "Wiele peptydów",
+      "subtitle": "Zarządzaj wszystkimi peptydami w jednym miejscu z niestandardowymi mieszankami i protokołami"
+    },
+    "screen3": {
+      "title": "Wszystkie rozmiary strzykawek",
+      "subtitle": "Wsparcie dla każdego typu strzykawki — od insulinowych po większe"
+    },
     "welcome": {
       "title": "Śledź bóle głowy,\nprzejmij kontrolę",
       "subtitle": "Odpowiedzmy na kilka pytań, aby spersonalizować Twoje doświadczenie"

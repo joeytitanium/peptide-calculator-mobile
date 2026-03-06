@@ -1,4 +1,3 @@
-import { requestReviewHandler } from '@/hooks/use-deterministically-request-review';
 import { Href } from 'expo-router';
 
 type ScreenConfig = {
@@ -11,57 +10,65 @@ type ScreenConfig = {
 
 export const ONBOARDING_CONFIG: ScreenConfig[] = [
   {
-    posthogEventName: 'onboarding-welcome',
-    href: '/(auth)/onboarding-welcome',
-    hideTopGradient: true,
-    hideBottomGradient: true,
+    posthogEventName: 'onboarding-1',
+    href: '/(auth)/onboarding-1',
   },
   {
-    posthogEventName: 'onboarding-question-1',
-    href: '/(auth)/onboarding-question-1',
+    posthogEventName: 'onboarding-2',
+    href: '/(auth)/onboarding-2',
   },
   {
-    posthogEventName: 'onboarding-question-2',
-    href: '/(auth)/onboarding-question-2',
+    posthogEventName: 'onboarding-3',
+    href: '/(auth)/onboarding-3',
   },
-  {
-    posthogEventName: 'onboarding-notifications',
-    href: '/(auth)/onboarding-notifications',
-  },
-  {
-    posthogEventName: 'onboarding-personalization',
-    href: '/(auth)/onboarding-personalization',
-    onComplete: async () => {
-      await requestReviewHandler({ inAppOnly: true });
-    },
-  },
-  {
-    posthogEventName: 'onboarding-personalization-done',
-    href: '/(auth)/onboarding-personalization-done',
-  },
+  // {
+  //   posthogEventName: 'onboarding-welcome',
+  //   href: '/(auth)/onboarding-welcome',
+  //   hideTopGradient: true,
+  //   hideBottomGradient: true,
+  // },
+  // {
+  //   posthogEventName: 'onboarding-question-1',
+  //   href: '/(auth)/onboarding-question-1',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-question-2',
+  //   href: '/(auth)/onboarding-question-2',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-notifications',
+  //   href: '/(auth)/onboarding-notifications',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-personalization',
+  //   href: '/(auth)/onboarding-personalization',
+  //   onComplete: async () => {
+  //     await requestReviewHandler({ inAppOnly: true });
+  //   },
+  // },
+  // {
+  //   posthogEventName: 'onboarding-personalization-done',
+  //   href: '/(auth)/onboarding-personalization-done',
+  // },
   // {
   //   posthogEventName: 'onboarding-community',
   //   href: '/(auth)/onboarding-community',
   // },
-  {
-    posthogEventName: 'onboarding-pain-points',
-    href: '/(auth)/onboarding-pain-points',
-  },
-  {
-    posthogEventName: 'onboarding-benefits',
-    href: '/(auth)/onboarding-benefits',
-  },
-  {
-    posthogEventName: 'onboarding-comparison',
-    href: '/(auth)/onboarding-comparison',
-  },
-  {
-    posthogEventName: 'onboarding-finished',
-    href: '/(auth)/onboarding-finished',
-  },
   // {
-  //   posthogEventName: 'onboarding-review',
-  //   href: '/(auth)/onboarding-review',
+  //   posthogEventName: 'onboarding-pain-points',
+  //   href: '/(auth)/onboarding-pain-points',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-benefits',
+  //   href: '/(auth)/onboarding-benefits',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-comparison',
+  //   href: '/(auth)/onboarding-comparison',
+  // },
+  // {
+  //   posthogEventName: 'onboarding-finished',
+  //   href: '/(auth)/onboarding-finished',
   // },
   {
     posthogEventName: 'onboarding-paywall',
