@@ -124,10 +124,5 @@
     "prettier": "3.6.2",
     "typescript": "5.9.2"
   },
-  "private": true,
-  "pnpm": {
-    "overrides": {
-      "entities": "2.2.0"
-    }
-  }
+  "private": true
 }
