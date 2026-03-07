@@ -1,4 +1,9 @@
-import { Stack } from 'expo-router';
+import {
+  HeaderCloseButton,
+} from '@/components/core/header-button';
+import { THEME } from '@/lib/theme';
+import { useColorScheme } from '@/lib/use-color-scheme';
+import { Stack, useRouter } from 'expo-router';
 import { Platform } from 'react-native';
 
 export const unstable_settings = {
@@ -6,6 +11,9 @@ export const unstable_settings = {
 };
 
 export default function AppLayout() {
+  const { isDarkColorScheme } = useColorScheme();
+  const router = useRouter();
+
   return (
     <Stack
       screenOptions={{
@@ -33,6 +41,37 @@ export default function AppLayout() {
           title: '',
           presentation: 'fullScreenModal',
           headerShown: true,
+        }}
+      />
+      <Stack.Screen
+        name="review"
+        options={{
+          headerShown: false,
+          ...(Platform.OS === 'ios'
+            ? {
+                presentation: 'formSheet',
+                sheetGrabberVisible: true,
+                sheetAllowedDetents: 'fitToContents',
+              }
+            : {
+                presentation: 'fullScreenModal',
+                headerShown: true,
+                title: '',
+                headerShadowVisible: false,
+                headerStyle: {
+                  backgroundColor: isDarkColorScheme
+                    ? THEME.dark.background
+                    : THEME.light.background,
+                },
+                headerLeft: () => (
+                  <HeaderCloseButton onPress={() => router.back()} />
+                ),
+              }),
+          contentStyle: {
+            backgroundColor: isDarkColorScheme
+              ? THEME.dark.background
+              : THEME.light.background,
+          },
         }}
       />
       <Stack.Screen name="+not-found" />

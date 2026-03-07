@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as Haptics from 'expo-haptics';
@@ -39,7 +40,8 @@ export function StarRating({
   readonly = false,
   className,
 }: StarRatingProps) {
-  const { colors: themeColors } = useColorScheme();
+  const { colors: themeColors, isDarkColorScheme } = useColorScheme();
+  const emptyStarFill = isDarkColorScheme ? THEME.dark.card : THEME.light.card;
 
   const stars = Array.from({ length: 5 }, (_, i) => {
     const starValue = i + 1;
@@ -69,7 +71,7 @@ export function StarRating({
             <Star
               size={starSize}
               color={isFilled ? colors.yellow['400'] : themeColors.grey2}
-              fill={isFilled ? colors.yellow['400'] : 'transparent'}
+              fill={isFilled ? colors.yellow['400'] : emptyStarFill}
               strokeWidth={1.5}
             />
           </Pressable>
@@ -78,7 +80,7 @@ export function StarRating({
             key={starValue}
             size={starSize}
             color={isFilled ? colors.yellow['400'] : themeColors.grey2}
-            fill={isFilled ? colors.yellow['400'] : 'transparent'}
+            fill={isFilled ? colors.yellow['400'] : emptyStarFill}
             strokeWidth={1.5}
           />
         );

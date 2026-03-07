@@ -19,7 +19,7 @@ export default function Reconstitution() {
           router.push('/(app)/(tabs)/reconstitution/paywall')
         }
         onRequestReview={() =>
-          router.push('/(app)/(tabs)/reconstitution/review')
+          router.push('/(app)/review')
         }
       />
     </Screen>

@@ -58,17 +58,6 @@ export default function Layout() {
           presentation: 'fullScreenModal',
         }}
       />
-      <Stack.Screen
-        name="review"
-        options={{
-          headerShown: false,
-          presentation: 'formSheet',
-          sheetGrabberVisible: true,
-          sheetAllowedDetents: [0.35, 0.65],
-          sheetInitialDetentIndex: 0,
-          contentStyle: { backgroundColor: 'transparent' },
-        }}
-      />
     </Stack>
   );
 }

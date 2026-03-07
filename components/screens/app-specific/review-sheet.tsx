@@ -5,7 +5,7 @@ import { Text } from '@/components/ui/text';
 import { useSubmitFeedback } from '@/lib/api/use-submit-feedback';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Alert, View } from 'react-native';
+import { Alert, Keyboard, Platform, ScrollView, View } from 'react-native';
 
 type Step = 'rating' | 'feedback';
 
@@ -61,8 +61,13 @@ export function ReviewSheetScreen({
     });
   };
 
+  const isIOS = Platform.OS === 'ios';
+
   return (
-    <View className="flex-1 justify-end p-6 pb-12">
+    <ScrollView
+      contentContainerClassName={`p-6 pb-12 ${step === 'rating' ? (isIOS ? 'flex-1 justify-end' : 'flex-1') : ''}`}
+      keyboardShouldPersistTaps="always"
+    >
       {step === 'rating' ? (
         <View className="items-center gap-4">
           <Text className="text-2xl font-bold">{t('review.title')}</Text>
@@ -104,13 +109,16 @@ export function ReviewSheetScreen({
           </Button>
           <Button
             variant="ghost"
-            onPress={onDismiss}
+            onPress={() => {
+              Keyboard.dismiss();
+              onDismiss();
+            }}
             disabled={isSubmitting}
           >
             <Text>{t('review.noThanks')}</Text>
           </Button>
         </View>
       )}
-    </View>
+    </ScrollView>
   );
 }

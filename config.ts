@@ -6,7 +6,7 @@ import { isDevelopment } from './utils/is-development';
 const useSimulator = false;
 
 // > ifconfig -> en0 -> inet
-const DEVICE_IP = '192.0.0.2';
+const DEVICE_IP = '172.30.1.51';
 
 // Simulator
 const LOCALHOST_PORT = 3000;

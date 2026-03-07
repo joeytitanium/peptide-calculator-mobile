@@ -9,10 +9,10 @@ export default function ReviewSheet() {
   return (
     <ReviewSheetScreen
       onRequestStoreReview={() => {
-        router.back();
+        router.dismiss();
         void Linking.openURL(storeUrl());
       }}
-      onDismiss={() => router.back()}
+      onDismiss={() => router.dismissAll()}
     />
   );
 }
