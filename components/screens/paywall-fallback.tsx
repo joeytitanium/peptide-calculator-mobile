@@ -11,6 +11,7 @@ import {
   PaywallResult,
 } from '@/lib/drip-notifications';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
+import { annualizePrice } from '@/utils/annualize-price';
 import { capturePosthogEvent, useViewedScreen } from '@/utils/posthog';
 import { isNil } from 'lodash';
 import { useEffect, useState } from 'react';
@@ -191,6 +192,8 @@ export function PaywallFallbackScreen({
     isLoadingAvailablePackages,
   } = useRevenueCat();
 
+  console.log(`🔫 : ${JSON.stringify(availablePackages, null, '\t')}`);
+
   const discountedPackages = availablePackages.filter(isDiscountedPackage);
   const [selectedPackage, setSelectedPackage] = useState<
     PurchasesPackage | undefined
@@ -267,36 +270,52 @@ export function PaywallFallbackScreen({
 
   const getPercentageOff = (pkg: PurchasesPackage | undefined) => {
     if (!pkg || !referencePackage) return undefined;
-    const refPerYear = referencePackage.product.pricePerYear;
-    const discountedPerYear = pkg.product.pricePerYear;
-    if (isNil(refPerYear) || isNil(discountedPerYear) || refPerYear === 0)
-      return undefined;
-    return Math.round(((refPerYear - discountedPerYear) / refPerYear) * 100);
+    const refPrice = referencePackage.product.price;
+    const discountedPrice = pkg.product.price;
+    if (refPrice === 0) return undefined;
+    // Only compare raw prices when both are the same period
+    if (pkg.product.subscriptionPeriod === referencePackage.product.subscriptionPeriod) {
+      return Math.round(((refPrice - discountedPrice) / refPrice) * 100);
+    }
+    // Different periods: compare annualized prices
+    const refPerYear = annualizePrice(referencePackage);
+    const discountedPerYear = annualizePrice(pkg);
+    if (refPerYear === 0) return undefined;
+    const pct = Math.round(((refPerYear - discountedPerYear) / refPerYear) * 100);
+    // If negative, the "discount" is actually more expensive — don't show it
+    return pct > 0 ? pct : undefined;
   };
 
   const percentageOff = getPercentageOff(selectedPackage);
   const referenceYearlyPriceString = referencePackage?.product.priceString;
 
+  const isYearly = (pkg: PurchasesPackage) =>
+    pkg.packageType === PACKAGE_TYPE.ANNUAL ||
+    pkg.product.subscriptionPeriod === 'P1Y';
+
+  const isMonthly = (pkg: PurchasesPackage) =>
+    pkg.packageType === PACKAGE_TYPE.MONTHLY ||
+    pkg.product.subscriptionPeriod === 'P1M';
+
+  const isWeekly = (pkg: PurchasesPackage) =>
+    pkg.packageType === PACKAGE_TYPE.WEEKLY ||
+    pkg.product.subscriptionPeriod === 'P1W';
+
   const getPackageTitle = (pkg: PurchasesPackage) => {
-    const type = pkg.packageType;
-    if (type === PACKAGE_TYPE.ANNUAL) return t('paywall.package.yearlyTitle');
-    if (type === PACKAGE_TYPE.MONTHLY) return t('paywall.package.monthlyTitle');
-    if (type === PACKAGE_TYPE.WEEKLY) return t('paywall.package.weeklyTitle');
-    if (type === PACKAGE_TYPE.LIFETIME)
+    if (isYearly(pkg)) return t('paywall.package.yearlyTitle');
+    if (isMonthly(pkg)) return t('paywall.package.monthlyTitle');
+    if (isWeekly(pkg)) return t('paywall.package.weeklyTitle');
+    if (pkg.packageType === PACKAGE_TYPE.LIFETIME)
       return t('paywall.package.lifetimeTitle');
     return pkg.product.title.replace(/\s*\(.*?\)/, '').trim();
   };
 
   const getPriceLabel = (pkg: PurchasesPackage) => {
     const price = pkg.product.priceString;
-    const type = pkg.packageType;
-    if (type === PACKAGE_TYPE.ANNUAL)
-      return `${price}${t('paywall.package.perYear')}`;
-    if (type === PACKAGE_TYPE.MONTHLY)
-      return `${price}${t('paywall.package.perMonth')}`;
-    if (type === PACKAGE_TYPE.WEEKLY)
-      return `${price}${t('paywall.package.perWeek')}`;
-    if (type === PACKAGE_TYPE.LIFETIME)
+    if (isYearly(pkg)) return `${price}${t('paywall.package.perYear')}`;
+    if (isMonthly(pkg)) return `${price}${t('paywall.package.perMonth')}`;
+    if (isWeekly(pkg)) return `${price}${t('paywall.package.perWeek')}`;
+    if (pkg.packageType === PACKAGE_TYPE.LIFETIME)
       return `${price} ${t('paywall.package.once')}`;
     return price;
   };

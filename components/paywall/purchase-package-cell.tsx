@@ -1,3 +1,4 @@
+import { annualizePrice } from '@/utils/annualize-price';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
@@ -108,12 +109,8 @@ export const PurchasePackageCell = ({
       return undefined;
     }
 
-    const weeklyPrice = weeklyPackage.product.pricePerYear;
-    const yearlyPrice = yearlyPackage.product.pricePerYear;
-
-    if (isNil(weeklyPrice) || isNil(yearlyPrice)) {
-      return undefined;
-    }
+    const weeklyPrice = annualizePrice(weeklyPackage);
+    const yearlyPrice = annualizePrice(yearlyPackage);
 
     return Math.floor(((weeklyPrice - yearlyPrice) / weeklyPrice) * 100);
   })();

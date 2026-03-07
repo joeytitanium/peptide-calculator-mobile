@@ -1,3 +1,4 @@
+import { annualizePrice } from '@/utils/annualize-price';
 import { IMAGE_ASSETS } from '@/components/assets';
 import { CoolOffCloseButton } from '@/components/cool-off-close-button';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
@@ -108,9 +109,10 @@ const PackageCell = ({
     );
     const reference = monthlyPkg ?? weeklyPkg;
     if (!reference) return undefined;
-    const refPerYear = reference.product.pricePerYear;
-    const annualPrice = purchasePackage.product.pricePerYear;
-    if (isNil(refPerYear) || isNil(annualPrice)) return undefined;
+    const refPerYear = annualizePrice(reference);
+    const annualPrice = annualizePrice(purchasePackage);
+    if (isNil(refPerYear) || isNil(annualPrice) || refPerYear === 0)
+      return undefined;
     return Math.floor(((refPerYear - annualPrice) / refPerYear) * 100);
   })();
 
