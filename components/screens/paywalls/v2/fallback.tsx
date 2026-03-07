@@ -346,11 +346,11 @@ export function PaywallFallbackScreen({
       {/* Content */}
       <ScrollView
         className="flex-1"
+        style={{ overflow: 'visible' }}
         contentContainerStyle={{
           flexGrow: 1,
           alignItems: 'center',
           paddingHorizontal: 24,
-          paddingTop: 16,
         }}
         showsVerticalScrollIndicator={false}
       >
