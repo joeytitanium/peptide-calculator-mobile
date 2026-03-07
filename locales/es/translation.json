@@ -303,7 +303,7 @@
     "errorNoReason": "Por favor proporciona una razón para tu reporte."
   },
   "paywall": {
-    "tryForFree": "Prueba gratis",
+    "tryForFree": "Prueba por {{price}}",
     "continue": "Continuar",
     "noCommitment": "Sin compromiso, cancela cuando quieras",
     "freeTrialEnabled": "Prueba gratuita activada",

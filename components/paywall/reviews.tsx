@@ -63,6 +63,28 @@ type ReviewKey =
   | 'paywall.reviews.isaac'
   | 'paywall.reviews.emma';
 
+export const SingleReview = ({ className }: { className?: string }) => {
+  const { t } = useTranslation();
+
+  const review = useMemo(() => {
+    const r = REVIEW_DATA[Math.floor(Math.random() * REVIEW_DATA.length)];
+    return {
+      ...r,
+      message: t(`paywall.reviews.${r.messageKey}` as ReviewKey),
+    };
+  }, [t]);
+
+  return (
+    <View className={className}>
+      <ReviewMessage
+        imageAssetName={review.imageAssetName}
+        name={review.name}
+        message={review.message}
+      />
+    </View>
+  );
+};
+
 export const Reviews = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
 

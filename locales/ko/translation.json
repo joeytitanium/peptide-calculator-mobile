@@ -303,7 +303,7 @@
     "errorNoReason": "신고 사유를 입력해주세요."
   },
   "paywall": {
-    "tryForFree": "무료로 체험하기",
+    "tryForFree": "{{price}}에 체험하기",
     "continue": "계속",
     "noCommitment": "약정 없음, 언제든 취소 가능",
     "freeTrialEnabled": "무료 체험 활성화됨",

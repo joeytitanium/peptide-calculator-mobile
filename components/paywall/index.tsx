@@ -281,7 +281,7 @@ export const Paywall = ({
                   <>
                     <Text className="text-lg leading-tight">
                       {selectedFreeTrialPackage
-                        ? t('paywall.tryForFree')
+                        ? t('paywall.tryForFree', { price: selectedPackage?.product.introPrice?.priceString })
                         : t('paywall.continue')}
                     </Text>
                     {selectedFreeTrialPackage && (

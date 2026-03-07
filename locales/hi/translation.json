@@ -303,7 +303,7 @@
     "errorNoReason": "कृपया अपनी रिपोर्ट का कारण बताएं।"
   },
   "paywall": {
-    "tryForFree": "मुफ्त में आज़माएं",
+    "tryForFree": "{{price}} में आज़माएं",
     "continue": "जारी रखें",
     "noCommitment": "कोई बाध्यता नहीं, कभी भी रद्द करें",
     "freeTrialEnabled": "मुफ्त ट्रायल सक्रिय",

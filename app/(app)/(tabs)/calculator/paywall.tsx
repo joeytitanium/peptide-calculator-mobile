@@ -1,4 +1,4 @@
-import { PaywallV2 } from '@/components/paywall-v2';
+import { PaywallV2 } from '@/components/screens/paywalls/v2';
 import { handlePaywallComplete } from '@/lib/drip-notifications';
 import { useRouter } from 'expo-router';
 

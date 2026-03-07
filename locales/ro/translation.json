@@ -303,7 +303,7 @@
     "errorNoReason": "Te rugăm să oferi un motiv pentru raport."
   },
   "paywall": {
-    "tryForFree": "Încearcă gratuit",
+    "tryForFree": "Încearcă pentru {{price}}",
     "continue": "Continuă",
     "noCommitment": "Fără angajament, anulează oricând",
     "freeTrialEnabled": "Perioadă de probă gratuită activată",

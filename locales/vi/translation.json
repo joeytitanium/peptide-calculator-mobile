@@ -303,7 +303,7 @@
     "errorNoReason": "Vui lòng cung cấp lý do báo cáo."
   },
   "paywall": {
-    "tryForFree": "Dùng thử miễn phí",
+    "tryForFree": "Dùng thử {{price}}",
     "continue": "Tiếp tục",
     "noCommitment": "Không ràng buộc, hủy bất cứ lúc nào",
     "freeTrialEnabled": "Đã kích hoạt dùng thử miễn phí",

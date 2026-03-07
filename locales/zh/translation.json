@@ -303,7 +303,7 @@
     "errorNoReason": "请提供举报原因。"
   },
   "paywall": {
-    "tryForFree": "免费试用",
+    "tryForFree": "{{price}}试用",
     "continue": "继续",
     "noCommitment": "无需承诺，随时取消",
     "freeTrialEnabled": "免费试用已启用",

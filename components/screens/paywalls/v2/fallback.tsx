@@ -1,5 +1,6 @@
 import { CoolOffCloseButton } from '@/components/cool-off-close-button';
 import { FooterLinks } from '@/components/paywall/main-content';
+import { SingleReview } from '@/components/paywall/reviews';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -21,6 +22,7 @@ import {
   Alert,
   Platform,
   Pressable,
+  ScrollView,
   useColorScheme,
   View,
 } from 'react-native';
@@ -274,14 +276,19 @@ export function PaywallFallbackScreen({
     const discountedPrice = pkg.product.price;
     if (refPrice === 0) return undefined;
     // Only compare raw prices when both are the same period
-    if (pkg.product.subscriptionPeriod === referencePackage.product.subscriptionPeriod) {
+    if (
+      pkg.product.subscriptionPeriod ===
+      referencePackage.product.subscriptionPeriod
+    ) {
       return Math.round(((refPrice - discountedPrice) / refPrice) * 100);
     }
     // Different periods: compare annualized prices
     const refPerYear = annualizePrice(referencePackage);
     const discountedPerYear = annualizePrice(pkg);
     if (refPerYear === 0) return undefined;
-    const pct = Math.round(((refPerYear - discountedPerYear) / refPerYear) * 100);
+    const pct = Math.round(
+      ((refPerYear - discountedPerYear) / refPerYear) * 100
+    );
     // If negative, the "discount" is actually more expensive — don't show it
     return pct > 0 ? pct : undefined;
   };
@@ -337,7 +344,16 @@ export function PaywallFallbackScreen({
       </View>
 
       {/* Content */}
-      <View className="flex-1 justify-center items-center px-6">
+      <ScrollView
+        className="flex-1"
+        contentContainerStyle={{
+          flexGrow: 1,
+          alignItems: 'center',
+          paddingHorizontal: 24,
+          paddingTop: 16,
+        }}
+        showsVerticalScrollIndicator={false}
+      >
         {/* "Last chance" heading */}
         <Animated.View entering={FadeInDown.delay(100).duration(600)}>
           <Text className="text-center text-3xl font-bold text-foreground mb-3">
@@ -376,9 +392,19 @@ export function PaywallFallbackScreen({
             </Text>
           </Animated.View>
         )}
-      </View>
 
-      {/* Bottom: packages + CTA + footer */}
+        <Animated.View entering={FadeInDown.delay(600).duration(600)}>
+          <SingleReview className="mt-6" />
+        </Animated.View>
+
+        <View style={{ flex: 1, minHeight: 80 }} />
+
+        <FooterLinks
+          onRestorePurchase={handleRestorePurchases}
+        />
+      </ScrollView>
+
+      {/* Bottom: packages + CTA */}
       <Animated.View
         entering={FadeInDown.delay(800).duration(600)}
         className="border-t border-border bg-background px-4 pt-3"
@@ -444,10 +470,9 @@ export function PaywallFallbackScreen({
             </Text>
           )}
         </Button>
-        <FooterLinks
-          className="mt-2"
-          onRestorePurchase={handleRestorePurchases}
-        />
+        <Text className="text-center text-sm text-muted-foreground">
+          {t('paywall.noCommitment')}
+        </Text>
       </Animated.View>
     </View>
   );

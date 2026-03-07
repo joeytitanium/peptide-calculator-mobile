@@ -1,4 +1,3 @@
-import { annualizePrice } from '@/utils/annualize-price';
 import { IMAGE_ASSETS } from '@/components/assets';
 import { CoolOffCloseButton } from '@/components/cool-off-close-button';
 import { iconWithClassName } from '@/components/icons/iconWithClassName';
@@ -18,6 +17,7 @@ import {
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRevenueCat } from '@/providers/revenue-cat-provider';
+import { annualizePrice } from '@/utils/annualize-price';
 import { capturePosthogEvent, useViewedScreen } from '@/utils/posthog';
 import { clsx } from 'clsx';
 import { useFocusEffect } from 'expo-router';
@@ -310,22 +310,12 @@ export const PaywallV2 = ({
       className={clsx('flex-1 bg-background', className)}
       style={{ paddingTop: Platform.OS === 'android' ? top : paddingTop }}
     >
-      {/* Header */}
-      <View className="flex-row items-center justify-start px-4">
-        {!CONFIG.isHardPaywall ? (
-          <CoolOffCloseButton onClose={handleClose} />
-        ) : (
-          <View className="w-10" />
-        )}
-      </View>
-
       {/* Scrollable content */}
       <ScrollView
         style={{ overflow: 'visible' }}
         contentContainerStyle={{
           paddingHorizontal: 16,
           paddingBottom: 24,
-          flexGrow: 1,
         }}
         showsVerticalScrollIndicator={false}
       >
@@ -348,6 +338,12 @@ export const PaywallV2 = ({
 
         {/* Perks */}
         <PerksList />
+
+        <View style={{ height: 200 }} />
+
+        <FooterLinks
+          onRestorePurchase={handleRestorePurchases}
+        />
       </ScrollView>
 
       {/* Bottom: packages + continue button + footer links */}
@@ -379,16 +375,28 @@ export const PaywallV2 = ({
           ) : (
             <Text className="text-lg">
               {!isNil(selectedPackage?.product.introPrice)
-                ? t('paywall.tryForFree')
+                ? t('paywall.tryForFree', {
+                    price: selectedPackage.product.introPrice.priceString,
+                  })
                 : t('paywall.continue')}
             </Text>
           )}
         </Button>
-        <FooterLinks
-          className="mt-2"
-          onRestorePurchase={handleRestorePurchases}
-        />
+        <Text className="text-center text-sm text-muted-foreground">
+          {t('paywall.noCommitment')}
+        </Text>
       </View>
+      {/* Close button overlay — must be above ScrollView to stay tappable */}
+      {!CONFIG.isHardPaywall && (
+        <CoolOffCloseButton
+          onClose={handleClose}
+          className="absolute"
+          style={{
+            left: 16,
+            top: Platform.OS === 'android' ? top : paddingTop,
+          }}
+        />
+      )}
     </View>
   );
 };

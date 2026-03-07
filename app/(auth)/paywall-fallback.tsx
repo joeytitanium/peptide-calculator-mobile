@@ -1,4 +1,4 @@
-import { PaywallFallbackScreen } from '@/components/screens/paywall-fallback';
+import { PaywallFallbackScreen } from '@/components/screens/paywalls/v2/fallback';
 import { handlePaywallComplete } from '@/lib/drip-notifications';
 import { useAsyncStorage } from '@/providers/async-storage-provider';
 import { useRouter } from 'expo-router';

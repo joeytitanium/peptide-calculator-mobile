@@ -303,7 +303,7 @@
     "errorNoReason": "Geef een reden op voor je melding."
   },
   "paywall": {
-    "tryForFree": "Gratis proberen",
+    "tryForFree": "Probeer voor {{price}}",
     "continue": "Doorgaan",
     "noCommitment": "Geen verplichting, op elk moment opzeggen",
     "freeTrialEnabled": "Gratis proefperiode ingeschakeld",

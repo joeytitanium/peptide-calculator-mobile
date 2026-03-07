@@ -303,7 +303,7 @@
     "errorNoReason": "Lütfen şikayetiniz için bir neden belirtin."
   },
   "paywall": {
-    "tryForFree": "Ücretsiz dene",
+    "tryForFree": "{{price}} için dene",
     "continue": "Devam",
     "noCommitment": "Taahhüt yok, istediğiniz zaman iptal edin",
     "freeTrialEnabled": "Ücretsiz deneme etkinleştirildi",
