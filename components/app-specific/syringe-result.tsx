@@ -29,6 +29,7 @@ type SyringeResultProps = {
   concentrationMcgPerMl: number;
   displayMode: 'units' | 'ml';
   estimatedDraws?: number;
+  placeholder?: boolean;
   className?: string;
 };
 
@@ -39,12 +40,13 @@ export function SyringeResult({
   concentrationMcgPerMl,
   displayMode,
   estimatedDraws,
+  placeholder,
   className,
 }: SyringeResultProps) {
   const { t } = useTranslation();
   const fillPercent = useMemo(
-    () => Math.min((unitsToDraw / syringeSize) * 100, 100),
-    [unitsToDraw, syringeSize]
+    () => placeholder ? 0 : Math.min((unitsToDraw / syringeSize) * 100, 100),
+    [unitsToDraw, syringeSize, placeholder]
   );
 
   const tickInterval = getTickInterval({ syringeSize });
@@ -57,11 +59,15 @@ export function SyringeResult({
     return result;
   }, [tickCount, tickInterval]);
 
-  const primaryValue =
-    displayMode === 'units' ? `${unitsToDraw} ${t('calculator.units')}` : `${volumeToDrawMl} ${t('calculator.unitMl')}`;
+  const dash = '—';
 
-  const secondaryValue =
-    displayMode === 'units'
+  const primaryValue = placeholder
+    ? `${dash} ${displayMode === 'units' ? t('calculator.units') : t('calculator.unitMl')}`
+    : displayMode === 'units' ? `${unitsToDraw} ${t('calculator.units')}` : `${volumeToDrawMl} ${t('calculator.unitMl')}`;
+
+  const secondaryValue = placeholder
+    ? `≈ ${dash} ${displayMode === 'units' ? t('calculator.unitMl') : t('calculator.units')}`
+    : displayMode === 'units'
       ? `≈ ${volumeToDrawMl} ${t('calculator.unitMl')}`
       : `≈ ${unitsToDraw} ${t('calculator.units')}`;
 
@@ -86,7 +92,7 @@ export function SyringeResult({
           {estimatedDraws != null && (
             <View className="flex-row items-baseline gap-1">
               <Text className="text-3xl font-bold text-foreground">
-                {estimatedDraws}
+                {placeholder ? dash : estimatedDraws}
               </Text>
               <Text className="text-sm text-muted-foreground">{t('calculator.draws')}</Text>
             </View>
@@ -181,7 +187,7 @@ export function SyringeResult({
               className="text-muted-foreground"
             />
             <Text className="text-sm text-muted-foreground">
-              {primaryValue}
+              {placeholder ? `${dash} ${displayMode === 'units' ? t('calculator.units') : t('calculator.unitMl')}` : primaryValue}
             </Text>
           </View>
           <View className="flex-row items-center gap-1.5">
@@ -190,7 +196,7 @@ export function SyringeResult({
               className="text-muted-foreground"
             />
             <Text className="text-sm text-muted-foreground">
-              {concentrationMcgPerMl} {t('calculator.concentrationUnit')}
+              {placeholder ? dash : concentrationMcgPerMl} {t('calculator.concentrationUnit')}
             </Text>
           </View>
           <View className="flex-row items-center gap-1.5">

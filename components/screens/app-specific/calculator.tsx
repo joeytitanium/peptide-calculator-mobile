@@ -57,9 +57,9 @@ export function CalculatorScreen({
     nativePadding: 'none',
   });
 
-  const [peptideAmountMg, setPeptideAmountMg] = useState('5');
-  const [waterVolumeMl, setWaterVolumeMl] = useState('2');
-  const [desiredDose, setDesiredDose] = useState('250');
+  const [peptideAmountMg, setPeptideAmountMg] = useState('');
+  const [waterVolumeMl, setWaterVolumeMl] = useState('');
+  const [desiredDose, setDesiredDose] = useState('');
   const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
@@ -314,37 +314,16 @@ export function CalculatorScreen({
       <StickyOutputPanel
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
       >
-        {result ? (
-          <SyringeResult
-            unitsToDraw={result.unitsToDraw}
-            volumeToDrawMl={result.volumeToDrawMl}
-            syringeSize={syringeSize}
-            concentrationMcgPerMl={result.concentrationMcgPerMl}
-            displayMode={displayMode}
-            estimatedDraws={result.estimatedDraws}
-            className="rounded-none bg-transparent"
-          />
-        ) : (
-          <Card className="rounded-none bg-transparent">
-            <CardContent className="gap-4">
-              <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon
-                  icon={SyringeIcon}
-                  color="violet"
-                  size={18}
-                />
-                <Text className="text-base font-semibold">
-                  {t('calculator.preparationOutput')}
-                </Text>
-              </View>
-              <View className="items-center py-4">
-                <Text className="text-sm text-muted-foreground">
-                  {t('calculator.enterValues')}
-                </Text>
-              </View>
-            </CardContent>
-          </Card>
-        )}
+        <SyringeResult
+          unitsToDraw={result?.unitsToDraw ?? 0}
+          volumeToDrawMl={result?.volumeToDrawMl ?? 0}
+          syringeSize={syringeSize}
+          concentrationMcgPerMl={result?.concentrationMcgPerMl ?? 0}
+          displayMode={displayMode}
+          estimatedDraws={result?.estimatedDraws}
+          placeholder={!result}
+          className="rounded-none bg-transparent"
+        />
       </StickyOutputPanel>
     </>
   );

@@ -60,10 +60,10 @@ export function ReconstitutionScreen({
     nativePadding: 'none',
   });
 
-  const [peptideAmountMg, setPeptideAmountMg] = useState('5');
-  const [desiredDose, setDesiredDose] = useState('250');
+  const [peptideAmountMg, setPeptideAmountMg] = useState('');
+  const [desiredDose, setDesiredDose] = useState('');
   const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
-  const [desiredUnits, setDesiredUnits] = useState('25');
+  const [desiredUnits, setDesiredUnits] = useState('');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
   const [stickyHeight, setStickyHeight] = useState(0);
@@ -312,74 +312,52 @@ export function ReconstitutionScreen({
       <StickyOutputPanel
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
       >
-        {result ? (
-          <Card className="rounded-none bg-transparent">
-            <CardContent className="gap-3">
-              {/* Main value */}
-              <View className="flex-row items-baseline justify-between">
-                <View className="flex-row items-baseline gap-2">
-                  <Text className="text-3xl font-bold text-foreground">
-                    {result.waterToAddMl} {t('calculator.unitMl')}
-                  </Text>
-                  <Text className="text-sm text-muted-foreground">
-                    {t('calculator.toAdd')}
-                  </Text>
-                </View>
-                <View className="flex-row items-baseline gap-1">
-                  <Text className="text-3xl font-bold text-foreground">
-                    {result.dosesPerVial}
-                  </Text>
-                  <Text className="text-sm text-muted-foreground">
-                    {t('calculator.doses')}
-                  </Text>
-                </View>
-              </View>
-
-              {/* Stats */}
-              <View className="flex-row justify-between">
-                <View className="flex-row items-center gap-1.5">
-                  <Droplets
-                    size={13}
-                    className="text-muted-foreground"
-                  />
-                  <Text className="text-sm text-muted-foreground">
-                    {t('calculator.bacWater')}
-                  </Text>
-                </View>
-                <View className="flex-row items-center gap-1.5">
-                  <Info
-                    size={13}
-                    className="text-muted-foreground"
-                  />
-                  <Text className="text-sm text-muted-foreground">
-                    {result.concentrationMcgPerMl}{' '}
-                    {t('calculator.concentrationUnit')}
-                  </Text>
-                </View>
-              </View>
-            </CardContent>
-          </Card>
-        ) : (
-          <Card className="rounded-none bg-transparent">
-            <CardContent className="gap-4">
-              <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon
-                  icon={Droplets}
-                  color="teal"
-                  size={18}
-                />
-                <Text className="text-base font-semibold">
-                  {t('calculator.result')}
+        <Card className="rounded-none bg-transparent">
+          <CardContent className="gap-3">
+            {/* Main value */}
+            <View className="flex-row items-baseline justify-between">
+              <View className="flex-row items-baseline gap-2">
+                <Text className="text-3xl font-bold text-foreground">
+                  {result ? result.waterToAddMl : '—'} {t('calculator.unitMl')}
                 </Text>
-              </View>
-              <View className="items-center py-4">
                 <Text className="text-sm text-muted-foreground">
-                  {t('calculator.enterValues')}
+                  {t('calculator.toAdd')}
                 </Text>
               </View>
-            </CardContent>
-          </Card>
-        )}
+              <View className="flex-row items-baseline gap-1">
+                <Text className="text-3xl font-bold text-foreground">
+                  {result ? result.dosesPerVial : '—'}
+                </Text>
+                <Text className="text-sm text-muted-foreground">
+                  {t('calculator.doses')}
+                </Text>
+              </View>
+            </View>
+
+            {/* Stats */}
+            <View className="flex-row justify-between">
+              <View className="flex-row items-center gap-1.5">
+                <Droplets
+                  size={13}
+                  className="text-muted-foreground"
+                />
+                <Text className="text-sm text-muted-foreground">
+                  {t('calculator.bacWater')}
+                </Text>
+              </View>
+              <View className="flex-row items-center gap-1.5">
+                <Info
+                  size={13}
+                  className="text-muted-foreground"
+                />
+                <Text className="text-sm text-muted-foreground">
+                  {result ? result.concentrationMcgPerMl : '—'}{' '}
+                  {t('calculator.concentrationUnit')}
+                </Text>
+              </View>
+            </View>
+          </CardContent>
+        </Card>
       </StickyOutputPanel>
     </>
   );

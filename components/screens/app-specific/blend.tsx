@@ -79,20 +79,9 @@ export function BlendScreen({
   });
 
   const [peptides, setPeptides] = useState<BlendPeptideInput[]>([
-    {
-      key: Math.random().toString(36).slice(2),
-      peptideName: 'BPC-157',
-      peptideAmountMg: '5',
-      desiredDose: '250',
-    },
-    {
-      key: Math.random().toString(36).slice(2),
-      peptideName: 'TB-500',
-      peptideAmountMg: '5',
-      desiredDose: '500',
-    },
+    createEmptyEntry(),
   ]);
-  const [waterVolumeMl, setWaterVolumeMl] = useState('2');
+  const [waterVolumeMl, setWaterVolumeMl] = useState('');
   const [syringeSize, setSyringeSize] = useState<SyringeSize>(100);
   const [doseUnit, setDoseUnit] = useState<DoseUnit>('mcg');
   const [displayMode, setDisplayMode] = useState<SyringeDisplayMode>('units');
@@ -493,36 +482,15 @@ export function BlendScreen({
       <StickyOutputPanel
         onLayout={(e) => setStickyHeight(e.nativeEvent.layout.height)}
       >
-        {result ? (
-          <SyringeResult
-            unitsToDraw={result.totalUnitsToDraw}
-            volumeToDrawMl={result.totalVolumeMl}
-            syringeSize={syringeSize}
-            concentrationMcgPerMl={blendedConcentration}
-            displayMode={displayMode}
-            className="rounded-none bg-transparent"
-          />
-        ) : (
-          <Card className="rounded-none bg-transparent">
-            <CardContent className="gap-4">
-              <View className="flex-row items-center gap-3 pb-2">
-                <GlowIcon
-                  icon={SyringeIcon}
-                  color="violet"
-                  size={18}
-                />
-                <Text className="text-base font-semibold">
-                  {t('calculator.preparationOutput')}
-                </Text>
-              </View>
-              <View className="items-center py-4">
-                <Text className="text-sm text-muted-foreground">
-                  {t('calculator.enterValues')}
-                </Text>
-              </View>
-            </CardContent>
-          </Card>
-        )}
+        <SyringeResult
+          unitsToDraw={result?.totalUnitsToDraw ?? 0}
+          volumeToDrawMl={result?.totalVolumeMl ?? 0}
+          syringeSize={syringeSize}
+          concentrationMcgPerMl={blendedConcentration}
+          displayMode={displayMode}
+          placeholder={!result}
+          className="rounded-none bg-transparent"
+        />
       </StickyOutputPanel>
     </>
   );
