@@ -194,8 +194,6 @@ export function PaywallFallbackScreen({
     isLoadingAvailablePackages,
   } = useRevenueCat();
 
-  console.log(`🔫 : ${JSON.stringify(availablePackages, null, '\t')}`);
-
   const discountedPackages = availablePackages.filter(isDiscountedPackage);
   const [selectedPackage, setSelectedPackage] = useState<
     PurchasesPackage | undefined
@@ -399,9 +397,7 @@ export function PaywallFallbackScreen({
 
         <View style={{ flex: 1, minHeight: 80 }} />
 
-        <FooterLinks
-          onRestorePurchase={handleRestorePurchases}
-        />
+        <FooterLinks onRestorePurchase={handleRestorePurchases} />
       </ScrollView>
 
       {/* Bottom: packages + CTA */}
