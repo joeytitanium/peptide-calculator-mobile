@@ -7,7 +7,7 @@ import { useDeterministicallyRequestReview } from '@/hooks/use-deterministically
 import { useColorScheme } from '@/lib/use-color-scheme';
 import type { Href } from 'expo-router';
 import { useState } from 'react';
-import { Image, View } from 'react-native';
+import { ActivityIndicator, Image, View } from 'react-native';
 
 type Review = {
   imageAssetName: ImageAssetName;
@@ -69,15 +69,21 @@ export const OnboardingReview = ({
   const { requestReview } = useDeterministicallyRequestReview();
   const { colors } = useColorScheme();
   const [reviewEnabled, setReviewEnabled] = useState(true);
+  const [isWaiting, setIsWaiting] = useState(false);
 
   return (
     <Onboarding.Container
       currentHref={currentHref}
-      canProceed
+      canProceed={!isWaiting}
       onProceed={async () => {
         if (reviewEnabled) {
-          await requestReview({ inAppOnly: true });
-          await new Promise((resolve) => setTimeout(resolve, 5000));
+          setIsWaiting(true);
+          try {
+            await requestReview({ inAppOnly: true });
+            await new Promise((resolve) => setTimeout(resolve, 5000));
+          } finally {
+            setIsWaiting(false);
+          }
         }
         await onProceed?.();
       }}
@@ -99,10 +105,14 @@ export const OnboardingReview = ({
             <View className="mb-4 flex-row items-center justify-between gap-2 rounded-xl bg-card px-4 py-5">
               <Text className="flex-1 text-lg font-medium">{switchLabel}</Text>
               <View>
-                <Switch
-                  value={reviewEnabled}
-                  onValueChange={setReviewEnabled}
-                />
+                {isWaiting ? (
+                  <ActivityIndicator />
+                ) : (
+                  <Switch
+                    value={reviewEnabled}
+                    onValueChange={setReviewEnabled}
+                  />
+                )}
               </View>
             </View>
             <View className="gap-4">
