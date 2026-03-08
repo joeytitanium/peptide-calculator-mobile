@@ -154,6 +154,11 @@
       "title": "Mezclas perfectas, siempre",
       "subtitle": "Combina múltiples péptidos en una sola jeringa con proporciones precisas. Sin cálculos complicados."
     },
+    "review": {
+      "title": "Ayúdanos a crecer",
+      "subtitle": "Muestra tu apoyo dejándonos una reseña en la App Store",
+      "switchLabel": "Califícanos en la App Store"
+    },
     "welcome": {
       "title": "Registra tus dolores de cabeza,\ntoma el control",
       "subtitle": "Respondamos algunas preguntas rápidas para personalizar tu experiencia"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Esta es una muy buena app que uso todos los días. Es muy fácil de usar y me encantan los widgets.",
-      "zlassenp": "Ver una cuenta regresiva para mi viaje o el cumpleaños de un amigo me emociona.",
-      "rajgha": "Hace difícil olvidar eventos importantes. Solo desearía que hubiera opciones de fuentes.",
-      "jaynacc": "No pensé que usaría mucho esta app… pero ahora la reviso cada mañana."
+      "emilea": "Se acabó adivinar con mi dosificación. Esta app hace todos los cálculos por mí — solo ingreso la información del vial y me dice exactamente cuántas unidades extraer.",
+      "zlassenp": "Siempre dudaba de mis proporciones de reconstitución. Esta app lo hizo infalible. Muy recomendable para cualquiera que use péptidos.",
+      "rajgha": "La calculadora de mezclas es revolucionaria. Combino varios péptidos en una jeringa y esta app calcula las proporciones perfectas cada vez.",
+      "jaynacc": "Simple, limpia y precisa. La uso todos los días para mi protocolo y no he cometido un error de dosificación desde entonces."
     }
   },
   "notifications": {

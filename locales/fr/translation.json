@@ -154,6 +154,11 @@
       "title": "Des mélanges parfaits, à chaque fois",
       "subtitle": "Combinez plusieurs peptides dans une seule seringue avec des proportions précises. Aucun calcul nécessaire."
     },
+    "review": {
+      "title": "Aidez-nous à grandir",
+      "subtitle": "Montrez votre soutien en nous laissant un avis sur l'App Store",
+      "switchLabel": "Notez-nous sur l'App Store"
+    },
     "welcome": {
       "title": "Suivez vos maux de tête,\nreprenez le contrôle",
       "subtitle": "Répondons à quelques questions rapides pour personnaliser votre expérience"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "C'est une très bonne app que j'utilise tous les jours. Elle est facile à utiliser et j'adore les widgets.",
-      "zlassenp": "Voir un compte à rebours pour mon voyage ou l'anniversaire d'un ami me motive.",
-      "rajgha": "Difficile d'oublier les événements importants. J'aimerais juste avoir des options de police.",
-      "jaynacc": "Je ne pensais pas utiliser cette app autant… mais maintenant je la consulte chaque matin."
+      "emilea": "Fini les devinettes pour mon dosage. Cette app fait tous les calculs pour moi — j'entre juste les infos du flacon et elle me dit exactement combien d'unités prélever.",
+      "zlassenp": "Je remettais toujours en question mes ratios de reconstitution. Cette app a rendu ça infaillible. Je la recommande vivement à tous ceux qui utilisent des peptides.",
+      "rajgha": "Le calculateur de mélanges est révolutionnaire. Je combine plusieurs peptides dans une seule seringue et cette app calcule les ratios parfaitement à chaque fois.",
+      "jaynacc": "Simple, claire et précise. Je l'utilise tous les jours pour mon protocole et je n'ai pas fait d'erreur de dosage depuis."
     }
   },
   "notifications": {

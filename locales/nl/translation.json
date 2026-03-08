@@ -154,6 +154,11 @@
       "title": "Perfecte mengsels, elke keer",
       "subtitle": "Combineer meerdere peptiden in één spuit met precieze verhoudingen. Geen rekenwerk nodig."
     },
+    "review": {
+      "title": "Help ons groeien",
+      "subtitle": "Toon je steun door ons een review te geven in de App Store",
+      "switchLabel": "Beoordeel ons in de App Store"
+    },
     "welcome": {
       "title": "Houd je hoofdpijn bij,\nneem de controle",
       "subtitle": "Laten we een paar snelle vragen beantwoorden om je ervaring te personaliseren"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Dit is een heel goede app die ik elke dag gebruik. Het is zo makkelijk te gebruiken en ik hou van de widgets.",
-      "zlassenp": "Een aftelling zien naar mijn reis of de verjaardag van een vriend maakt me enthousiast.",
-      "rajgha": "Maakt het moeilijk om grote evenementen te vergeten. Zou alleen willen dat er lettertypeopties waren.",
-      "jaynacc": "Dacht niet dat ik deze app veel zou gebruiken… maar nu check ik hem elke ochtend."
+      "emilea": "Geen giswerk meer bij mijn dosering. Deze app doet alle berekeningen voor me — ik voer gewoon de flesinfo in en het vertelt me precies hoeveel eenheden ik moet optrekken.",
+      "zlassenp": "Ik twijfelde altijd aan mijn reconstitutieverhoudingen. Deze app maakt het foutloos. Sterk aanbevolen voor iedereen die peptiden gebruikt.",
+      "rajgha": "De blend-calculator is een gamechanger. Ik combineer meerdere peptiden in één spuit en deze app berekent de verhoudingen elke keer perfect.",
+      "jaynacc": "Simpel, overzichtelijk en nauwkeurig. Ik gebruik het elke dag voor mijn protocol en heb sindsdien geen doseerfout meer gemaakt."
     }
   },
   "notifications": {

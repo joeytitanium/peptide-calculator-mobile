@@ -154,6 +154,11 @@
       "title": "Amestecuri perfecte, de fiecare dată",
       "subtitle": "Combină mai multe peptide într-o singură seringă cu proporții precise. Fără calcule complicate."
     },
+    "review": {
+      "title": "Ajută-ne să creștem",
+      "subtitle": "Arată-ți aprecierea lăsându-ne o recenzie pe App Store",
+      "switchLabel": "Evaluează-ne pe App Store"
+    },
     "welcome": {
       "title": "Urmărește-ți durerile de cap,\npreia controlul",
       "subtitle": "Să răspundem la câteva întrebări rapide pentru a-ți personaliza experiența"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Este o aplicație foarte bună pe care o folosesc zilnic. Este atât de ușor de folosit și ador widget-urile.",
-      "zlassenp": "Să văd un numărătoare inversă până la călătoria mea sau ziua de naștere a unui prieten mă entuziasmează.",
-      "rajgha": "Face dificil să uiți de evenimentele importante. Aș vrea doar să existe opțiuni de fonturi.",
-      "jaynacc": "Nu credeam că voi folosi mult această aplicație… dar acum o verific în fiecare dimineață."
+      "emilea": "Nu mai ghicesc dozarea. Această aplicație face toate calculele pentru mine — introduc doar informațiile fiolei și îmi spune exact câte unități să trag.",
+      "zlassenp": "Mereu aveam dubii cu privire la proporțiile de reconstituire. Această aplicație a făcut totul simplu. Recomand cu căldură oricui folosește peptide.",
+      "rajgha": "Calculatorul de amestecuri e revoluționar. Combin mai multe peptide într-o singură seringă și această aplicație calculează proporțiile perfect de fiecare dată.",
+      "jaynacc": "Simplă, curată și precisă. O folosesc zilnic pentru protocolul meu și nu am mai făcut nicio greșeală de dozare de atunci."
     }
   },
   "notifications": {

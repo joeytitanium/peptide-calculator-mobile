@@ -154,6 +154,11 @@
       "title": "Misturas perfeitas, sempre",
       "subtitle": "Combine múltiplos peptídeos em uma única seringa com proporções precisas. Sem cálculos complicados."
     },
+    "review": {
+      "title": "Ajude-nos a crescer",
+      "subtitle": "Mostre seu apoio nos dando uma avaliação na App Store",
+      "switchLabel": "Avalie-nos na App Store"
+    },
     "welcome": {
       "title": "Registre suas dores de cabeça,\ntome o controle",
       "subtitle": "Vamos responder algumas perguntas rápidas para personalizar sua experiência"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Este é um app muito bom que uso todos os dias. É muito fácil de usar e adoro os widgets.",
-      "zlassenp": "Ver uma contagem regressiva para minha viagem ou aniversário de um amigo me anima.",
-      "rajgha": "Torna difícil esquecer eventos importantes. Só queria que houvesse opções de fontes.",
-      "jaynacc": "Não achava que usaria muito este app… mas agora verifico toda manhã."
+      "emilea": "Acabou a adivinhação com minha dosagem. Este app faz toda a matemática por mim — eu só insiro as informações do frasco e ele me diz exatamente quantas unidades puxar.",
+      "zlassenp": "Eu sempre duvidava das minhas proporções de reconstituição. Este app tornou isso infalível. Recomendo muito para qualquer pessoa que use peptídeos.",
+      "rajgha": "A calculadora de misturas é revolucionária. Eu combino vários peptídeos em uma seringa e este app acerta as proporções perfeitamente todas as vezes.",
+      "jaynacc": "Simples, limpo e preciso. Uso todos os dias para meu protocolo e não cometi nenhum erro de dosagem desde então."
     }
   },
   "notifications": {

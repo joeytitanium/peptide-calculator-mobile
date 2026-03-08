@@ -154,6 +154,11 @@
       "title": "Her seferinde mükemmel karışımlar",
       "subtitle": "Birden fazla peptidi hassas oranlarla tek bir şırıngada birleştirin. Hesap yapmaya gerek yok."
     },
+    "review": {
+      "title": "Büyümemize yardım edin",
+      "subtitle": "App Store'da bize bir değerlendirme bırakarak desteğinizi gösterin",
+      "switchLabel": "App Store'da bizi değerlendirin"
+    },
     "welcome": {
       "title": "Baş ağrılarınızı takip edin,\nkontrolü elinize alın",
       "subtitle": "Deneyiminizi kişiselleştirmek için birkaç hızlı soruyu cevaplayalım"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Her gün kullandığım çok iyi bir uygulama. Kullanımı çok kolay ve widget'ları çok seviyorum.",
-      "zlassenp": "Gezime veya arkadaşımın doğum gününe geri sayım görmek beni heyecanlandırıyor.",
-      "rajgha": "Önemli etkinlikleri unutmayı zorlaştırıyor. Keşke yazı tipi seçenekleri olsaydı.",
-      "jaynacc": "Bu uygulamayı çok kullanacağımı düşünmemiştim… ama artık her sabah kontrol ediyorum."
+      "emilea": "Artık dozajımı tahmin etmek yok. Bu uygulama tüm hesaplamayı benim için yapıyor — sadece flakon bilgilerini giriyorum ve kaç ünite çekmem gerektiğini tam olarak söylüyor.",
+      "zlassenp": "Rekonstitüsyon oranlarımdan hep şüphe ediyordum. Bu uygulama bunu hatasız hale getirdi. Peptid kullanan herkese şiddetle tavsiye ederim.",
+      "rajgha": "Karışım hesaplayıcı oyunun kurallarını değiştirdi. Birden fazla peptidi tek bir şırıngada birleştiriyorum ve bu uygulama oranları her seferinde mükemmel hesaplıyor.",
+      "jaynacc": "Basit, temiz ve doğru. Her gün protokolüm için kullanıyorum ve o zamandan beri hiç dozaj hatası yapmadım."
     }
   },
   "notifications": {

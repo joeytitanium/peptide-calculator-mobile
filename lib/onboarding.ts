@@ -71,6 +71,10 @@ export const ONBOARDING_CONFIG: ScreenConfig[] = [
   //   href: '/(auth)/onboarding-finished',
   // },
   {
+    posthogEventName: 'onboarding-review',
+    href: '/(auth)/onboarding-review',
+  },
+  {
     posthogEventName: 'onboarding-paywall',
     href: '/(auth)/paywall',
   },

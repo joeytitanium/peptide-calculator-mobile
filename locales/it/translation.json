@@ -154,6 +154,11 @@
       "title": "Miscele perfette, ogni volta",
       "subtitle": "Combina più peptidi in una sola siringa con proporzioni precise. Nessun calcolo necessario."
     },
+    "review": {
+      "title": "Aiutaci a crescere",
+      "subtitle": "Mostra il tuo supporto lasciandoci una recensione sull'App Store",
+      "switchLabel": "Valutaci sull'App Store"
+    },
     "welcome": {
       "title": "Monitora il tuo mal di testa,\nriprendi il controllo",
       "subtitle": "Rispondiamo a qualche domanda rapida per personalizzare la tua esperienza"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Questa è un'ottima app che uso ogni giorno. È facilissima da usare e adoro i widget.",
-      "zlassenp": "Vedere un conto alla rovescia per il mio viaggio o il compleanno di un amico mi entusiasma.",
-      "rajgha": "Rende difficile dimenticare eventi importanti. Vorrei solo ci fossero opzioni per i font.",
-      "jaynacc": "Non pensavo di usare molto questa app… ma ora la controllo ogni mattina."
+      "emilea": "Niente più congetture con il mio dosaggio. Questa app fa tutti i calcoli per me — inserisco le info del flacone e mi dice esattamente quante unità aspirare.",
+      "zlassenp": "Dubitavo sempre dei miei rapporti di ricostituzione. Questa app li ha resi infallibili. Consigliata a chiunque usi peptidi.",
+      "rajgha": "Il calcolatore di miscele è rivoluzionario. Combino più peptidi in una siringa e questa app calcola i rapporti perfetti ogni volta.",
+      "jaynacc": "Semplice, pulita e precisa. La uso ogni giorno per il mio protocollo e non ho più sbagliato un dosaggio."
     }
   },
   "notifications": {

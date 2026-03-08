@@ -154,6 +154,11 @@
       "title": "Perfekte Mischungen, jedes Mal",
       "subtitle": "Kombiniere mehrere Peptide in einer Spritze mit präzisen Verhältnissen. Kein Rechnen nötig."
     },
+    "review": {
+      "title": "Hilf uns zu wachsen",
+      "subtitle": "Zeig deine Unterstützung mit einer Bewertung im App Store",
+      "switchLabel": "Bewerte uns im App Store"
+    },
     "welcome": {
       "title": "Erfasse deine Kopfschmerzen,\nübernimm die Kontrolle",
       "subtitle": "Lass uns ein paar kurze Fragen beantworten, um dein Erlebnis zu personalisieren"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Das ist eine sehr gute App, die ich täglich nutze. Sie ist so einfach zu bedienen und ich liebe die Widgets.",
-      "zlassenp": "Einen Countdown zu meiner Reise oder dem Geburtstag eines Freundes zu sehen, begeistert mich.",
-      "rajgha": "Macht es schwer, wichtige Events zu vergessen. Wünschte nur, es gäbe Schriftoptionen.",
-      "jaynacc": "Dachte nicht, dass ich diese App viel nutzen würde… aber jetzt schaue ich jeden Morgen rein."
+      "emilea": "Kein Rätselraten mehr bei meiner Dosierung. Die App macht die ganze Rechnung für mich — ich gebe einfach die Fläschchen-Infos ein und sie sagt mir genau, wie viele Einheiten ich aufziehen muss.",
+      "zlassenp": "Ich habe meine Rekonstitutionsverhältnisse immer hinterfragt. Diese App macht es narrensicher. Sehr empfehlenswert für jeden, der Peptide nimmt.",
+      "rajgha": "Der Blend-Rechner ist ein Gamechanger. Ich kombiniere mehrere Peptide in einer Spritze und diese App berechnet die Verhältnisse jedes Mal perfekt.",
+      "jaynacc": "Einfach, übersichtlich und genau. Ich benutze sie jeden Tag für mein Protokoll und habe seitdem keinen Dosierfehler mehr gemacht."
     }
   },
   "notifications": {

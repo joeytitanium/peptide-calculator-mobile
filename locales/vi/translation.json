@@ -154,6 +154,11 @@
       "title": "Pha trộn hoàn hảo mọi lúc",
       "subtitle": "Kết hợp nhiều peptide vào một ống tiêm với tỷ lệ chính xác. Không cần tính toán."
     },
+    "review": {
+      "title": "Giúp chúng tôi phát triển",
+      "subtitle": "Thể hiện tình yêu bằng cách đánh giá chúng tôi trên App Store",
+      "switchLabel": "Đánh giá chúng tôi trên App Store"
+    },
     "welcome": {
       "title": "Theo dõi đau đầu,\nkiểm soát sức khỏe",
       "subtitle": "Hãy trả lời một vài câu hỏi nhanh để cá nhân hóa trải nghiệm của bạn"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "Đây là một ứng dụng rất tốt mà tôi sử dụng hàng ngày. Rất dễ sử dụng và tôi thích các widget.",
-      "zlassenp": "Thấy đếm ngược đến chuyến đi hoặc sinh nhật bạn bè làm tôi phấn khích.",
-      "rajgha": "Khó quên các sự kiện lớn. Chỉ ước có thêm tùy chọn phông chữ.",
-      "jaynacc": "Không nghĩ mình sẽ dùng ứng dụng này nhiều… nhưng giờ tôi kiểm tra nó mỗi sáng."
+      "emilea": "Không còn phải đoán mò liều lượng nữa. Ứng dụng này tính toán tất cả cho tôi — tôi chỉ cần nhập thông tin lọ thuốc và nó cho biết chính xác cần rút bao nhiêu đơn vị.",
+      "zlassenp": "Tôi luôn nghi ngờ tỷ lệ pha hồi chỉnh của mình. Ứng dụng này đã làm mọi thứ trở nên chính xác tuyệt đối. Rất khuyến khích cho bất kỳ ai sử dụng peptide.",
+      "rajgha": "Máy tính pha trộn thật sự thay đổi cuộc chơi. Tôi kết hợp nhiều peptide trong một ống tiêm và ứng dụng này tính tỷ lệ hoàn hảo mỗi lần.",
+      "jaynacc": "Đơn giản, gọn gàng và chính xác. Tôi dùng mỗi ngày cho phác đồ của mình và chưa mắc lỗi liều lượng nào kể từ đó."
     }
   },
   "notifications": {

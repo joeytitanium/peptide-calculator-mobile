@@ -154,6 +154,11 @@
       "title": "Perfect Blends, Every Time",
       "subtitle": "Combine multiple peptides into one syringe with precise ratios. No math required."
     },
+    "review": {
+      "title": "Help us grow",
+      "subtitle": "Show your love by giving us a review on the App Store",
+      "switchLabel": "Rate us on the App Store"
+    },
     "welcome": {
       "title": "Track your headaches,\ntake control",
       "subtitle": "Let's answer a few quick questions to personalize your experience"
@@ -605,10 +610,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "This is a very good app that I use every day. It's so easy to use and I love the widgets.",
-      "zlassenp": "Seeing a countdown to my trip or friend's birthday gets me hyped.",
-      "rajgha": "Makes it hard to forget big events. Only wish there were font options.",
-      "jaynacc": "Didn't think I'd use this app much… but now I check it every morning."
+      "emilea": "No more guessing with my dosing. This app does all the math for me — I just enter the vial info and it tells me exactly how many units to draw.",
+      "zlassenp": "I was always second-guessing my reconstitution ratios. This app made it foolproof. Highly recommend for anyone on peptides.",
+      "rajgha": "The blend calculator is a game changer. I combine multiple peptides in one syringe and this app gets the ratios perfect every time.",
+      "jaynacc": "Simple, clean, and accurate. I use it every day for my protocol and haven't made a dosing mistake since."
     }
   },
   "notifications": {

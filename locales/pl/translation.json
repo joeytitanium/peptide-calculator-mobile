@@ -154,6 +154,11 @@
       "title": "Idealne mieszanki za każdym razem",
       "subtitle": "Łącz wiele peptydów w jednej strzykawce z precyzyjnymi proporcjami. Bez żadnych obliczeń."
     },
+    "review": {
+      "title": "Pomóż nam się rozwijać",
+      "subtitle": "Okaż swoje wsparcie, wystawiając nam ocenę w App Store",
+      "switchLabel": "Oceń nas w App Store"
+    },
     "welcome": {
       "title": "Śledź bóle głowy,\nprzejmij kontrolę",
       "subtitle": "Odpowiedzmy na kilka pytań, aby spersonalizować Twoje doświadczenie"
@@ -590,10 +595,10 @@
   },
   "reviewCarousel": {
     "reviews": {
-      "emilea": "To bardzo dobra aplikacja, której używam codziennie. Jest tak łatwa w użyciu i uwielbiam widżety.",
-      "zlassenp": "Widok odliczania do mojej podróży lub urodzin znajomego mnie nakręca.",
-      "rajgha": "Sprawia, że trudno zapomnieć o ważnych wydarzeniach. Szkoda tylko, że nie ma opcji czcionek.",
-      "jaynacc": "Nie sądziłem, że będę często korzystać z tej aplikacji… ale teraz sprawdzam ją każdego ranka."
+      "emilea": "Koniec z zgadywaniem dawkowania. Ta aplikacja robi za mnie wszystkie obliczenia — wystarczy wpisać dane z fiolki, a ona powie dokładnie ile jednostek nabrać.",
+      "zlassenp": "Zawsze miałem wątpliwości co do proporcji rekonstytucji. Ta aplikacja uczyniła to niezawodnym. Gorąco polecam każdemu, kto stosuje peptydy.",
+      "rajgha": "Kalkulator mieszanek to rewolucja. Łączę kilka peptydów w jednej strzykawce, a ta aplikacja za każdym razem idealnie oblicza proporcje.",
+      "jaynacc": "Prosta, czytelna i dokładna. Używam jej codziennie do mojego protokołu i od tego czasu nie popełniłem błędu w dawkowaniu."
     }
   },
   "notifications": {
