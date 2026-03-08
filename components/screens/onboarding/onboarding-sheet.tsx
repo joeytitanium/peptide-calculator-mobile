@@ -53,7 +53,7 @@ export function OnboardingSheet({ onContinue }: OnboardingSheetProps) {
             {CONFIG.site.name}
           </Text>
           <Text className="text-lg text-muted-foreground text-center">
-            {CONFIG.site.description}
+            {t('common.appDescription')}
           </Text>
         </View>
 

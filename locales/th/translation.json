@@ -7,7 +7,8 @@
     "error": "ข้อผิดพลาด",
     "ok": "ตกลง",
     "enabled": "เปิดใช้งาน",
-    "disabled": "ปิดใช้งาน"
+    "disabled": "ปิดใช้งาน",
+    "appDescription": "คำนวณปริมาณเปปไทด์ของคุณ"
   },
   "settings": {
     "unlockPro": "ปลดล็อก Pro",

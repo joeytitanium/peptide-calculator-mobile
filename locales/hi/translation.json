@@ -7,7 +7,8 @@
     "error": "त्रुटि",
     "ok": "ठीक है",
     "enabled": "सक्रिय",
-    "disabled": "निष्क्रिय"
+    "disabled": "निष्क्रिय",
+    "appDescription": "अपनी पेप्टाइड खुराक की गणना करें"
   },
   "settings": {
     "unlockPro": "Pro अनलॉक करें",

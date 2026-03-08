@@ -7,7 +7,8 @@
     "error": "오류",
     "ok": "확인",
     "enabled": "활성화",
-    "disabled": "비활성화"
+    "disabled": "비활성화",
+    "appDescription": "펩타이드 용량을 계산하세요"
   },
   "settings": {
     "unlockPro": "Pro 잠금 해제",

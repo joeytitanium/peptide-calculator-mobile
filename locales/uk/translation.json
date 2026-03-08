@@ -7,7 +7,8 @@
     "error": "Помилка",
     "ok": "ОК",
     "enabled": "Увімкнено",
-    "disabled": "Вимкнено"
+    "disabled": "Вимкнено",
+    "appDescription": "Розрахуйте дозу пептидів"
   },
   "settings": {
     "unlockPro": "Розблокувати Pro",

@@ -7,7 +7,8 @@
     "error": "Błąd",
     "ok": "OK",
     "enabled": "Włączone",
-    "disabled": "Wyłączone"
+    "disabled": "Wyłączone",
+    "appDescription": "Oblicz dawkę peptydu"
   },
   "settings": {
     "unlockPro": "Odblokuj Pro",

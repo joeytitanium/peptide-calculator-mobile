@@ -7,7 +7,8 @@
     "error": "Errore",
     "ok": "OK",
     "enabled": "Attivato",
-    "disabled": "Disattivato"
+    "disabled": "Disattivato",
+    "appDescription": "Calcola la tua dose di peptidi"
   },
   "settings": {
     "unlockPro": "Sblocca Pro",

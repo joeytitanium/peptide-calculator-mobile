@@ -7,7 +7,8 @@
     "error": "Ошибка",
     "ok": "ОК",
     "enabled": "Включено",
-    "disabled": "Отключено"
+    "disabled": "Отключено",
+    "appDescription": "Рассчитайте дозу пептидов"
   },
   "settings": {
     "unlockPro": "Разблокировать Pro",

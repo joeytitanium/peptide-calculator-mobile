@@ -7,7 +7,8 @@
     "error": "Fehler",
     "ok": "OK",
     "enabled": "Aktiviert",
-    "disabled": "Deaktiviert"
+    "disabled": "Deaktiviert",
+    "appDescription": "Berechne deine Peptiddosis"
   },
   "settings": {
     "unlockPro": "Pro freischalten",

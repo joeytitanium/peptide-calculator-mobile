@@ -7,7 +7,8 @@
     "error": "Lỗi",
     "ok": "OK",
     "enabled": "Đã bật",
-    "disabled": "Đã tắt"
+    "disabled": "Đã tắt",
+    "appDescription": "Tính liều peptide của bạn"
   },
   "settings": {
     "unlockPro": "Mở khóa Pro",

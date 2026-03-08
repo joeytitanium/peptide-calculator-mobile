@@ -7,7 +7,8 @@
     "error": "Eroare",
     "ok": "OK",
     "enabled": "Activat",
-    "disabled": "Dezactivat"
+    "disabled": "Dezactivat",
+    "appDescription": "Calculează doza de peptide"
   },
   "settings": {
     "unlockPro": "Deblochează Pro",

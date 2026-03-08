@@ -50,7 +50,7 @@ export function OnboardingWelcomeHeroImage({
               {CONFIG.site.name}
             </Text>
             <Text className="text-base text-center px-4">
-              {CONFIG.site.description}
+              {t('common.appDescription')}
             </Text>
           </View>
         </View>
