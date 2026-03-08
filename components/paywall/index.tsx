@@ -167,10 +167,12 @@ export const Paywall = ({
       return;
     }
 
-    const { error } = await purchasePackage(selectedPackage);
+    const { error, userCancelled } = await purchasePackage(selectedPackage);
     if (error) {
-      capturePosthogEvent('purchases-purchase-failed', { error });
-      Alert.alert(t('common.error'), error);
+      if (!userCancelled) {
+        capturePosthogEvent('purchases-purchase-failed', { error });
+        Alert.alert(t('common.error'), error);
+      }
       return;
     }
 
